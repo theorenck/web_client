@@ -1,9 +1,9 @@
 $(document).ready(function(){	
 /********** menu animado  **********/
-	$('#btn-menu-right').click(function(){
+	$('#btn-menu').click(function(){
 		$(this).toggleClass('aberto');
 		
-		$('.menu-right').toggleClass('aberto');
+		$('.menu').toggleClass('aberto');
 
 		$('#fa-search').toggleClass("hidden");
 		$('#fa-times-search').toggleClass("hidden");
