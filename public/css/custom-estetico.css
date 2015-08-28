@@ -5,6 +5,9 @@ a:focus{
 .bold{
 	font-weight: bold;
 }
+.navbar{
+	border-radius: 0;
+}
 @media screen and (max-width: 34em) {
     .xs-bold{
     	font-weight: bold;
@@ -53,7 +56,6 @@ a:focus{
 		font-weight: normal;
 	}
 }
-
 /********************** Icones e imagens ******************************/
 .logo-navbar{
 	height: 40px;
@@ -62,6 +64,7 @@ a:focus{
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 .fa{
 	transform: rotate(0deg);
 	transition: 0.5s ease;

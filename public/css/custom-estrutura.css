@@ -1,8 +1,20 @@
+
+@media screen and (max-width: 34em) {
+    .m-t-1{
+		margin-top: 1em;
+	}
+}
+.m-t-2{
+	margin-top: 2em;
+}
+.m-b-2{
+	margin-bottom: 2em;
+}
 .hidden{
 	display: none;
 }
 .container{
-	margin-top: 3em;
+	margin-top: 2em;
 }
 .divider-solid{
 	border-bottom: 1px solid #ccc;
@@ -70,6 +82,15 @@ input{
 .form-bloco h5.collapse-titulo{
 	padding-bottom: 1em;
 }
+.menu h5{
+	margin: 0.85em 0 1.3em;
+}
+.menu h5 i{
+	margin: 0 0.5em 0 0;
+}
+h6.header{
+	font-weight: bold;
+}
 .form-bloco .itens-lista h6{
 	text-overflow: ellipsis;
     white-space: nowrap;
@@ -82,17 +103,14 @@ input{
     white-space: nowrap;
     overflow: hidden;
 }
-.menu-right h5{
-	margin: 0.85em 0 1.3em;
-}
-.menu-right h5 i{
-	margin: 0 0.5em 0 0;
-}
 /*********************** MENUS animados *************************/
-.menu-right button{
+.menu button{
 	margin-bottom: 1.5em;
 }
-.menu-right{
+.menu .btn-block .fa{
+	padding-right: 1em;
+}
+.menu{
 	top: 81px;
 	right: -420px;
 	width: 420px;
@@ -106,13 +124,13 @@ input{
 	z-index: 1;
 	transition: 0.5s ease;
 }
-.menu-right.aberto{
+.menu.aberto{
 	right: 0;
 	transition: 0.5s ease;
 	box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 	z-index: 2;
 }
-#btn-menu-right{
+#btn-menu{
 	top: 81px;
 	right: 0px;
 	width: 50px;
@@ -133,13 +151,13 @@ input{
     margin-right: -1px;
     margin-top: 0;
 }
-#btn-menu-right.aberto{
+#btn-menu.aberto{
 	right: 0px;
 	transition: 0.5s ease;
 	border:0;
 	border-top: 1px solid #e3e3e3;
 	box-shadow: none;
 }
-#btn-menu-right.aberto:hover{
+#btn-menu.aberto:hover{
 	box-shadow: none;
 }
