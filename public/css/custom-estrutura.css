@@ -1,0 +1,145 @@
+.hidden{
+	display: none;
+}
+.container{
+	margin-top: 3em;
+}
+.divider-solid{
+	border-bottom: 1px solid #ccc;
+    margin: 0 0 1.5em 0;
+    overflow: hidden;
+}
+.divider-dashed{
+	border-bottom: 1px dashed #ccc;
+    margin: 0 0 1.5em 0;
+    overflow: hidden;
+}
+.form-bloco{
+	margin-bottom: 3em;
+}
+.form-bloco > div{
+	padding: 1em 0 0 0;
+}
+@media screen and (max-width: 34em) {
+    .interno{
+		padding: 0 1.25em;
+	}	
+	.topico-produto{
+		border-bottom: 1px dashed #ccc;
+		padding: 0 0 0.8em 0;
+		margin: 0 0 0.8em 0;
+	}
+	.row.produto{
+		margin-bottom: 0.8em;
+	}
+}
+input{
+	height: 2.5em;  /*sem essa regra os inputs de data quebram na altura*/
+}
+.lista button{
+	font-size: 0.80em;
+}
+.btn{
+	margin-bottom: 1em
+}
+.btn-group.btn-block .btn-block{
+	width: 80%;
+}
+@media screen and (max-width: 34em) {
+    .btn-group.btn-block{
+		margin: 1em 0;
+	}
+}
+.btn-group.btn-block .dropdown-toggle{
+	width: 20%;
+}
+@media screen and (max-width: 34em) {
+    span.direita{
+		float: right !important;
+	}
+}
+
+
+/********************** Tipografia ******************************/
+.form-bloco h5{
+	/*text-transform: uppercase;*/
+	color: #34495e;  /*cor: peter river*/
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #ccc;
+}
+.form-bloco h5.collapse-titulo{
+	padding-bottom: 1em;
+}
+.form-bloco .itens-lista h6{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.form-bloco .formulario h6{
+	height: 2.5em;
+	padding: 0.7em 0;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu-right h5{
+	margin: 0.85em 0 1.3em;
+}
+.menu-right h5 i{
+	margin: 0 0.5em 0 0;
+}
+/*********************** MENUS animados *************************/
+.menu-right button{
+	margin-bottom: 1.5em;
+}
+.menu-right{
+	top: 81px;
+	right: -420px;
+	width: 420px;
+	padding: 20px;
+	position: fixed;
+	float: right;
+	background-color: #f1f1f1;
+	border: 1px solid #e3e3e3;
+	border-right: 0px;
+	padding: 0 10px;
+	z-index: 1;
+	transition: 0.5s ease;
+}
+.menu-right.aberto{
+	right: 0;
+	transition: 0.5s ease;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+	z-index: 2;
+}
+#btn-menu-right{
+	top: 81px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	float: right;
+	background-color: #f1f1f1;
+	z-index: 1;
+	vertical-align: center;
+	padding: 5px;
+	border: 0;
+	border-radius: 0;	
+	transition: 0.5s ease;
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #f1f1f1;
+    margin-right: -1px;
+    margin-top: 0;
+}
+#btn-menu-right.aberto{
+	right: 0px;
+	transition: 0.5s ease;
+	border:0;
+	border-top: 1px solid #e3e3e3;
+	box-shadow: none;
+}
+#btn-menu-right.aberto:hover{
+	box-shadow: none;
+}

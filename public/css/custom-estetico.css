@@ -1,0 +1,81 @@
+a:hover,
+a:focus{
+	text-decoration: none;
+}
+.bold{
+	font-weight: bold;
+}
+@media screen and (max-width: 34em) {
+    .xs-bold{
+    	font-weight: bold;
+    }
+}
+.card-light{
+	border: none;
+	padding-right: 0; 
+	padding-left: 0;
+}
+.card-dark{
+	margin-bottom: 2em;
+	background-color: #f1f1f1;
+}
+.form-bloco h5:hover,
+.form-bloco h5:focus{
+	color: #3498db;
+}
+.form-bloco h5.collapse-titulo:hover,
+.form-bloco h5.collapse-titulo:focus{
+	color: #34495e;
+}
+.navbar-dark{
+	background-color: #34495e;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: rgba(255, 255, 255, 1);
+}
+.btn-primary{
+	background-color: #3498db; 
+}
+.btn-primary:hover{
+	background-color: #3498db; 
+	border-color: #3498db;
+}
+@media screen and (max-width: 34em) {
+    .subtitle{
+		color: #3498db;
+		font-weight: bold;
+	}
+	.subinfo{
+		color: #373a3c;
+		font-weight: normal;
+	}
+}
+
+/********************** Icones e imagens ******************************/
+.logo-navbar{
+	height: 40px;
+	width: 150px;
+	background-image: url('zeta.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fa{
+	transform: rotate(0deg);
+	transition: 0.5s ease;
+}
+.fa-chevron-down{
+	transition: 0.5s ease;
+}
+.fa-chevron-down.girar-cima{
+	transform: rotate(180deg);
+	transition: 0.5s ease;
+}
+.girar-icon{
+	transform: rotate(45deg);
+	transition: 0.5s ease;
+}
+
+

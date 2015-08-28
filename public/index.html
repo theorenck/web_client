@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="ZetaWebClient">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Zeta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom-estrutura.css">
+    <link rel="stylesheet" href="css/custom-estetico.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+    <script src="js/angular-locale_pt-br.js"></script>
+    <script src="js/application.js"></script>
+  </head>
+  <body>
+    <div ng-include="'templates/pages/navbar.html'"></div>
+    <div ng-include="'templates/pages/menu.html'"></div>
+    <div class="container">
+      <div ng-view></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script src="js/novo-pedido.js"/>
+  </body>
+</html>
