@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 .divider-dashed{
-	border-bottom: 1px dotted #ccc;
+	border-bottom: 1px dotted #bdc3c7;
     margin: 0 0 1.5em 0;
     overflow: hidden;
 }
@@ -46,7 +46,7 @@ input{
 	height: 2.5em;  /*sem essa regra os inputs de data quebram na altura*/
 }
 .lista button{
-	font-size: 0.80em;
+	font-size: 0.80rem;
 }
 .btn{
 	margin-bottom: 1em
@@ -68,7 +68,6 @@ input{
 	}
 }
 
-
 /********************** Tipografia ******************************/
 .menu h5{
 	margin: 0.85em 0 1.3em;
@@ -76,9 +75,21 @@ input{
 .menu h5 i{
 	margin: 0 0.5em 0 0;
 }
+.h3, h3{
+	color: #3498db;
+	padding-bottom: 0.8em;
+	margin: 0.5em 0 1.5em;
+	font-weight: bold;
+}
+h3 small{
+	color: #bdc3c7;
+	font-size: 70%;
+	font-weight: normal;
+	padding-left: 0.5em;
+}
 .form-bloco h5{
 	text-transform: uppercase;
-	color: #3f9ddd;
+	color: #3498db;
 	padding-bottom: 0.8em;
 	margin-bottom: 0.8em;
 	border-bottom: 1px solid #ccc;
