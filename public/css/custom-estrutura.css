@@ -14,7 +14,7 @@
 	display: none;
 }
 .container{
-	margin-top: 2em;
+	margin-top: 2.5em;
 }
 .divider-solid{
 	border-bottom: 1px solid #ccc;
@@ -22,15 +22,12 @@
     overflow: hidden;
 }
 .divider-dashed{
-	border-bottom: 1px dashed #ccc;
+	border-bottom: 1px dotted #ccc;
     margin: 0 0 1.5em 0;
     overflow: hidden;
 }
 .form-bloco{
 	margin-bottom: 3em;
-}
-.form-bloco > div{
-	padding: 1em 0 0 0;
 }
 @media screen and (max-width: 34em) {
     .interno{
@@ -73,30 +70,32 @@ input{
 
 
 /********************** Tipografia ******************************/
-.form-bloco h5{
-	/*text-transform: uppercase;*/
-	color: #34495e;  /*cor: peter river*/
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #ccc;
-}
-.form-bloco h5.collapse-titulo{
-	padding-bottom: 1em;
-}
 .menu h5{
 	margin: 0.85em 0 1.3em;
 }
 .menu h5 i{
 	margin: 0 0.5em 0 0;
 }
-h6.header{
+.form-bloco h5{
+	text-transform: uppercase;
+	color: #3f9ddd;
+	padding-bottom: 0.8em;
+	margin-bottom: 0.8em;
+	border-bottom: 1px solid #ccc;
+}
+.form-bloco h5.collapse-titulo{
+	padding-bottom: 0.8em;
+	margin-bottom: 0.8em;
+}
+span.header{
 	font-weight: bold;
 }
-.form-bloco .itens-lista h6{
+.form-bloco .itens-lista span.texto{
 	text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-.form-bloco .formulario h6{
+.form-bloco .formulario span.form{
 	height: 2.5em;
 	padding: 0.7em 0;
 	text-overflow: ellipsis;
