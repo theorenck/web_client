@@ -1,88 +1,109 @@
 <div class="form-bloco">
-    <h5>
-        Ordens de Serviço
-    </h5>
-    <div class="card card-light card-block">
-        <fieldset class="form-group hidden">
-            <div class="row interno">
-                <div class="col-sm-3">
-                    <h6>Cliente</h6>
-                    <h6>Documento</h6>
-                </div>
-                <div class="col-sm-3">
-                   <h6>Exemplo</h6>
-                   <h6>Exemplo</h6>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Pagamento (status)</h6>
-                    <h6>Total da nota</h6>
-                </div>
+  <h5>
+    Ordens de Serviço
+  </h5>
+  <div class="card card-light card-block">
+    <div class="hidden-xs-down">
+      <fieldset class="form-group">
+        <div class="row interno">
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><strong class="header">Número</strong></div>
             </div>
-        </fieldset>
-
-        <fieldset class="form-group" ng-repeat="os in ctrl.items">
-            <div class="row interno">
-                <div class="col-sm-1">
-                   <h6>#{{os.codservico}}</h6>
-                   <h6><span class="label label-info">{{os.status}}</span></h6>
-                </div>
-                <div class="col-sm-5">
-                    <h6>{{os.cliente}}</h6>
-                    <h6>{{os.cgc}}</h6>
-                </div>
-                <div class="col-sm-3">
-                    <h6>Dinheiro (quitado)</h6>
-                    <h6>{{os.total|currency}}</h6>
-                </div>
-                <div class="col-sm-3">
-                    <div class="btn-group btn-block">
-                        <button type="button" class="btn btn-secondary btn-block">Emitir NF</button>
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Gerar NF-e</a>
-                            <a class="dropdown-item" href="#">Visualizar</a>
-                            <a class="dropdown-item" href="#">Imprimir</a>
-                            <a class="dropdown-item" href="#">Editar</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Excluir</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-
-        <div class="divider-solid hidden-sm-up"></div>
-    </div>
-</div>
-<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Importar Nota</h4>
           </div>
-          <div class="modal-body">
-              <div class="form-group">
-                  <fieldset class="form-group">
-                      <label>Cole o endereço do XML</label>
-                      <input type="text" class="form-control" placeholder="http://...">
-                  </fieldset>
-                  <fieldset class="form-group">
-                      <label>Ou faça upload de um arquivo</label>
-                      <label class="file center-block">
-                          <input type="file" id="file">
-                          <span class="file-custom"></span>
-                      </label>
-                  </fieldset>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><strong class="header">Entrada</strong></div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><strong class="header">Cliente</strong></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><strong class="header">Total</strong></div>
+            </div>
+          </div>
+      </fieldset>
+      <div class="divider-solid hidden-sm-up"></div>
+      <div class="divider-dashed hidden-xs-down"></div>
+    </div>
+    <div ng-repeat="os in ctrl.items">
+      <fieldset class="form-group">
+        <div class="row interno ">
+          <div class="col-sm-1 col-xs-12">
+              <div class="row">
+                  <div class="col-sm-12 col-xs-6"><span>#{{os.codservico}}</span></div>
+                  <div class="col-sm-12 col-xs-6"><span class="label label-info">{{os.aberto}}</span></div>
               </div>
           </div>
-
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary col-sm-3" data-dismiss="modal">Não importar</button>
-              <button type="button" class="btn btn-primary col-sm-3 pull-right">Importar</button>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span>{{os.dataentrada}}</span></div>
+            </div>
           </div>
-      </div>
+          <div class="col-sm-5 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span>{{os.cliente}}</span></div>
+              <div class="col-sm-12 col-xs-6"><span>{{os.cgc|cpfcnpj}}</span></div>
+            </div>
+          </div>
+            <div class="col-sm-2 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-6"><span>{{os.total|currency}}</span></div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 col-xs-12 m-t-1">
+              <button type="button" class="btn btn-secondary btn-block">Emitir NF</button>
+            </div>
+        </div>
+      </fieldset>
+      <div class="divider-solid hidden-sm-up"></div>
+      <div class="divider-dashed hidden-xs-down"></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12">
+  <div class="text-center">
+    <ul class="pagination hidden-xs-down">
+      <li>
+        <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="pagination pagination-lg hidden-sm-up">
+      <li>
+        <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
