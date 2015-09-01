@@ -1,11 +1,17 @@
 
 @media screen and (max-width: 34em) {
-    .m-t-1{
+    .xs-m-t-1{
 		margin-top: 1em;
 	}
 }
+.m-t-1{
+		margin-top: 1em;
+	}
 .m-t-2{
 	margin-top: 2em;
+}
+.m-b-1{
+	margin-bottom: 1em;
 }
 .m-b-2{
 	margin-bottom: 2em;
@@ -70,6 +76,17 @@ input{
 		float: right !important;
 	}
 }
+label{
+	display: block;
+	font-weight: bold;
+}
+.label{
+	/*display: block;  todos labels da mesma largura*/
+	white-space: normal;
+	line-height: 1rem;
+	margin-bottom: 0.4em;
+	text-align: left;
+}
 
 /********************** Tipografia ******************************/
 .menu h5{
@@ -77,10 +94,6 @@ input{
 }
 .menu h5 i{
 	margin: 0 0.5em 0 0;
-}
-label{
-	font-weight: bold;
-	display: block;
 }
 .h3, h3{
 	color: #3498db;
@@ -100,12 +113,23 @@ h3 small{
 }
 span.header{
 	font-weight: bold;
-	color: #373a3c;
-	color: #3498db;
+	color: #34495e;
+	color: #2980b9;
+	/*color: #3498db;*/
 	display: block;
 	padding-bottom: 0.8em;
 	border-bottom: 1px dotted #ccc;
 	margin-bottom: 0.8em;
+}
+span.header-gray{
+	/*font-weight: bold;*/
+	color: #34495e;
+	color: #2980b9;
+	/*color: #3498db;*/
+	display: block;
+	padding-bottom: 0.8em;
+	/*border-bottom: 1px dotted #ccc;*/
+	/*margin-bottom: 0.8em;*/
 }
 .form-bloco .itens-lista span.texto{
 	text-overflow: ellipsis;
