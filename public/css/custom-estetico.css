@@ -26,7 +26,7 @@ a:focus{
 }
 .card-light{
 	border: none;
-	padding-right: 0; 
+	padding-right: 0;
 	padding-left: 0;
 }
 .card-dark{
@@ -51,11 +51,14 @@ a:focus{
 	color: rgba(255, 255, 255, 1);
 }
 .btn-primary{
-	background-color: #3498db; 
+	background-color: #3498db;
 }
 .btn-primary:hover{
-	background-color: #3498db; 
+	background-color: #3498db;
 	border-color: #3498db;
+}
+.label-primary {
+    background-color: #3498db;
 }
 @media screen and (max-width: 34em) {
     .subtitle{

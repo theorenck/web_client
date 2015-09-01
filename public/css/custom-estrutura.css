@@ -41,7 +41,7 @@
 @media screen and (max-width: 34em) {
     .interno{
 		padding: 0 1.25em;
-	}	
+	}
 	.topico-produto{
 		border-bottom: 1px dashed #ccc;
 		padding: 0 0 0.8em 0;
@@ -56,9 +56,6 @@ input{
 }
 .lista button{
 	font-size: 0.80rem;
-}
-.btn{
-	margin-bottom: 1em
 }
 .btn-group.btn-block .btn-block{
 	width: 80%;
@@ -182,7 +179,7 @@ span.header-gray{
 	vertical-align: center;
 	padding: 5px;
 	border: 0;
-	border-radius: 0;	
+	border-radius: 0;
 	transition: 0.5s ease;
 	border-top: 1px solid #e3e3e3;
 	border-bottom: 1px solid #e3e3e3;
