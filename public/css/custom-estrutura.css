@@ -78,6 +78,10 @@ input{
 .menu h5 i{
 	margin: 0 0.5em 0 0;
 }
+label{
+	font-weight: bold;
+	display: block;
+}
 .h3, h3{
 	color: #3498db;
 	padding-bottom: 0.8em;
@@ -90,19 +94,18 @@ h3 small{
 	font-weight: normal;
 	padding-left: 0.5em;
 }
-.form-bloco h5{
-	text-transform: uppercase;
-	color: #3498db;
-	padding-bottom: 0.8em;
-	margin-bottom: 0.8em;
-	border-bottom: 1px solid #ccc;
-}
 .form-bloco h5.collapse-titulo{
 	padding-bottom: 0.8em;
 	margin-bottom: 0.8em;
 }
 span.header{
 	font-weight: bold;
+	color: #373a3c;
+	color: #3498db;
+	display: block;
+	padding-bottom: 0.8em;
+	border-bottom: 1px dotted #ccc;
+	margin-bottom: 0.8em;
 }
 .form-bloco .itens-lista span.texto{
 	text-overflow: ellipsis;
