@@ -7,14 +7,22 @@
     <title>Zeta</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans:400,600,300,300italic,400italic,600italic,700,700italic,800,800italic">
     <link rel="stylesheet" href="css/custom-estrutura.css">
     <link rel="stylesheet" href="css/custom-estetico.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+    <!-- load momentJS (required for angular-moment) -->
+    <script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
     <script src="js/angular-locale_pt-br.js"></script>
     <script src="js/application.js"></script>
+    <script src="js/services/ordens-servico.js"></script>
     <script src="js/controllers/ordens-servico/index.js"></script>
     <script src="js/filters/cpf-cnpj.js"></script>
+    <script src="js/filters/capitalize.js"></script>
+    <script src="js/filters/humanize.js"></script>
+    <script src="js/filters/cdate.js"></script>
+    <script src="js/filters/timeago.js"></script>
   </head>
   <body>
     <div ng-include="'templates/pages/navbar.html'"></div>

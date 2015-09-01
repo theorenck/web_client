@@ -1,8 +1,14 @@
 angular.module('ZetaWebClient')
-.controller('OrdensServicoIndexController', ['$http', function($http) {
+.controller('OrdensServicoIndexController', ['OrdensServicoService', function(OrdensServicoService) {
   this.items = [];
   var controller = this;
-  $http.get('http://zetainfo.dyndns.info/api/v1/entities/zw15ser?sort=-codservico').success(function(data){
+  OrdensServicoService.all(function(data){
     controller.items = data;
   });
+
+  this.situacao = function(codigo) {
+    return OrdensServicoService.situacao(codigo,function(situacao){
+      return situacao.descricao;
+    });
+  }
 }]);
