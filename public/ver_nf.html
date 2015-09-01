@@ -44,91 +44,317 @@
         <div class="page-header">            
             <h3>
                 Ordem de Serviço
-                <small># 12345</small>
+                <small>número 12345</small>
             </h3>
+
         </div>
 
-        <div class="form-bloco">
-            <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#servicos" aria-expanded="false">
-                <span class="header">
-                    Serviço
-                    <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-                </span>
-            </a>
-            <div class="collapse formulario" id="servicos">
-                <fieldset class="form-group">
-                    <div class="row interno">                        
-                        <div class="col-sm-3">
-                            <label>Emissão</label>
-                            <p>Há 7 dias</p>                             
+        <div class="card card-light card-block">
+            <div class="form-bloco">
+                <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#os" aria-expanded="false">
+                    <span class="header">
+                        Detalhes
+                        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+                    </span>
+                </a>
+                <div class="card card-light formulario collapse in" id="os">
+                    <fieldset class="form-group">
+                        <div class="row interno">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="form-group col-sm-3">
+                                        <label>Emissão</label>
+                                        <p>Há 7 dias</p>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label>Orçamentista</label>
+                                        <p>Paulo Ricardo Machado</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Validade</label>
+                                        <p>1 semana</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <label>Orçamentista</label>
-                            <p>Paulo Ricardo Machado</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <label>Validade</label>
-                            <p>1 semana</p>                            
-                        </div>
-                    </div>
-                </fieldset>
+                    </fieldset>
+                </div>
             </div>
-        </div>
-        <div class="form-bloco">
-            <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#cliente" aria-expanded="false">
-                <span class="header">
-                    Cliente
-                    <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-                </span>
-            </a>
-            <div class="collapse formulario" id="cliente">
-                <fieldset class="form-group">
-                    <div class="row interno">
-                    	<div class="col-sm-3">
-                            <label>CPF</label>
-                            <p>023.578.080-47</p>       
-                        </div>
-                        <div class="col-sm-6">
-                            <label>Nome</label>
-                            <p>Paulo Ricardo Machado</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <label>Fone</label>
-                            <p>(54) 9227-7997</p>                            
-                        </div> 
 
-                        <div class="col-sm-3">
-                            <label>Cep</label>
-                            <p>95010-160</p>                            
-                        </div>
-                        <div class="col-sm-6">
-                            <label>Endereço</label>
-                            <p>R DO ESPEDICIONARIO, 37</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <label>Complemento</label>
-                            <p>Sala 1234</p>
-                        </div>
+            <div class="form-bloco">
+                <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#cliente" aria-expanded="false">
+                    <span class="header">
+                        Cliente
+                        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+                    </span>
+                </a>
+                <div class="card card-light formulario collapse in" id="cliente" aria-expanded="false">
+                    <fieldset class="form-group">
+                        <div class="row interno">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="form-group col-sm-3">
+                                        <label>CPF</label>
+                                        <p>023.578.080-47</p>       
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label>Nome</label>
+                                        <p>Paulo Ricardo Machado</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Fone</label>
+                                        <p>(54) 9227-7997</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <span class="subheader">Endereço do cliente</span>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Cep</label>
+                                        <p>95010-160</p>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label>Logradouro</label>
+                                        <p>Rua Lisl magnis donec incididunt, 37</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Complemento</label>
+                                        <p>Sala 1234</p>
+                                    </div>
 
-                        <div class="col-sm-3">
-                            <label>Bairro</label>
-                            <p>Cinquentenário</p>
-                        </div>                        
-                        <div class="col-sm-3">
-                            <label>Cidade</label>
-                            <p>Caxias do Sul</p>                             
+                                    <div class="form-group col-sm-3">
+                                        <label>Bairro</label>
+                                        <p>Cinquentenário</p>
+                                    </div>                        
+                                    <div class="form-group col-sm-3">
+                                        <label>Cidade</label>
+                                        <p>Caxias do Sul</p>                             
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Estado</label>
+                                        <p>Rio Grande do Sul</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>País</label>
+                                        <p>Brasil</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-3">
-                            <label>Estado</label>
-                            <p>Rio Grande do Sul</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <label>País</label>
-                            <p>Brasil</p>
-                        </div>
-                    </div>
-                </fieldset>
+                    </fieldset>
+                </div>
             </div>
+
+            <div class="form-bloco">
+                <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#veiculo" aria-expanded="false">
+                    <span class="header">
+                        Veículo
+                        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+                    </span>
+                </a>
+                <div class="card card-light formulario collapse in" id="veiculo">
+                    <fieldset class="form-group">
+                        <div class="row interno">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="form-group col-sm-3">
+                                        <label>Placa</label>
+                                        <p>IRF4043</p>       
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Marca</label>
+                                        <p>GM</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Modelo</label>
+                                        <p>Corsa</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Versão</label>
+                                        <p>-</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Ano Fabricação</label>
+                                        <p>2011</p>       
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Ano Modelo</label>
+                                        <p>2011</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Cor</label>
+                                        <p>Preto</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Chassi</label>
+                                        <p>9BGXH68P0BC156348</p>
+                                    </div>                    
+                                    <div class="form-group col-sm-3">
+                                        <label>Combustível</label>
+                                        <p>B - Reserva</p>       
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Portas</label>
+                                        <p>2</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Km Entrada</label>
+                                        <p>-</p>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label>Km Saída</label>
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            
+            <div class="form-bloco">
+                <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#servicos" aria-expanded="false">
+                    <span class="header">
+                        Serviço
+                        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+                    </span>
+                </a>
+                <!-- <div class="collapse in formulario" id="serviços"> -->
+                <div class="card card-light formulario collapse in" id="servicos">
+                    <fieldset class="form-group">
+                        <div class="row interno">
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <span class="subheader">Descrição</span>
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <p>Recuperar e pintar: LONGARINA TRAS ES + LONGARINA TRAS DIR + ASSOALHO DA MALA + PAINEL TRAS INFERIOR Tocar pintar: PAINEL TRAS + TAMPA TRAS + PARACHOQUE TRAS</p>
+                                        <p>OBS: 20/08: AUTORIZADO 17/08 ORÇ. DIGITADO 20/08 E COLOCADO EM SERVIÇO, PEÇAS FORNECIDAS AGUARDANDO A CHEGADA. Paulinho.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 itens-lista">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <span class="subheader">Peças</span>
+                                    </div>                                
+                                    <div class="form-group col-sm-1">
+                                        <strong class="header">Código</strong>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <strong class="header">Descrição</strong>
+                                    </div>
+                                    <div class="form-group col-sm-1 text-right">
+                                       <strong class="header">Quant.</strong>
+                                    </div>
+                                    <div class="form-group col-sm-2 text-right">
+                                        <strong class="header">Valor Unit.<small> (R$)</small></strong>
+                                    </div>
+                                    <div class="form-group col-sm-2 text-right">
+                                        <strong class="header">Valor Total<small> (R$)</small></strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-1">
+                                        <span>000550</span>
+                                        <span>000153</span>
+                                        <span>000550</span>
+                                        <span>055607</span>
+                                        <span>000550</span>
+                                        <span>000154</span>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <span>SAIDA VACUO PAINEL TRAS (F)</span>
+                                        <span>EMBLEMA DA TAMPA TRASEIRA GRAVATA DOURADA (9335517)</span>
+                                        <span>VIGIA TRAS (F)</span>
+                                        <span>VIGIA TRAS (F)</span>
+                                        <span>VIGIA TRAS (F)</span>
+                                        <span>KIT COLA</span>
+                                    </div>
+                                    <div class="form-group col-sm-1 text-right">
+                                        <span>1</span>
+                                        <span>1</span>
+                                        <span>1</span>
+                                        <span>1</span>
+                                        <span>1</span>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="form-group col-sm-2 text-right">
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>60,00</span>
+                                    </div>
+                                    <div class="form-group col-sm-2 text-right">
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>60,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 itens-lista">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <span class="subheader">Mão de Obra</span>
+                                    </div>                                
+                                    <div class="form-group col-sm-1">
+                                        <strong class="header">Código</strong>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <strong class="header">Descrição</strong>
+                                    </div>
+                                    <div class="form-group col-sm-1 text-right">
+                                       <strong class="header">Quant.</strong>
+                                    </div>
+                                    <div class="form-group col-sm-2 text-right">
+                                        <strong class="header">Valor Unit.<small> (R$)</small></strong>
+                                    </div>
+                                    <div class="form-group col-sm-2 text-right">
+                                        <strong class="header">Valor Total<small> (R$)</small></strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-1">
+                                        <span>000550</span>
+                                        <span>000153</span>
+                                        <span>000550</span>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <span>CHAPEAÇÃO</span>
+                                        <span>MONTAGEM/DESMONTAGEM</span>
+                                        <span>PINTURA</span>
+                                    </div>
+                                    <div class="form-group col-sm-1 text-right">
+                                        <span>16</span>
+                                        <span>4</span>
+                                        <span>16</span>
+                                    </div>
+                                    <div class="form-group col-sm-2 text-right">
+                                        <span>40,00</span>
+                                        <span>40,00</span>
+                                        <span>52,00</span>
+                                    </div>
+                                    <div class="form-group col-sm-2 text-right">
+                                        <span>640,00</span>
+                                        <span>160,00</span>
+                                        <span>832,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            
         </div>
     </div>
 
