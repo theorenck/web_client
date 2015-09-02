@@ -103,6 +103,16 @@ h3 small{
 	font-weight: normal;
 	padding-left: 0.5em;
 }
+@media screen and (max-width: 34em) {
+    h3{
+    	margin: 0.5em 0 0 20px;
+    	padding-bottom: 0;
+    }
+    h3 small{
+		display: block;
+		padding: 0.75em 0 0 0;
+	}
+}
 .form-bloco h5.collapse-titulo{
 	padding-bottom: 0.8em;
 	margin-bottom: 0.8em;
