@@ -74,7 +74,7 @@ input{
 }
 label{
 	display: block;
-	font-weight: 500;
+	font-weight: 600;
 }
 .label{
 	/*display: block;  todos labels da mesma largura*/
