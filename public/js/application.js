@@ -9,6 +9,11 @@ angular.module('ZetaWebClient',['ngRoute'])
     controller: 'OrdensServicoIndexController',
     controllerAs: 'ctrl'
   })
+  .when('/ordens-servico/:id', {
+    templateUrl : 'templates/pages/ordens-servico/show.html',
+    controller: 'OrdensServicoShowController',
+    controllerAs: 'ctrl'
+  })
   .when('/notas-fiscais', {
     templateUrl : 'templates/pages/notas-fiscais/index.html'
   })

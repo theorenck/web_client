@@ -18,6 +18,7 @@
     <script src="js/application.js"></script>
     <script src="js/services/ordens-servico.js"></script>
     <script src="js/controllers/ordens-servico/index.js"></script>
+    <script src="js/controllers/ordens-servico/show.js"></script>
     <script src="js/filters/cpf-cnpj.js"></script>
     <script src="js/filters/capitalize.js"></script>
     <script src="js/filters/humanize.js"></script>
@@ -28,7 +29,7 @@
     <div ng-include="'templates/pages/navbar.html'"></div>
     <div ng-include="'templates/pages/menu.html'"></div>
     <div class="container">
-      <div ng-view></div>
+      <div ng-view ng-cloak></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>

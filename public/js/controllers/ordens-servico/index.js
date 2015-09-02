@@ -5,10 +5,4 @@ angular.module('ZetaWebClient')
   OrdensServicoService.all(function(data){
     controller.items = data;
   });
-
-  this.situacao = function(codigo) {
-    return OrdensServicoService.situacao(codigo,function(situacao){
-      return situacao.descricao;
-    });
-  }
 }]);
