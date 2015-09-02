@@ -7,13 +7,7 @@
 
 <div ng-show="ctrl.os" class="card card-light card-block">
   <div class="form-bloco">
-    <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#os" aria-expanded="false" class="hidden">
-      <span class="header">
-        Detalhes
-        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-      </span>
-    </a>
-    <div class="card card-light formulario collapse in" id="os">
+    <div class="card card-light formulario">
       <fieldset class="form-group">
         <div class="row interno">
           <div class="col-sm-12">
@@ -22,9 +16,17 @@
                 <label>Emissão</label>
                 <p>há {{ctrl.os.dataentrada|cdate|timeago}}</p>
               </div>
-              <div class="form-group col-sm-6">
+              <div class="form-group col-sm-3">
                 <label>Orçamentista</label>
                 <p>{{ctrl.os.usuarioinclusao|humanize}}</p>
+              </div>
+              <div class="form-group col-sm-3">
+                <label>Total de Ítens</label>
+                <p>123</p>
+              </div>
+              <div class="form-group col-sm-3">
+                <label>Total da Ordem de Serviço<small> (R$)</small></label>
+                <p>12345,00</p>
               </div>
             </div>
           </div>
@@ -40,124 +42,29 @@
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>
     </a>
-    <div class="card card-light formulario collapse in" id="cliente" aria-expanded="false">
+    <div class="card card-light formulario collapse in" id="cliente">
       <fieldset class="form-group">
         <div class="row interno">
           <div class="col-sm-12">
             <div class="row">
-              <div class="form-group col-sm-3">
-                <label>CPF</label>
-                <p>{{ctrl.os.cliente.cpf_cgc|cpfcnpj}}</p>
-              </div>
-              <div class="form-group col-sm-6">
+              <div class="form-group col-sm-6 col-xs-12">
                 <label>Nome</label>
                 <p>{{ctrl.os.cliente.nome|humanize}}</p>
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>CPF</label>
+                <p>{{ctrl.os.cliente.cpf_cgc|cpfcnpj}}</p>
+              </div>
+              <div class="form-group col-sm-3 col-xs-12">
                 <label>Telefone</label>
                 <p>{{ctrl.os.cliente.fone}}</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 hidden">
-            <div class="row">
-              <div class="form-group col-sm-12">
-                <span class="subheader">Endereço do cliente</span>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Cep</label>
-                <p>{{ctrl.os.cliente.cep}}</p>
-              </div>
-              <div class="form-group col-sm-6">
-                <label>Endereço</label>
-                <p>{{ctrl.os.cliente.tipologradouro}}. {{ctrl.os.cliente.endereco}}, {{ctrl.os.cliente.complemento}}</p>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Complemento</label>
-                <p>{{ctrl.os.cliente.complemento2}}</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-sm-3">
-                <label>Bairro</label>
-                <p>Cinquentenário</p>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Cidade</label>
-                <p>{{ctrl.os.cliente.cidade}}</p>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Estado</label>
-                <p>{{ctrl.os.cliente.uf}}</p>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>País</label>
-                <p>{{ctrl.os.cliente.pais|capitalize}}</p>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Endereco</label>
-                <p>{{ctrl.os.cliente.pais|capitalize}}</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 hidden">
-            <div class="row">
-              <div class="form-group col-sm-12">
-                <span class="subheader">Endereços do cliente</span>
-              </div>
-              <div class="form-group col-sm-1">
-                <strong class="header">CEP</strong>
-              </div>
-              <div class="form-group col-sm-4">
-                <strong class="header">Endereço</strong>
-              </div>
-              <div class="form-group col-sm-1">
-                <strong class="header">Comp.</strong>
-              </div>
-              <div class="form-group col-sm-2">
-                <strong class="header">Bairro</strong>
-              </div>
-              <div class="form-group col-sm-2">
-                <strong class="header">Cidade</strong>
-              </div>
-              <div class="form-group col-sm-1">
-                <strong class="header">Estado</strong>
-              </div>
-              <div class="form-group col-sm-1">
-                <strong class="header">País</strong>
-              </div>
-            </div>
-            <div class="divider-solid"></div>
-          </div>
-          <div class="col-sm-12 hidden">
-            <div class="row">
-              <div class="form-group col-sm-1">
-                <p>{{ctrl.os.cliente.cep}}</p>
-              </div>
-              <div class="form-group col-sm-4">
-                <p>{{ctrl.os.cliente.tipologradouro}}. {{ctrl.os.cliente.endereco}}, {{ctrl.os.cliente.complemento}}</p>
-              </div>
-              <div class="form-group col-sm-1">
-                <p>{{ctrl.os.cliente.complemento2}}</p>
-              </div>
-              <div class="form-group col-sm-2">
-                <p>{{ctrl.os.cliente.bairro}}</p>
-              </div>
-              <div class="form-group col-sm-2">
-                <p>{{ctrl.os.cliente.cidade}}</p>
-              </div>
-              <div class="form-group col-sm-1">
-                <p>{{ctrl.os.cliente.uf}}</p>
-              </div>
-              <div class="form-group col-sm-1">
-                <p>{{ctrl.os.cliente.pais|capitalize}}</p>
-              </div>
-            </div>
-          </div>
           <div class="col-sm-12">
             <div class="row">
               <div class="form-group col-sm-12">
-                <label>Endereços do cliente</label>
+                <label>Endereço do cliente</label>
                 <p>R. Rodolfo Felix Laner, 1108 - Cinquentenário - Caxias do Sul - RS - CEP 95012-480</p>
               </div>
             </div>
@@ -297,6 +204,14 @@
             </div>
             <div class="divider-solid"></div>
           </div>
+          <div class="row text-right">
+            <div class="form-group col-sm-10 ">
+              <strong class="header">Total das Peças<small> (R$)</small></strong>
+            </div>
+            <div class="form-group col-sm-2">
+              <strong class="header">1.073,83</strong>
+            </div>            
+          </div>
 
         </div>
         <div class="col-sm-12 itens-lista m-b-2">
@@ -339,8 +254,16 @@
               <span>{{item.valorsubtotal|number:2}}</span>
             </div>
           </div>
-          <div class="divider-solid"></div>
+          <div class="divider-solid"></div>          
         </div>
+        <div class="row text-right">
+            <div class="form-group col-sm-10">
+              <strong class="header">Total da Mão de Obra<small> (R$)</small></strong>
+            </div>
+            <div class="form-group col-sm-2">
+              <strong class="header">1.073,83</strong>
+            </div>            
+          </div>
       </div>
     </div>
   </fieldset>
