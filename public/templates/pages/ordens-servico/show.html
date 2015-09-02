@@ -20,12 +20,8 @@
                 <label>Orçamentista</label>
                 <p>{{ctrl.os.usuarioinclusao|humanize}}</p>
               </div>
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Total de Ítens</label>
-                <p>123</p>
-              </div>
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Total da OS<small> (R$)</small></label>
+              <div class="form-group col-sm-offset-3 col-sm-3 col-xs-6">
+                <label>Total<small> (R$)</small></label>
                 <p>12345,00</p>
               </div>
             </div>
@@ -63,7 +59,7 @@
             <div class="row">
               <div class="form-group col-sm-12">
                 <label>Endereço do cliente</label>
-                <p>R. Rodolfo Felix Laner, 1108 - Cinquentenário - Caxias do Sul - RS - CEP 95012-480</p>
+                <p style="color:red">R. Rodolfo Felix Laner, 1108 - Cinquentenário - Caxias do Sul - RS - CEP 95012-480</p>
               </div>
             </div>
           </div>
@@ -81,58 +77,35 @@
               Veículo
               <i class="fa fa-chevron-down pull-right girar-baixo"></i>
             </span>
-            <div class="row">
-              <div class="form-group col-sm-2 col-xs-3">
-                <label>Placa</label>
-                <p>{{ctrl.os.placa}}</p>
-              </div>
-              <div class="form-group col-sm-2 col-xs-3">
-                <label>Marca</label>
-                <p>{{ctrl.os.marca|capitalize}}</p>
-              </div>
-              <div class="form-group col-sm-2 col-xs-3">
+            <div class="row">              
+              <div class="form-group col-sm-3 col-xs-12">
                 <label>Modelo</label>
-                <p>{{ctrl.os.modelo|capitalize}}</p>
+                <p>{{ctrl.os.marca|capitalize}} {{ctrl.os.modelo|capitalize}} {{ctrl.os.versaomodelo}}</p>
               </div>
-              <div class="form-group col-sm-2 col-xs-3">
-                <label>Versão</label>
-                <p>{{ctrl.os.versaomodelo}}</p>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label>Ano</label>
+                <p>{{ctrl.os.anomodelo}} / 2011{{ctrl.os.anofrabicacao}}</p>
+              </div>              
+              <div class="form-group col-sm-1 col-xs-6">
+                <label>Placa</label>
+                <span class="label label-primary ng-binding">
+                  {{ctrl.os.placa}}
+                </span>
+              </div>
+              <div class="form-group col-sm-1 col-xs-3">
+                <label>Portas</label>
+                <p>{{ctrl.os.qtdeportas}}</p>
               </div>
               <div class="form-group col-sm-2 col-xs-3">
                 <label>Cor</label>
                 <p>{{ctrl.os.cor|capitalize}}</p>
               </div>
-              <div class="form-group col-sm-2 col-xs-3">
-                <label>Portas</label>
-                <p>{{ctrl.os.qtdeportas}}</p>
-              </div>
-              <div class="form-group col-sm-4 col-xs-3">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Chassi</label>
                 <p>{{ctrl.os.chassi}}</p>
-              </div>
-              <div class="hidden-sm-down">
-                <div class="form-group col-sm-4">
-                  <label>Ano Fabricação</label>
-                  <p>{{ctrl.os.anomodelo}}</p>
-                </div>
-                <div class="form-group col-sm-4">
-                  <label>Ano Modelo</label>
-                  <p>{{ctrl.os.anofrabicacao}}</p>
-                </div>
-              </div>
-
-              <div class="col-xs-12 hidden-xs-up">
-                <div class="row">
-                  <div class="form-group col-xs-6">
-                    <label>Ano Fabricação</label>
-                    <p>{{ctrl.os.anomodelo}}</p>
-                  </div>
-                  <div class="form-group col-xs-6">
-                    <label>Ano Modelo</label>
-                    <p>{{ctrl.os.anofrabicacao}}</p>
-                  </div>
-                </div>
-              </div>
+              </div> 
+            </div>
+            <div class="row">
               <div class="col-sm-6">
                 <div class="row">
                   <div class="form-group col-sm-12">
@@ -140,21 +113,21 @@
                     <div class="divider-solid"></div>
                   </div>                  
                   <div class="form-group col-xs-3">
-                    <strong class="header">Data Entrada</strong>
+                    <strong class="header">Data </strong>
                   </div>
                   <div class="form-group col-xs-5">
-                    <strong class="header">Combustível Entrada</strong>
+                    <strong class="header">Combustível </strong>
                   </div>
                   <div class="form-group col-xs-4">
-                    <strong class="header">Km Entrada</strong>
+                    <strong class="header">Quilometragem </strong>
                   </div>
                 </div>
                 <div class="row">       
                   <div class="form-group col-xs-3">
-                    <p>22/08/2015</p>
+                    <p style="color:red">22/08/2015</p>
                   </div>
                   <div class="form-group col-xs-5">
-                    <p>B - Reserva (???)</p>
+                    <p style="color:red">B - Reserva (???)</p>
                   </div>
                   <div class="form-group col-xs-4">
                     <p>{{ctrl.os.kmsentrada}} km</p>
@@ -168,24 +141,24 @@
                     <div class="divider-solid"></div>                   
                   </div>                  
                   <div class="form-group col-xs-3">
-                    <strong class="header">Data Saída</strong>
+                    <strong class="header">Data</strong>
                   </div>
                   <div class="form-group col-xs-5">
-                    <strong class="header">Combustível Saída</strong>
+                    <strong class="header">Combustível</strong>
                   </div>
                   <div class="form-group col-xs-4">
-                    <strong class="header">Km Saída</strong>
+                    <strong class="header">Quilometragem</strong>
                   </div>                  
                 </div> 
                 <div class="row">       
                   <div class="form-group col-xs-3">
-                    <p>22/08/2015</p>
+                    <p style="color:red">22/08/2015</p>
                   </div>
                   <div class="form-group col-xs-5">
-                    <p>B - Reserva (???)</p>
+                    <p style="color:red">B - Reserva (???)</p>
                   </div>
                   <div class="form-group col-xs-4">
-                    <p>{{ctrl.os.kmsentrada}} km</p>
+                    <p style="color:red">(???)</p>
                   </div>
                 </div>               
               </div>
