@@ -12,20 +12,20 @@
         <div class="row interno">
           <div class="col-sm-12">
             <div class="row">
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Emissão</label>
                 <p>há {{ctrl.os.dataentrada|cdate|timeago}}</p>
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Orçamentista</label>
                 <p>{{ctrl.os.usuarioinclusao|humanize}}</p>
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Total de Ítens</label>
                 <p>123</p>
               </div>
-              <div class="form-group col-sm-3">
-                <label>Total da Ordem de Serviço<small> (R$)</small></label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label>Total da OS<small> (R$)</small></label>
                 <p>12345,00</p>
               </div>
             </div>
@@ -36,26 +36,24 @@
   </div>
 
   <div class="form-bloco">
-    <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#cliente" aria-expanded="false">
-      <span class="header">
-        Cliente
-        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-      </span>
-    </a>
     <div class="card card-light formulario collapse in" id="cliente">
       <fieldset class="form-group">
         <div class="row interno">
           <div class="col-sm-12">
+            <span class="header">
+              Cliente
+              <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+            </span>
             <div class="row">
               <div class="form-group col-sm-6 col-xs-12">
                 <label>Nome</label>
                 <p>{{ctrl.os.cliente.nome|humanize}}</p>
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>CPF</label>
                 <p>{{ctrl.os.cliente.cpf_cgc|cpfcnpj}}</p>
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Telefone</label>
                 <p>{{ctrl.os.cliente.fone}}</p>
               </div>
@@ -75,64 +73,121 @@
   </div>
 
   <div class="form-bloco">
-    <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#veiculo" aria-expanded="false">
-      <span class="header">
-        Veículo
-        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-      </span>
-    </a>
     <div class="card card-light formulario collapse in" id="veiculo">
       <fieldset class="form-group">
         <div class="row interno">
           <div class="col-sm-12">
+            <span class="header">
+              Veículo
+              <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+            </span>
             <div class="row">
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-2 col-xs-3">
                 <label>Placa</label>
                 <p>{{ctrl.os.placa}}</p>
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-2 col-xs-3">
                 <label>Marca</label>
                 <p>{{ctrl.os.marca|capitalize}}</p>
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-2 col-xs-3">
                 <label>Modelo</label>
                 <p>{{ctrl.os.modelo|capitalize}}</p>
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-2 col-xs-3">
                 <label>Versão</label>
                 <p>{{ctrl.os.versaomodelo}}</p>
               </div>
-              <div class="form-group col-sm-3">
-                <label>Ano Fabricação</label>
-                <p>{{ctrl.os.anomodelo}}</p>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Ano Modelo</label>
-                <p>{{ctrl.os.anofrabicacao}}</p>
-              </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-2 col-xs-3">
                 <label>Cor</label>
                 <p>{{ctrl.os.cor|capitalize}}</p>
               </div>
-              <div class="form-group col-sm-3">
-                <label>Chassi</label>
-                <p>{{ctrl.os.chassi}}</p>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Combustível</label>
-                <p style="color:red">B - Reserva (???)</p>
-              </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-2 col-xs-3">
                 <label>Portas</label>
                 <p>{{ctrl.os.qtdeportas}}</p>
               </div>
-              <div class="form-group col-sm-3">
-                <label>Quilometragem Entrada</label>
-                <p>{{ctrl.os.kmsentrada}} km</p>
+              <div class="form-group col-sm-4 col-xs-3">
+                <label>Chassi</label>
+                <p>{{ctrl.os.chassi}}</p>
               </div>
-              <div class="form-group col-sm-3">
-                <label>Quilometragem Saída</label>
-                <p>{{ctrl.os.kmssaida}} km</p>
+              <div class="hidden-sm-down">
+                <div class="form-group col-sm-4">
+                  <label>Ano Fabricação</label>
+                  <p>{{ctrl.os.anomodelo}}</p>
+                </div>
+                <div class="form-group col-sm-4">
+                  <label>Ano Modelo</label>
+                  <p>{{ctrl.os.anofrabicacao}}</p>
+                </div>
+              </div>
+
+              <div class="col-xs-12 hidden-xs-up">
+                <div class="row">
+                  <div class="form-group col-xs-6">
+                    <label>Ano Fabricação</label>
+                    <p>{{ctrl.os.anomodelo}}</p>
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label>Ano Modelo</label>
+                    <p>{{ctrl.os.anofrabicacao}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <span class="subheader">Entrada</span>
+                    <div class="divider-solid"></div>
+                  </div>                  
+                  <div class="form-group col-xs-3">
+                    <strong class="header">Data Entrada</strong>
+                  </div>
+                  <div class="form-group col-xs-5">
+                    <strong class="header">Combustível Entrada</strong>
+                  </div>
+                  <div class="form-group col-xs-4">
+                    <strong class="header">Km Entrada</strong>
+                  </div>
+                </div>
+                <div class="row">       
+                  <div class="form-group col-xs-3">
+                    <p>22/08/2015</p>
+                  </div>
+                  <div class="form-group col-xs-5">
+                    <p>B - Reserva (???)</p>
+                  </div>
+                  <div class="form-group col-xs-4">
+                    <p>{{ctrl.os.kmsentrada}} km</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="form-group col-sm-12">
+                    <span class="subheader">Saída</span> 
+                    <div class="divider-solid"></div>                   
+                  </div>                  
+                  <div class="form-group col-xs-3">
+                    <strong class="header">Data Saída</strong>
+                  </div>
+                  <div class="form-group col-xs-5">
+                    <strong class="header">Combustível Saída</strong>
+                  </div>
+                  <div class="form-group col-xs-4">
+                    <strong class="header">Km Saída</strong>
+                  </div>                  
+                </div> 
+                <div class="row">       
+                  <div class="form-group col-xs-3">
+                    <p>22/08/2015</p>
+                  </div>
+                  <div class="form-group col-xs-5">
+                    <p>B - Reserva (???)</p>
+                  </div>
+                  <div class="form-group col-xs-4">
+                    <p>{{ctrl.os.kmsentrada}} km</p>
+                  </div>
+                </div>               
               </div>
             </div>
           </div>
@@ -142,16 +197,14 @@
   </div>
 
   <div class="form-bloco">
-    <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#servicos" aria-expanded="false">
-      <span class="header">
-        Serviço
-        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-      </span>
-    </a>
     <div class="card card-light formulario collapse in" id="servicos">
       <fieldset class="form-group">
         <div class="row interno">
           <div class="col-sm-12">
+            <span class="header">
+              Serviço
+              <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+            </span>
             <div class="row">
               <div class="form-group col-sm-12">
                 <span class="subheader">Descrição</span>
@@ -161,7 +214,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-sm-12 itens-lista m-b-2">
             <div class="row">
               <div class="form-group col-sm-12">
@@ -266,5 +319,5 @@
           </div>
       </div>
     </div>
-  </fieldset>
+  </div>
 </div>
