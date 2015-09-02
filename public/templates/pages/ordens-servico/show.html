@@ -58,7 +58,7 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="form-group col-sm-12">
-                <label>Endereço do cliente</label>
+                <label>Endereço</label>
                 <p style="color:red">R. Rodolfo Felix Laner, 1108 - Cinquentenário - Caxias do Sul - RS - CEP 95012-480</p>
               </div>
             </div>
@@ -78,29 +78,30 @@
               <i class="fa fa-chevron-down pull-right girar-baixo"></i>
             </span>
             <div class="row">              
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Modelo</label>
-                <p>{{ctrl.os.marca|capitalize}} {{ctrl.os.modelo|capitalize}} {{ctrl.os.versaomodelo}}</p>
-              </div>
-              <div class="form-group col-sm-2 col-xs-6">
-                <label>Ano</label>
-                <p>{{ctrl.os.anomodelo}} / 2011{{ctrl.os.anofrabicacao}}</p>
-              </div>              
-              <div class="form-group col-sm-1 col-xs-6">
+              <div class="form-group col-sm-1 col-xs-4">
                 <label>Placa</label>
                 <span class="label label-primary ng-binding">
                   {{ctrl.os.placa}}
                 </span>
               </div>
-              <div class="form-group col-sm-1 col-xs-3">
-                <label>Portas</label>
-                <p>{{ctrl.os.qtdeportas}}</p>
+              <div class="form-group col-sm-3 col-xs-8">
+                <label>Modelo</label>
+                <p>{{ctrl.os.marca|capitalize}} {{ctrl.os.modelo|capitalize}} {{ctrl.os.versaomodelo}}</p>
               </div>
-              <div class="form-group col-sm-2 col-xs-3">
+              <div class="form-group col-sm-2 col-xs-4">
+                <label>Ano</label>
+                <p style="color:red">{{ctrl.os.anomodelo}} / -{{ctrl.os.anofrabicacao}}</p>
+              </div>              
+              <div class="form-group col-sm-2 col-xs-4">
                 <label>Cor</label>
                 <p>{{ctrl.os.cor|capitalize}}</p>
               </div>
-              <div class="form-group col-sm-3 col-xs-6">
+              <div class="form-group col-sm-1 col-xs-4">
+                <label>Portas</label>
+                <p>{{ctrl.os.qtdeportas}}</p>
+              </div>
+              
+              <div class="form-group col-sm-3 col-xs-12">
                 <label>Chassi</label>
                 <p>{{ctrl.os.chassi}}</p>
               </div> 
