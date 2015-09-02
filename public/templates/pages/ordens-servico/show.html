@@ -7,7 +7,7 @@
 
 <div ng-show="ctrl.os" class="card card-light card-block">
   <div class="form-bloco">
-    <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#os" aria-expanded="false">
+    <a id="a-tab-cliente" role="button" data-toggle="collapse" href="#os" aria-expanded="false" class="hidden">
       <span class="header">
         Detalhes
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
@@ -25,10 +25,6 @@
               <div class="form-group col-sm-6">
                 <label>Orçamentista</label>
                 <p>{{ctrl.os.usuarioinclusao|humanize}}</p>
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Validade</label>
-                <p style="color:red">1 semana (???)</p>
               </div>
             </div>
           </div>
@@ -104,7 +100,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12">
+          <div class="col-sm-12 hidden">
             <div class="row">
               <div class="form-group col-sm-12">
                 <span class="subheader">Endereços do cliente</span>
@@ -133,7 +129,7 @@
             </div>
             <div class="divider-solid"></div>
           </div>
-          <div class="col-sm-12">
+          <div class="col-sm-12 hidden">
             <div class="row">
               <div class="form-group col-sm-1">
                 <p>{{ctrl.os.cliente.cep}}</p>
@@ -155,6 +151,14 @@
               </div>
               <div class="form-group col-sm-1">
                 <p>{{ctrl.os.cliente.pais|capitalize}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <label>Endereços do cliente</label>
+                <p>R. Rodolfo Felix Laner, 1108 - Cinquentenário - Caxias do Sul - RS - CEP 95012-480</p>
               </div>
             </div>
           </div>
