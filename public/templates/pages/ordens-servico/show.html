@@ -63,7 +63,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12">
+          <div class="col-sm-12 hidden">
             <div class="row">
               <div class="form-group col-sm-12">
                 <span class="subheader">Endereço do cliente</span>
@@ -80,7 +80,8 @@
                 <label>Complemento</label>
                 <p>{{ctrl.os.cliente.complemento2}}</p>
               </div>
-
+            </div>
+            <div class="row">
               <div class="form-group col-sm-3">
                 <label>Bairro</label>
                 <p>Cinquentenário</p>
@@ -95,6 +96,60 @@
               </div>
               <div class="form-group col-sm-3">
                 <label>País</label>
+                <p>{{ctrl.os.cliente.pais|capitalize}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <span class="subheader">Endereços do cliente</span>
+              </div>
+              <div class="form-group col-sm-1">
+                <strong class="header">CEP</strong>
+              </div>
+              <div class="form-group col-sm-4">
+                <strong class="header">Endereço</strong>
+              </div>
+              <div class="form-group col-sm-1">
+                <strong class="header">Comp.</strong>
+              </div>
+              <div class="form-group col-sm-2">
+                <strong class="header">Bairro</strong>
+              </div>
+              <div class="form-group col-sm-2">
+                <strong class="header">Cidade</strong>
+              </div>
+              <div class="form-group col-sm-1">
+                <strong class="header">Estado</strong>
+              </div>
+              <div class="form-group col-sm-1">
+                <strong class="header">País</strong>
+              </div>
+            </div>
+            <div class="divider-solid"></div>
+          </div>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="form-group col-sm-1">
+                <p>{{ctrl.os.cliente.cep}}</p>
+              </div>
+              <div class="form-group col-sm-4">
+                <p>{{ctrl.os.cliente.tipologradouro}}. {{ctrl.os.cliente.endereco}}, {{ctrl.os.cliente.complemento}}</p>
+              </div>
+              <div class="form-group col-sm-1">
+                <p>{{ctrl.os.cliente.complemento2}}</p>
+              </div>
+              <div class="form-group col-sm-2">
+                <p></p>
+              </div>  
+              <div class="form-group col-sm-2">
+                <p>{{ctrl.os.cliente.cidade}}</p>
+              </div>
+              <div class="form-group col-sm-1">
+                <p>{{ctrl.os.cliente.uf}}</p>
+              </div>
+              <div class="form-group col-sm-1">
                 <p>{{ctrl.os.cliente.pais|capitalize}}</p>
               </div>
             </div>
