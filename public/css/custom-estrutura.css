@@ -40,9 +40,13 @@
 .form-bloco{
 	margin-bottom: 3em;
 }
+.interno{
+	margin-bottom: 1em;
+}
 @media screen and (max-width: 34em) {
     .interno{
 		padding: 0 1.25em;
+		margin:0;
 	}
 	.topico-produto{
 		border-bottom: 1px dashed #ccc;
