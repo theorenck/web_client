@@ -59,7 +59,8 @@
             <div class="row">
               <div class="form-group col-sm-12">
                 <label>Endereço</label>
-                <p style="color:red">R. Rodolfo Felix Laner, 1108 - Cinquentenário - Caxias do Sul - RS - CEP 95012-480</p>
+                <p class="hidden-sm-down" style="color:red">R. Rodolfo Felix Laner, 1108  Cinquentenário - Caxias do Sul - RS CEP 95012-480</p>
+                <p class="hidden-sm-up" style="color:red">R. Rodolfo Felix Laner, 1108<br>Cinquentenário - Caxias do Sul - RS<br>CEP 95012-480</p>
               </div>
             </div>
           </div>
@@ -194,6 +195,8 @@
               <div class="form-group col-sm-12">
                 <span class="subheader">Peças</span>
               </div>
+            </div>
+            <div class="row hidden-sm-down">
               <div class="form-group col-sm-1">
                 <strong class="header">Código</strong>
               </div>
@@ -202,96 +205,126 @@
               </div>
               <div class="form-group col-sm-1 text-right">
                <strong class="header">Quant.</strong>
-             </div>
-             <div class="form-group col-sm-2 text-right">
-              <strong class="header">Valor Unit.<small> (R$)</small></strong>
-            </div>
-            <div class="form-group col-sm-2 text-right">
-              <strong class="header">Valor Total<small> (R$)</small></strong>
-            </div>
-          </div>
-          <div class="divider-solid"></div>
-          <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
-            <div class="row">
-              <div class="form-group col-sm-1">
-                <span>{{item.coditem}}</span>
-              </div>
-              <div class="form-group col-sm-6">
-                <span style="color:red">PRODUTO (???)</span>
-              </div>
-              <div class="form-group col-sm-1 text-right">
-                <span>{{item.quantidade}} {{item.unidade}}</span>
               </div>
               <div class="form-group col-sm-2 text-right">
-                <span>{{item.precounitario|number:2}}</span>
+                <strong class="header">Valor Unit.<small> (R$)</small></strong>
               </div>
               <div class="form-group col-sm-2 text-right">
-                <span>{{item.valorsubtotal|number:2}}</span>
+                <strong class="header">Valor Total<small> (R$)</small></strong>
               </div>
             </div>
             <div class="divider-solid"></div>
-          </div>
-          <div class="row text-right">
-            <div class="form-group col-sm-10 ">
-              <strong class="header">Total das Peças<small> (R$)</small></strong>
+            <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
+              <div class="row">
+                <div class="form-group col-sm-1 col-xs-3">
+                  <span>{{item.coditem}}</span>
+                </div>
+                <div class="form-group col-sm-6 col-xs-9">
+                  <span style="color:red">PRODUTO (???)</span>
+                </div>
+                <div class="form-group col-sm-1 text-right">
+                  <span class="xs-bold hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
+                  <div class="row hidden-sm-up">
+                    <span class="col-xs-6 text-left">Quantidade</span>
+                    <span class="col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
+                  </div>
+                </div>
+                <div class="form-group col-sm-2 text-right">
+                  <span class="xs-bold hidden-sm-down">{{item.precounitario|number:2}}</span>
+                  <div class="row hidden-sm-up">
+                    <span class="col-xs-6 text-left">Valor Unitário</span>
+                    <span class="col-xs-6">{{item.precounitario|number:2}}</span>
+                  </div>
+                </div>
+                <div class="form-group col-sm-2 text-right">
+                  <span class="xs-bold hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
+                  <div class="row hidden-sm-up">
+                    <span class="col-xs-6 text-left">Valor Total</span>
+                    <span class="xs-bold col-xs-6">{{item.valorsubtotal|number:2}}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="divider-solid"></div>
             </div>
-            <div class="form-group col-sm-2">
-              <strong class="header">1.073,83</strong>
-            </div>            
+            <div class="row rodape">
+              <div class="form-group col-sm-10 col-xs-9">
+                <strong class="header pull-right hidden-sm-down">Total das Peças<small> (R$)</small></strong>
+                <strong class="header hidden-sm-up">Total das Peças<small> (R$)</small></strong>
+              </div>
+              <div class="form-group col-sm-2 col-xs-3">
+                <strong class="header pull-right">1.073,83</strong>
+              </div>            
+            </div>
+          </div>
+
+          <div class="col-sm-12 itens-lista m-b-2">
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <span class="subheader">Mão de Obra</span>
+              </div>
+            </div>
+            <div class="row hidden-sm-down">
+              <div class="form-group col-sm-1">
+                <strong class="header">Código</strong>
+              </div>
+              <div class="form-group col-sm-6">
+                <strong class="header">Descrição</strong>
+              </div>
+              <div class="form-group col-sm-1 text-right">
+               <strong class="header">Quant.</strong>
+              </div>
+              <div class="form-group col-sm-2 text-right">
+                <strong class="header">Valor Unit.<small> (R$)</small></strong>
+              </div>
+              <div class="form-group col-sm-2 text-right">
+                <strong class="header">Valor Total<small> (R$)</small></strong>
+              </div>
+            </div>
+            <div class="divider-solid"></div>
+            <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
+              <div class="row">
+                <div class="form-group col-sm-1 col-xs-3">
+                  <span>{{item.coditem}}</span>
+                </div>
+                <div class="form-group col-sm-6 col-xs-9">
+                  <span style="color:red">MÃO DE OBRA (???)</span>
+                </div>
+                <div class="form-group col-sm-1 text-right">
+                  <span class="xs-bold hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
+                  <div class="row hidden-sm-up">
+                    <span class="col-xs-6 text-left">Quantidade</span>
+                    <span class="col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
+                  </div>
+                </div>
+                <div class="form-group col-sm-2 text-right">
+                  <span class="xs-bold hidden-sm-down">{{item.precounitario|number:2}}</span>
+                  <div class="row hidden-sm-up">
+                    <span class="col-xs-6 text-left">Valor Unitário</span>
+                    <span class="col-xs-6">{{item.precounitario|number:2}}</span>
+                  </div>
+                </div>
+                <div class="form-group col-sm-2 text-right">
+                  <span class="xs-bold hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
+                  <div class="row hidden-sm-up">
+                    <span class="col-xs-6 text-left">Valor Total</span>
+                    <span class="xs-bold col-xs-6">{{item.valorsubtotal|number:2}}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="divider-solid"></div>
+            </div>
+            <div class="row rodape">
+              <div class="form-group col-sm-10 col-xs-9">
+                <strong class="header pull-right hidden-sm-down">Total da Mão de Obra<small> (R$)</small></strong>
+                <strong class="header hidden-sm-up">Total da Mão de Obra<small> (R$)</small></strong>
+              </div>
+              <div class="form-group col-sm-2 col-xs-3">
+                <strong class="header pull-right">1.073,83</strong>
+              </div>            
+            </div>
           </div>
 
         </div>
-        <div class="col-sm-12 itens-lista m-b-2">
-          <div class="row">
-            <div class="form-group col-sm-12">
-              <span class="subheader">Mão de Obra</span>
-            </div>
-            <div class="form-group col-sm-1">
-              <strong class="header">Código</strong>
-            </div>
-            <div class="form-group col-sm-6">
-              <strong class="header">Descrição</strong>
-            </div>
-            <div class="form-group col-sm-1 text-right">
-             <strong class="header">Quant.</strong>
-           </div>
-           <div class="form-group col-sm-2 text-right">
-            <strong class="header">Valor Unit.<small> (R$)</small></strong>
-          </div>
-          <div class="form-group col-sm-2 text-right">
-            <strong class="header">Valor Total<small> (R$)</small></strong>
-          </div>
-        </div>
-        <div class="divider-solid"></div>
-        <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:2}">
-          <div class="row">
-            <div class="form-group col-sm-1">
-              <span>{{item.coditem}}</span>
-            </div>
-            <div class="form-group col-sm-6">
-              <span style="color:red">SERVICO (???)</span>
-            </div>
-            <div class="form-group col-sm-1 text-right">
-              <span>{{item.quantidade}} {{item.unidade}}</span>
-            </div>
-            <div class="form-group col-sm-2 text-right">
-              <span>{{item.precounitario|number:2}}</span>
-            </div>
-            <div class="form-group col-sm-2 text-right">
-              <span>{{item.valorsubtotal|number:2}}</span>
-            </div>
-          </div>
-          <div class="divider-solid"></div>          
-        </div>
-        <div class="row text-right">
-            <div class="form-group col-sm-10">
-              <strong class="header">Total da Mão de Obra<small> (R$)</small></strong>
-            </div>
-            <div class="form-group col-sm-2">
-              <strong class="header">1.073,83</strong>
-            </div>            
-          </div>
-      </div>
+      </fieldset>
     </div>
   </div>
-</div>

@@ -70,6 +70,11 @@ a:focus{
 		font-weight: normal;
 	}
 }
+.rodape{
+	padding: 0.8em 0 0 0;
+	background-color: #f8f8f8;
+	margin-top: -1.5em;
+}
 /********************** Icones e imagens ******************************/
 .logo-navbar{
 	height: 40px;
