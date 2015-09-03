@@ -75,6 +75,13 @@ a:focus{
 	background-color: #ededed;
 	margin-top: -1.5em;
 }
+@media screen and (max-width: 34em) {
+    .rodape{
+		padding: 0.;
+		background-color: #ededed;
+		margin-top: 0;
+	}
+}
 /********************** Icones e imagens ******************************/
 .logo-navbar{
 	height: 40px;
