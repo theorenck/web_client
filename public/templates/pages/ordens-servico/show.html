@@ -215,16 +215,19 @@
             </div>
             <div class="divider-solid"></div>
             <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
-              <div class="row">
-                <div class="form-group col-sm-1 col-xs-3">
-                  <span>{{item.coditem}}</span>
+              <div class="row interno">
+                <div class="form-group col-sm-1">
+                  <span class="hidden-sm-down">{{item.coditem}}</span>
                 </div>
-                <div class="form-group col-sm-6 col-xs-9">
-                  <span style="color:red">PRODUTO (???)</span>
+                <div class="form-group col-sm-6 col-xs-12">
+                  <span style="color:red" class="hidden-sm-down">PRODUTO (???)</span>
+                  <span style="color:#3498db">PRODUTO (???)</span>
+                  <span class="hidden-sm-up">{{item.coditem}}</span>
                 </div>
                 <div class="form-group col-sm-1 text-right">
                   <span class="xs-bold hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
                   <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
                     <span class="col-xs-6 text-left">Quantidade</span>
                     <span class="col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
                   </div>
@@ -232,6 +235,7 @@
                 <div class="form-group col-sm-2 text-right">
                   <span class="xs-bold hidden-sm-down">{{item.precounitario|number:2}}</span>
                   <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
                     <span class="col-xs-6 text-left">Valor Unitário</span>
                     <span class="col-xs-6">{{item.precounitario|number:2}}</span>
                   </div>
@@ -239,6 +243,7 @@
                 <div class="form-group col-sm-2 text-right">
                   <span class="xs-bold hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
                   <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
                     <span class="col-xs-6 text-left">Valor Total</span>
                     <span class="xs-bold col-xs-6">{{item.valorsubtotal|number:2}}</span>
                   </div>

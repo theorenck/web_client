@@ -26,12 +26,12 @@
 }
 .divider-solid{
 	border-bottom: 1px solid #f1f1f1;
-    margin: 0 -15px 1.5em -15px;
+    margin: 0 -15px 1em -15px;
     overflow: hidden;
 }
 .divider-dashed{
-	border-bottom: 1px dotted #bdc3c7;
-    margin: 0 0 1.5em 0;
+	border-bottom: 1px dotted #DAE1E5;
+    margin: 0 0 0.8em 0;
     overflow: hidden;
 }
 .form-bloco{
