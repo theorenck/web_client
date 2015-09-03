@@ -2,6 +2,9 @@
     .xs-m-t-1{
 		margin-top: 1em;
 	}
+	.xs-m-b-1{
+		margin-bottom: 1em;
+	}
 }
 .m-t-1{
 		margin-top: 1em;
@@ -30,7 +33,7 @@
     overflow: hidden;
 }
 .divider-dashed{
-	border-bottom: 1px dotted #DAE1E5;
+	border-bottom: 1px dotted #e0e0e0;
     margin: 0 0 0.8em 0;
     overflow: hidden;
 }
