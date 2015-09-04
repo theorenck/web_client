@@ -21,6 +21,15 @@
 .p-r-2{
 	padding-right: 2em;
 }
+.metade{
+	width: 50%;
+}
+.quarto{
+	width: 20%;
+}
+.terco{
+	width: 30%;
+}
 .hidden{
 	display: none;
 }
@@ -62,6 +71,12 @@ input{
 }
 .lista button{
 	font-size: 0.80rem;
+}
+.fa-padding{
+	padding-right: 0.3em;
+}
+.btn{
+	padding: 8px
 }
 .btn-group.btn-block .btn-block{
 	width: 80%;
@@ -159,7 +174,7 @@ span.subheader{
 .menu button{
 	margin-bottom: 1.5em;
 }
-.menu .btn-block .fa{
+.menu .btn .fa{
 	padding-right: 1em;
 }
 .menu{
