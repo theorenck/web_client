@@ -21,17 +21,24 @@
 .p-r-2{
 	padding-right: 2em;
 }
-.metade{
-	width: 50%;
-}
 .quarto{
-	width: 20%;
+	min-width: 22%;
 }
 .terco{
-	width: 30%;
+	min-width: 32%;
 }
+.metade{
+	min-width: 48%;
+}
+.tres-quartos{
+	min-width: 72%;
+}
+
 .hidden{
 	display: none;
+}
+.bloco{
+	display: block;
 }
 .container{
 	margin-top: 2.5em;
@@ -73,7 +80,7 @@ input{
 	font-size: 0.80rem;
 }
 .fa-padding{
-	padding-right: 0.3em;
+	padding-right: 0.2em;
 }
 .btn{
 	padding: 8px

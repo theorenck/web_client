@@ -35,68 +35,83 @@
 
         <div class="divider-solid"></div>
       </div>
-      <div ng-repeat="os in ctrl.items">
-        <div class="form-group">
-          <div class="row interno">
-            <div class="col-sm-1 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">{{os.codservico}}</a></span></div>
-              </div>
+    </div>
+    <div ng-repeat="os in ctrl.items">
+      <div class="form-group">
+        <div class="row interno">
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">{{os.codservico}}</a></span></div>
             </div>
-            <div class="col-sm-1 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6">
-                  <span ng-show="os.aberto == 'S'" class="label label-warning">
-                    Aberta
-                  </span>
-                  <span ng-show="os.aberto != 'S'" class="label label-primary">
-                    Fechada
-                  </span>
-                  <span class="label label-info">
-                    {{os.situacao1}}
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><span><a style="white-space: nowrap;" href="#">{{os.cliente|humanize}}</a></span></div>
-                <div class="col-sm-12 col-xs-6"><span>{{os.cgc|cpfcnpj}}</span></div>
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="row">
-                <div class="text-right col-sm-12 col-xs-6"><span class="p-r-2">{{os.total|number:2}}</span></div>
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6">
-                  <span>há {{os.dataentrada|cdate|timeago}}</span>
-                </div>
-                <div class="col-sm-12 col-xs-6">
-                  <span>por <a href="#">{{os.usuarioinclusao|humanize}}</a></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="row">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-secondary">Gerar NF</button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#/ordens-servico/{{os.codservico}}">Exibir OS</a>
-                  </div>
-                </div>
+          </div>
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6">
+                <span ng-show="os.aberto == 'S'" class="label label-warning">
+                  Aberta
+                </span>
+                <span ng-show="os.aberto != 'S'" class="label label-primary">
+                  Fechada
+                </span>
+                <span class="label label-info">
+                  {{os.situacao1}}
+                </span>
               </div>
             </div>
           </div>
-        </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span><a style="white-space: nowrap;" href="#">{{os.cliente|humanize}}</a></span></div>
+              <div class="col-sm-12 col-xs-6"><span>{{os.cgc|cpfcnpj}}</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="text-right col-sm-12 col-xs-6"><span class="p-r-2">{{os.total|number:2}}</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6">
+                <span>há {{os.dataentrada|cdate|timeago}}</span>
+              </div>
+              <div class="col-sm-12 col-xs-6">
+                <span>por <a href="#">{{os.usuarioinclusao|humanize}}</a></span>
+              </div>
+            </div>
+          </div>
 
-        <div class="divider-solid"></div>
+          
+          <div class="col-sm-2 hidden-sm-down">
+            <div class="row">
+              <button type="button" class="btn btn-sm tres-quartos btn-primary" data-toggle="tooltip" data-placement="top" title="Cancelar NF">
+                <i class="fa fa-file-text-o fa-padding"></i>
+                Gerar NF
+              </button>
+          
+              <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Exibir NF">
+                <i class="fa fa-eye btn-block"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-xs-12 hidden-sm-up xs-m-t-1">
+            <div class="row">
+              <button type="button" class="btn btn-primary metade">
+                <i class="fa fa-file-text-o btn-block"></i>
+                Gerar NF
+              </button>          
+              <button type="button" class="btn  btn-secondary metade">
+                <i class="fa fa-eye btn-block"></i>
+                Exibir
+              </button>
+            </div> 
+          </div>
+
+        </div>
       </div>
+
+      <div class="divider-solid"></div>
     </div>
   </div>
   <div class="col-sm-12">
