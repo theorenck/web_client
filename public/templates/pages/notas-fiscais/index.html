@@ -36,106 +36,116 @@
         <div class="divider-solid"></div>
       </div>
       <!-- <div ng-repeat="os in ctrl.items"> -->
-        <div class="form-group">
-          <div class="row interno">
-            <div class="col-sm-1 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">12345</a></span></div>
-              </div>
+      <div class="form-group">
+        <div class="row interno">
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">12345</a></span></div>
             </div>
-            <div class="col-sm-1 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6">
-                  <span ng-show="os.aberto == 'S'" class="label label-warning">
-                    Aberta
-                  </span>
-                  <span ng-show="os.aberto != 'S'" class="label label-primary">
-                    Fechada
-                  </span>
-                  <span class="label label-info">
-                    Teste
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><span><a style="white-space: nowrap;" href="#">Cliente</a></span></div>
-                <div class="col-sm-12 col-xs-6"><span>123456789</span></div>
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="row">
-                <div class="text-right col-sm-12 col-xs-6"><span class="p-r-2">123</span></div>
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6">
-                  <span>há 2 dias</span>
-                </div>
-                <div class="col-sm-12 col-xs-6">
-                  <span>por <a href="#">Valesca</a></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="row">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-secondary">Gerar NF</button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#/ordens-servico/{{os.codservico}}">Exibir OS</a>
-                  </div>
-                </div>
+          </div>
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6">
+                <span ng-show="os.aberto == 'S'" class="label label-warning">
+                  Aberta
+                </span>
+                <span ng-show="os.aberto != 'S'" class="label label-primary">
+                  Rascunho
+                </span>
+                <span class="label label-info">
+                  Teste
+                </span>
               </div>
             </div>
           </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span><a style="white-space: nowrap;" href="#">Cliente</a></span></div>
+              <div class="col-sm-12 col-xs-6"><span>123456789</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="text-right col-sm-12 col-xs-6"><span class="p-r-2">123</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6">
+                <span>há 2 dias</span>
+              </div>
+              <div class="col-sm-12 col-xs-6">
+                <span>por <a href="#">Valesca</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              
+                <button type="button" class="btn btn-sm btn-info"><i class="fa fa-paper-plane-o btn-block"></i>Emitir</button>
+                <button type="button" class="btn btn-sm btn-primary"><i class="fa fa-pencil-square-o btn-block"></i>Editar</button>
+                <button type="button" class="btn btn-sm btn-warning"><i class="fa fa-trash-o btn-block"></i>Excluir</button>
+             
+            </div>
+          </div>
         </div>
-
-        <div class="divider-solid"></div>
+      </div>
+      <div class="divider-solid"></div>
+      <div class="form-group">
+        <div class="row interno">
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">12345</a></span></div>
+            </div>
+          </div>
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6">
+                <span ng-show="os.aberto == 'S'" class="label label-warning">
+                  Aberta
+                </span>
+                <span ng-show="os.aberto != 'S'" class="label label-primary">
+                  Rascunho
+                </span>
+                <span class="label label-info">
+                  Teste
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span><a style="white-space: nowrap;" href="#">Cliente</a></span></div>
+              <div class="col-sm-12 col-xs-6"><span>123456789</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="text-right col-sm-12 col-xs-6"><span class="p-r-2">123</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6">
+                <span>há 2 dias</span>
+              </div>
+              <div class="col-sm-12 col-xs-6">
+                <span>por <a href="#">Valesca</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              
+                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-paper-plane-o btn-block"></i></button>
+                <button type="button" class="btn btn-lg btn-secondary"><i class="fa fa-pencil btn-block"></i></button>
+                <button type="button" class="btn btn-lg btn-secondary"><i class="fa fa-trash-o btn-block"></i></button>
+             
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-12">
-    <div class="text-center">
-      <ul class="pagination hidden-xs-down">
-        <li>
-          <a href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="pagination pagination-lg hidden-sm-up">
-        <li>
-          <a href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li>
-          <a href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+</div>
+  
