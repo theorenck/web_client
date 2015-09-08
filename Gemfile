@@ -15,3 +15,6 @@ gem 'eventmachine', '~> 1.0.7'
 
 # A fast and very simple Ruby web server
 gem 'thin', '~> 1.6.3'
+
+# A simple Rack middleware to enforce ssl connections
+#gem 'rack-ssl-enforcer', '~> 0.2.8', require: 'rack/ssl-enforcer'

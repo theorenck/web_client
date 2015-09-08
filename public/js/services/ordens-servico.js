@@ -29,14 +29,17 @@ angular.module('ZetaWebClient')
     }
     $http.get(service.base + '/zw15ser/' + numero)
     .success(function(ordemServico){
-      $http.get(service.base + '/zw15its?codservico=' + numero +'&sort=codseqservico&limit=0')
+      $http.get(service.base + '/zw15its?filter[codservico]=' + numero +'&sort=codseqservico&limit=0')
       .success(function(itens) {
         ordemServico.itens = itens;
         $http.get(service.base + '/zw15ecli/' + ordemServico.codcliente)
         .success(function(cliente) {
-          ordemServico.itens = itens;
-          ordemServico.cliente = cliente;
-          callback(ordemServico);
+          // $http.get(service.base + '/produtos/?filter[codproduto]='+)
+          // .success(function(produtos) {
+            ordemServico.itens = itens;
+            ordemServico.cliente = cliente;
+            callback(ordemServico);
+          // });
         });
       });
     });
