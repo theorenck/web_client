@@ -2,6 +2,7 @@
   <h3>
     Ordem de Serviço
     <small ng-show="ctrl.os">número {{ctrl.os.codservico}}</small>
+    <div class="divider-solid hidden-sm-up"></div>
   </h3>
 </div>
 
@@ -121,7 +122,7 @@
                     <strong class="header">Combustível </strong>
                   </div>
                   <div class="form-group col-xs-4">
-                    <strong class="header">Quilometragem </strong>
+                    <strong class="header">km</strong>
                   </div>
                 </div>
                 <div class="row">       
@@ -132,7 +133,7 @@
                     <p style="color:red">B - Reserva (???)</p>
                   </div>
                   <div class="form-group col-xs-4">
-                    <p>{{ctrl.os.kmsentrada}} km</p>
+                    <p>{{ctrl.os.kmsentrada}}</p>
                   </div>
                 </div>
               </div>
@@ -149,7 +150,7 @@
                     <strong class="header">Combustível</strong>
                   </div>
                   <div class="form-group col-xs-4">
-                    <strong class="header">Quilometragem</strong>
+                    <strong class="header">km</strong>
                   </div>                  
                 </div> 
                 <div class="row">       
@@ -318,15 +319,11 @@
                 <strong class="header" style="color:red">Total da Mão de Obra <span class="bloco">R$ 1.073,83</span></strong>
               </div>   
             </div>
-
           </div>
         </div>
       </fieldset>
     </div>
   </div>
-
-  
-
 
   <div class="form-bloco">
     <div class="card card-light formulario collapse in" id="servicos">
@@ -335,11 +332,8 @@
           <div class="col-sm-12 itens-lista m-b-2">
             <div class="row">
               <div class="divider-solid"></div>
-              <div class="form-group col-xs-6 text-right">
-                <strong class="header" style="color:red">Total dos Impostos?<span class="bloco">R$ 1.073,83</span></strong>
-              </div>
-              <div class="form-group col-xs-6 text-right">
-                <strong class="header" style="color:red">Total da OS<span class="bloco">R$ 1.073,83</span></strong>
+              <div class="form-group col-xs-12 text-right">
+                <strong class="header" style="color:red">Total<span class="bloco">R$ 1.073,83</span></strong>
               </div>    
             </div>
           </div>

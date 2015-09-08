@@ -147,6 +147,7 @@ h3 small{
 @media screen and (max-width: 34em) {
     h3{
     	margin-left: 20px;
+    	margin-bottom: 0;
     	padding-bottom: 0.8em;		
     }
     h3 small{

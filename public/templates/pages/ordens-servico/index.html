@@ -65,13 +65,13 @@
           <div class="col-sm-2 col-xs-12 xs-m-t-1">
             <div class="row">
               <div class="hidden-sm-down text-right col-sm-12"><span class="p-r-2">{{os.total|number:2}}</span></div>
-              <div class="hidden-sm-up text-right col-xs-12"><strong class="header" style="color:red">Total R$ 123,00</strong></div>
+              <div class="hidden-sm-up text-right col-xs-12"><strong class="header">Total R$ {{os.total|number:2}}</strong></div>
             </div>
           </div>
           <div class="col-sm-2  hidden-sm-down">
             <div class="row">
               <div class="col-sm-12">
-                <span>há {{os.dataentrada|cdate|timeago}}s</span>
+                <span>há {{os.dataentrada|cdate|timeago}}</span>
               </div>
               <div class="col-sm-12">
                 <span>por <a href="#">{{os.usuarioinclusao|humanize}}</span>
