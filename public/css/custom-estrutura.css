@@ -25,7 +25,7 @@
 	min-width: 22%;
 }
 .terco{
-	min-width: 32%;
+	min-width: 32.5%;
 }
 .metade{
 	min-width: 48%;
@@ -52,6 +52,13 @@
 	border-bottom: 1px dotted #e0e0e0;
     margin: 0 0 0.8em 0;
     overflow: hidden;
+}
+@media screen and (max-width: 34em) {
+    .divider-solid{
+		border-bottom: 1px solid #f1f1f1;
+	    margin: 0 15px 1em 15px;
+	    overflow: hidden;
+	}
 }
 .form-bloco{
 	margin-bottom: 3em;
