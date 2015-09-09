@@ -65,6 +65,10 @@
 	    overflow: hidden;
 	}	
 }
+.underline{
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #f1f1f1;
+}
 .form-bloco{
 	margin-bottom: 3em;
 }
@@ -176,7 +180,7 @@ span.subheader{
 	font-weight: 400;
 	color: #3498db;
 	display: block;
-	margin: 1em 0 ;
+	margin: 1em 0 0;
 }
 .form-bloco .itens-lista span{
 	text-overflow: ellipsis;
