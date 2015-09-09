@@ -72,8 +72,10 @@ a:focus{
 	}
 }
 .bg-f1{
-	background-color: #f1f1f1;
-	font-weight: bold; 
+	border-top: 1px dashed #dedede;
+    border-bottom: 1px dashed #dedede;
+    border: 1px dashed #dedede;
+    background-color: #f1f1f1; 
 }
 .rodape{
 	padding: 0.8em 0 0 0;
@@ -87,6 +89,7 @@ a:focus{
 		margin-top: 0;
 	}
 }
+
 /********************** Icones e imagens ******************************/
 .logo-navbar{
 	height: 40px;
