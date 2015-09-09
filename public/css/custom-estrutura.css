@@ -48,6 +48,9 @@
 .container{
 	margin-top: 2.5em;
 }
+.navbar-nav .nav-link{
+	padding: 0.6em 0 0.5em; 
+}
 .divider-solid{
 	border-bottom: 1px solid #f1f1f1;
     margin: 1em -15px;
@@ -95,7 +98,7 @@
 	}
 }
 input{
-	height: 2.5em;  /*sem essa regra os inputs de data quebram na altura*/
+	height: 2.5em;
 }
 .lista button{
 	font-size: 0.80rem;
