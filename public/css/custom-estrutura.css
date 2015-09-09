@@ -42,6 +42,9 @@
 .container{
 	margin-top: 2.5em;
 }
+.bg-f1{
+	background-color: #f1f1f1;
+}
 .divider-solid{
 	border-bottom: 1px solid #f1f1f1;
     margin: 1em -15px;
