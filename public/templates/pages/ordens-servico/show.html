@@ -21,9 +21,15 @@
                 <label>Orçamentista</label>
                 <p>{{ctrl.os.usuarioinclusao|humanize}}</p>
               </div>
-              <div class="form-group col-sm-offset-3 col-sm-3 col-xs-6">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Total<small> (R$)</small></label>
                 <p>12345,00</p>
+              </div>
+              <div class="form-group col-sm-3 col-xs-6">
+                <button type="button" class="btn btn-sm btn-primary btn-block" data-toggle="tooltip" data-placement="top" title="Cancelar NF">
+                  <i class="fa fa-cog bloco"></i>
+                  Gerar NF
+                </button>
               </div>
             </div>
           </div>
@@ -339,20 +345,20 @@
                 </div>   
               </div>
             </div>                
+          </div>          
+
+          <div class="col-sm-12 itens-lista m-b-2">             
+            <div class="col-sm-12 bg-f1 p-t-1">
+              <div class="form-group text-right">                         
+                <span>Total R$ 1.2345,00</span> 
+              </div>              
+            </div>              
           </div>
 
-          <div class="col-sm-12 itens-lista m-t-2 m-b-2 bg-f1">
-            <div class="divider-solid"></div>
-            <div class="form-group text-right">
-              <span class="header">Total R$ 1.2345,00</strong> 
-            </div>
-            <div class="divider-solid"></div>
-          </div>
-
-          <div class="col-xs-12 itens-lista">
-            <div class="form-group ">
+          <div class="col-sm-12 itens-lista">
+            <div class="form-group">
               <button type="button" class="btn btn-sm btn-secondary col-sm-3" data-toggle="tooltip" data-placement="top" title="Cancelar NF"><i class="fa fa-arrow-left"></i>
-                Ver Lista OS
+                Ver Lista de OS
               </button>
               <button type="button" class="btn btn-sm btn-primary col-sm-3 pull-right" data-toggle="tooltip" data-placement="top" title="Cancelar NF"><i class="fa fa-cog"></i>
                 Gerar NF
