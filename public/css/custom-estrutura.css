@@ -77,6 +77,10 @@
 	padding-bottom: 0.5em;
 	border-bottom: 1px solid #f1f1f1;
 }
+.page-header{
+	display: block;
+	padding-left: 1em;
+}
 .form-bloco{
 	margin-bottom: 3em;
 }
