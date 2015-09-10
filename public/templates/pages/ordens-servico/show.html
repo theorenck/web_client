@@ -23,7 +23,7 @@
               </div>
               <div class="form-group col-sm-3 col-xs-6">
                 <label>Total<small> (R$)</small></label>
-                <p>12345,00</p>
+                <p>12.345,00</p>
               </div>
               <div class="form-group col-sm-3 col-xs-6">
                 <button type="button" class="btn btn-sm btn-primary btn-block">
@@ -117,21 +117,23 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="row">
-                  <div class="form-group col-sm-12">
+                  <div class="col-sm-12 underline underline-borda">
                     <span class="subheader">Entrada</span>
-                    <div class="col-sm-12">
-                      <div class="divider-solid"></div>
-                    </div>                    
-                  </div>                  
-                  <div class="form-group col-xs-3">
-                    <strong class="header">Data </strong>
                   </div>
-                  <div class="form-group col-xs-5">
-                    <strong class="header">Combustível </strong>
+                  <div class="col-sm-12 m-t-meio">
+                    <div class="row">
+                      <div class="form-group col-xs-3">
+                        <strong class="header">Data </strong>
+                      </div>
+                      <div class="form-group col-xs-5">
+                        <strong class="header">Combustível </strong>
+                      </div>
+                      <div class="form-group col-xs-4">
+                        <strong class="header">km</strong>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group col-xs-4">
-                    <strong class="header">km</strong>
-                  </div>
+                      
                 </div>
                 <div class="row">       
                   <div class="form-group col-xs-3">
@@ -147,12 +149,9 @@
               </div>
               <div class="col-sm-6">
                 <div class="row">
-                  <div class="form-group col-sm-12">
-                    <span class="subheader">Saída</span> 
-                    <div class="col-sm-12">
-                      <div class="divider-solid"></div>
-                    </div>                   
-                  </div>                  
+                  <div class="col-sm-12 underline">
+                    <span class="subheader">Saída</span>
+                  </div>                 
                   <div class="form-group col-xs-3">
                     <strong class="header">Data</strong>
                   </div>
@@ -203,10 +202,10 @@
 
           <div class="col-sm-12 m-b-2">
             <div class="row">
-              <div class="form-group col-sm-12 underline">                
+              <div class="col-sm-12 underline">                
                 <a href="" class="subheader" data-toggle="collapse" href="#maoobra" aria-expanded="false" aria-controls="maoobra">                  
                   <i class="fa fa-chevron-right"></i>
-                  <span>Produto</span>
+                  <span class="subheader">Produto</span>
                   <div class="pull-right">
                     <strong class="header">R$ 1.073,83</strong>
                   </div>                 
@@ -214,7 +213,7 @@
               </div>
             </div>
             <div class="collapse in" id="ver-pecas">
-              <div class="row hidden-sm-down m-t-1">
+              <div class="row hidden-sm-down m-t-2">
                 <div class="form-group col-sm-1">
                   <strong class="header">Código</strong>
                 </div>
@@ -270,7 +269,7 @@
               </div>
               <div class="row">
                 <div class="form-group col-sm-12 text-right">
-                  <strong class="header" style="color:red">Total das Peças <span class="bloco">R$ 1.073,83</span></strong>
+                  <strong class="header" style="color:red">Total das Peças  <small>(R$)</small><span class="bloco">1.073,83</span></strong>
                 </div>    
               </div>
             </div>              
@@ -278,7 +277,7 @@
 
           <div class="col-sm-12 m-b-4">
             <div class="row">
-              <div class="form-group col-sm-12 underline">
+              <div class="col-sm-12 underline">
                 <a href="" class="subheader" data-toggle="collapse" href="#maoobra" aria-expanded="false" aria-controls="maoobra">
                   <i class="fa fa-chevron-right"></i>
                   <span>Mão de Obra</span>
@@ -289,7 +288,7 @@
               </div>
             </div>
             <div class="collapse in" id="ver-maoobra">
-              <div class="row hidden-sm-down  m-t-1">
+              <div class="row hidden-sm-down m-t-2">
                 <div class="form-group col-sm-1">
                   <strong class="header">Código</strong>
                 </div>
@@ -341,21 +340,34 @@
               </div>
               <div class="row">
                 <div class="form-group col-sm-12 text-right">
-                  <strong class="header" style="color:red">Total da Mão de Obra <span class="bloco">R$ 1.073,83</span></strong>
+                  <strong class="header" style="color:red">Total da Mão de Obra <small>(R$)</small><span class="bloco">1.073,83</span></strong>
                 </div>   
               </div>
             </div>                
-          </div>          
+          </div>
+          
+        </div>
+      </fieldset>
+    </div>
+  </div>
 
-          <div class="col-sm-12 m-b-2 p-t-1 bg-f1">
-            <div class="row text-right">
+  <div class="form-bloco">
+    <div class="card card-light formulario collapse in" id="servicos">
+      <fieldset class="form-group">
+        <div class="row interno">
+          <span class="header">
+            Totais
+            <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+          </span>
+          <div class="col-sm-12 m-b-2">
+            <div class="row">
               <div class="form-group col-sm-3 col-xs-6">
                 <label>Peças <small>(R$)</small></label>
-                <p>12345,00</p>
+                <p>12.345,00</p>
               </div>
               <div class="form-group col-sm-3 col-xs-6">
                 <label>Mão de Obra <small>(R$)</small></label>
-                <p>12345,00</p>
+                <p>12.345,00</p>
               </div>
               <div class="form-group col-sm-3 col-xs-6">
                 <label>Desconto <small>(R$)</small></label>
@@ -363,10 +375,46 @@
               </div>
               <div class="form-group col-sm-3 col-xs-6">
                 <label>Total <small>(R$)</small></label>
-                <p>12345,00</p>
+                <p>12.345,00</p>
               </div>
             </div>
-          </div>
+          </div>              
+
+
+          <div class="col-sm-12 m-b-2">
+            <div class="row">
+              <div class="col-sm-12 underline">                
+                <a href="" class="subheader" data-toggle="collapse" href="#impostos" aria-expanded="false" aria-controls="impostos">
+                  <i class="fa fa-chevron-right"></i>
+                  <span class="subheader">Impostos</span>
+                  <div class="pull-right">
+                    <strong class="header">R$ 1.073,83</strong>
+                  </div>                 
+                </a>
+              </div>
+            </div>
+            <div class="collapse in" id="ver-pecas">
+              <div class="row hidden-sm-down m-t-1">
+                <div class="form-group col-sm-3 col-xs-6">
+                  <label>ICMS <small>(R$)</small></label>
+                  <p>12.345,00</p>
+                </div>
+                <div class="form-group col-sm-3 col-xs-6">
+                  <label>IPI <small>(R$)</small></label>
+                  <p>12.345,00</p>
+                </div>
+                <div class="form-group col-sm-3 col-xs-6">
+                  <label>Imposto <small>(R$)</small></label>
+                  <p>-</p>
+                </div>
+                <div class="form-group col-sm-3 col-xs-6">
+                  <label>Imposto <small>(R$)</small></label>
+                  <p>12.345,00</p>
+                </div>
+              </div>              
+            </div> 
+          </div>          
+              
 
           <div class="col-sm-12">
             <div class="form-group">
@@ -378,10 +426,10 @@
               </button>
             </div>
           </div>
-          
         </div>
       </fieldset>
     </div>
   </div>
 </div>
 
+  

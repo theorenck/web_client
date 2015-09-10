@@ -1,161 +1,159 @@
 <div class="form-bloco">
   <div class="page-header">    
-    <h3>Ordem de Serviço
-    </h3>
+    <h3>Ordem de Serviço</h3>
   </div>
 
-  <div class="col-sm-12">
-    <div class="card card-light card-block">
-      <div class="hidden-xs-down">
-        <div class="form-group">
-          <div class="row interno">
-            <div class="col-sm-1 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><strong class="header">Número</strong></div>
-              </div>
-            </div>
-            <div class="col-sm-1 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><strong class="header">Situação</strong></div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><strong class="header">Cliente</strong></div>
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="row">
-                <div class="text-center col-sm-12 col-xs-6"><strong class="header">Total <small>(R$)</small></strong></div>
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><strong class="header">Atualizado</strong></div>
-              </div>
+  
+  <div class="card card-light card-block">
+    <div class="hidden-xs-down">
+      <div class="form-group">
+        <div class="row interno">
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><strong class="header">Número</strong></div>
             </div>
           </div>
-
-          <div class="divider-solid"></div>
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><strong class="header">Situação</strong></div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><strong class="header">Cliente</strong></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="text-center col-sm-12 col-xs-6"><strong class="header">Total <small>(R$)</small></strong></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><strong class="header">Atualizado</strong></div>
+            </div>
+          </div>
         </div>
+
+        <div class="divider-solid"></div>
       </div>
-      <div ng-repeat="os in ctrl.items">
-        <div class="form-group">
-          <div class="row interno">
-            <div class="col-sm-1 col-xs-12">
-              <div class="row">
-                <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">{{os.codservico}}</a></span>
-                </div>
+    </div>
+    <div ng-repeat="os in ctrl.items">
+      <div class="form-group">
+        <div class="row interno">
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">{{os.codservico}}</a></span>
               </div>
             </div>
-            <div class="col-sm-1 col-xs-12">           
-              <span ng-show="os.aberto == 'S'" class="label label-warning">
-                Aberta
-              </span>
-              <span ng-show="os.aberto != 'S'" class="label label-primary">
-                Fechada
-              </span>
-              <span class="label label-info">
-                {{os.situacao1}}
-              </span>
+          </div>
+          <div class="col-sm-1 col-xs-12">           
+            <span ng-show="os.aberto == 'S'" class="label label-warning">
+              Aberta
+            </span>
+            <span ng-show="os.aberto != 'S'" class="label label-primary">
+              Fechada
+            </span>
+            <span class="label label-info">
+              {{os.situacao1}}
+            </span>
+          </div>
+          <div class="col-sm-4 col-xs-12  xs-m-t-1">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12"><span><a style="white-space: nowrap;" href="#">{{os.cliente|humanize}}</a></span></div>
+              <div class="col-sm-12 col-xs-12"><span>{{os.cgc|cpfcnpj}}</span></div>
             </div>
-            <div class="col-sm-4 col-xs-12  xs-m-t-1">
-              <div class="row">
-                <div class="col-sm-12 col-xs-12"><span><a style="white-space: nowrap;" href="#">{{os.cliente|humanize}}</a></span></div>
-                <div class="col-sm-12 col-xs-12"><span>{{os.cgc|cpfcnpj}}</span></div>
+          </div>
+          <div class="col-sm-2 col-xs-12 xs-m-t-1">
+            <div class="row">
+              <div class="hidden-sm-down text-right col-sm-12"><span class="p-r-2">{{os.total|number:2}}</span></div>
+              <div class="hidden-sm-up text-right col-xs-12"><strong class="header">Total R$ {{os.total|number:2}}</strong></div>
+            </div>
+          </div>
+          <div class="col-sm-2  hidden-sm-down">
+            <div class="row">
+              <div class="col-sm-12">
+                <span>há {{os.dataentrada|cdate|timeago}}</span>
+              </div>
+              <div class="col-sm-12">
+                <span>por <a href="#">{{os.usuarioinclusao|humanize}}</a></span>
               </div>
             </div>
-            <div class="col-sm-2 col-xs-12 xs-m-t-1">
-              <div class="row">
-                <div class="hidden-sm-down text-right col-sm-12"><span class="p-r-2">{{os.total|number:2}}</span></div>
-                <div class="hidden-sm-up text-right col-xs-12"><strong class="header">Total R$ {{os.total|number:2}}</strong></div>
-              </div>
+          </div>
+          <div class="col-sm-2 hidden-sm-down">
+            <div class="row">
+              <button type="button" class="btn btn-sm tres-quartos btn-primary" data-toggle="tooltip" data-placement="top" title="Cancelar NF">
+                <i class="fa fa-cog fa-lg fa-padding"></i>
+                Gerar NF
+              </button>
+          
+              <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Exibir NF">
+                <i class="fa fa-eye btn-block"></i>
+              </button>
             </div>
-            <div class="col-sm-2  hidden-sm-down">
-              <div class="row">
-                <div class="col-sm-12">
-                  <span>há {{os.dataentrada|cdate|timeago}}</span>
-                </div>
-                <div class="col-sm-12">
-                  <span>por <a href="#">{{os.usuarioinclusao|humanize}}</a></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-2 hidden-sm-down">
-              <div class="row">
-                <button type="button" class="btn btn-sm tres-quartos btn-primary" data-toggle="tooltip" data-placement="top" title="Cancelar NF">
-                  <i class="fa fa-cog fa-lg fa-padding"></i>
-                  Gerar NF
-                </button>
-            
-                <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Exibir NF">
-                  <i class="fa fa-eye btn-block"></i>
-                </button>
-              </div>
-            </div>
-            <div class="col-xs-12 hidden-sm-up xs-m-t-1 xs-m-b-1">
-              <div class="row">
-                <button type="button" class="btn btn-primary metade">
-                  <i class="fa fa-cog fa-lg btn-block"></i>
-                  Gerar NF
-                </button>          
-                <button type="button" class="btn btn-secondary metade">
-                  <i class="fa fa-eye btn-block"></i>
-                  Exibir
-                </button>
-              </div> 
-            </div>
-            <div class="col-sm-12 hidden-sm-down">            
-              <div class="divider-solid"></div>            
-            </div> 
-            <div class="col-xs-12 hidden-sm-up">
-              <div class="row">
-                <div class="divider-solid"></div>
-              </div>
+          </div>
+          <div class="col-xs-12 hidden-sm-up xs-m-t-1 xs-m-b-1">
+            <div class="row">
+              <button type="button" class="btn btn-primary metade">
+                <i class="fa fa-cog fa-lg btn-block"></i>
+                Gerar NF
+              </button>          
+              <button type="button" class="btn btn-secondary metade">
+                <i class="fa fa-eye btn-block"></i>
+                Exibir
+              </button>
             </div> 
           </div>
+          <div class="col-sm-12 hidden-sm-down">            
+            <div class="divider-solid"></div>            
+          </div> 
+          <div class="col-xs-12 hidden-sm-up">
+            <div class="row">
+              <div class="divider-solid"></div>
+            </div>
+          </div> 
         </div>
       </div>
     </div>
-    <div class="col-sm-12">
-      <div class="text-center">
-        <ul class="pagination hidden-xs-down">
-          <li>
-            <a href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li>
-            <a href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="pagination pagination-lg hidden-sm-up">
-          <li>
-            <a href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li>
-            <a href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="text-center">
+      <ul class="pagination hidden-xs-down">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="pagination pagination-lg hidden-sm-up">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
