@@ -31,11 +31,11 @@ angular.module('ZetaWebClient')
         ordemServico.itens = itens;
         $http.get(service.base + '/zw15ecli/' + ordemServico.codcliente)
         .success(function(cliente) {
-          angular.forEach(situacoes, function(situacao) {
-            if(os.situacao1 == situacao.coddescgen) {
-              os.situacao1 = situacao.descricao;
-            }
-          });
+          // angular.forEach(situacoes, function(situacao) {
+          //   if(os.situacao1 == situacao.coddescgen) {
+          //     os.situacao1 = situacao.descricao;
+          //   }
+          // });
           // $http.get(service.base + '/produtos/?codproduto=['+''+']')
           //   .success(function(produtos) {
           ordemServico.itens = itens;
