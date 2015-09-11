@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Open Sans';
-    src: url('/.../font/opensans-regular-webfont.eot');
+    src: url('/font/opensans-regular-webfont.eot');
 
-	src: url('/.../font/opensans-regular-webfont.eot') format('eot'),
-		 url('/.../font/opensans-regular-webfont.woff') format('woff'),
-		 url('/.../font/opensans-regular-webfont.ttf')  format('truetype'),
-		 url('/.../font/opensans-regular-webfont.svg') format('svg');
+	src: url('/font/opensans-regular-webfont.eot') format('eot'),
+		 url('/font/opensans-regular-webfont.woff') format('woff'),
+		 url('/font/opensans-regular-webfont.ttf') format('truetype'),
+		 url('/font/opensans-regular-webfont.svg') format('svg');
 }
 body{
 	font-family: "Open Sans", sans-serif;
@@ -71,6 +71,12 @@ a:focus{
 		font-weight: normal;
 	}
 }
+.bg-f1{
+	border-top: 1px dashed #dedede;
+    border-bottom: 1px dashed #dedede;
+    border: 1px dashed #dedede;
+    background-color: #f1f1f1; 
+}
 .rodape{
 	padding: 0.8em 0 0 0;
 	background-color: #ededed;
@@ -83,6 +89,7 @@ a:focus{
 		margin-top: 0;
 	}
 }
+
 /********************** Icones e imagens ******************************/
 .logo-navbar{
 	height: 40px;

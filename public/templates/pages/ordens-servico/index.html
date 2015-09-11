@@ -1,7 +1,9 @@
 <div class="form-bloco">
-  <div class="page-header">
+  <div class="page-header">    
     <h3>Ordem de Serviço</h3>
   </div>
+
+  
   <div class="card card-light card-block">
     <div class="hidden-xs-down">
       <div class="form-group">
@@ -41,47 +43,43 @@
         <div class="row interno">
           <div class="col-sm-1 col-xs-12">
             <div class="row">
-              <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">{{os.codservico}}</a></span></div>
-            </div>
-          </div>
-          <div class="col-sm-1 col-xs-12">
-            <div class="row">
-              <div class="col-sm-12 col-xs-6">
-                <span ng-show="os.aberto == 'S'" class="label label-warning">
-                  Aberta
-                </span>
-                <span ng-show="os.aberto != 'S'" class="label label-primary">
-                  Fechada
-                </span>
-                <span class="label label-info">
-                  {{os.situacao1}}
-                </span>
+              <div class="col-sm-12 col-xs-6"><span><a href="#/ordens-servico/{{os.codservico}}">{{os.codservico}}</a></span>
               </div>
             </div>
           </div>
-          <div class="col-sm-4 col-xs-12">
+          <div class="col-sm-1 col-xs-12">           
+            <span ng-show="os.aberto == 'S'" class="label label-warning">
+              Aberta
+            </span>
+            <span ng-show="os.aberto != 'S'" class="label label-primary">
+              Fechada
+            </span>
+            <span class="label label-info">
+              {{os.situacao1}}
+            </span>
+          </div>
+          <div class="col-sm-4 col-xs-12  xs-m-t-1">
             <div class="row">
-              <div class="col-sm-12 col-xs-6"><span><a style="white-space: nowrap;" href="#">{{os.cliente|humanize}}</a></span></div>
-              <div class="col-sm-12 col-xs-6"><span>{{os.cgc|cpfcnpj}}</span></div>
+              <div class="col-sm-12 col-xs-12"><span><a style="white-space: nowrap;" href="#">{{os.cliente|humanize}}</a></span></div>
+              <div class="col-sm-12 col-xs-12"><span>{{os.cgc|cpfcnpj}}</span></div>
             </div>
           </div>
-          <div class="col-sm-2 col-xs-12">
+          <div class="col-sm-2 col-xs-12 xs-m-t-1">
             <div class="row">
-              <div class="text-right col-sm-12 col-xs-6"><span class="p-r-2">{{os.total|number:2}}</span></div>
+              <div class="hidden-sm-down text-right col-sm-12"><span class="p-r-2">{{os.total|number:2}}</span></div>
+              <div class="hidden-sm-up text-right col-xs-12"><strong class="header">Total R$ {{os.total|number:2}}</strong></div>
             </div>
           </div>
-          <div class="col-sm-2 col-xs-12">
+          <div class="col-sm-2  hidden-sm-down">
             <div class="row">
-              <div class="col-sm-12 col-xs-6">
+              <div class="col-sm-12">
                 <span>há {{os.dataentrada|cdate|timeago}}</span>
               </div>
-              <div class="col-sm-12 col-xs-6">
+              <div class="col-sm-12">
                 <span>por <a href="#">{{os.usuarioinclusao|humanize}}</a></span>
               </div>
             </div>
           </div>
-
-          
           <div class="col-sm-2 hidden-sm-down">
             <div class="row">
               <button type="button" class="btn btn-sm tres-quartos btn-primary" data-toggle="tooltip" data-placement="top" title="Cancelar NF">
@@ -94,24 +92,28 @@
               </button>
             </div>
           </div>
-
-          <div class="col-xs-12 hidden-sm-up xs-m-t-1">
+          <div class="col-xs-12 hidden-sm-up xs-m-t-1 xs-m-b-1">
             <div class="row">
               <button type="button" class="btn btn-primary metade">
                 <i class="fa fa-cog fa-lg btn-block"></i>
                 Gerar NF
               </button>          
-              <button type="button" class="btn  btn-secondary metade">
+              <button type="button" class="btn btn-secondary metade">
                 <i class="fa fa-eye btn-block"></i>
                 Exibir
               </button>
             </div> 
           </div>
-
+          <div class="col-sm-12 hidden-sm-down">            
+            <div class="divider-solid"></div>            
+          </div> 
+          <div class="col-xs-12 hidden-sm-up">
+            <div class="row">
+              <div class="divider-solid"></div>
+            </div>
+          </div> 
         </div>
       </div>
-
-      <div class="divider-solid"></div>
     </div>
   </div>
   <div class="col-sm-12">
@@ -154,3 +156,5 @@
       </ul>
     </div>
   </div>
+
+</div>

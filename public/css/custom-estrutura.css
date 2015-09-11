@@ -6,6 +6,9 @@
 		margin-bottom: 1em;
 	}
 }
+.m-t-meio{
+		margin-top: 0.5em;
+	}
 .m-t-1{
 		margin-top: 1em;
 	}
@@ -18,6 +21,12 @@
 .m-b-2{
 	margin-bottom: 2em;
 }
+.m-b-4{
+	margin-bottom: 4em;
+}
+.p-t-1{
+	padding-top: 1em;
+}
 .p-r-2{
 	padding-right: 2em;
 }
@@ -25,15 +34,14 @@
 	min-width: 22%;
 }
 .terco{
-	min-width: 32%;
+	min-width: 32.5%;
 }
 .metade{
-	min-width: 48%;
+	min-width: 49%;
 }
 .tres-quartos{
 	min-width: 72%;
 }
-
 .hidden{
 	display: none;
 }
@@ -43,15 +51,41 @@
 .container{
 	margin-top: 2.5em;
 }
+.navbar-nav .nav-link{
+	padding: 0.6em 0 0.5em; 
+}
 .divider-solid{
 	border-bottom: 1px solid #f1f1f1;
-    margin: 0 -15px 1em -15px;
+    margin: 1em -15px;
     overflow: hidden;
 }
 .divider-dashed{
 	border-bottom: 1px dotted #e0e0e0;
     margin: 0 0 0.8em 0;
     overflow: hidden;
+}
+.underline-borda{
+	border-bottom-right-radius:50px 1px; 
+	border-right:30px solid white;
+}
+@media screen and (max-width: 34em) {
+    .divider-solid{
+		border-bottom: 1px solid #f1f1f1;
+	    margin: 1em 0;
+	    overflow: hidden;
+	}
+	.divider-dashed{
+		border-bottom: 1px dotted #e0e0e0;
+	    margin: 0 15px 0.8em 15px;
+	    overflow: hidden;
+	}	
+}
+.underline{
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #f1f1f1;
+}
+.page-header{
+	display: block;
 }
 .form-bloco{
 	margin-bottom: 3em;
@@ -74,7 +108,7 @@
 	}
 }
 input{
-	height: 2.5em;  /*sem essa regra os inputs de data quebram na altura*/
+	height: 2.5em;
 }
 .lista button{
 	font-size: 0.80rem;
@@ -135,6 +169,7 @@ h3 small{
 @media screen and (max-width: 34em) {
     h3{
     	margin-left: 20px;
+    	margin-bottom: 0;
     	padding-bottom: 0.8em;		
     }
     h3 small{
@@ -146,24 +181,20 @@ h3 small{
 	padding-bottom: 0.8em;
 	margin-bottom: 0.8em;
 }
-span{
-	display: block;
-}
 span.header{
 	font-size: 1.23em;
 	font-weight: 700;
 	color: #3498db;
 	display: block;
-	padding-bottom: 0.5em;
+	padding: 0 15px 0.5em 15px;
 	border-bottom: 1px solid #f1f1f1;
 	margin-bottom: 0.5em;
 }
-span.subheader{
+.subheader{
 	font-size: 1.1em;
 	font-weight: 400;
-	color: #3498db;
-	display: block;
-	margin: 1em 0 ;
+	color: #3498db;	
+	margin: 1em 0 0;
 }
 .form-bloco .itens-lista span{
 	text-overflow: ellipsis;

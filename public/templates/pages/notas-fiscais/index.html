@@ -1,6 +1,15 @@
 <div class="form-bloco">
   <div class="page-header">
-    <h3>Nota Fiscal</h3>
+    <h3>Nota Fiscal
+      <div class="col-sm-2 pull-right">
+        <div class="row">
+          <button type="button" class="btn btn-sm btn-primary btn-block">
+            <i class="fa fa-plus bloco"></i>
+            Nova NF
+          </button>
+        </div>
+      </div>
+    </h3>
   </div>
   <div class="card card-light card-block">
     <div class="hidden-xs-down">
@@ -35,80 +44,84 @@
         <div class="divider-solid"></div>
       </div>
     </div>
-
     <div ng-repeat="nf in ctrl.items">
       <div class="form-group">
-      <div class="row interno">
-        <div class="col-sm-1 col-xs-12">
-          <div class="row">
-            <div class="col-sm-12 col-xs-6"><span><a href="#/notas-fiscais/{{nf.numeronf}}">{{nf.numeronf}}</a></span></div>
+        <div class="row interno">
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6"><span><a href="#/notas-fiscais/{{nf.numeronf}}">{{nf.numeronf}}</a></span></div>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-1 col-xs-12">
-          <div class="row">
-            <div class="col-sm-12 col-xs-6">
-              <span class="label label-{{nf.nfesituacao.style}}">
-                {{nf.nfesituacao.descricao|humanize}}
-              </span>
+          <div class="col-sm-1 col-xs-12">
+            <div class="row">
+              <div class="col-sm-12 col-xs-6">
+                <span class="label label-{{nf.nfesituacao.style}}">
+                  {{nf.nfesituacao.descricao|humanize}}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12 xs-m-t-1">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12"><span><a style="white-space: nowrap;" href="#">{{nf.nomeentidade|humanize}}</a></span></div>
+              <div class="col-sm-12 col-xs-12"><span>{{nf.cgc_cpfentidade|cpfcnpj}}</span></div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-xs-12 xs-m-t-1">
+            <div class="row">
+              <div class="hidden-sm-down text-right col-sm-12"><span class="p-r-2">{{nf.valortotalnf|number:2}}</span></div>
+              <div class="hidden-sm-up text-right col-xs-12"><strong class="header">Total {{nf.valortotalnf|currency:2}}</strong></div>
+            </div>
+          </div>
+          <div class="col-sm-2 hidden-sm-down">
+            <div class="row">
+              <div class="col-sm-12">
+                <span>há {{nf.datacadastramento|cdate|timeago}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 hidden-sm-down">
+            <div class="row">
+              <button type="button" class="btn btn-sm metade btn-primary" data-toggle="tooltip" data-placement="top" title="Emitir NF">
+                <i class="fa fa-paper-plane-o fa-padding"></i>
+                Emitir
+              </button>
+              <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Editar Rascunho">
+                <i class="fa fa-pencil btn-block"></i>
+              </button>
+              <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Excluir Rascunho">
+                <i class="fa fa-trash-o btn-block"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-xs-12 hidden-sm-up xs-m-t-1 xs-m-b-1">
+            <div class="row">
+              <button type="button" class="btn btn-primary terco">
+                <i class="fa fa-paper-plane-o btn-block"></i>
+                Emitir
+              </button>
+              <button type="button" class="btn  btn-secondary terco">
+                <i class="fa fa-pencil btn-block"></i>
+                Editar
+              </button>
+              <button type="button" class="btn  btn-secondary terco">
+                <i class="fa fa-trash-o btn-block"></i>
+                Excluir
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-12 hidden-sm-down">
+            <div class="divider-solid"></div>
+          </div>
+          <div class="col-xs-12 hidden-sm-up">
+            <div class="row">
+              <div class="divider-solid"></div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12 xs-m-t-1">
-          <div class="row">
-            <div class="col-sm-12 col-xs-12"><span><a style="white-space: nowrap;" href="#">{{nf.nomeentidade|humanize}}</a></span></div>
-            <div class="col-sm-12 col-xs-12"><span>{{nf.cgc_cpfentidade|cpfcnpj}}</span></div>
-          </div>
-        </div>
-        <div class="col-sm-2 col-xs-12">
-          <div class="row">
-            <div class="hidden-sm-down text-right col-sm-12"><span class="p-r-2">{{nf.valortotalnf|number:2}}</span></div>
-            <div class="hidden-sm-up text-right col-xs-12"><strong class="header">Total {{nf.valortotalnf|currency:2}}</strong></div>
-          </div>
-        </div>
-        <div class="col-sm-2  hidden-sm-down">
-          <div class="row">
-            <div class="col-sm-12">
-              <span>há {{nf.datacadastramento|cdate|timeago}}</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-2 hidden-sm-down">
-          <div class="row">
-            <button type="button" class="btn btn-sm metade btn-primary" data-toggle="tooltip" data-placement="top" title="Emitir NF">
-              <i class="fa fa-paper-plane-o fa-padding"></i>
-              Emitir
-            </button>
-            <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Editar Rascunho">
-              <i class="fa fa-pencil btn-block"></i>
-            </button>
-            <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Excluir Rascunho">
-              <i class="fa fa-trash-o btn-block"></i>
-            </button>
-          </div>
-        </div>
-        <div class="col-xs-12 hidden-sm-up xs-m-t-1">
-          <div class="row">
-            <button type="button" class="btn btn-primary terco">
-              <i class="fa fa-paper-plane-o btn-block"></i>
-              Emitir
-            </button>
-            <button type="button" class="btn  btn-secondary terco">
-              <i class="fa fa-pencil btn-block"></i>
-              Editar
-            </button>
-            <button type="button" class="btn  btn-secondary terco">
-              <i class="fa fa-trash-o btn-block"></i>
-              Excluir
-            </button>
-          </div>
-        </div>
-
+        <div class="divider-solid"></div>
       </div>
-      </div>
-      <div class="divider-solid"></div>
     </div>
-
   </div>
 </div>
 
