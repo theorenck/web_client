@@ -15,7 +15,14 @@ angular.module('ZetaWebClient',['ngRoute'])
     controllerAs: 'ctrl'
   })
   .when('/notas-fiscais', {
-    templateUrl : 'templates/pages/notas-fiscais/index.html'
+    templateUrl : 'templates/pages/notas-fiscais/index.html',
+    controller: 'NotasFiscaisIndexController',
+    controllerAs: 'ctrl'
+  })
+  .when('/notas-fiscais/:id', {
+    templateUrl : 'templates/pages/notas-fiscais/show.html',
+    controller: 'NotasFiscaisShowController',
+    controllerAs: 'ctrl'
   })
   .when('/notas-fiscais/new', {
     templateUrl : 'templates/pages/notas-fiscais/new.html'

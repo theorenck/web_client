@@ -23,23 +23,25 @@ angular.module('ZetaWebClient')
       });
     });
   };
-  this.get = function (numero, callback) {
-    if(service.cache) {
-      callback(service.cache);
-    }
-    $http.get(service.base + '/zw15ser/' + numero)
+  this.get = function (id, callback) {
+    $http.get(service.base + '/zw15ser/' + id)
     .success(function(ordemServico){
-      $http.get(service.base + '/zw15its?filter[codservico]=' + numero +'&sort=codseqservico&limit=0')
+      $http.get(service.base + '/zw15its?filter[codservico]=' + id +'&sort=codseqservico&limit=0')
       .success(function(itens) {
         ordemServico.itens = itens;
         $http.get(service.base + '/zw15ecli/' + ordemServico.codcliente)
         .success(function(cliente) {
-          // $http.get(service.base + '/produtos/?filter[codproduto]='+)
-          // .success(function(produtos) {
-            ordemServico.itens = itens;
-            ordemServico.cliente = cliente;
-            callback(ordemServico);
-          // });
+          angular.forEach(situacoes, function(situacao) {
+            if(os.situacao1 == situacao.coddescgen) {
+              os.situacao1 = situacao.descricao;
+            }
+          });
+          // $http.get(service.base + '/produtos/?codproduto=['+''+']')
+          //   .success(function(produtos) {
+          ordemServico.itens = itens;
+          ordemServico.cliente = cliente;
+          callback(ordemServico);
+            // });
         });
       });
     });
