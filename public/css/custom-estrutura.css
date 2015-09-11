@@ -1,9 +1,22 @@
 @media screen and (max-width: 34em) {
+    .xs-m-t-0{
+		margin-top: 01em;
+	}
     .xs-m-t-1{
 		margin-top: 1em;
 	}
+	.xs-m-t-2{
+		margin-top: 2em;
+	}
 	.xs-m-b-1{
 		margin-bottom: 1em;
+	}
+	.xs-m-b-2{
+		margin-bottom: 2em;
+	}
+	.xs-p-1{
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 }
 .m-t-meio{
@@ -26,6 +39,9 @@
 }
 .p-t-1{
 	padding-top: 1em;
+}
+.p-b-1{
+	padding-bottom: 1em;
 }
 .p-r-2{
 	padding-right: 2em;
@@ -56,17 +72,16 @@
 }
 .divider-solid{
 	border-bottom: 1px solid #f1f1f1;
-    margin: 1em -15px;
+	/*border-bottom: 1px solid #ccc;*/
+    /*margin: 1em -15px;*/
+    margin-left: -15px;
+    margin-right: -15px;
     overflow: hidden;
 }
 .divider-dashed{
 	border-bottom: 1px dotted #e0e0e0;
     margin: 0 0 0.8em 0;
     overflow: hidden;
-}
-.underline-borda{
-	border-bottom-right-radius:50px 1px; 
-	border-right:30px solid white;
 }
 @media screen and (max-width: 34em) {
     .divider-solid{
@@ -84,13 +99,23 @@
 	padding-bottom: 0.5em;
 	border-bottom: 1px solid #f1f1f1;
 }
+.underline-borda{
+	border-bottom-right-radius:50px 1px; 
+	border-right:30px solid white;
+}
+@media screen and (max-width: 34em) {
+    .underline-borda{
+		border-bottom-right-radius:0; 
+		border-right:0;
+	}	
+}
 .page-header{
 	display: block;
 }
 .form-bloco{
 	margin-bottom: 3em;
 }
-.interno{
+.form-group{
 	margin-bottom: 1em;
 }
 @media screen and (max-width: 34em) {
@@ -169,6 +194,7 @@ h3 small{
 @media screen and (max-width: 34em) {
     h3{
     	margin-left: 20px;
+    	margin-right: 20px;
     	margin-bottom: 0;
     	padding-bottom: 0.8em;		
     }
