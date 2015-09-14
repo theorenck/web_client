@@ -1,3 +1,6 @@
+html{
+	overflow-y: scroll;
+}
 @media screen and (max-width: 34em) {
     .xs-m-t-0{
 		margin-top: 01em;
@@ -37,6 +40,9 @@
 }
 .m-b-0{
 	margin-bottom: 0;
+}
+.m-b-meio{
+	margin-bottom: 0.5em;
 }
 .m-b-1{
 	margin-bottom: 1em;

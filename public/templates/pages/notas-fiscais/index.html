@@ -1,40 +1,33 @@
 <div class="form-bloco"> 
   <div class="col-sm-12">
     <div class="row">
-      <div class="col-sm-12 hidden-sm-down m-b-3">
-        <h3>Nota Fiscal
-          <div class="col-sm-3 pull-right">
-            <div class="row">
-              <button type="button" class="btn btn-sm btn-primary btn-block">
-                <i class="fa fa-plus bloco"></i>
-                Nova NF
-              </button>
-            </div>
-          </div>            
-        </h3>
+      <div class="col-sm-10 hidden-sm-down m-b-3">
+        <h3>Nota Fiscal</h3>
+      </div>      
+      <div class="col-sm-2 hidden-sm-down pull-right">       
+        <button type="button" class="btn btn-sm btn-primary btn-block">
+          <i class="fa fa-plus bloco"></i>
+          Nova NF
+        </button>        
       </div>
-      <div class="col-sm-12 hidden-sm-up xs-m-b-1">
-        <h3>Nota Fiscal
-          <div class="col-xs-12 xs-m-t-meio">
-            <div class="row">
-              <button type="button" class="btn btn-sm btn-primary btn-block">
-                <i class="fa fa-plus bloco"></i>
-                Nova NF
-              </button>
-            </div>
-          </div>            
-        </h3>
+      <div class="col-xs-12 hidden-sm-up">
+        <h3>Nota Fiscal</h3>
       </div>
-      <div class="col-sm-12 hidden-sm-up xs-m-t-1">
-        <div class="divider-solid"></div>
+      <div class="col-xs-12 hidden-sm-up xs-m-t-meio">
+        <button type="button" class="btn btn-sm btn-primary btn-block">
+          <i class="fa fa-plus bloco"></i>
+          Nova NF
+        </button> 
+        <div class="xs-m-t-2">
+          <div class="divider-solid"></div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
 <div class="form-bloco">
-  <div class="col-sm-12 m-b-2">
+  <div class="col-sm-12 m-b-1">
     <div class="row hidden-sm-down">
       <div class="form-group col-sm-1">
         <strong class="header">Número</strong>
@@ -60,7 +53,7 @@
 
 <div ng-repeat="nf in ctrl.items">
   <div class="form-bloco">
-    <div class="col-sm-12 m-b-1">
+    <div class="col-sm-12 m-b-meio">
       <div class="row">
         <div class="form-group col-sm-1 col-xs-12">
           <span>
@@ -86,32 +79,32 @@
           <span>há {{nf.datacadastramento|cdate|timeago}}</span>
         </div>
         <div class="form-group col-sm-2 hidden-sm-down">
-          <button type="button" class="btn btn-sm metade btn-primary" data-toggle="tooltip" data-placement="top" title="Emitir NF">
-            <i class="fa fa-paper-plane-o fa-padding"></i>
-            Emitir
+          <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Excluir Rascunho">
+            <i class="fa fa-trash-o btn-block"></i>
           </button>
           <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Editar Rascunho">
             <i class="fa fa-pencil btn-block"></i>
           </button>
-          <button type="button" class="btn btn-lg quarto btn-secondary" data-toggle="tooltip" data-placement="top" title="Excluir Rascunho">
-            <i class="fa fa-trash-o btn-block"></i>
+          <button type="button" class="btn btn-sm metade btn-primary" data-toggle="tooltip" data-placement="top" title="Emitir NF">
+            <i class="fa fa-paper-plane-o fa-padding"></i>
+            Emitir
           </button>
         </div>
         <div class="form-group col-xs-12 hidden-sm-up">
-          <button type="button" class="btn btn-primary terco">
-            <i class="fa fa-paper-plane-o btn-block"></i>
-            Emitir
+          <button type="button" class="btn  btn-secondary terco">
+            <i class="fa fa-trash-o btn-block"></i>
+            Excluir
           </button>
           <button type="button" class="btn  btn-secondary terco">
             <i class="fa fa-pencil btn-block"></i>
             Editar
           </button>
-          <button type="button" class="btn  btn-secondary terco">
-            <i class="fa fa-trash-o btn-block"></i>
-            Excluir
+          <button type="button" class="btn btn-primary terco">
+            <i class="fa fa-paper-plane-o btn-block"></i>
+            Emitir
           </button>
         </div>
-        <div class="col-xs-12 m-meio">
+        <div class="col-xs-12 m-b-meio">
           <div class="divider-solid"></div>
         </div>
       </div>
