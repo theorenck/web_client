@@ -1,7 +1,7 @@
 <div class="form-bloco">
   <div class="page-header">
     <h3>Nota Fiscal
-      <small>número {{ctrl.item.numeronf}} - série 123</small>
+      <small>No {{ctrl.item.numeronf}} / Série 1</small>
       <div class="col-sm-12 hidden-sm-up">
         <div class="row">
           <div class="divider-solid"></div>
@@ -97,7 +97,7 @@
         <fieldset class="form-group">
           <div class="row interno">
             <span class="header">
-              Serviço
+              Ítens
               <i class="fa fa-chevron-down pull-right girar-baixo"></i>
             </span>
             <div class="col-sm-12 m-b-2">
@@ -106,7 +106,7 @@
                   <strong class="header">Descrição</strong>
                 </div>
                 <div class="form-group col-sm-12">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@
                       <span class="hidden-sm-down">000033</span>
                     </div>
                     <div class="form-group col-sm-6 col-xs-12">
-                      <span class="hidden-sm-up">PRODUTO (???)</span>
+                      <span class="hidden-sm-up">000033</span>
                       <span>PRODUTO (???)</span>
                     </div>
                     <div class="form-group col-sm-1 text-right">
@@ -191,17 +191,17 @@
 
             <div class="col-sm-12 m-b-2">
               <div class="row">
-                <div class="col-sm-12 underline">
-                  <a href="" class="subheader" data-toggle="collapse" href="#maoobra" aria-expanded="false" aria-controls="maoobra">
+                <div class="col-sm-12 underline ">
+                  <a href="" class="subheader" data-toggle="collapse" href="#maoobra" aria-expanded="false" aria-controls="produto">
                     <i class="fa fa-chevron-right"></i>
-                    <span class="subheader">Mão de Obra</span>
+                    <span class="subheader">Serviço</span>
                     <div class="pull-right">
                       <strong class="header">R$ 1.073,83</strong>
                     </div>
                   </a>
                 </div>
               </div>
-              <div class="collapse in" id="ver-maoobra">
+              <div class="collapse in" id="ver-pecas">
                 <div class="row hidden-sm-down m-t-1">
                   <div class="form-group col-sm-1">
                     <strong class="header">Código</strong>
@@ -221,12 +221,13 @@
                 </div>
                 <div class="divider-solid m-b-1 hidden-sm-down"></div>
                 <div>
-                  <div class="row xs-m-b-1">
-                    <div class="form-group col-sm-1 col-xs-3">
-                      <span>000033</span>
+                  <div class="row">
+                    <div class="form-group col-sm-1">
+                      <span class="hidden-sm-down">000033</span>
                     </div>
-                    <div class="form-group col-sm-6 col-xs-9">
-                      <span>MÃO DE OBRA (???)</span>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <span class="hidden-sm-up">000033</span>
+                      <span>SERVIÇO (???)</span>
                     </div>
                     <div class="form-group col-sm-1 text-right">
                       <span class="hidden-sm-down">1 UN</span>
@@ -252,12 +253,15 @@
                         <span class="xs-bold col-xs-6">380,00</span>
                       </div>
                     </div>
+                    <div class="xs-m-t-2">
+                      <div class="divider-solid hidden-sm-up"></div>
+                    </div>                    
                   </div>
-                  <div class="divider-solid"></div>
+                  <div class="divider-solid hidden-sm-down"></div>
                 </div>
                 <div class="row">
                   <div class="form-group m-t-1 col-sm-12 text-right">
-                    <strong class="header">Total da Mão de Obra <small>(R$)</small><span class="bloco">1.073,83</span></strong>
+                    <strong class="header">Total das Peças<small>(R$)</small><span class="bloco">1.073,83</span></strong>
                   </div>
                 </div>
               </div>
@@ -308,19 +312,19 @@
                   </div>
                 </div>
                 <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Total do IPI</label>
                     <p>R$ 123,45</p>
                   </div>
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Total do PIS</label>
                     <p>R$ 123,45</p>
                   </div>               
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Total do COFINS</label>
                     <p>R$ 123,45</p>
                   </div>
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Total de imposto de importação</label>
                     <p>R$ 123,45</p>
                   </div>
@@ -349,19 +353,19 @@
               </div>
               <div class="collapse in" id="impostos">
                 <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Base cálc. do ISS</label>
                     <p>R$ 123,45</p>
                   </div>
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Total do ISS</label>
                     <p>R$ 123,45</p>
                   </div>               
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>PIS sobre serviços</label>
                     <p>R$ 123,45</p>
                   </div>
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>COFINS sobre serviços</label>
                     <p>R$ 123,45</p>
                   </div>
@@ -408,15 +412,15 @@
                   </div>
                 </div>
                 <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Valor retido do PIS</label>
                     <p>R$ 123,45</p>
                   </div>
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Valor retido do COFINS</label>
                     <p>R$ 123,45</p>
                   </div>               
-                  <div class="form-group col-sm-3 col-xs-6">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
                     <label>Valor retido do CSLL</label>
                     <p>R$ 123,45</p>
                   </div>
@@ -431,6 +435,114 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-12 m-b-2">
+              <div class="row">
+                <div class="col-sm-12 underline">
+                  <a href="" class="subheader" data-toggle="collapse" href="#impostos" aria-expanded="false" aria-controls="impostos">
+                    <i class="fa fa-chevron-right"></i>
+                    <span class="subheader">Outros</span>
+                    <div class="pull-right">
+                      <strong class="header">R$ 123,03</strong>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="collapse in" id="impostos">
+                <div class="row m-t-1">
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
+                    <label>Valor do Frete</label>
+                    <p>R$ 123,45</p>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
+                    <label>Valor do Seguro</label>
+                    <p>R$ 123,45</p>
+                  </div>               
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
+                    <label>Outras despesas acessórias</label>
+                    <p>R$ 123,45</p>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
+                    <label>Acréscimo</label>
+                    <p>R$ 123,45</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="divider-solid m-b-1"></div>
+                  </div>                
+                  <div class="form-group col-sm-12 text-right">
+                    <strong class="header">Total dos Impostos<small>(R$)</small><span class="bloco">1.073,83</span></strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row interno">
+            <table class="table">
+              <colgroup span="4">
+                <col width="50%">
+                <col width="16%">
+                <col width="17%">
+                <col width="17%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Base</th>
+                  <th>Alíquota</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>                
+                <tr>
+                  <td>COFINS</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                </tr>
+                <tr>
+                  <td>PIS</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                <tr>
+                  <td>CSSL</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                </tr>
+                <tr>
+                  <td>ISSQN</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                </tr>
+                <tr>
+                  <td>INSS</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                </tr>
+                <tr>
+                  <td>IRF</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                </tr>
+                <tr>
+                  <td>Outros Impostos</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                  <td>0 %</td>
+                </tr>
+                <tr>
+                  <td>TOTAL</td>
+                  <td></td>
+                  <td></td>
+                  <td>0 %</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </fieldset>
       </div>
@@ -447,11 +559,11 @@
             <div class="col-sm-12 m-b-2">
               <div class="row">
                 <div class="form-group col-sm-3 col-xs-6">
-                  <label>Peças <small>(R$)</small></label>
+                  <label>Produtos <small>(R$)</small></label>
                   <p>12.345,00</p>
                 </div>
                 <div class="form-group col-sm-3 col-xs-6">
-                  <label>Mão de Obra <small>(R$)</small></label>
+                  <label>Serviços <small>(R$)</small></label>
                   <p>12.345,00</p>
                 </div>
                 <div class="form-group col-sm-3 col-xs-6">
