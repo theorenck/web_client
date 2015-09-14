@@ -53,21 +53,21 @@
 
 <div ng-repeat="nf in ctrl.items">
   <div class="form-bloco">
-    <div class="col-sm-12 m-b-meio">
+    <div class="col-sm-12">
       <div class="row">
         <div class="form-group col-sm-1 col-xs-12">
           <span>
             <a href="#/notas-fiscais/{{nf.numeronf}}">{{nf.numeronf}}</a>
           </span>
         </div>
-        <div class="form-group col-sm-1 col-xs-12">
+        <div class="col-sm-1 col-xs-12 xs-m-b-meio">
           <span class="label label-{{nf.nfesituacao.style}}">
             {{nf.nfesituacao.descricao|humanize}}
           </span>
         </div>
         <div class="form-group col-sm-4 col-xs-12">
-          <span class="bloco">
-            <a style="white-space: nowrap;" href="#">{{nf.nomeentidade|humanize}}</a>
+          <span class="bloco pontinhos">
+            <a href="#" >{{nf.nomeentidade|humanize}}</a>
           </span>
           <span class="bloco">{{nf.cgc_cpfentidade|cpfcnpj}}</span>
         </div>
@@ -91,20 +91,20 @@
           </button>
         </div>
         <div class="form-group col-xs-12 hidden-sm-up">
-          <button type="button" class="btn  btn-secondary terco">
+          <button type="button" class="btn  btn-secondary terco ">
             <i class="fa fa-trash-o btn-block"></i>
             Excluir
           </button>
-          <button type="button" class="btn  btn-secondary terco">
+          <button type="button" class="btn  btn-secondary terco m-auto">
             <i class="fa fa-pencil btn-block"></i>
             Editar
           </button>
-          <button type="button" class="btn btn-primary terco">
+          <button type="button" class="btn btn-primary terco pull-right">
             <i class="fa fa-paper-plane-o btn-block"></i>
             Emitir
           </button>
         </div>
-        <div class="col-xs-12 m-b-meio">
+        <div class="col-xs-12 m-t-meio m-b-1">
           <div class="divider-solid"></div>
         </div>
       </div>

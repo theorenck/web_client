@@ -14,7 +14,6 @@
   </div>
 </div>
 
-
 <div class="form-bloco">
   <div class="col-sm-12 m-b-1">
     <div class="row hidden-sm-down">
@@ -42,14 +41,14 @@
 
 <div ng-repeat="os in ctrl.items">
   <div class="form-bloco">
-    <div class="col-sm-12 m-b-meio">
+    <div class="col-sm-12">
       <div class="row">
         <div class="form-group col-sm-1 col-xs-12">
           <span>
             <a href="#/ordens-servico/{{os.codservico}}">{{os.codservico}}</a>
           </span>
         </div>
-        <div class="form-group col-sm-1 col-xs-12">
+        <div class="col-sm-1 col-xs-12 xs-m-b-meio">
           <span ng-show="os.aberto == 'S'" class="label label-warning">
             Aberta
           </span>
@@ -61,8 +60,8 @@
           </span>
         </div>
         <div class="form-group col-sm-4 col-xs-12">
-          <span class="bloco">
-            <a style="white-space: nowrap;" href="#">{{os.cliente|humanize}}</a>
+          <span class="bloco pontinhos" >
+            <a href="#">{{os.cliente|humanize}}</a>
           </span>
           <span class="bloco">{{os.cgc|cpfcnpj}}</span>
         </div>
@@ -93,7 +92,7 @@
             Gerar NF
           </button>
         </div>
-        <div class="col-xs-12 m-b-meio">
+        <div class="col-xs-12 m-1">
           <div class="divider-solid"></div>
         </div>
       </div>
