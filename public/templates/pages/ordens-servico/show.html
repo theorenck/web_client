@@ -1,429 +1,417 @@
-<div class="form-bloco">
-  <div class="page-header">
-    <h3>Ordem de Serviço
-      <small ng-show="ctrl.os">número {{ctrl.os.codservico}}</small>
-      <div class="col-sm-12 hidden-sm-up">
-        <div class="row">
-          <div class="divider-solid"></div>
-        </div>
+<div class="form-bloco"> 
+  <div class="col-sm-12 m-b-3">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Ordem de Serviço
+          <small ng-show="ctrl.os">número {{ctrl.os.codservico}}</small>
+        </h3>
       </div>
-    </h3>    
-  </div>
-
-  <div ng-show="ctrl.os">
-    <div class="form-bloco">
-      <div class="card card-light formulario">
-        <fieldset class="form-group">
-          <div class="row interno">
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Emissão</label>
-                  <p>há {{ctrl.os.dataentrada|cdate|timeago}}</p>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Orçamentista</label>
-                  <p>{{ctrl.os.usuarioinclusao|humanize}}</p>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Total<small> (R$)</small></label>
-                  <p>12.345,00</p>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <button type="button" class="btn btn-sm btn-primary btn-block">
-                    <i class="fa fa-cog bloco"></i>
-                    Gerar NF
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-    </div>
-
-    <div class="form-bloco">
-      <div class="card card-light formulario collapse in" id="cliente">
-        <fieldset class="form-group">
-          <div class="row interno">
-            <span class="header">
-              Cliente
-              <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-            </span>
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="form-group col-sm-6 col-xs-12">
-                  <label>Nome</label>
-                  <p>{{ctrl.os.cliente.nome|humanize}}</p>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Documento</label>
-                  <p>{{ctrl.os.cliente.cpf_cgc|cpfcnpj}}</p>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Telefone</label>
-                  <p>{{ctrl.os.cliente.fone}}</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="form-group col-sm-12">
-                  <label>Endereço</label>
-                  <p class="hidden-sm-down" style="color:red">R. Rodolfo Felix Laner, 1108  Cinquentenário - Caxias do Sul - RS CEP 95012-480</p>
-                  <p class="hidden-sm-up" style="color:red">R. Rodolfo Felix Laner, 1108<br>Cinquentenário - Caxias do Sul - RS<br>CEP 95012-480</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-    </div>
-
-    <div class="form-bloco">
-      <div class="card card-light formulario collapse in" id="veiculo">
-        <fieldset class="form-group">
-          <div class="row interno">
-              <span class="header">
-                Veículo
-                <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-              </span>
-            <div class="col-sm-12">
-              <div class="row">
-                <div class="form-group col-sm-1 col-xs-4">
-                  <label>Placa</label>
-                  <span class="label label-primary ng-binding">
-                    {{ctrl.os.placa}}
-                  </span>
-                </div>
-                <div class="form-group col-sm-3 col-xs-8">
-                  <label>Modelo</label>
-                  <p>{{ctrl.os.marca|capitalize}} {{ctrl.os.modelo|capitalize}} {{ctrl.os.versaomodelo}}</p>
-                </div>
-                <div class="form-group col-sm-2 col-xs-4">
-                  <label>Ano</label>
-                  <p style="color:red">{{ctrl.os.anomodelo}} / -{{ctrl.os.anofrabicacao}}</p>
-                </div>
-                <div class="form-group col-sm-2 col-xs-4">
-                  <label>Cor</label>
-                  <p>{{ctrl.os.cor|capitalize}}</p>
-                </div>
-                <div class="form-group col-sm-1 col-xs-4">
-                  <label>Portas</label>
-                  <p>{{ctrl.os.qtdeportas}}</p>
-                </div>
-
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Chassi</label>
-                  <p>{{ctrl.os.chassi}}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="row">
-                    <div class="col-sm-12 underline underline-borda">
-                      <span class="subheader">Entrada</span>
-                    </div>
-                    <div class="col-sm-12 m-t-meio">
-                      <div class="row">
-                        <div class="form-group col-xs-3">
-                          <strong class="header">Data </strong>
-                        </div>
-                        <div class="form-group col-xs-4">
-                          <strong class="header">km</strong>
-                        </div>
-                        <div class="form-group col-xs-5">
-                          <strong class="header">Combustível </strong>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="row">
-                    <div class="form-group col-xs-3">
-                      <p style="color:red">22/08/2015</p>
-                    </div>
-                    <div class="form-group col-xs-4">
-                      <p>{{ctrl.os.kmsentrada}}</p>
-                    </div>
-                    <div class="form-group col-xs-5">
-                      <p style="color:red">B - Reserva (???)</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="row">
-                    <div class="col-sm-12 underline">
-                      <span class="subheader">Saída</span>
-                    </div>
-                    <div class="col-sm-12 m-t-meio">
-                      <div class="row">
-                        <div class="form-group col-xs-3">
-                          <strong class="header">Data</strong>
-                        </div>
-                        <div class="form-group col-xs-4">
-                          <strong class="header">km</strong>
-                        </div>
-                        <div class="form-group col-xs-5">
-                          <strong class="header">Combustível</strong>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-group col-xs-3">
-                      <p style="color:red">22/08/2015</p>
-                    </div>
-                    <div class="form-group col-xs-4">
-                      <p style="color:red">(???)</p>
-                    </div>
-                    <div class="form-group col-xs-5">
-                      <p style="color:red">B - Reserva (???)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-    </div>
-
-    <div class="form-bloco">
-      <div class="card card-light formulario collapse in" id="servicos">
-        <fieldset class="form-group">
-          <div class="row interno">
-            <span class="header">
-              Serviço
-              <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-            </span>
-            <div class="col-sm-12 m-b-2">
-              <div class="row">
-                <div class="form-group col-sm-12">
-                  <strong class="header">Descrição</strong>
-                </div>
-                <div class="form-group col-sm-12">
-                  <p>{{ctrl.os.descricaoservicos}}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 m-b-2">
-              <div class="row">
-                <div class="col-sm-12 underline">
-                  <a href="" class="subheader" data-toggle="collapse" href="#maoobra" aria-expanded="false" aria-controls="produto">
-                    <i class="fa fa-chevron-right"></i>
-                    <span class="subheader">Produto</span>
-                    <div class="pull-right">
-                      <strong class="header">R$ 1.073,83</strong>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="collapse in" id="ver-pecas">
-                <div class="row hidden-sm-down m-t-2">
-                  <div class="form-group col-sm-1">
-                    <strong class="header">Código</strong>
-                  </div>
-                  <div class="form-group col-sm-6">
-                    <strong class="header">Descrição</strong>
-                  </div>
-                  <div class="form-group col-sm-1 text-right">
-                   <strong class="header">Quant.</strong>
-                  </div>
-                  <div class="form-group col-sm-2 text-right">
-                    <strong class="header">Valor Unit.<small> (R$)</small></strong>
-                  </div>
-                  <div class="form-group col-sm-2 text-right">
-                    <strong class="header">Valor Total<small> (R$)</small></strong>
-                  </div>
-                </div>
-                <div class="divider-solid m-b-1 hidden-sm-down"></div>
-                <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
-                  <div class="row">
-                    <div class="form-group col-sm-1">
-                      <span class="hidden-sm-down">{{item.coditem}}</span>
-                    </div>
-                    <div class="form-group col-sm-6 col-xs-12">
-                      <span class="hidden-sm-up">{{item.coditem}}</span>
-                      <span style="color:red">PRODUTO (???)</span>
-                    </div>
-                    <div class="form-group col-sm-1 text-right">
-                      <span class="hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
-                      <div class="row hidden-sm-up">
-                        <div class="divider-dashed hidden-sm-up"></div>
-                        <span class="col-xs-6 text-left">Quantidade</span>
-                        <span class="xs-bold col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
-                      </div>
-                    </div>
-                    <div class="form-group col-sm-2 text-right">
-                      <span class="hidden-sm-down">{{item.precounitario|number:2}}</span>
-                      <div class="row hidden-sm-up">
-                        <div class="divider-dashed hidden-sm-up"></div>
-                        <span class="col-xs-6 text-left">Valor Unitário</span>
-                        <span class="xs-bold col-xs-6">{{item.precounitario|currency:2}}</span>
-                      </div>
-                    </div>
-                    <div class="form-group col-sm-2 text-right">
-                      <span class="hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
-                      <div class="row hidden-sm-up">
-                        <div class="divider-dashed hidden-sm-up"></div>
-                        <span class="col-xs-6 text-left">Valor Total</span>
-                        <span class="xs-bold col-xs-6">{{item.valorsubtotal|currency:2}}</span>
-                      </div>
-                    </div>
-                    <div class="xs-m-t-2">
-                      <div class="divider-solid hidden-sm-up"></div>
-                    </div>                    
-                  </div>
-                  <div class="divider-solid m-b-1 hidden-sm-down"></div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-sm-12 text-right">
-                    <strong class="header" style="color:red">Total das Peças  <small>(R$)</small><span class="bloco">1.073,83</span></strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 m-b-2">
-              <div class="row">
-                <div class="col-sm-12 underline">
-                  <a href="" class="subheader" data-toggle="collapse" href="#maoobra" aria-expanded="false" aria-controls="produto">
-                    <i class="fa fa-chevron-right"></i>
-                    <span class="subheader">Mão de Obra</span>
-                    <div class="pull-right">
-                      <strong class="header">R$ 1.073,83</strong>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="collapse in" id="ver-maoobra">
-                <div class="row hidden-sm-down m-t-2">
-                  <div class="form-group col-sm-1">
-                    <strong class="header">Código</strong>
-                  </div>
-                  <div class="form-group col-sm-6">
-                    <strong class="header">Descrição</strong>
-                  </div>
-                  <div class="form-group col-sm-1 text-right">
-                   <strong class="header">Quant.</strong>
-                  </div>
-                  <div class="form-group col-sm-2 text-right">
-                    <strong class="header">Valor Unit.<small> (R$)</small></strong>
-                  </div>
-                  <div class="form-group col-sm-2 text-right">
-                    <strong class="header">Valor Total<small> (R$)</small></strong>
-                  </div>
-                </div>
-                <div class="divider-solid m-b-1 hidden-sm-down"></div>
-                <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
-                  <div class="row">
-                    <div class="form-group col-sm-1">
-                      <span class="hidden-sm-down">{{item.coditem}}</span>
-                    </div>
-                    <div class="form-group col-sm-6 col-xs-12">
-                      <span class="hidden-sm-up">{{item.coditem}}</span>
-                      <span style="color:red">Mão de Obra (???)</span>
-                    </div>
-                    <div class="form-group col-sm-1 text-right">
-                      <span class="hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
-                      <div class="row hidden-sm-up">
-                        <div class="divider-dashed hidden-sm-up"></div>
-                        <span class="col-xs-6 text-left">Quantidade</span>
-                        <span class="xs-bold col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
-                      </div>
-                    </div>
-                    <div class="form-group col-sm-2 text-right">
-                      <span class="hidden-sm-down">{{item.precounitario|number:2}}</span>
-                      <div class="row hidden-sm-up">
-                        <div class="divider-dashed hidden-sm-up"></div>
-                        <span class="col-xs-6 text-left">Valor Unitário</span>
-                        <span class="xs-bold col-xs-6">{{item.precounitario|currency:2}}</span>
-                      </div>
-                    </div>
-                    <div class="form-group col-sm-2 text-right">
-                      <span class="hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
-                      <div class="row hidden-sm-up">
-                        <div class="divider-dashed hidden-sm-up"></div>
-                        <span class="col-xs-6 text-left">Valor Total</span>
-                        <span class="xs-bold col-xs-6">{{item.valorsubtotal|currency:2}}</span>
-                      </div>
-                    </div>
-                    <div class="xs-m-t-2">
-                      <div class="divider-solid hidden-sm-up"></div>
-                    </div>                    
-                  </div>
-                  <div class="divider-solid m-b-1 hidden-sm-down"></div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-sm-12 text-right">
-                    <strong class="header" style="color:red">Total da Mão de Obra <small>(R$)</small><span class="bloco">1.073,83</span></strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </fieldset>
-      </div>
-    </div>
-
-    <div class="form-bloco">
-      <div class="card card-light formulario collapse in" id="servicos">
-        <fieldset class="form-group">
-          <div class="row interno">
-            <span class="header">
-              Totais
-              <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-            </span>
-            <div class="col-sm-12 m-b-2">
-              <div class="row">
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Peças <small>(R$)</small></label>
-                  <p>12.345,00</p>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Mão de Obra <small>(R$)</small></label>
-                  <p>12.345,00</p>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Desconto <small>(R$)</small></label>
-                  <p>-</p>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Total <small>(R$)</small></label>
-                  <p>12.345,00</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 hidden-sm-down">
-              <div class="form-group">                
-                <button type="button" class="btn btn-sm btn-secondary col-sm-3"><i class="fa fa-arrow-left bloco"></i>
-                Voltar
-                </button>
-                <button type="button" class="btn btn-sm btn-primary col-sm-3 pull-right"><i class="fa fa-cog bloco"></i>
-                  Gerar NF
-                </button>
-              </div>
-            </div>
-            <div class="col-xs-12 hidden-sm-up">
-              <div class="form-group">                
-                <button type="button" class="btn btn-sm btn-secondary metade"><i class="fa fa-arrow-left bloco"></i>
-                Voltar
-                </button>
-                <button type="button" class="btn btn-sm btn-primary metade"><i class="fa fa-cog bloco"></i>
-                  Gerar NF
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </fieldset>
+      <div class="col-sm-12 hidden-sm-up xs-m-t-1">
+        <div class="divider-solid"></div>
       </div>
     </div>
   </div>
 </div>
+
+<div ng-show="ctrl.os">
+  <div class="form-bloco">
+    <div class="col-sm-12 m-b-2">
+        <div class="row">
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Emissão</label>
+            <p>há {{ctrl.os.dataentrada|cdate|timeago}}</p>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Orçamentista</label>
+            <p>{{ctrl.os.usuarioinclusao|humanize}}</p>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Total<small> (R$)</small></label>
+            <p>12.345,00</p>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <button type="button" class="btn btn-sm btn-primary btn-block">
+              <i class="fa fa-cog bloco"></i>
+              Gerar NF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+  <div class="form-bloco">
+    <div class="col-sm-12 m-b-2">
+      <div class="row">
+        <span class="header">
+          Cliente
+          <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+        </span>
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="form-group col-sm-6 col-xs-12">
+              <label>Nome</label>
+              <p>{{ctrl.os.cliente.nome|humanize}}</p>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Documento</label>
+              <p>{{ctrl.os.cliente.cpf_cgc|cpfcnpj}}</p>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Telefone</label>
+              <p>{{ctrl.os.cliente.fone}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="form-group col-sm-12">
+              <label>Endereço</label>
+              <p class="hidden-sm-down" style="color:red">R. Rodolfo Felix Laner, 1108  Cinquentenário - Caxias do Sul - RS CEP 95012-480</p>
+              <p class="hidden-sm-up" style="color:red">R. Rodolfo Felix Laner, 1108<br>Cinquentenário - Caxias do Sul - RS<br>CEP 95012-480</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+
+  <div class="form-bloco">
+    <div class="col-sm-12 m-b-2">
+      <div class="row">
+        <span class="header">
+          Veículo
+          <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+        </span>
+        <div class="col-sm-12 m-b-2">
+          <div class="row">
+            <div class="form-group col-sm-1 col-xs-4">
+              <label>Placa</label>
+              <span class="label label-primary ng-binding">
+                {{ctrl.os.placa}}
+              </span>
+            </div>
+            <div class="form-group col-sm-3 col-xs-8">
+              <label>Modelo</label>
+              <p>{{ctrl.os.marca|capitalize}} {{ctrl.os.modelo|capitalize}} {{ctrl.os.versaomodelo}}</p>
+            </div>
+            <div class="form-group col-sm-2 col-xs-4">
+              <label>Ano</label>
+              <p style="color:red">{{ctrl.os.anomodelo}} / -{{ctrl.os.anofrabicacao}}</p>
+            </div>
+            <div class="form-group col-sm-2 col-xs-4">
+              <label>Cor</label>
+              <p>{{ctrl.os.cor|capitalize}}</p>
+            </div>
+            <div class="form-group col-sm-1 col-xs-4">
+              <label>Portas</label>
+              <p>{{ctrl.os.qtdeportas}}</p>
+            </div>
+
+            <div class="form-group col-sm-3 col-xs-12">
+              <label>Chassi</label>
+              <p>{{ctrl.os.chassi}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-12 underline underline-borda">
+                  <span class="subheader">Entrada</span>
+                </div>
+                <div class="col-sm-12 m-t-meio">
+                  <div class="row">
+                    <div class="form-group col-xs-3">
+                      <strong class="header">Data </strong>
+                    </div>
+                    <div class="form-group col-xs-4">
+                      <strong class="header">km</strong>
+                    </div>
+                    <div class="form-group col-xs-5">
+                      <strong class="header">Combustível </strong>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-3">
+                  <p style="color:red">22/08/2015</p>
+                </div>
+                <div class="form-group col-xs-4">
+                  <p>{{ctrl.os.kmsentrada}}</p>
+                </div>
+                <div class="form-group col-xs-5">
+                  <p style="color:red">B - Reserva (???)</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-12 underline">
+                  <span class="subheader">Saída</span>
+                </div>
+                <div class="col-sm-12 m-t-meio">
+                  <div class="row">
+                    <div class="form-group col-xs-3">
+                      <strong class="header">Data</strong>
+                    </div>
+                    <div class="form-group col-xs-4">
+                      <strong class="header">km</strong>
+                    </div>
+                    <div class="form-group col-xs-5">
+                      <strong class="header">Combustível</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-3">
+                  <p style="color:red">22/08/2015</p>
+                </div>
+                <div class="form-group col-xs-4">
+                  <p style="color:red">(???)</p>
+                </div>
+                <div class="form-group col-xs-5">
+                  <p style="color:red">B - Reserva (???)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="form-bloco">
+    <div class="col-sm-12 m-b-2">
+      <div class="row">
+        <span class="header">
+          Serviço
+          <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+        </span>
+        <div class="col-sm-12 m-b-2">
+          <div class="row">
+            <div class="form-group col-sm-12">
+              <strong class="header">Descrição</strong>
+            </div>
+            <div class="form-group col-sm-12">
+              <p>{{ctrl.os.descricaoservicos}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 m-b-2">
+          <div class="row">
+            <div class="col-sm-12 underline">
+              <a href="" class="subheader" data-toggle="collapse" href="#maoobra" aria-expanded="false" aria-controls="produto">
+                <i class="fa fa-chevron-right"></i>
+                <span class="subheader">Produto</span>
+                <div class="pull-right">
+                  <strong class="header">R$ 1.073,83</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collapse in" id="ver-pecas">
+            <div class="row hidden-sm-down m-t-2">
+              <div class="form-group col-sm-1">
+                <strong class="header">Código</strong>
+              </div>
+              <div class="form-group col-sm-6">
+                <strong class="header">Descrição</strong>
+              </div>
+              <div class="form-group col-sm-1 text-right">
+               <strong class="header">Quant.</strong>
+              </div>
+              <div class="form-group col-sm-2 text-right">
+                <strong class="header">Valor Unit.<small> (R$)</small></strong>
+              </div>
+              <div class="form-group col-sm-2 text-right">
+                <strong class="header">Valor Total<small> (R$)</small></strong>
+              </div>
+            </div>
+            <div class="divider-solid m-b-1 hidden-sm-down"></div>
+            <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
+              <div class="row">
+                <div class="form-group col-sm-1">
+                  <span class="hidden-sm-down">{{item.coditem}}</span>
+                </div>
+                <div class="form-group col-sm-6 col-xs-12">
+                  <span class="hidden-sm-up">{{item.coditem}}</span>
+                  <span style="color:red">PRODUTO (???)</span>
+                </div>
+                <div class="form-group col-sm-1 text-right">
+                  <span class="hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
+                  <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
+                    <span class="col-xs-6 text-left">Quantidade</span>
+                    <span class="xs-bold col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
+                  </div>
+                </div>
+                <div class="form-group col-sm-2 text-right">
+                  <span class="hidden-sm-down">{{item.precounitario|number:2}}</span>
+                  <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
+                    <span class="col-xs-6 text-left">Valor Unitário</span>
+                    <span class="xs-bold col-xs-6">{{item.precounitario|currency:2}}</span>
+                  </div>
+                </div>
+                <div class="form-group col-sm-2 text-right">
+                  <span class="hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
+                  <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
+                    <span class="col-xs-6 text-left">Valor Total</span>
+                    <span class="xs-bold col-xs-6">{{item.valorsubtotal|currency:2}}</span>
+                  </div>
+                </div>
+                <div class="xs-m-t-2">
+                  <div class="divider-solid hidden-sm-up"></div>
+                </div>                    
+              </div>
+              <div class="divider-solid m-b-1 hidden-sm-down"></div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12 text-right">
+                <strong class="header" style="color:red">Total das Peças  <small>(R$)</small><span class="bloco">1.073,83</span></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 m-b-2">
+          <div class="row">
+            <div class="col-sm-12 underline">
+              <a href="" class="subheader" data-toggle="collapse" href="#maoobra" aria-expanded="false" aria-controls="produto">
+                <i class="fa fa-chevron-right"></i>
+                <span class="subheader">Mão de Obra</span>
+                <div class="pull-right">
+                  <strong class="header">R$ 1.073,83</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="collapse in" id="ver-maoobra">
+            <div class="row hidden-sm-down m-t-2">
+              <div class="form-group col-sm-1">
+                <strong class="header">Código</strong>
+              </div>
+              <div class="form-group col-sm-6">
+                <strong class="header">Descrição</strong>
+              </div>
+              <div class="form-group col-sm-1 text-right">
+               <strong class="header">Quant.</strong>
+              </div>
+              <div class="form-group col-sm-2 text-right">
+                <strong class="header">Valor Unit.<small> (R$)</small></strong>
+              </div>
+              <div class="form-group col-sm-2 text-right">
+                <strong class="header">Valor Total<small> (R$)</small></strong>
+              </div>
+            </div>
+            <div class="divider-solid m-b-1 hidden-sm-down"></div>
+            <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
+              <div class="row">
+                <div class="form-group col-sm-1">
+                  <span class="hidden-sm-down">{{item.coditem}}</span>
+                </div>
+                <div class="form-group col-sm-6 col-xs-12">
+                  <span class="hidden-sm-up">{{item.coditem}}</span>
+                  <span style="color:red">Mão de Obra (???)</span>
+                </div>
+                <div class="form-group col-sm-1 text-right">
+                  <span class="hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
+                  <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
+                    <span class="col-xs-6 text-left">Quantidade</span>
+                    <span class="xs-bold col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
+                  </div>
+                </div>
+                <div class="form-group col-sm-2 text-right">
+                  <span class="hidden-sm-down">{{item.precounitario|number:2}}</span>
+                  <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
+                    <span class="col-xs-6 text-left">Valor Unitário</span>
+                    <span class="xs-bold col-xs-6">{{item.precounitario|currency:2}}</span>
+                  </div>
+                </div>
+                <div class="form-group col-sm-2 text-right">
+                  <span class="hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
+                  <div class="row hidden-sm-up">
+                    <div class="divider-dashed hidden-sm-up"></div>
+                    <span class="col-xs-6 text-left">Valor Total</span>
+                    <span class="xs-bold col-xs-6">{{item.valorsubtotal|currency:2}}</span>
+                  </div>
+                </div>
+                <div class="xs-m-t-2">
+                  <div class="divider-solid hidden-sm-up"></div>
+                </div>                    
+              </div>
+              <div class="divider-solid m-b-1 hidden-sm-down"></div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12 text-right">
+                <strong class="header" style="color:red">Total da Mão de Obra <small>(R$)</small><span class="bloco">1.073,83</span></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-bloco">
+    <div class="col-sm-12 m-b-2">
+      <div class="row">
+        <span class="header">
+          Totais
+          <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+        </span>
+        <div class="col-sm-12 m-b-2">
+          <div class="row">
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Produtos <small>(R$)</small></label>
+              <p>12.345,00</p>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Serviços <small>(R$)</small></label>
+              <p>12.345,00</p>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Impostos <small>(R$)</small></label>
+              <p>12.345,00</p>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Total <small>(R$)</small></label>
+              <p>12.345,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 hidden-sm-down">
+          <div class="form-group">                
+            <button type="button" class="btn btn-sm btn-secondary col-sm-3"><i class="fa fa-arrow-left bloco"></i>
+            Voltar
+            </button>
+            <button type="button" class="btn btn-sm btn-primary col-sm-3 pull-right"><i class="fa fa-print bloco"></i>
+              Imprimir DANFE
+            </button>
+          </div>
+        </div>
+        <div class="col-xs-12 hidden-sm-up">
+          <div class="form-group">                
+            <button type="button" class="btn btn-sm btn-secondary metade pull-left"><i class="fa fa-arrow-left bloco"></i>
+            Voltar
+            </button>
+            <button type="button" class="btn btn-sm btn-primary metade pull-right"><i class="fa fa-print bloco"></i>
+              Imprimir DANFE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 

@@ -2,6 +2,9 @@
     .xs-m-t-0{
 		margin-top: 01em;
 	}
+	.xs-m-t-meio{
+		margin-top: 1em;
+	}
     .xs-m-t-1{
 		margin-top: 1em;
 	}
@@ -19,12 +22,16 @@
 		padding-right: 1em;
 	}
 }
+.m-meio{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
 .m-t-meio{
-		margin-top: 0.5em;
-	}
+	margin-top: 0.5em;
+}
 .m-t-1{
-		margin-top: 1em;
-	}
+	margin-top: 1em;
+}
 .m-t-2{
 	margin-top: 2em;
 }
@@ -78,8 +85,6 @@
 }
 .divider-solid{
 	border-bottom: 1px solid #f1f1f1;
-	/*border-bottom: 1px solid #ccc;*/
-    /*margin: 1em -15px;*/
     margin-left: -15px;
     margin-right: -15px;
     overflow: hidden;
@@ -92,7 +97,7 @@
 @media screen and (max-width: 34em) {
     .divider-solid{
 		border-bottom: 1px solid #f1f1f1;
-	    margin: 1em 0;
+	    /*margin: 1em 0;*/
 	    overflow: hidden;
 	}
 	.divider-dashed{
