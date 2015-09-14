@@ -37,6 +37,9 @@
 .m-b-2{
 	margin-bottom: 2em;
 }
+.m-b-3{
+	margin-bottom: 3em;
+}
 .m-b-4{
 	margin-bottom: 4em;
 }
@@ -121,7 +124,7 @@
 	display: block;
 }
 .form-bloco{
-	margin-bottom: 3em;
+	/*margin-bottom: 3em;*/
 }
 .form-group{
 	margin-bottom: 1em;
@@ -201,19 +204,13 @@ h3 small{
 }
 @media screen and (max-width: 34em) {
     h3{
-    	margin-left: 20px;
-    	margin-right: 20px;
     	margin-bottom: 0;
-    	padding-bottom: 0.8em;		
+    	padding-bottom: 0;		
     }
     h3 small{
 		display: block;
 		padding: 0.75em 0 0 0;
 	}
-}
-.form-bloco h5.collapse-titulo{
-	padding-bottom: 0.8em;
-	margin-bottom: 0.8em;
 }
 span.header{
 	font-size: 1.23em;
@@ -229,18 +226,6 @@ span.header{
 	font-weight: 400;
 	color: #3498db;	
 	margin: 1em 0 0;
-}
-.form-bloco .itens-lista span{
-	text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.form-bloco .formulario span.form{
-	height: 2.5em;
-	padding: 0.7em 0;
-	text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
 }
 /*********************** MENUS animados *************************/
 .menu button{
