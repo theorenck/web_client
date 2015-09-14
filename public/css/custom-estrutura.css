@@ -112,6 +112,11 @@
 		border-right:0;
 	}	
 }
+.table thead th{
+	padding-top: 0.2em;
+	border-top: transparent;
+	border-bottom-width: 1px;
+}
 .page-header{
 	display: block;
 }

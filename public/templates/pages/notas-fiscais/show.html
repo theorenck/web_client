@@ -280,269 +280,191 @@
               Cálculo dos Impostos
               <i class="fa fa-chevron-down pull-right girar-baixo"></i>
             </span>
-            <div class="col-sm-12 m-b-2">
+            <div class="col-sm-12">
               <div class="row">
-                <div class="col-sm-12 underline">
-                  <a href="" class="subheader" data-toggle="collapse" href="#impostos" aria-expanded="false" aria-controls="impostos">
-                    <i class="fa fa-chevron-right"></i>
-                    <span class="subheader">ICMS</span>
-                    <div class="pull-right">
-                      <strong class="header">R$ 123,03</strong>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="collapse in" id="impostos">
-                <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6">
-                    <label>Base cálc. do ICMS</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6">
-                    <label>Total do ICMS</label>
-                    <p>R$ 123,45</p>
-                  </div>               
-                  <div class="form-group col-sm-3 col-xs-6">
-                    <label>Base cálc. do ICMS ST</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6">
-                    <label>Total do ICMS ST</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                </div>
-                <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Total do IPI</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Total do PIS</label>
-                    <p>R$ 123,45</p>
-                  </div>               
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Total do COFINS</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Total de imposto de importação</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="divider-solid m-b-1"></div>
-                  </div>                
-                  <div class="form-group col-sm-12 text-right">
-                    <strong class="header">Total dos Tributos<small>(R$)</small><span class="bloco">1.073,83</span></strong>
-                  </div>
-                </div>
-              </div>
+                <table class="table">
+                  <colgroup span="4">
+                    <col width="50%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="13%">
+                    <col width="13%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th><strong>Base</strong></th>
+                      <th><strong>Alíquota</strong></th>
+                      <th><strong>Substituição</strong></th>
+                      <th><strong>Retenção</strong></th>
+                      <th><strong>Valor</strong></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>ICMS</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>ICMS ST</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>IPI</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>PIS</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    <tr>
+                    <tr>
+                      <td><strong>PIS sobre Serviços</strong></td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                    <tr>
+                    <tr>
+                      <td><strong>COFINS</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>COFINS sobre Serviços</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td>0 %</td>
+                      <td>0 %</td>
+                    </tr>
+                    <tr>
+                      <td><strong>CSSL</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>ISS</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>ISSQN</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>INSS</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>IRRF</strong></td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Previdência Social</strong></td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                    </tr>
+                    <tr>
+                      <td><strong>CSLL</strong></td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Importação</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Frete</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Seguro</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Despesas Acessórias</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Outros Impostos</strong></td>
+                      <td>0 %</td>
+                      <td>0 %</td>
+                      <td>0 %</td>                      
+                      <td> - </td>
+                      <td> - </td>
+                    </tr>
+                    <tr>
+                      <td><strong>TOTAL</strong></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>0 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>              
             </div>
-            <div class="col-sm-12 m-b-2">
-              <div class="row">
-                <div class="col-sm-12 underline">
-                  <a href="" class="subheader" data-toggle="collapse" href="#impostos" aria-expanded="false" aria-controls="impostos">
-                    <i class="fa fa-chevron-right"></i>
-                    <span class="subheader">ISSQN</span>
-                    <div class="pull-right">
-                      <strong class="header">R$ 123,03</strong>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="collapse in" id="impostos">
-                <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Base cálc. do ISS</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Total do ISS</label>
-                    <p>R$ 123,45</p>
-                  </div>               
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>PIS sobre serviços</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>COFINS sobre serviços</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="divider-solid m-b-1"></div>
-                  </div>                
-                  <div class="form-group col-sm-12 text-right">
-                    <strong class="header">Total dos serviços sob não-incidência<small>(R$)</small><span class="bloco">1.073,83</span></strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 m-b-2">
-              <div class="row">
-                <div class="col-sm-12 underline">
-                  <a href="" class="subheader" data-toggle="collapse" href="#impostos" aria-expanded="false" aria-controls="impostos">
-                    <i class="fa fa-chevron-right"></i>
-                    <span class="subheader">Retenção de Tributos</span>
-                    <div class="pull-right">
-                      <strong class="header">R$ 123,03</strong>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="collapse in" id="impostos">
-                <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6">
-                    <label>Base cálc. do IRRF</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6">
-                    <label>Valor retido do IRRF</label>
-                    <p>R$ 123,45</p>
-                  </div>               
-                  <div class="form-group col-sm-3 col-xs-6">
-                    <label>BC da retenção da prev. social</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6">
-                    <label>Retenção da prev. social</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                </div>
-                <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Valor retido do PIS</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Valor retido do COFINS</label>
-                    <p>R$ 123,45</p>
-                  </div>               
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Valor retido do CSLL</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="divider-solid m-b-1"></div>
-                  </div>                
-                  <div class="form-group col-sm-12 text-right">
-                    <strong class="header">Total dos Impostos<small>(R$)</small><span class="bloco">1.073,83</span></strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 m-b-2">
-              <div class="row">
-                <div class="col-sm-12 underline">
-                  <a href="" class="subheader" data-toggle="collapse" href="#impostos" aria-expanded="false" aria-controls="impostos">
-                    <i class="fa fa-chevron-right"></i>
-                    <span class="subheader">Outros</span>
-                    <div class="pull-right">
-                      <strong class="header">R$ 123,03</strong>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="collapse in" id="impostos">
-                <div class="row m-t-1">
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Valor do Frete</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Valor do Seguro</label>
-                    <p>R$ 123,45</p>
-                  </div>               
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Outras despesas acessórias</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                  <div class="form-group col-sm-3 col-xs-6 m-b-0">
-                    <label>Acréscimo</label>
-                    <p>R$ 123,45</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="divider-solid m-b-1"></div>
-                  </div>                
-                  <div class="form-group col-sm-12 text-right">
-                    <strong class="header">Total dos Impostos<small>(R$)</small><span class="bloco">1.073,83</span></strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row interno">
-            <table class="table">
-              <colgroup span="4">
-                <col width="50%">
-                <col width="16%">
-                <col width="17%">
-                <col width="17%">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Base</th>
-                  <th>Alíquota</th>
-                  <th>Valor</th>
-                </tr>
-              </thead>
-              <tbody>                
-                <tr>
-                  <td>COFINS</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                </tr>
-                <tr>
-                  <td>PIS</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                <tr>
-                  <td>CSSL</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                </tr>
-                <tr>
-                  <td>ISSQN</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                </tr>
-                <tr>
-                  <td>INSS</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                </tr>
-                <tr>
-                  <td>IRF</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                </tr>
-                <tr>
-                  <td>Outros Impostos</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                  <td>0 %</td>
-                </tr>
-                <tr>
-                  <td>TOTAL</td>
-                  <td></td>
-                  <td></td>
-                  <td>0 %</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </fieldset>
       </div>
