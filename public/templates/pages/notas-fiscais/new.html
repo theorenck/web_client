@@ -92,14 +92,22 @@
               <option>0.002 - Saída</option>
             </select>
           </div>
-          <div class="form-group col-sm-3 col-xs-6">
-            <label>Situação</label>
-            <span class="label label-info">Em digitação</span>
+          <div class="form-group col-sm-3 col-xs-12">
+            <label for="nome-cliente">Destinação</label>
+            <select class="form-control">
+              <option>0.001 - Uso e consumo</option>
+              <option>0.002 - Industrialização</option>
+              <option>0.002 - Outra</option>
+            </select>
           </div>                   
         </div>
       </div>
       <div class="col-sm-12">
         <div class="row">
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Situação</label>
+            <span class="label label-info">Em digitação</span>
+          </div>
           <div class="form-group col-sm-3 col-xs-12">
             <label for="nome-cliente">Emissão</label>
             <input type="text" class="form-control">
@@ -111,15 +119,7 @@
           <div class="form-group col-sm-3 col-xs-12">
             <label for="nome-cliente">Hora de saída</label>
             <input type="text" class="form-control">
-          </div>
-          <div class="form-group col-sm-3 col-xs-12">
-            <label for="nome-cliente">Destinação</label>
-            <select class="form-control">
-              <option>0.001 - Uso e consumo</option>
-              <option>0.002 - Industrialização</option>
-              <option>0.002 - Outra</option>
-            </select>
-          </div> 
+          </div>                    
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
       <div class="col-sm-12">
         <div class="row m-t-meio">
           <div class="col-sm-12 underline">
-            <a href="" class="subheader" data-toggle="collapse" aria-expanded="false" aria-controls="produto">
+            <a href="" class="subheader">
               <i class="fa fa-chevron-right"></i>
               <span class="subheader">Endereço</span>              
             </a>
@@ -160,7 +160,7 @@
         </div>
       </div>
       <div class="col-sm-12">
-        <div class="row m-t-meio">
+        <div class="row m-t-meio m-b-1">
           <div class="m-t-1">
             <div class="form-group col-sm-3">
               <label for="nome-cliente">CEP</label>
@@ -198,7 +198,7 @@
 </div>
 
 <div class="form-bloco">
-  <div class="col-sm-12 m-b-2">
+  <div class="col-sm-12 m-b-3">
     <div class="row">
       <span class="header">
         Itens
@@ -206,25 +206,176 @@
       </span>      
       <div class="form-group col-sm-12 col-xs-12 m-t-meio">
         <label for="nome-cliente">Descrição</label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        <textarea class="form-control" rows="3"></textarea>
       </div>
     </div>
   </div>
-  <div class="col-sm-12 m-b-2">
+  <div class="col-sm-12 m-b-3">
     <div class="row">
-      <div class="col-sm-12 underline">
-        <a href="" class="subheader" data-toggle="collapse" aria-expanded="false" aria-controls="produto">
-          <i class="fa fa-chevron-right"></i>
-          <span class="subheader">Produto</span>
-        </a>
+      <div class="m-t-1">
+        <div class="col-sm-10 underline">
+          <a href="" class="subheader">
+            <i class="fa fa-chevron-right"></i>
+            <span class="subheader">Produto</span>
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-sm btn-info pull-right"><i class="fa fa-plus"></i>
+          Adicionar produto
+          </button>        
+        </div>
       </div>
-      <div class="form-group col-sm-12 col-xs-12 m-t-1">
-        <label for="nome-cliente">Descrição</label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+
+      <div REPETIR formulario>
+        <div class="form-group col-sm-2 col-xs-12 m-t-1">
+          <label for="nome-cliente">Código</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-3 col-xs-12 m-t-1">
+          <label for="nome-cliente">Descrição</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-1 col-xs-12 m-t-1">
+          <label for="nome-cliente">Quant.</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-2 col-xs-12 m-t-1">
+          <label for="nome-cliente">Valor Unit.<small> (R$)</small></label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-2 col-xs-12 m-t-1">
+          <label for="nome-cliente">Valor Total<small> (R$)</small></label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-2 hidden-sm-down p-t-3">
+          <button type="button" class="btn btn-lg quarto btn-secondary">
+            <i class="fa fa-trash-o btn-block"></i>
+          </button>
+          <button type="button" class="btn btn-sm tres-quartos btn-primary">
+            <i class="fa fa-floppy-o fa-padding"></i>
+            Salvar
+          </button>
+        </div>
+        <div class="col-sm-12 m-b-1 m-t-meio">
+          <div class="divider-solid"></div>
+        </div> 
+      </div><!--   FIM DO FORMULARIO    -->
+
+      <div REPETIR texto do formulario>
+        <div class="form-group col-sm-2">
+          <span>000033</span>
+        </div>
+        <div class="form-group col-sm-3">
+          <span>Aqui vai um produto de exemplo</span>
+        </div>
+        <div class="form-group col-sm-1 text-right">
+         <span>1 UN</span>
+        </div>
+        <div class="form-group col-sm-2 text-right">
+          <span>380,00</span>
+        </div>
+        <div class="form-group col-sm-2 text-right">
+          <span>380,00</span>
+        </div>
+        <div class="form-group col-sm-2 hidden-sm-down">
+          <button type="button" class="btn btn-lg quarto btn-secondary">
+            <i class="fa fa-trash-o btn-block"></i>
+          </button>
+          <button type="button" class="btn btn-sm tres-quartos btn-primary">
+            <i class="fa fa-pencil fa-padding"></i>
+            Editar
+          </button>
+        </div>
+        <div class="col-sm-12 m-b-1 m-t-meio">
+          <div class="divider-solid"></div>
+        </div> 
+      </div> <!--   FIM DO TEXTO FORM    -->
+    </div>
+  </div>
+  <div class="col-sm-12 m-b-3">
+    <div class="row">
+      <div class="m-t-1">
+        <div class="col-sm-10 underline">
+          <a href="" class="subheader" data-toggle="collapse" aria-expanded="false" aria-controls="produto">
+            <i class="fa fa-chevron-right"></i>
+            <span class="subheader">Serviço</span>
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-sm btn-info pull-right"><i class="fa fa-plus"></i>
+          Adicionar serviço
+          </button>        
+        </div>
       </div>
+
+      <div REPETIR formulario>
+        <div class="form-group col-sm-2 col-xs-12 m-t-1">
+          <label for="nome-cliente">Código</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-3 col-xs-12 m-t-1">
+          <label for="nome-cliente">Descrição</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-1 col-xs-12 m-t-1">
+          <label for="nome-cliente">Quant.</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-2 col-xs-12 m-t-1">
+          <label for="nome-cliente">Valor Unit.<small> (R$)</small></label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-2 col-xs-12 m-t-1">
+          <label for="nome-cliente">Valor Total<small> (R$)</small></label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-sm-2 hidden-sm-down p-t-3">
+          <button type="button" class="btn btn-lg quarto btn-secondary">
+            <i class="fa fa-trash-o btn-block"></i>
+          </button>
+          <button type="button" class="btn btn-sm tres-quartos btn-primary">
+            <i class="fa fa-floppy-o fa-padding"></i>
+            Salvar
+          </button>
+        </div>
+        <div class="col-sm-12 m-b-1 m-t-meio">
+          <div class="divider-solid"></div>
+        </div> 
+      </div><!--   FIM DO FORMULARIO    -->
+
+      <div REPETIR texto do formulario>
+        <div class="form-group col-sm-2">
+          <span>000033</span>
+        </div>
+        <div class="form-group col-sm-3">
+          <span>Aqui vai um produto de exemplo</span>
+        </div>
+        <div class="form-group col-sm-1 text-right">
+         <span>1 UN</span>
+        </div>
+        <div class="form-group col-sm-2 text-right">
+          <span>380,00</span>
+        </div>
+        <div class="form-group col-sm-2 text-right">
+          <span>380,00</span>
+        </div>
+        <div class="form-group col-sm-2 hidden-sm-down">
+          <button type="button" class="btn btn-lg quarto btn-secondary">
+            <i class="fa fa-trash-o btn-block"></i>
+          </button>
+          <button type="button" class="btn btn-sm tres-quartos btn-primary">
+            <i class="fa fa-pencil fa-padding"></i>
+            Editar
+          </button>
+        </div>
+        <div class="col-sm-12 m-b-1 m-t-meio">
+          <div class="divider-solid"></div>
+        </div> 
+      </div> <!--   FIM DO TEXTO FORM    -->
     </div>
   </div>
 
+</div>
 
 
 <!-- ************* FIM ************************************** -->
