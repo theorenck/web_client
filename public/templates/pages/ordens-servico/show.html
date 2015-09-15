@@ -232,7 +232,7 @@
                 <strong class="header">Valor Total<small> (R$)</small></strong>
               </div>
             </div>
-            <div class="divider-solid m-b-1 hidden-sm-down"></div>
+            <div class="divider-solid m-t-meio m-b-1 hidden-sm-down"></div>
             <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
               <div class="row m-t-1">
                 <div class="form-group col-sm-1">
@@ -245,7 +245,7 @@
                 <div class="form-group col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
                   <div class="row hidden-sm-up">
-                    <div class="divider-dashed hidden-sm-up"></div>
+                    <div class="divider-dashed hidden-sm-up m-b-meio"></div>
                     <span class="col-xs-6 text-left">Quantidade</span>
                     <span class="xs-bold col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
                   </div>
@@ -253,7 +253,7 @@
                 <div class="form-group col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.precounitario|number:2}}</span>
                   <div class="row hidden-sm-up">
-                    <div class="divider-dashed hidden-sm-up"></div>
+                    <div class="divider-dashed hidden-sm-up m-b-meio"></div>
                     <span class="col-xs-6 text-left">Valor Unitário</span>
                     <span class="xs-bold col-xs-6">{{item.precounitario|currency:2}}</span>
                   </div>
@@ -261,20 +261,20 @@
                 <div class="form-group col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
                   <div class="row hidden-sm-up">
-                    <div class="divider-dashed hidden-sm-up"></div>
+                    <div class="divider-dashed hidden-sm-up m-b-meio"></div>
                     <span class="col-xs-6 text-left">Valor Total</span>
                     <span class="xs-bold col-xs-6">{{item.valorsubtotal|currency:2}}</span>
                   </div>
                 </div>
                 <div class="col-xs-12 xs-m-t-1">
                   <div class="divider-solid hidden-sm-up"></div>
-                </div>                    
+                </div>
               </div>
-              <div class="divider-solid hidden-sm-down"></div>
+              <div class="divider-solid m-t-meio hidden-sm-down"></div>
             </div>
             <div class="row">
               <div class="form-group m-t-1 col-sm-12 text-right">
-                <strong class="header" style="color:red">Total das Peças  <small>(R$)</small><span class="bloco">1.073,83</span></strong>
+                <strong class="header" style="color:red">Total das Peças<small> (R$)</small><span class="bloco">1.073,83</span></strong>
               </div>
             </div>
           </div>
@@ -323,7 +323,7 @@
                 <div class="form-group col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
                   <div class="row hidden-sm-up">
-                    <div class="divider-dashed hidden-sm-up"></div>
+                    <div class="divider-dashed hidden-sm-up m-b-meio"></div>
                     <span class="col-xs-6 text-left">Quantidade</span>
                     <span class="xs-bold col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
                   </div>
@@ -331,7 +331,7 @@
                 <div class="form-group col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.precounitario|number:2}}</span>
                   <div class="row hidden-sm-up">
-                    <div class="divider-dashed hidden-sm-up"></div>
+                    <div class="divider-dashed hidden-sm-up m-b-meio"></div>
                     <span class="col-xs-6 text-left">Valor Unitário</span>
                     <span class="xs-bold col-xs-6">{{item.precounitario|currency:2}}</span>
                   </div>
@@ -339,7 +339,7 @@
                 <div class="form-group col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
                   <div class="row hidden-sm-up">
-                    <div class="divider-dashed hidden-sm-up"></div>
+                    <div class="divider-dashed hidden-sm-up m-b-meio"></div>
                     <span class="col-xs-6 text-left">Valor Total</span>
                     <span class="xs-bold col-xs-6">{{item.valorsubtotal|currency:2}}</span>
                   </div>
@@ -348,11 +348,11 @@
                   <div class="divider-solid hidden-sm-up"></div>
                 </div>                    
               </div>
-              <div class="divider-solid hidden-sm-down"></div>
+              <div class="divider-solid m-t-meio hidden-sm-down"></div>
             </div>
             <div class="row">
               <div class="form-group m-t-1 col-sm-12 text-right">
-                <strong class="header" style="color:red">Total da Mão de Obra <small>(R$)</small><span class="bloco">1.073,83</span></strong>
+                <strong class="header" style="color:red">Total da Mão de Obra<small> (R$)</small><span class="bloco">1.073,83</span></strong>
               </div>
             </div>
           </div>
@@ -371,19 +371,19 @@
         <div class="col-sm-12 m-b-2">
           <div class="row">
             <div class="form-group col-sm-3 col-xs-6">
-              <label>Produtos <small>(R$)</small></label>
+              <label>Produtos<small> (R$)</small></label>
               <p>12.345,00</p>
             </div>
             <div class="form-group col-sm-3 col-xs-6">
-              <label>Serviços <small>(R$)</small></label>
+              <label>Serviços<small> (R$)</small></label>
               <p>12.345,00</p>
             </div>
             <div class="form-group col-sm-3 col-xs-6">
-              <label>Impostos <small>(R$)</small></label>
+              <label>Impostos<small> (R$)</small></label>
               <p>12.345,00</p>
             </div>
             <div class="form-group col-sm-3 col-xs-6">
-              <label>Total <small>(R$)</small></label>
+              <label>Total<small> (R$)</small></label>
               <p>12.345,00</p>
             </div>
           </div>
