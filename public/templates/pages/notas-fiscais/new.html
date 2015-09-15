@@ -69,57 +69,92 @@
 </div>
 
 <div class="form-bloco">
-  <div class="col-sm-12 m-b-2">
+  <div class="col-sm-12 m-b-3">
     <div class="row">      
       <div class="col-sm-12">
         <div class="row">
-          <div class="form-group col-sm-3 col-xs-12">
-            <label for="nome-cliente">OS Origem</label>
-            <p><a href=""># 12345</a></p>
-          </div>
-          <div class="form-group col-sm-3 col-xs-12">
-            <label for="nome-cliente">Natureza de Operação</label>
-            <select class="form-control">
-              <option>0.001 - Venda</option>
-              <option>0.002 - Compra</option>
-              <option>0.003 - Devolução</option>
-            </select>
-          </div>
-          <div class="form-group col-sm-3 col-xs-12">
-            <label for="nome-cliente">Tipo</label>
-            <select class="form-control">
-              <option>0.001 - Entrada</option>
-              <option>0.002 - Saída</option>
-            </select>
-          </div>
-          <div class="form-group col-sm-3 col-xs-12">
-            <label for="nome-cliente">Destinação</label>
-            <select class="form-control">
-              <option>0.001 - Uso e consumo</option>
-              <option>0.002 - Industrialização</option>
-              <option>0.002 - Outra</option>
-            </select>
-          </div>                   
-        </div>
-      </div>
-      <div class="col-sm-12">
-        <div class="row">
           <div class="form-group col-sm-3 col-xs-6">
+            <label>Origem</label>
+            <select class="form-control">
+              <option>Sem origem</option>
+              <option>Ordem de Serviço</option>
+              <option>Nota Fiscal Eletrônica</option>
+              <option>Nota fiscal Impressa</option>
+              <option>ERP</option>
+            </select>
+          </div>
+          <div class="hidden-sm-up form-group col-sm-3 col-xs-6">
             <label>Situação</label>
             <span class="label label-info">Em digitação</span>
           </div>
           <div class="form-group col-sm-3 col-xs-12">
-            <label for="nome-cliente">Emissão</label>
+            <label>Tipo</label>
+            <select class="form-control">
+              <option>1 - Entrada</option>
+              <option>2 - Saída</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3 col-xs-12">
+            <label>Natureza de Operação</label>
+            <select class="form-control">
+              <option>1 - Venda</option>
+              <option>2 - Compra</option>
+              <option>3 - Devolução</option>
+            </select>
+          </div>
+          <div class="form-group col-sm-3 col-xs-12">
+            <label>Destinação</label>
+            <select class="form-control">
+              <option>1 - Uso e consumo</option>
+              <option>2 - Industrialização</option>
+              <option>2 - Outra</option>
+            </select>
+          </div> 
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">          
+          <div class="form-group col-sm-3 col-xs-12">
+            <label>Emissão</label>
             <input type="text" class="form-control">
           </div>
           <div class="form-group col-sm-3 col-xs-12">
-            <label for="nome-cliente">Saída</label>
+            <label>Saída</label>
             <input type="text" class="form-control">
           </div>
           <div class="form-group col-sm-3 col-xs-12">
-            <label for="nome-cliente">Hora de saída</label>
+            <label>Hora de saída</label>
             <input type="text" class="form-control">
-          </div>                    
+          </div>
+          <div class="hidden-sm-down form-group col-sm-3 col-xs-6">
+            <label>Frete</label>
+            <select class="form-control">
+              <option>9 - Sem frete</option>
+              <option>0 - Emitente</option>
+              <option>1 - Destinatário</option>
+              <option>2 - Terceiro</option>
+            </select>            
+          </div>                             
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">  
+          <div class="hidden-sm-down form-group col-sm-6 col-xs-6">
+            <label>Emitente</label>
+            <select class="form-control">
+              <option>Jr e Chies Com. e Imp. de Suplem. Alim. Ltda - 19.217.855/0001-05</option>
+              <option>Jr e Chies Com. e Imp. de Suplem. Alim. Ltda - 19.217.855/0001-05</option>
+              <option>Jr e Chies Com. e Imp. de Suplem. Alim. Ltda - 19.217.855/0001-05</option>
+            </select> 
+          </div>
+          <div class="hidden-sm-down form-group col-sm-3 col-xs-6">
+            <label>Total da Nota<small> (R$)</small></label>
+            <span>1234,56</span>
+          </div>           
+          <div class="hidden-sm-down form-group col-sm-3 col-xs-6">
+            <label>Situação</label>
+            <span class="label label-info">Em digitação</span>
+          </div>  
         </div>
       </div>
     </div>
@@ -127,7 +162,7 @@
 </div>
 
 <div class="form-bloco">
-  <div class="col-sm-12 m-b-2">
+  <div class="col-sm-12 m-b-3">
     <div class="row">
       <span class="header">
         Cliente
@@ -136,15 +171,15 @@
       <div class="col-sm-12 m-b-2">
         <div class="row">
           <div class="form-group col-sm-6 col-xs-12">
-            <label for="nome-cliente">Nome</label>
+            <label>Nome / Razão Social</label>
             <input type="text" class="form-control">
           </div>
           <div class="form-group col-sm-3">
-            <label for="nome-cliente">Documento</label>
+            <label>Documento</label>
             <input type="text" class="form-control">
           </div>
           <div class="form-group col-sm-3">
-            <label for="nome-cliente">Telefone</label>
+            <label>Telefone</label>
             <input type="text" class="form-control">
           </div>
         </div>
@@ -163,31 +198,31 @@
         <div class="row m-t-meio m-b-1">
           <div class="m-t-1">
             <div class="form-group col-sm-3">
-              <label for="nome-cliente">CEP</label>
+              <label>CEP</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-6">
-              <label for="nome-cliente">Endereço</label>
+              <label>Endereço</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-3">
-              <label for="nome-cliente">Número e complemento</label>
+              <label>Número e complemento</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-3">
-              <label for="nome-cliente">Bairro</label>
+              <label>Bairro</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-3">
-              <label for="nome-cliente">Cidade</label>
+              <label>Cidade</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-3">
-              <label for="nome-cliente">Estado</label>
+              <label>Estado</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-3">
-              <label for="nome-cliente">País</label>
+              <label>País</label>
               <input type="text" class="form-control">
             </div> 
           </div>     
@@ -205,14 +240,14 @@
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>      
       <div class="form-group col-sm-12 col-xs-12 m-t-meio">
-        <label for="nome-cliente">Descrição</label>
+        <label>Descrição</label>
         <textarea class="form-control" rows="3"></textarea>
       </div>
     </div>
   </div>
   <div class="col-sm-12 m-b-3">
     <div class="row">
-      <div class="m-t-1">
+      <div class="m-t-1 hidden-sm-down">
         <div class="col-sm-10 underline">
           <a href="" class="subheader">
             <i class="fa fa-chevron-right"></i>
@@ -225,26 +260,42 @@
           </button>        
         </div>
       </div>
+      <div class="m-t-1 hidden-sm-up">
+        <div class="col-xs-12">
+          <a href="" class="subheader">
+            <i class="fa fa-chevron-right"></i>
+            <span class="subheader">Produto</span>
+          </a>
+        </div>
+        <div class="col-xs-12 m-1">
+          <button type="button" class="btn btn-sm btn-info btn-block"><i class="fa fa-plus"></i>
+          Adicionar produto
+          </button>        
+        </div>
+        <div class="col-xs-12 m-meio">
+          <div class="divider-solid"></div>
+        </div>
+      </div>
 
       <div REPETIR formulario>
         <div class="form-group col-sm-2 col-xs-12 m-t-1">
-          <label for="nome-cliente">Código</label>
+          <label>Código</label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-3 col-xs-12 m-t-1">
-          <label for="nome-cliente">Descrição</label>
+          <label>Descrição</label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-1 col-xs-12 m-t-1">
-          <label for="nome-cliente">Quant.</label>
+          <label>Quant.</label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-2 col-xs-12 m-t-1">
-          <label for="nome-cliente">Valor Unit.<small> (R$)</small></label>
+          <label>Valor Unit.<small> (R$)</small></label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-2 col-xs-12 m-t-1">
-          <label for="nome-cliente">Valor Total<small> (R$)</small></label>
+          <label>Valor Total<small> (R$)</small></label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-2 hidden-sm-down p-t-3">
@@ -256,26 +307,45 @@
             Salvar
           </button>
         </div>
-        <div class="col-sm-12 m-b-1 m-t-meio">
+        <div class="col-sm-12 m-1 hidden-sm-down">
           <div class="divider-solid"></div>
-        </div> 
+        </div>
+        <div class="col-xs-12 xs-m-1 hidden-sm-up">
+          <div class="divider-solid xs-m-t-meio"></div>
+        </div>
       </div><!--   FIM DO FORMULARIO    -->
 
       <div REPETIR texto do formulario>
-        <div class="form-group col-sm-2">
+        <div class="form-group col-sm-2 hidden-sm-down">
           <span>000033</span>
         </div>
-        <div class="form-group col-sm-3">
-          <span>Aqui vai um produto de exemplo</span>
+        <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
+          <span class="hidden-sm-up">000033</span>
+          <span><span class="hidden-sm-up"> - </span>Aqui vai um produto de exemplo</span>
         </div>
-        <div class="form-group col-sm-1 text-right">
-         <span>1 UN</span>
+        <div class="form-group col-sm-1 col-xs-12 text-right ">
+          <span class="hidden-sm-down">1 UN</span>
+          <div class="row hidden-sm-up">
+            <div class="divider-dashed hidden-sm-up m-b-meio"></div>
+            <span class="col-xs-6 text-left">Quantidade</span>
+            <span class="xs-bold col-xs-6">1 UN</span>
+          </div>
         </div>
-        <div class="form-group col-sm-2 text-right">
-          <span>380,00</span>
+        <div class="form-group col-sm-2 col-xs-12 text-right">
+          <span class="hidden-sm-down">380,00</span>
+          <div class="row hidden-sm-up">
+            <div class="divider-dashed hidden-sm-up m-b-meio"></div>
+            <span class="col-xs-6 text-left">Valor Unitário</span>
+            <span class="xs-bold col-xs-6">380,00</span>
+          </div>
         </div>
-        <div class="form-group col-sm-2 text-right">
-          <span>380,00</span>
+        <div class="form-group col-sm-2 col-xs-12 text-right">
+          <span class="hidden-sm-down">380,00</span>
+          <div class="row hidden-sm-up">
+            <div class="divider-dashed hidden-sm-up m-b-meio"></div>
+            <span class="col-xs-6 text-left">Valor Total</span>
+            <span class="xs-bold col-xs-6">380,00</span>
+          </div>
         </div>
         <div class="form-group col-sm-2 hidden-sm-down">
           <button type="button" class="btn btn-lg quarto btn-secondary">
@@ -286,17 +356,20 @@
             Editar
           </button>
         </div>
-        <div class="col-sm-12 m-b-1 m-t-meio">
+        <div class="col-sm-12 m-1 hidden-sm-down">
           <div class="divider-solid"></div>
-        </div> 
+        </div>
+        <div class="col-xs-12 xs-m-1 hidden-sm-up">
+          <div class="divider-solid xs-m-t-meio"></div>
+        </div>
       </div> <!--   FIM DO TEXTO FORM    -->
     </div>
-  </div>
+  </div>  
   <div class="col-sm-12 m-b-3">
     <div class="row">
-      <div class="m-t-1">
+      <div class="m-t-1 hidden-sm-down">
         <div class="col-sm-10 underline">
-          <a href="" class="subheader" data-toggle="collapse" aria-expanded="false" aria-controls="produto">
+          <a href="" class="subheader">
             <i class="fa fa-chevron-right"></i>
             <span class="subheader">Serviço</span>
           </a>
@@ -307,26 +380,42 @@
           </button>        
         </div>
       </div>
+      <div class="m-t-1 hidden-sm-up">
+        <div class="col-xs-12">
+          <a href="" class="subheader">
+            <i class="fa fa-chevron-right"></i>
+            <span class="subheader">Serviço</span>
+          </a>
+        </div>
+        <div class="col-xs-12 m-1">
+          <button type="button" class="btn btn-sm btn-info btn-block"><i class="fa fa-plus"></i>
+          Adicionar serviço
+          </button>        
+        </div>
+        <div class="col-xs-12 m-meio">
+          <div class="divider-solid"></div>
+        </div>
+      </div>
 
       <div REPETIR formulario>
         <div class="form-group col-sm-2 col-xs-12 m-t-1">
-          <label for="nome-cliente">Código</label>
+          <label>Código</label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-3 col-xs-12 m-t-1">
-          <label for="nome-cliente">Descrição</label>
+          <label>Descrição</label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-1 col-xs-12 m-t-1">
-          <label for="nome-cliente">Quant.</label>
+          <label>Quant.</label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-2 col-xs-12 m-t-1">
-          <label for="nome-cliente">Valor Unit.<small> (R$)</small></label>
+          <label>Valor Unit.<small> (R$)</small></label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-2 col-xs-12 m-t-1">
-          <label for="nome-cliente">Valor Total<small> (R$)</small></label>
+          <label>Valor Total<small> (R$)</small></label>
           <input type="text" class="form-control">
         </div>
         <div class="form-group col-sm-2 hidden-sm-down p-t-3">
@@ -338,26 +427,45 @@
             Salvar
           </button>
         </div>
-        <div class="col-sm-12 m-b-1 m-t-meio">
+        <div class="col-sm-12 m-1 hidden-sm-down">
           <div class="divider-solid"></div>
-        </div> 
+        </div>
+        <div class="col-xs-12 xs-m-1 hidden-sm-up">
+          <div class="divider-solid xs-m-t-meio"></div>
+        </div>
       </div><!--   FIM DO FORMULARIO    -->
 
       <div REPETIR texto do formulario>
-        <div class="form-group col-sm-2">
+        <div class="form-group col-sm-2 hidden-sm-down">
           <span>000033</span>
         </div>
-        <div class="form-group col-sm-3">
-          <span>Aqui vai um produto de exemplo</span>
+        <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
+          <span class="hidden-sm-up">000033</span>
+          <span><span class="hidden-sm-up"> - </span>Aqui vai um produto de exemplo</span>
         </div>
-        <div class="form-group col-sm-1 text-right">
-         <span>1 UN</span>
+        <div class="form-group col-sm-1 col-xs-12 text-right ">
+          <span class="hidden-sm-down">1 UN</span>
+          <div class="row hidden-sm-up">
+            <div class="divider-dashed hidden-sm-up m-b-meio"></div>
+            <span class="col-xs-6 text-left">Quantidade</span>
+            <span class="xs-bold col-xs-6">1 UN</span>
+          </div>
         </div>
-        <div class="form-group col-sm-2 text-right">
-          <span>380,00</span>
+        <div class="form-group col-sm-2 col-xs-12 text-right">
+          <span class="hidden-sm-down">380,00</span>
+          <div class="row hidden-sm-up">
+            <div class="divider-dashed hidden-sm-up m-b-meio"></div>
+            <span class="col-xs-6 text-left">Valor Unitário</span>
+            <span class="xs-bold col-xs-6">380,00</span>
+          </div>
         </div>
-        <div class="form-group col-sm-2 text-right">
-          <span>380,00</span>
+        <div class="form-group col-sm-2 col-xs-12 text-right">
+          <span class="hidden-sm-down">380,00</span>
+          <div class="row hidden-sm-up">
+            <div class="divider-dashed hidden-sm-up m-b-meio"></div>
+            <span class="col-xs-6 text-left">Valor Total</span>
+            <span class="xs-bold col-xs-6">380,00</span>
+          </div>
         </div>
         <div class="form-group col-sm-2 hidden-sm-down">
           <button type="button" class="btn btn-lg quarto btn-secondary">
@@ -368,16 +476,253 @@
             Editar
           </button>
         </div>
-        <div class="col-sm-12 m-b-1 m-t-meio">
+        <div class="col-sm-12 m-1 hidden-sm-down">
           <div class="divider-solid"></div>
-        </div> 
+        </div>
+        <div class="col-xs-12 xs-m-1 hidden-sm-up">
+          <div class="divider-solid xs-m-t-meio"></div>
+        </div>
       </div> <!--   FIM DO TEXTO FORM    -->
     </div>
   </div>
-
 </div>
 
+<div class="form-bloco">
+  <div class="col-sm-12 m-b-3">
+    <div class="row">
+      <span class="header">
+        Cálculo dos Impostos
+        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+      </span>
+      <div class="col-sm-12">
+        <div class="collapse in" id="ver-pecas">
+          <div class="row hidden-sm-down m-t-meio">
+            <div class="form-group col-sm-2">
+              <strong class="header">Imposto</strong>
+            </div>
+            <div class="form-group col-sm-2 text-right">
+              <strong class="header">Base</strong>
+            </div>
+            <div class="form-group col-sm-2 text-right">
+              <strong class="header">Alíquota</strong>
+            </div>
+            <div class="form-group col-sm-2 text-right">
+              <strong class="header">Retenção</strong>
+            </div>
+            <div class="form-group col-sm-2 text-right">
+             <strong class="header">Substituição</strong>
+            </div>
+            <div class="form-group col-sm-2 text-right">
+              <strong class="header">Valor<small> (R$)</small></strong>
+            </div>
+          </div>
+          <div class="divider-solid m-t-meio m-b-1 hidden-sm-down"></div>
+          <div REPETIR>
+            <div class="row m-t-1">
+              <div class="form-group col-sm-2 col-xs-12">
+                <span class="hidden-sm-down">ICMS</span>
+                <span class="subheader hidden-sm-up"><i class="fa fa-chevron-right fa-padding"></i>ICMS</span>
+              </div>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label class="hidden-sm-up">Base</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label class="hidden-sm-up">Alíquota</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label class="hidden-sm-up">Retenção</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label class="hidden-sm-up">Substituição</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-2 col-xs-12">
+                <label class="hidden-sm-up">Valor<small>(R$)</small></label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-xs-12 xs-m-t-1 xs-m-b-meio">
+                <div class="divider-solid hidden-sm-up"></div>
+              </div>
+            </div>
+            <div class="divider-solid m-t-meio hidden-sm-down"></div>
+          </div>
 
+          <div NÃO REPETIR>
+            <div class="row m-t-1">
+              <div class="form-group col-sm-2 col-xs-12">
+                <span class="hidden-sm-down">Previdência Social</span>
+                <span class="subheader hidden-sm-up"><i class="fa fa-chevron-right fa-padding"></i>Previdência Social</span>
+              </div>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label class="hidden-sm-up">Base</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label class="hidden-sm-up">Alíquota</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label class="hidden-sm-up">Retenção</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-2 col-xs-6">
+                <label class="hidden-sm-up">Substituição</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-2 col-xs-12">
+                <label class="hidden-sm-up">Valor<small>(R$)</small></label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-xs-12 xs-m-t-1 xs-m-b-meio">
+                <div class="divider-solid hidden-sm-up"></div>
+              </div>
+            </div>
+            <div class="divider-solid m-t-meio hidden-sm-down"></div>
+          </div>
+              
+          <div class="row">
+            <div class="form-group m-t-1 col-sm-12 text-right">
+              <strong class="header">Total dos Impostos<small> (R$)</small><span class="bloco">1.073,83</span></strong>
+            </div>
+          </div>
+        </div>
+      </div>        
+    </div>
+  </div>
+</div>
+
+<div class="form-bloco">
+  <div class="col-sm-12 m-b-3">
+    <div class="row">
+      <span class="header">
+        Entrega
+        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+      </span>
+      <div class="col-sm-12 m-b-2">
+        <div class="row">
+          <div class="form-group col-sm-6 col-xs-12">
+            <label>Transportadora</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-sm-3">
+            <label>CNPJ</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-sm-3">
+            <label>Telefone</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row">          
+          <div class="form-group col-sm-3 col-xs-12">
+            <label>Inscrição Estadual</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-sm-3">
+            <label>RNTRC</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-sm-3">
+            <label>CGC</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-sm-3">
+            <label>Motorista</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row m-t-meio">
+          <div class="col-sm-12 underline">
+            <a href="" class="subheader">
+              <i class="fa fa-chevron-right"></i>
+              <span class="subheader">Veículo</span>              
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row m-t-meio m-b-1">
+          <div class="m-t-meio">
+            <div class="form-group col-sm-3 col-xs-4">
+              <label>Placa</label>
+              <span class="label label-primary ng-binding">
+                ITT9744
+              </span>
+            </div>
+            <div class="form-group col-sm-3 col-xs-8">
+              <label>Modelo</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-sm-3">
+              <label>Tipo de Veículo</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-sm-3">
+              <label>Chassi</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>     
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row m-t-meio">
+          <div class="col-sm-12 underline">
+            <a href="" class="subheader">
+              <i class="fa fa-chevron-right"></i>
+              <span class="subheader">Itens</span>              
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row m-t-meio m-b-1">
+          <div class="m-t-meio">
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Seguro</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Quantidade</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Peso bruto</label>
+              <input type="text" class="form-control col-xs-6">
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label>Peso Líquido</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-bloco">
+  <div class="col-sm-12 m-b-3">
+    <div class="row">
+      <span class="header">
+        Dados Adicionais
+        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
+      </span>
+      <div class="col-sm-12 m-b-2">
+        <div class="row">
+          <div class="form-group col-sm-12 col-xs-12">
+            <label></label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>          
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
 <!-- ************* FIM ************************************** -->
   </div> <!-- Fecha o container -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
