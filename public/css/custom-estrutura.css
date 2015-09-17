@@ -212,9 +212,9 @@ label{
 	text-align: left;
 }
 .pontinhos{
-	white-space: nowrap;
-  	overflow: hidden;
   	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 /********************** Tipografia ******************************/
 .menu h5{
