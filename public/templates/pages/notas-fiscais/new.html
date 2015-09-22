@@ -78,85 +78,184 @@
       </span>
       
       <div class="collapse in" id="#">
-        <div class="col-sm-12">
-          <div class="row m-b-1">
-            <div class="form-group col-sm-3 col-xs-6">
-              <label>Modelo</label>
-              <select class="form-control">
-                <option>NF-e</option>
-                <option>NFS-e</option>
-              </select>           
+        <div class="col-sm-12">          
+          <div class="hidden-sm-down">
+            <div class="row m-b-1">
+              <div class="form-group col-sm-3">
+                <label>Modelo</label>
+                <select class="form-control">
+                  <option>NF-e</option>
+                  <option>NFS-e</option>
+                </select>           
+              </div>            
+              <div class="form-group col-sm-3">
+                <label>Número</label>
+                <span>123456</span>            
+              </div>
+              <div class="form-group col-sm-3">
+                <label>Série</label>
+                <span>123</span>            
+              </div>
+              <div class="form-group col-sm-3">
+                <label>Situação</label>
+                <span class="label label-info">Em digitação</span>
+              </div>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
-              <label>Número</label>
-              <span>123</span>            
+          </div>
+          <div class="hidden-sm-up">
+            <div class="row xs-m-b-1">
+              <div class="form-group col-xs-12 xs-m-b-1">
+                <label>Modelo</label>
+                <select class="form-control">
+                  <option>NF-e</option>
+                  <option>NFS-e</option>
+                </select>           
+              </div>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
-              <label>Série</label>
-              <span>123</span>            
+            <div class="row">
+              <div class="form-group col-xs-3">
+                <label>Número</label>
+                <span>123456</span>            
+              </div>
+              <div class="form-group col-xs-3">
+                <label>Série</label>
+                <span>123</span>            
+              </div>
+              <div class="form-group col-xs-6">
+                <label>Situação</label>
+                <span class="label label-info">Em digitação</span>
+              </div>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
-              <label>Situação</label>
-              <span class="label label-info">Em digitação</span>
+          </div>
+          <div class="hidden-sm-down">
+            <div class="row m-b-1">
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>Origem</label>
+                <select class="form-control">
+                  <option>Sem origem</option>
+                  <option>Ordem de Serviço</option>
+                  <option>Nota Fiscal Eletrônica</option>
+                  <option>Nota fiscal Impressa</option>
+                  <option>ERP</option>
+                </select>
+              </div>
+              
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
+                <label>Tipo de Operação</label>
+                <select class="form-control">
+                  <option>1 - Entrada</option>
+                  <option>2 - Saída</option>
+                </select>
+              </div>
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
+                <label>Natureza de Operação</label>
+                <select class="form-control">
+                  <option>1 - Venda</option>
+                  <option>2 - Compra</option>
+                  <option>3 - Devolução</option>
+                </select>
+              </div>
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
+                <label>Destinação</label>
+                <select class="form-control">
+                  <option>1 - Uso e consumo</option>
+                  <option>2 - Industrialização</option>
+                  <option>3 - Outra</option>
+                </select>
+              </div> 
             </div>
-          </div>        
-          <div class="row m-b-1">
-            <div class="form-group col-sm-3 col-xs-6">
-              <label>Origem</label>
-              <select class="form-control">
-                <option>Sem origem</option>
-                <option>Ordem de Serviço</option>
-                <option>Nota Fiscal Eletrônica</option>
-                <option>Nota fiscal Impressa</option>
-                <option>ERP</option>
-              </select>
+          </div>
+          <div class="hidden-sm-up">
+            <div class="row m-b-1">
+              <div class="form-group col-xs-12">
+                <label>Origem</label>
+                <select class="form-control">
+                  <option>Sem origem</option>
+                  <option>Ordem de Serviço</option>
+                  <option>Nota Fiscal Eletrônica</option>
+                  <option>Nota fiscal Impressa</option>
+                  <option>ERP</option>
+                </select>
+              </div>
             </div>
-            
-            <div class="form-group col-sm-3 col-xs-12">
-              <label>Tipo de Operação</label>
-              <select class="form-control">
-                <option>1 - Entrada</option>
-                <option>2 - Saída</option>
-              </select>
+            <div class="row m-b-1">              
+              <div class="form-group col-xs-12">
+                <label>Tipo de Operação</label>
+                <select class="form-control">
+                  <option>1 - Entrada</option>
+                  <option>2 - Saída</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group col-sm-3 col-xs-12">
-              <label>Natureza de Operação</label>
-              <select class="form-control">
-                <option>1 - Venda</option>
-                <option>2 - Compra</option>
-                <option>3 - Devolução</option>
-              </select>
+            <div class="row m-b-1">
+              <div class="form-group col-xs-12">
+                <label>Natureza de Operação</label>
+                <select class="form-control">
+                  <option>1 - Venda</option>
+                  <option>2 - Compra</option>
+                  <option>3 - Devolução</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group col-sm-3 col-xs-12">
-              <label>Destinação</label>
-              <select class="form-control">
-                <option>1 - Uso e consumo</option>
-                <option>2 - Industrialização</option>
-                <option>3 - Outra</option>
-              </select>
-            </div> 
-          </div>        
-          <div class="row m-b-1">
-            <div class="form-group col-sm-3 col-xs-12">
-              <label>Emissão</label>
-              <input type="text" class="form-control" placeholder="16/09/15 às 17h02">
+            <div class="row">
+              <div class="form-group col-xs-12">
+                <label>Destinação</label>
+                <select class="form-control">
+                  <option>1 - Uso e consumo</option>
+                  <option>2 - Industrialização</option>
+                  <option>3 - Outra</option>
+                </select>
+              </div> 
             </div>
-            <div class="form-group col-sm-3 col-xs-12">
-              <label>Saída</label>
-              <input type="text" class="form-control" placeholder="16/09/15 às 17h02">
-            </div> 
-            <div class="form-group col-sm-3 col-xs-6">
-              <label>Frete</label>
-              <select class="form-control">
-                <option>9 - Sem frete</option>
-                <option>0 - Emitente</option>
-                <option>1 - Destinatário</option>
-                <option>2 - Terceiro</option>
-              </select>            
+          </div>
+          <div class="hidden-sm-down">
+            <div class="row m-b-1">
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>Emissão</label>
+                <input type="text" class="form-control" placeholder="16/09/15 às 17h02">
+              </div>
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
+                <label>Saída</label>
+                <input type="text" class="form-control" placeholder="16/09/15 às 17h02">
+              </div> 
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
+                <label>Frete</label>
+                <select class="form-control">
+                  <option>9 - Sem frete</option>
+                  <option>0 - Emitente</option>
+                  <option>1 - Destinatário</option>
+                  <option>2 - Terceiro</option>
+                </select>            
+              </div>
+              <div class="hidden-sm-down form-group col-sm-3">
+                <label>Total da Nota<small> (R$)</small></label>
+                <span>1234,56</span>
+              </div>
             </div>
-            <div class="hidden-sm-down form-group col-sm-3 col-xs-6">
-              <label>Total da Nota<small> (R$)</small></label>
-              <span>1234,56</span>
+          </div>
+          <div class="hidden-sm-up">
+            <div class="row m-b-1">
+              <div class="form-group col-xs-12">
+                <label>Emissão</label>
+                <input type="text" class="form-control" placeholder="16/09/15 às 17h02">
+              </div>
+            </div>
+            <div class="row m-b-1">
+              <div class="form-group col-xs-12">
+                <label>Saída</label>
+                <input type="text" class="form-control" placeholder="16/09/15 às 17h02">
+              </div>
+            </div>
+            <div class="row m-b-1">
+              <div class="form-group col-xs-12">
+                <label>Frete</label>
+                <select class="form-control">
+                  <option>9 - Sem frete</option>
+                  <option>0 - Emitente</option>
+                  <option>1 - Destinatário</option>
+                  <option>2 - Terceiro</option>
+                </select>            
+              </div>
             </div>
           </div>
         </div>
@@ -180,15 +279,15 @@
               <label>Nome</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>Documento</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>Telefone</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>E-mail</label>
               <input type="text" class="form-control">
             </div>
@@ -198,15 +297,15 @@
               <label>Inscrição Estadual</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>Inscrição Municipal</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>CNAE</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>Código de Regime Tributário</label>
               <select class="form-control">
                 <option>Simples Nacional</option>
@@ -226,15 +325,15 @@
                 <label>CEP</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-4">
+              <div class="form-group col-sm-4 col-xs-12 xs-m-t-1">
                 <label>Endereço</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-t-1">
                 <label>Número</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-t-1">
                 <label>Complemento</label>
                 <input type="text" class="form-control">
               </div>
@@ -242,17 +341,21 @@
             <div class="row m-b-1">
               <div class="form-group col-sm-2 col-xs-12">
                 <label>Estado</label>
-                <input type="text" class="form-control">
+                <select class="form-control">
+                  <option>RS</option>
+                  <option>SC</option>
+                  <option>etc...</option>
+                </select>
               </div>
-              <div class="form-group col-sm-4">
+              <div class="form-group col-sm-4 col-xs-12 xs-m-t-1">
                 <label>Bairro</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
                 <label>Cidade</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
                 <label>País</label>
                 <input type="text" class="form-control">
               </div>
@@ -281,15 +384,15 @@
               <label>Nome</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>Documento</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>Telefone</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>E-mail</label>
               <input type="text" class="form-control">
             </div>
@@ -299,11 +402,11 @@
               <label>Inscrição Estadual</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>Inscrição Municipal</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
               <label>Suframa</label>
               <input type="text" class="form-control">
             </div>
@@ -321,15 +424,15 @@
                 <label>CEP</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-4">
+              <div class="form-group col-sm-4 col-xs-12 xs-m-t-1">
                 <label>Endereço</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-t-1">
                 <label>Número</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-t-1">
                 <label>Complemento</label>
                 <input type="text" class="form-control">
               </div>
@@ -337,17 +440,21 @@
             <div class="row m-b-1">
               <div class="form-group col-sm-2 col-xs-12">
                 <label>Estado</label>
-                <input type="text" class="form-control">
+                <select class="form-control">
+                  <option>RS</option>
+                  <option>SC</option>
+                  <option>etc...</option>
+                </select>
               </div>
-              <div class="form-group col-sm-4">
+              <div class="form-group col-sm-4 col-xs-12 xs-m-t-1">
                 <label>Bairro</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
                 <label>Cidade</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-t-1">
                 <label>País</label>
                 <input type="text" class="form-control">
               </div>
@@ -468,14 +575,11 @@
           </button>        
         </div>
       </div>
-      <div class="hidden-sm-up m-t-1">
-        <div class="col-xs-12 m-1">
+      <div class="hidden-sm-up">
+        <div class="col-xs-12 xs-m-t-1 xs-m-b-2">
           <button type="button" class="btn btn-sm btn-info btn-block"><i class="fa fa-plus"></i>
           Adicionar produto
           </button>        
-        </div>
-        <div class="col-xs-12 m-meio">
-          <div class="divider-solid"></div>
         </div>
       </div>
     </div>
@@ -499,62 +603,64 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="produtos">
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-4 xs-m-b-meio">
                 <label>Código</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-8 xs-m-b-meio">
                 <label>Produto</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-6 col-xs-12">
+              <div class="form-group col-sm-6 col-xs-12 xs-m-b-meio">
                 <label>Descrição</label>
                 <input type="text" class="form-control">
               </div>              
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>Quantidade</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>Unidade</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Quantidade Tributável</label>
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
+                <label class="hidden-sm-down">Quantidade Tributável</label>
+                <label class="hidden-sm-up">Quant. Tributável</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>Unidade Tributável</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
                 <label>Código Natureza</label>
                 <input type="text" class="form-control">
               </div>              
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
                 <label>EAN Comercial</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
                 <label>EAN Tributável</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
                 <label>NCM</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Valor Unitário<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor Unit. de Tributação<small> (R$)</small></label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Valor Unit. de Tributação<small> (R$)</small></label>
+                <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
@@ -666,21 +772,36 @@
         </div> 
         <!-- ** Botoes da lista ** -->
         <div class="row m-t-2">
-          <div class="col-sm-6 col-xs-12">          
+          <div class="hidden-sm-down">
+            <div class="col-sm-offset-6 col-sm-3">
+              <button class="btn btn-sm btn-secondary btn-block">
+                <i class="fa fa-trash-o fa-padding"></i>
+                Excluir
+              </button>            
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-sm btn-primary btn-block">
+                <i class="fa fa-floppy-o fa-padding"></i>
+                Salvar
+              </button>            
+            </div>
+          </div>
             
+          <div class="hidden-sm-up">
+            <div class="col-xs-6">
+              <button class="btn btn-sm btn-secondary btn-block">
+                <i class="fa fa-trash-o bloco"></i>
+                Excluir
+              </button>
+            </div>
+            <div class="col-xs-6">
+              <button class="btn btn-sm btn-primary btn-block">
+                <i class="fa fa-floppy-o bloco"></i>
+                Salvar
+              </button>
+            </div>
           </div>
-          <div class="col-sm-3">
-            <button class="btn btn-sm btn-secondary btn-block">
-              <i class="fa fa-trash-o fa-padding"></i>
-              Excluir
-            </button>
-          </div>
-          <div class="col-sm-3">
-            <button class="btn btn-sm btn-primary btn-block">
-              <i class="fa fa-floppy-o fa-padding"></i>
-              Salvar
-            </button>
-          </div>        
+        </div>        
       </div>
     </div>
   </div>
@@ -737,7 +858,7 @@
             <span class="hidden-sm-up">000033</span>
             <span class="pontinhos"><span class="hidden-sm-up"> - </span>Aqui vai um serviço de exemplo loren ipsum lero lero</span>
           </div>
-          <div class="form-group col-sm-1 col-xs-12 text-right ">
+          <div class="form-group col-sm-1 col-xs-12 text-right">
             <span class="hidden-sm-down">1 UN</span>
             <div class="row hidden-sm-up">
               <div class="divider-dashed hidden-sm-up m-b-meio"></div>
@@ -792,14 +913,11 @@
           </button>        
         </div>
       </div>
-      <div class="hidden-sm-up m-t-1">
-        <div class="col-xs-12 m-1">
+      <div class="hidden-sm-up">
+        <div class="col-xs-12 xs-m-t-1 xs-m-b-2">
           <button type="button" class="btn btn-sm btn-info btn-block"><i class="fa fa-plus"></i>
-          Adicionar produto
+          Adicionar serviço
           </button>        
-        </div>
-        <div class="col-xs-12 m-meio">
-          <div class="divider-solid"></div>
         </div>
       </div>
     </div>
@@ -823,62 +941,64 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="produtos_serv">
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-4 xs-m-b-meio">
                 <label>Código</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-8 xs-m-b-meio">
                 <label>Produto</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-6 col-xs-12">
+              <div class="form-group col-sm-6 col-xs-12 xs-m-b-meio">
                 <label>Descrição</label>
                 <input type="text" class="form-control">
               </div>              
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>Quantidade</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>Unidade</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Quantidade Tributável</label>
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
+                <label class="hidden-sm-down">Quantidade Tributável</label>
+                <label class="hidden-sm-up">Quant. Tributável</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>Unidade Tributável</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
                 <label>Código Natureza</label>
                 <input type="text" class="form-control">
               </div>              
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
                 <label>EAN Comercial</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
                 <label>EAN Tributável</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
                 <label>NCM</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Valor Unitário<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor Unit. de Tributação<small> (R$)</small></label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Valor Unit. de Tributação<small> (R$)</small></label>
+                <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
@@ -892,60 +1012,86 @@
             </div>
           </div>
           <div role="tabpanel" class="tab-pane" id="impostos_serv">
-            <div class="row">              
+            <div class="row">
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Data de prestação do serviço</label>
+                <label>Base de cálculo ICMS</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Regime especial de tributação</label>
+                <label>Total do ICMS</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>PIS sobre serviço</label>
+                <label>Base de cálculo ICMS ST</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>COFINS sobre serviço</label>
+                <label>Total do ICMS ST</label>
                 <input type="text" class="form-control">
-              </div> 
+              </div>
             </div>
             <div class="row">
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo ISS</label>
+                <label>Total do ICMS desonerado</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Total do ISS</label>
+                <label>Total do Imposto de Importação</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor total retenção ISS</label>
+                <label>Total do IPI</label>
                 <input type="text" class="form-control">
-              </div>             
+              </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor total outras retenções</label>
+                <label>Valor retido do CSLL</label>
                 <input type="text" class="form-control">
               </div>
             </div>
-            <div class="row">              
-              <div class="form-group col-sm-6 col-xs-12">
-                <label>Total dos serviços sob não-incidencia ou não tributados pelo ICMS</label>
+            <div class="row">
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>PIS</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor total desconto incondicionado</label>
+                <label>Valor retido do PIS</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor total desconto condicionado</label>
+                <label>COFINS</label>
                 <input type="text" class="form-control">
               </div>
-            </div>          
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>Valor retido do COFINS</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>Base de cálculo do IRRF</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>Valor retido do IRRF</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>Base de cálculo previdência social</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>Valor retido previdência social</label>
+                <input type="text" class="form-control">
+              </div>              
+            </div>            
           </div>
           <div role="tabpanel" class="tab-pane" id="otras_despesas_serv">
             <div class="row">
-              <div class="form-group col-sm-6 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12">
+                <label>Valor Seguro<small> (R$)</small></label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-12">
                 <label>Outras despesas<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
@@ -958,21 +1104,36 @@
         </div> 
         <!-- ** Botoes da lista ** -->
         <div class="row m-t-2">
-          <div class="col-sm-6 col-xs-12">          
+          <div class="hidden-sm-down">
+            <div class="col-sm-offset-6 col-sm-3">
+              <button class="btn btn-sm btn-secondary btn-block">
+                <i class="fa fa-trash-o fa-padding"></i>
+                Excluir
+              </button>            
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-sm btn-primary btn-block">
+                <i class="fa fa-floppy-o fa-padding"></i>
+                Salvar
+              </button>            
+            </div>
+          </div>
             
+          <div class="hidden-sm-up">
+            <div class="col-xs-6">
+              <button class="btn btn-sm btn-secondary btn-block">
+                <i class="fa fa-trash-o bloco"></i>
+                Excluir
+              </button>
+            </div>
+            <div class="col-xs-6">
+              <button class="btn btn-sm btn-primary btn-block">
+                <i class="fa fa-floppy-o bloco"></i>
+                Salvar
+              </button>
+            </div>
           </div>
-          <div class="col-sm-3">
-            <button class="btn btn-sm btn-secondary btn-block">
-              <i class="fa fa-trash-o fa-padding"></i>
-              Excluir
-            </button>
-          </div>
-          <div class="col-sm-3">
-            <button class="btn btn-sm btn-primary btn-block">
-              <i class="fa fa-floppy-o fa-padding"></i>
-              Salvar
-            </button>
-          </div>        
+        </div>        
       </div>
     </div>
   </div>
@@ -995,45 +1156,41 @@
               <span class="subheader">ICMS</span>              
             </a>
           </div>
-          <div class="collapse in" id="#">
+          <div class="collapse in xs-m-b-1" id="#">
             <div class="row m-t-1">
-              <div class="form-group col-sm-4 col-xs-6">
+              <div class="form-group col-sm-4 col-xs-6 m-t-1">
                 <label>Base de cálculo ICMS<small> (R$)</small></label>
                 <span>123</span>            
               </div>            
-              <div class="form-group col-sm-4 col-xs-6">
+              <div class="form-group col-sm-4 col-xs-6 m-t-1">
                 <label>Base de cálculo ICMS ST<small> (R$)</small></label>
                 <span>123</span>            
               </div>
-              <div class="form-group col-sm-4 col-xs-6">
+              <div class="form-group col-sm-4 col-xs-6 m-t-1">
                 <label>Total IPI<small> (R$)</small></label>
                 <span>123</span>            
-              </div>                        
-            </div>
-            <div class="row m-t-1">
-              <div class="form-group col-sm-4 col-xs-6">
+              </div> 
+              <div class="form-group col-sm-4 col-xs-6 m-t-1">
                 <label>Total ICMS<small> (R$)</small></label>
                 <span>123</span>            
               </div>
-              <div class="form-group col-sm-4 col-xs-6">
+              <div class="form-group col-sm-4 col-xs-6 m-t-1">
                 <label>Total ICMS ST<small> (R$)</small></label>
                 <span>123</span>            
               </div>            
-              <div class="form-group col-sm-4 col-xs-6">
+              <div class="form-group col-sm-4 col-xs-6 m-t-1">
                 <label>Total COFINS<small> (R$)</small></label>
                 <span>123</span>            
-              </div>                        
-            </div>
-            <div class="row m-t-1">
-              <div class="form-group col-sm-4 col-xs-6">
+              </div> 
+              <div class="form-group col-sm-4 col-xs-6 m-t-1">
                 <label>Total PIS<small> (R$)</small></label>
                 <span>123</span>            
               </div>
-              <div class="form-group col-sm-4 col-xs-6">
+              <div class="form-group col-sm-4 col-xs-6 m-t-1">
                 <label>Total Imposto de importação<small> (R$)</small></label>
                 <span>123</span>            
               </div>
-              <div class="form-group col-sm-3 col-xs-6">
+              <div class="form-group col-sm-3 col-xs-12 m-t-1">
                 <label>Total dos tributos<small> (R$)</small></label>
                 <input type="text" class="form-control" placeholder="0,00 %">
               </div>
@@ -1045,17 +1202,33 @@
                     <span class="subheader">Descontos</span>              
                   </a>
                 </div>
-                <div class="form-group m-t-1">
-                  <label>Produtos<small> (R$)</small></label>
-                  <span>123</span>            
+                <div class="hidden-sm-down">
+                  <div class="form-group m-t-1">
+                    <label>Produtos<small> (R$)</small></label>
+                    <span>123</span>            
+                  </div>
+                  <div class="form-group m-t-1">
+                    <label>Serviços<small> (R$)</small></label>
+                    <span>123</span>            
+                  </div>            
+                  <div class="form-group m-t-1">
+                    <label>Total<small> (R$)</small></label>
+                    <span>123</span>            
+                  </div>
                 </div>
-                <div class="form-group m-t-1">
-                  <label>Serviços<small> (R$)</small></label>
-                  <span>123</span>            
-                </div>            
-                <div class="form-group m-t-1">
-                  <label>Total Descontos<small> (R$)</small></label>
-                  <span>123</span>            
+                <div class="hidden-sm-up row xs-m-b-1">
+                  <div class="form-group col-xs-4 m-t-1">
+                    <label>Produtos</label>
+                    <span>R$ 123,00</span>            
+                  </div>
+                  <div class="form-group col-xs-4 m-t-1">
+                    <label>Serviços</label>
+                    <span>R$ 123,00</span>            
+                  </div>            
+                  <div class="form-group col-xs-4 m-t-1">
+                    <label>Total</label>
+                    <span>R$ 123,00</span>            
+                  </div>
                 </div>
               </div>
 
@@ -1065,17 +1238,33 @@
                     <span class="subheader">Outros</span>              
                   </a>
                 </div>
-                <div class="form-group m-t-1">
-                  <label>Despesas acessorias<small> (R$)</small></label>
-                  <span>123</span>            
+                <div class="hidden-sm-down">
+                  <div class="form-group m-t-1">
+                    <label>Despesas acessorias<small> (R$)</small></label>
+                    <span>123</span>            
+                  </div>
+                  <div class="form-group m-t-1">
+                    <label>Frete<small> (R$)</small></label>
+                    <span>123</span>            
+                  </div>            
+                  <div class="form-group m-t-1">
+                    <label>Seguro<small> (R$)</small></label>
+                    <span>123</span>            
+                  </div>
                 </div>
-                <div class="form-group m-t-1">
-                  <label>Total Frete<small> (R$)</small></label>
-                  <span>123</span>            
-                </div>            
-                <div class="form-group m-t-1">
-                  <label>Total Seguro<small> (R$)</small></label>
-                  <span>123</span>            
+                <div class="hidden-sm-up row xs-m-b-1">
+                  <div class="form-group col-xs-4 m-t-1">
+                    <label>Despesas acessorias</label>
+                    <span>R$ 123,00</span>            
+                  </div>
+                  <div class="form-group col-xs-4 m-t-1">
+                    <label>Frete</label>
+                    <span>R$ 123,00</span>            
+                  </div>            
+                  <div class="form-group col-xs-4 m-t-1">
+                    <label>Seguro</label>
+                    <span>R$ 123,00</span>            
+                  </div>
                 </div>
               </div>
 
@@ -1085,21 +1274,41 @@
                     <span class="subheader">Totais</span>              
                   </a>
                 </div>
-                <div class="form-group m-t-1">
-                  <label>Total produtos e serviços<small> (R$)</small></label>
-                  <span>123</span>            
+                <div class="hidden-sm-down">
+                  <div class="form-group m-t-1">
+                    <label>Total produtos e serviços<small> (R$)</small></label>
+                    <span>123</span>            
+                  </div>
+                  <div class="form-group m-t-1">
+                    <label>Total Nota<small> (R$)</small></label>
+                    <span>123</span>            
+                  </div>            
+                  <div class="form-group m-t-1">
+                    <label>ICMS total da nota<small> (R$)</small></label>
+                    <select class="form-control">
+                      <option>Não somar ICMS ST</option>
+                      <option>Somar ICMS ST</option>
+                      <option>Somar ICMS ST - ICMS</option>
+                    </select>           
+                  </div>
                 </div>
-                <div class="form-group m-t-1">
-                  <label>Total Nota<small> (R$)</small></label>
-                  <span>123</span>            
-                </div>            
-                <div class="form-group m-t-1">
-                  <label>ICMS total da nota<small> (R$)</small></label>
-                  <select class="form-control">
-                    <option>Não somar ICMS ST</option>
-                    <option>Somar ICMS ST</option>
-                    <option>Somar ICMS ST - ICMS</option>
-                  </select>           
+                <div class="hidden-sm-up row xs-m-b-1">
+                  <div class="form-group col-xs-6 m-t-1">
+                    <label>Produtos e Serviços</label>
+                    <span>R$ 123,00</span>            
+                  </div>
+                  <div class="form-group col-xs-6 m-t-1">
+                    <label>Nota Fiscal</label>
+                    <span>R$ 123,00</span>            
+                  </div>            
+                  <div class="form-group col-xs-12 m-t-1">
+                    <label>ICMS da NF</label>
+                    <select class="form-control">
+                      <option>Não somar ICMS ST</option>
+                      <option>Somar ICMS ST</option>
+                      <option>Somar ICMS ST - ICMS</option>
+                    </select>           
+                  </div>
                 </div>
               </div>
             </div>
@@ -1112,30 +1321,60 @@
               <span class="subheader">ISSQN</span>              
             </a>
           </div>
-          <div class="collapse in" id="#">
-            <div class="row m-t-1">
-              <div class="form-group col-sm-4 col-xs-6">
-                <label>Base de cálculo do ISS<small> (R$)</small></label>
-                <span>123</span>            
-              </div>            
-              <div class="form-group col-sm-4 col-xs-6">
-                <label>PIS sobre serviços</label>
-                <span>123</span>
+          <div class="collapse in xs-m-b-1" id="#">
+            <div class="hidden-sm-down">
+              <div class="row m-t-1">
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Base de cálculo do ISS<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>            
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>PIS sobre serviços<small> (R$)</small></label>
+                  <span>123</span>
+                </div>
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>COFINS sobre serviços<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>
               </div>
-              <div class="form-group col-sm-4 col-xs-6">
-                <label>COFINS sobre serviços<small> (R$)</small></label>
-                <span>123</span>            
-              </div>                        
+              <div class="row m-t-1">
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Total do ISS<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>            
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Total dos serviços sob não-incidências<small> (R$)</small></label>
+                  <span>123</span>
+                </div>
+              </div>
             </div>
-            <div class="row m-t-1">
-              <div class="form-group col-sm-4 col-xs-6">
-                <label>Total do ISS<small> (R$)</small></label>
-                <span>123</span>            
-              </div>            
-              <div class="form-group col-sm-4 col-xs-6">
-                <label>Total dos serviços sob não-incidências</label>
-                <span>123</span>
-              </div>                     
+            <div class="hidden-sm-up">
+              <div class="row xs-m-b-1">
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Base de cálc. do ISS</label>
+                  <span>R$ 123,00</span>            
+                </div>
+                <div class="form-group col-sm-4 col-xs-6 xs-m-b-1">
+                  <label>Total do ISS</label>
+                  <span>R$ 123,00</span>            
+                </div>
+              </div>
+              <div class="row xs-m-b-1">
+                <div class="form-group col-sm-4 col-xs-6 xs-m-b-1">
+                  <label>COFINS serviços</label>
+                  <span>R$ 123,00</span>            
+                </div>
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>PIS serviços</label>
+                  <span>R$ 123,00</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-4 col-xs-12">
+                  <label>Total dos serviços sob não-incidências</label>
+                  <span>R$ 123,00</span>
+                </div>
+              </div>                                   
             </div>
           </div>
 
@@ -1147,37 +1386,79 @@
             </a>
           </div>
           <div class="collapse in" id="#">
-            <div class="row m-t-1">
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Base de cálculo IRRF<small> (R$)</small></label>
-                <span>123</span>            
-              </div>            
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Base de cálculo prev. social<small> (R$)</small></label>
-                <span>123</span>            
-              </div>                                               
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Valor retido COFINS<small> (R$)</small></label>
-                <span>123</span>            
+            <div class="hidden-sm-down">
+              <div class="row m-t-1">
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Base de cálculo IRRF<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>            
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Base de cálculo prev. social<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>                                               
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Valor retido COFINS<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>
               </div>
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Valor retido PIS<small> (R$)</small></label>
-                <span>123</span>            
+              <div class="row m-t-1">
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Valor retido PIS<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Valor retido IRRF<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Valor retido prev. social<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>
+              </div>
+              <div class="row m-t-1">
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label>Valor retido do CSLL<small> (R$)</small></label>
+                  <span>123</span>            
+                </div>                
               </div>
             </div>
-            <div class="row m-t-1">
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Valor retido IRRF<small> (R$)</small></label>
-                <span>123</span>            
+            <div class="hidden-sm-up">
+              <div class="row xs-m-t-1">
+                <div class="form-group col-xs-6">
+                  <label>Base de cálc. previdência social</label>
+                  <span>R$ 123,00</span>            
+                </div>
+                <div class="form-group col-xs-6">
+                  <label>Valor ret. previdência social</label>
+                  <span>R$ 123,00</span>            
+                </div>
               </div>
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Valor retido prev. social<small> (R$)</small></label>
-                <span>123</span>            
+              <div class="row xs-m-t-1">
+                <div class="form-group col-xs-6">
+                  <label>Base de cálc. IRRF</label>
+                  <span>R$ 123,00</span>            
+                </div>            
+                <div class="form-group col-xs-6">
+                  <label>Valor ret. IRRF</label>
+                  <span>R$ 123,00</span>            
+                </div>                
               </div>
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Valor retido do CSLL<small> (R$)</small></label>
-                <span>123</span>            
-              </div>                
+              <div class="row xs-m-t-1">                                               
+                <div class="form-group col-xs-6">
+                  <label>Valor ret. COFINS</label>
+                  <span>R$ 123,00</span>            
+                </div>
+                <div class="form-group col-xs-6">
+                  <label>Valor ret. PIS</label>
+                  <span>R$ 123,00</span>            
+                </div>
+              </div>
+              <div class="row xs-m-t-1">
+                <div class="form-group col-xs-6">
+                  <label>Valor ret. do CSLL</label>
+                  <span>R$ 123,00</span>            
+                </div>                
+              </div>
             </div>
           </div>
         </div>

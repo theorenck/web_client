@@ -6,6 +6,10 @@ html{
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
+	.xs-m-2{
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
     .xs-m-t-0{
 		margin-top: 0em;
 	}
