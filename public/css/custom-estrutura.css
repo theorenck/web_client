@@ -180,7 +180,7 @@ html{
 	/*margin-bottom: 3em;*/
 }
 .form-group{
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
 @media screen and (max-width: 34em) {
     .interno{
@@ -276,7 +276,7 @@ span.header{
 	display: block;
 	padding: 0 15px 0.5em 15px;
 	border-bottom: 1px solid #f1f1f1;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 .subheader{
 	font-size: 1.1em;
