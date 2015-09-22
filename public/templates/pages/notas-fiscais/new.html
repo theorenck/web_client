@@ -517,7 +517,7 @@
           </div>
           <div class="form-group col-sm-3 col-xs-12 xs-m-t-1 pontinhos">
             <span class="hidden-sm-up">000033</span>
-            <span class="pontinhos"><span class="hidden-sm-up"> - </span>Aqui vai um produto de exemplo loren ipsum lero lero</span>
+            <span class="pontinhos"><span class="hidden-sm-up"> - </span>Produto</span>
           </div>
           <div class="form-group col-sm-1 col-xs-12 text-right ">
             <span class="hidden-sm-down">1 UN</span>
@@ -638,20 +638,20 @@
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>Código Natureza</label>
                 <input type="text" class="form-control">
               </div>              
-              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
+                <label>NCM</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>EAN Comercial</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>EAN Tributável</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
-                <label>NCM</label>
                 <input type="text" class="form-control">
               </div>
             </div>
@@ -665,11 +665,11 @@
                 <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Desconto</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Total Bruto<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
@@ -677,96 +677,105 @@
           </div>
           <div role="tabpanel" class="tab-pane" id="impostos">
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo ICMS</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Base de cálculo ICMS</label>
+                <label class="hidden-sm-up">Base cálc. ICMS</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Total do ICMS</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo ICMS ST</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Base de cálculo ICMS ST</label>
+                <label class="hidden-sm-up">Base cálc. ICMS ST</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Total do ICMS ST</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Total do ICMS desonerado</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Total do ICMS desonerado</label>
+                <label class="hidden-sm-up">Total ICMS deson.</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Total do Imposto de Importação</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Total do Imposto de Importação</label>
+                <label class="hidden-sm-up">Total do II</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Total do IPI</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido do CSLL</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Valor retido do CSLL</label>
+                <label class="hidden-sm-up">Valor ret. do CSLL</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>PIS</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Valor retido do PIS</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>COFINS</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido do COFINS</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Valor retido do COFINS</label>
+                <label class="hidden-sm-up">Valor ret. COFINS</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo do IRRF</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Base de cálculo do IRRF</label>
+                <label class="hidden-sm-up">Base de cálc. IRRF</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido do IRRF</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Valor retido do IRRF</label>
+                <label class="hidden-sm-up">Valor ret. IRRF</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo previdência social</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Base de cálculo previdência social</label>
+                <label class="hidden-sm-up">Base de cálc. previdência social</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido previdência social</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Valor retido previdência social</label>
+                <label class="hidden-sm-up">Valor ret. previdência social</label>
                 <input type="text" class="form-control">
               </div>              
             </div>            
           </div>
           <div role="tabpanel" class="tab-pane" id="otras_despesas">
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Valor Frete<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Valor Seguro<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-6 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Outras despesas<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-sm-6 col-xs-12">
-                <label>Total dos Descontos<small> (R$)</small></label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Total dos Descontos<small> (R$)</small></label>
+                <label class="hidden-sm-up">Total Descontos<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
             </div>
@@ -820,7 +829,7 @@
     </div>
   </div>
 
-  <!-- **  LISTA PRODUTOS ** -->
+  <!-- **  LISTA SERVIÇO ** -->
   <div class="collapse in" id="#">
     <div class="col-sm-12">    
       
@@ -858,7 +867,7 @@
           </div>
           <div class="form-group col-sm-3 col-xs-12 xs-m-t-1 pontinhos">
             <span class="hidden-sm-up">000033</span>
-            <span class="pontinhos"><span class="hidden-sm-up"> - </span>Aqui vai um serviço de exemplo loren ipsum lero lero</span>
+            <span class="pontinhos"><span class="hidden-sm-up"> - </span>Serviço</span>
           </div>
           <div class="form-group col-sm-1 col-xs-12 text-right">
             <span class="hidden-sm-down">1 UN</span>
@@ -905,7 +914,7 @@
     </div>
   </div>
 
-  <!-- **  ADICIONAR NOVO PRODUTO ** -->
+  <!-- **  ADICIONAR NOVO SERVIÇO ** -->
   <div class="col-sm-12 m-b-4">
     <div class="row">
       <div class="hidden-sm-down">
@@ -927,7 +936,7 @@
       </div>
     </div>
 
-    <!-- **  PAINEL INPUT NOVO PRODUTO ** -->
+    <!-- **  PAINEL INPUT NOVO SERVIÇO ** -->
     <div class="collapse in" id="#">
       <div class="row">
         <ul class="nav nav-tabs" role="tablist">
@@ -979,20 +988,20 @@
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>Código Natureza</label>
                 <input type="text" class="form-control">
               </div>              
-              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
+                <label>NCM</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>EAN Comercial</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+              <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                 <label>EAN Tributável</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
-                <label>NCM</label>
                 <input type="text" class="form-control">
               </div>
             </div>
@@ -1006,11 +1015,11 @@
                 <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Desconto</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Total Bruto<small> (R$)</small></label>
                 <input type="text" class="form-control">
               </div>
@@ -1019,76 +1028,72 @@
           <div role="tabpanel" class="tab-pane" id="impostos_serv">
             <div class="row">
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo ICMS</label>
+                <label class="hidden-sm-down">Data de prestação do serviço</label>
+                <label class="hidden-sm-up">Data do serviço</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-12">
-                <label>Total do ICMS</label>
+                <label>Regime especial de tributação</label>
+                <select class="form-control">
+                  <option>RS</option>
+                  <option>SC</option>
+                  <option>etc...</option>
+                </select>
+              </div>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Base cálculo ISS</label>
+                <label class="hidden-sm-up">Base cálc. ISS</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo ICMS ST</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Total do ICMS ST</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Total do ICMS desonerado</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Total do Imposto de Importação</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Total do IPI</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido do CSLL</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label>Total do ISS</label>
                 <input type="text" class="form-control">
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>PIS</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">PIS sobre serviços</label>
+                <label class="hidden-sm-up">PIS serviços</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido do PIS</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">COFINS sobre serviços</label>
+                <label class="hidden-sm-up">COFINS serviços</label>
+                <input type="text" class="form-control">                
+              </div>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Total desconto incondicionado</label>
+                <label class="hidden-sm-up">Total desconto incondicionado</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>COFINS</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido do COFINS</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo do IRRF</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido do IRRF</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Base de cálculo previdência social</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-12">
-                <label>Valor retido previdência social</label>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Total desconto condicionado</label>
+                <label class="hidden-sm-up">Total desconto condicionado</label>
                 <input type="text" class="form-control">
               </div>              
-            </div>            
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Total das retenções ISS</label>
+                <label class="hidden-sm-up">Total ret. ISS</label>
+                <input type="text" class="form-control">                
+              </div>
+              <div class="form-group col-sm-3 col-xs-6">
+                <label class="hidden-sm-down">Outras retenções</label>
+                <label class="hidden-sm-up">Outras retenções</label>
+                <input type="text" class="form-control">                
+              </div>
+              <div class="form-group col-sm-6 col-xs-12">
+                <label class="hidden-sm-down">Total dos serviços sob não-incidência ou não tributados pelo ICMS</label>
+                <label class="hidden-sm-up">Total dos serviços sob não-incidência ou não tributados pelo ICMS</label>
+                <input type="text" class="form-control">
+              </div>              
+              <div class="form-group col-sm-6 col-xs-12">
+                <label class="hidden-sm-down">Total das deduções</label>
+                <label class="hidden-sm-up">Total das deduções</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
           </div>
           <div role="tabpanel" class="tab-pane" id="otras_despesas_serv">
             <div class="row">
