@@ -122,10 +122,30 @@
                   <option>3 - Outra</option>
                 </select>
               </div> 
-              <div class="form-group col-sm-2">
+
+
+              <div class="form-group col-sm-2 hidden">
                 <label>Emissão</label>
-                <input type="text" class="form-control" placeholder="16/09/15 às 17:02">
+                <span>25/09/15 10:28</span>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">
+                    Editar emissão
+                  </label>
+                </div>                  
               </div>
+
+              <div class="form-group col-sm-2 ">
+                <label>Emissão</label>
+                <a href="">25/09/15 10:28</a>
+              </div>
+
+              <div class="form-group col-sm-2 hidden">
+                <label>Emissão</label>
+                <input type="text" class="form-control" placeholder="25/09/15 10:28">
+              </div>
+
+
               <div class="form-group col-sm-2">
                 <label>Saída</label>
                 <input type="text" class="form-control">
@@ -149,25 +169,34 @@
       <div class="collapse in" id="#">
         <div class="col-sm-12">
           <div class="row">            
-            <div class="form-group col-sm-10 col-xs-12">              
-              <label>Nome / Razão Social</label>
+            <div class="form-group col-sm-7 col-xs-12">              
+              <label>Buscar</label>
               <input type="text" class="form-control">
-            </div>        
-            <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-2">
-              <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações" disabled>
-                <i class="fa fa-pencil btn-block"></i>
+            </div>
+            <div class="form-group col-sm-2 col-xs-12 m-t-1">
+              <button type="button" class="btn btn-sm btn-primary btn-block">
+                <i class="fa fa-search btn-block"></i>
+                Pesquisar
               </button>
-              <button type="button" class="btn btn-sm btn-primary tres-quartos">
-                <i class="fa fa-plus fa-padding"></i>
+            </div>
+            <div class="col-sm-1 hidden-sm-down p-t-1 p-b-1">
+              <div class="divider-v-solid"></div>
+            </div> 
+            <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-1">
+              <button type="button" class="btn btn-sm btn-info btn-block">
+                <i class="fa fa-plus btn-block"></i>
                 Novo
-              </button>  
+              </button>
             </div>
             <div class="hidden-sm-up xs-m-b-1 col-xs-6">
               <button class="btn btn-sm btn-secondary btn-block">
                 <i class="fa fa-pencil bloco"></i>
                 Editar infos
               </button>
-            </div>           
+            </div>
+            <div class="col-sm-12 m-b-2 m-t-1">
+              <div class="divider-solid"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -176,7 +205,7 @@
           <div class="row">            
             <div class="form-group col-sm-4 col-xs-12">              
               <span class="bloco pontinhos">
-                <a id="myPopover" type="button" data-toggle="popover" title="Teste" data-placement="teste de conteudo">Macroservice Tecnica Comercial LTDA</a>
+                <a href="">Macroservice Tecnica Comercial LTDA</a>
               </span>
               <span class="bloco">123.456.789-00</span>
             </div>
@@ -192,35 +221,32 @@
                 CEP 95012-480
               </span>
             </div>            
-            <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-2">
+            <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
               <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
                 <i class="fa fa-pencil btn-block"></i>
-              </button>
-              <button type="button" class="btn btn-sm btn-primary tres-quartos">
-                <i class="fa fa-plus fa-padding"></i>
-                Novo
-              </button>  
-            </div>
-            <div class="hidden-sm-up xs-m-b-1 col-xs-6">
-              <button class="btn btn-sm btn-secondary btn-block">
-                <i class="fa fa-pencil bloco"></i>
-                Editar infos
-              </button>
-            </div>           
+              </button> 
+            </div>                       
           </div>
         </div>
       </div>
-
       <div class="collapse in" id="#">
         <div class="row m-b-1 underline">
           <a href="" class="col-sm-12 subheader">
             <i class="fa fa-chevron-right"></i>
-            <span class="subheader">Dados de identificação</span>              
+            <span class="subheader">Novo destinatário / Editar</span>              
           </a>
         </div>
         <div class="col-sm-12">
           <div class="row">
             <div class="form-group col-sm-3 col-xs-12">
+              <label>Tipo de pessoa</label>
+              <select class="form-control">
+                <option>Física</option>
+                <option>Judicial</option>
+                <option>Estrangeiro</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
               <label>Nome / Razão Social</label>
               <input type="text" class="form-control">
             </div>
@@ -232,8 +258,12 @@
               <label>Telefone</label>
               <input type="text" class="form-control">
             </div>
-            <div class="form-group col-sm-3 col-xs-12">
+            <div class="form-group col-sm-6 col-xs-12">
               <label>E-mail</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-sm-3 col-xs-12">
+              <label>Nacionalidade</label>
               <input type="text" class="form-control">
             </div>
           </div>
@@ -316,7 +346,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
@@ -326,13 +355,13 @@
   <div class="col-sm-12">
     <div class="row">
       <span class="header">
-        Itens <small>- Produtos e Serviços</small>
+        Itens <small>Produtos e Serviços</small>
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>
     </div>
   </div>
 
-  <!-- **  LISTA PRODUTOS ** -->
+  <!-- **  LISTA ** -->
   <div class="collapse in" id="#">
     <div class="col-sm-12">    
       
@@ -374,7 +403,7 @@
             <span class="hidden-sm-up">
               <span class="label label-primary">Produto</span>
             </span>
-            <span class="pontinhos bloco"><span class="hidden-sm-up"> - </span>Produto X Y Z</span>
+            <span class="pontinhos bloco"><span class="hidden-sm-up"> - </span>Produto X Y Z COM UM NOME BEM GRANDE PARA TESTAR o comprimento da linha =D</span>
             <span>EAN - codigo</span>
           </div>
           <div class="form-group col-sm-1 col-xs-12 text-right ">
@@ -479,31 +508,32 @@
     </div>
   </div>
 
-  <!-- **  ADICIONAR NOVO PRODUTO ** -->
+  <!-- **  NOVO ** -->
   <div class="col-sm-12 m-b-4">
-    <div class="row">
-      <div class="collapse in borda-b-lat " id="#">
+    <div class="row borda-b-lat">
+      <div class="collapse in" id="#">
         <div class="p-t-1">
-          <div class="form-group col-sm-3 col-xs-4 xs-m-b-meio">
+          <div class="form-group col-sm-12 xs-m-b-meio underline">
+            <span class="subheader ">Novo item</span>
+            <strong class="pull-right">Total Líquido R$ 123,00</strong>
+          </div>
+          <div class="form-group col-sm-2 col-xs-4 xs-m-b-meio">
             <label>Tipo</label>
             <select class="form-control">
               <option>Produto</option>
               <option>Serviço</option>
             </select>
           </div>
-          <div class="form-group col-sm-3 col-xs-8 xs-m-b-meio">
+          <div class="form-group col-sm-2 col-xs-8 xs-m-b-meio">
             <label>Produto</label>
             <input type="text" class="form-control">
           </div>
-          <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+          <div class="form-group col-sm-2 col-xs-8 xs-m-b-meio">
             <label>Quantidade</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
-            <label>Unidade</label>
-            <input type="text" class="form-control">
-          </div>          
-          <div class="form-group col-sm-3 col-xs-6">
+            <input type="text" class="form-control text-right p-r-3">
+            <span class="pull-right medida">km</span>
+          </div> 
+          <div class="form-group col-sm-2 col-xs-6">
             <label>CFOP</label>
             <select class="form-control">
               <option>123</option>
@@ -511,613 +541,597 @@
               <option>etc...</option>
             </select>
           </div>
-          <div class="form-group col-sm-3 col-xs-6">
+          <div class="form-group col-sm-2 col-xs-6">
             <label>Total Bruto</label>
             <input type="text" class="form-control">
           </div>  
-          <div class="form-group col-sm-3 col-xs-6">
+          <div class="form-group col-sm-2 col-xs-6">
             <label>Desconto</label>
             <input type="text" class="form-control">
-          </div> 
-          <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
-            <label>Total Líquido<small> (R$)</small></label>
-            <span>123,00</span>
           </div>
         </div>
-        <!-- ** Botoes da lista ** -->
+        <!-- ** BOTOES da lista ** -->
         <div class="col-sm-12 col-xs-12">
           <div class="row m-t-1 m-b-2">
             <div class="hidden-sm-down">
-              <div class="col-sm-3">
-                <button class="btn btn-sm btn-secondary btn-block">
-                  <i class="fa fa-arrow-down fa-padding"></i>
-                    Detalhes
-                </button>            
-              </div>
-              <div class="col-sm-offset-3 col-sm-3">
+              <div class="col-sm-2">
                 <button class="btn btn-sm btn-secondary btn-block">
                   <i class="fa fa-trash-o fa-padding"></i>
-                  Excluir
+                    Excluir
+                </button>
+              </div>
+              <div class="col-sm-offset-6 col-sm-2">
+                <button class="btn btn-sm btn-secondary btn-block">
+                  <i class="fa fa-eye fa-padding"></i>
+                    Exibir detalhes
                 </button>            
               </div>
-              <div class="col-sm-3">
+              <div class="col-sm-2">
                 <button class="btn btn-sm btn-primary btn-block">
                   <i class="fa fa-plus fa-padding"></i>
-                  Adicionar item
+                    Adicionar à lista
                 </button>            
               </div>
             </div>
-              
-            <div class="hidden-sm-up">
-              <div class="col-xs-6">
-                <button class="btn btn-sm btn-secondary btn-block">
-                  <i class="fa fa-trash-o bloco"></i>
-                  Excluir
-                </button>
-              </div>
-              <div class="col-xs-6">
-                <button class="btn btn-sm btn-primary btn-block">
-                  <i class="fa fa-plus bloco"></i>
-                  Adicionar item
-                </button>
-              </div>
-            </div>
+
           </div>
         </div>
          
-        <!-- ** Tabs ** -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" href="#item" role="tab" data-toggle="tab">Item</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#icms" role="tab" data-toggle="tab">ICMS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ipi" role="tab" data-toggle="tab">IPI</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pis" role="tab" data-toggle="tab">PIS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cofins" role="tab" data-toggle="tab">COFINS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#issqn" role="tab" data-toggle="tab">ISSQN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#importacao" role="tab" data-toggle="tab">Importação</a>
-          </li>
-        </ul>
-        <div class="p-b-1 bg-f1">
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="item">
-              <div class="row">
-                <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
-                  <label>Código do produto</label>
-                  <input type="text" class="form-control">
+        <!-- ** DETALHES do novo produto ** -->
+        <div class="collapse " id="#">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#item" role="tab" data-toggle="tab">Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#icms" role="tab" data-toggle="tab">ICMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ipi" role="tab" data-toggle="tab">IPI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pis" role="tab" data-toggle="tab">PIS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cofins" role="tab" data-toggle="tab">COFINS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#issqn" role="tab" data-toggle="tab">ISSQN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#importacao" role="tab" data-toggle="tab">Importação</a>
+            </li>
+          </ul>
+          <div class="p-b-1 bg-f1">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="item">
+                <div class="row">
+                  <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+                    <label>Código do produto</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-9 col-xs-12 xs-m-b-meio">
+                    <label>Descrição</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-sm-9 col-xs-12 xs-m-b-meio">
-                  <label>Descrição</label>
-                  <input type="text" class="form-control">
+                <div class="row"> 
+                  <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
+                    <label>EAN Comercial</label>
+                    <input type="text" class="form-control">
+                  </div>              
+                  <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
+                    <label>EAN Tributável</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
+                    <label>NCM</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
+                    <label>Ex TIPI</label>
+                    <input type="text" class="form-control">
+                  </div>                
                 </div>
-              </div>
-              <div class="row"> 
-                <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
-                  <label>EAN Comercial</label>
-                  <input type="text" class="form-control">
+                <div class="row">
+                  <div class="form-group col-sm-4 col-xs-12 xs-m-b-meio">
+                    <label>Valor Unitário</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-4 col-xs-6">
+                    <label class="hidden-sm-down">Valor Unit. de Tributação<small> (R$)</small></label>
+                    <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-4 col-xs-6">
+                    <label class="hidden-sm-down">Quantidade Tributária<small> (R$)</small></label>
+                    <label class="hidden-sm-up">Quant. Trib.<small> (R$)</small></label>
+                    <input type="text" class="form-control">
+                  </div>        
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-4 col-xs-6">
+                    <label>Total Seguro<small> (R$)</small></label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-4 col-xs-6">
+                    <label>Total Frete<small> (R$)</small></label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-4 col-xs-6">
+                    <label class="hidden-sm-down">Outras despesas acessorias<small> (R$)</small></label>
+                    <label class="hidden-sm-up">Outros<small> (R$)</small></label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>              
-                <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
-                  <label>EAN Tributável</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
-                  <label>NCM</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
-                  <label>Ex TIPI</label>
-                  <input type="text" class="form-control">
-                </div>                
               </div>
-              <div class="row">
-                <div class="form-group col-sm-4 col-xs-12 xs-m-b-meio">
-                  <label>Valor Unitário</label>
-                  <input type="text" class="form-control">
+              <div role="tabpanel" class="tab-pane" id="icms">
+                <div class="row">
+                  <div class="form-group col-sm-2 col-xs-6">
+                    <label>Regime</label>
+                    <select class="form-control">
+                      <option>Normal</option>
+                      <option>Simples</option>
+                    </select>
+                  </div>                
+                  <div class="form-group col-sm-4 col-xs-6">
+                    <label>Situação tributária</label>
+                    <select class="form-control">
+                      <option>900 - Outros</option>
+                      <option>900 - Outros</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label>Origem</label>
+                    <select class="form-control">
+                      <option>0 - Nacional, exceto as indicadas 3,4,5 e 8</option>
+                      <option>0 - Nacional, exceto as indicadas 3,4,5 e 8</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="form-group col-sm-4 col-xs-6">
-                  <label class="hidden-sm-down">Valor Unit. de Tributação<small> (R$)</small></label>
-                  <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
-                  <input type="text" class="form-control">
+                <div class="row">
+                  <div class="form-group col-sm-6 col-xs-6">
+                    <label class="hidden-sm-down">Alíquota aplicavel de cálculo do crédito</label>
+                    <label class="hidden-sm-up">Alíquota aplicável do cálculo crédito</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-6 col-xs-6">
+                    <label class="hidden-sm-down">Crédito do ICMs que pode ser aproveitado</label>
+                    <label class="hidden-sm-up">Crédito que pode ser aproveitado</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-sm-4 col-xs-6">
-                  <label class="hidden-sm-down">Quantidade Tributária<small> (R$)</small></label>
-                  <label class="hidden-sm-up">Quant. Trib.<small> (R$)</small></label>
-                  <input type="text" class="form-control">
-                </div>        
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-4 col-xs-6">
-                  <label>Total Seguro<small> (R$)</small></label>
-                  <input type="text" class="form-control">
+                <div class="underline m-t-1">
+                  <a href="" class="subheader">
+                    <span class="subheader">ICMS</span>              
+                  </a>
                 </div>
-                <div class="form-group col-sm-4 col-xs-6">
-                  <label>Total Frete<small> (R$)</small></label>
-                  <input type="text" class="form-control">
+                <div class="row">
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>Modalidade de determ. BC</label>
+                    <select class="form-control">
+                      <option>Margem valor agregado</option>
+                      <option>Pauta (valor)</option>
+                      <option>Preço tabelado (valor)</option>
+                      <option>Valor da operação</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-2 col-xs-6">
+                    <label>Base cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-1 col-xs-6">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-4 col-xs-6">
+                    <label>% redução da BC</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-2 col-xs-6">
+                    <label>Total</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-sm-4 col-xs-6">
-                  <label class="hidden-sm-down">Outras despesas acessorias<small> (R$)</small></label>
-                  <label class="hidden-sm-up">Outros<small> (R$)</small></label>
-                  <input type="text" class="form-control">
+                <div class="underline m-t-1">
+                  <a href="" class="subheader">
+                    <span class="subheader">ICMS ST</span>              
+                  </a>
                 </div>
-              </div>              
-            </div>
-            <div role="tabpanel" class="tab-pane" id="icms">
-              <div class="row">
-                <div class="form-group col-sm-2 col-xs-6">
-                  <label>Regime</label>
-                  <select class="form-control">
-                    <option>Normal</option>
-                    <option>Simples</option>
-                  </select>
-                </div>                
-                <div class="form-group col-sm-4 col-xs-6">
-                  <label>Situação tributária</label>
-                  <select class="form-control">
-                    <option>900 - Outros</option>
-                    <option>900 - Outros</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-6 col-xs-12">
-                  <label>Origem</label>
-                  <select class="form-control">
-                    <option>0 - Nacional, exceto as indicadas 3,4,5 e 8</option>
-                    <option>0 - Nacional, exceto as indicadas 3,4,5 e 8</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-6 col-xs-6">
-                  <label class="hidden-sm-down">Alíquota aplicavel de cálculo do crédito</label>
-                  <label class="hidden-sm-up">Alíquota aplicável do cálculo crédito</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-6 col-xs-6">
-                  <label class="hidden-sm-down">Crédito do ICMs que pode ser aproveitado</label>
-                  <label class="hidden-sm-up">Crédito que pode ser aproveitado</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="underline m-t-1">
-                <a href="" class="subheader">
-                  <span class="subheader">ICMS</span>              
-                </a>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Modalidade de determ. BC</label>
-                  <select class="form-control">
-                    <option>Margem valor agregado</option>
-                    <option>Pauta (valor)</option>
-                    <option>Preço tabelado (valor)</option>
-                    <option>Valor da operação</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-2 col-xs-6">
-                  <label>Base cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-1 col-xs-6">
-                  <label>Alíquota</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-4 col-xs-6">
-                  <label>% redução da BC</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-2 col-xs-6">
-                  <label>Total</label>
-                  <input type="text" class="form-control">
+                <div class="row">
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>Modalidade de determ. BC</label>
+                    <select class="form-control">
+                      <option>Margem valor agregado</option>
+                      <option>Pauta (valor)</option>
+                      <option>Preço tabelado (valor)</option>
+                      <option>Valor da operação</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-2 col-xs-6">
+                    <label>Base cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-1 col-xs-6">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-2 col-xs-6">
+                    <label>% redução da BC</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-2 col-xs-6">
+                    <label class="hidden-sm-down">% margem valor adic.</label>
+                    <label class="hidden-sm-up">% margem val. adic.</label>
+                    <input type="text" class="form-control">
+                  </div>                
+                  <div class="form-group col-sm-2 col-xs-12">
+                    <label>Total</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
               </div>
-              <div class="underline m-t-1">
-                <a href="" class="subheader">
-                  <span class="subheader">ICMS ST</span>              
-                </a>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Modalidade de determ. BC</label>
-                  <select class="form-control">
-                    <option>Margem valor agregado</option>
-                    <option>Pauta (valor)</option>
-                    <option>Preço tabelado (valor)</option>
-                    <option>Valor da operação</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-2 col-xs-6">
-                  <label>Base cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-1 col-xs-6">
-                  <label>Alíquota</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-2 col-xs-6">
-                  <label>% redução da BC</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-2 col-xs-6">
-                  <label class="hidden-sm-down">% margem valor adic.</label>
-                  <label class="hidden-sm-up">% margem val. adic.</label>
-                  <input type="text" class="form-control">
-                </div>                
-                <div class="form-group col-sm-2 col-xs-12">
-                  <label>Total</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="ipi">
-              <div class="row">
-                <div class="form-group col-sm-6 col-xs-12">
-                  <label>Situação tributária</label>
-                  <select class="form-control">
-                    <option>IPI 00 - Entrada com recuperação de crédito</option>
-                    <option>IPI 00 - Entrada com recuperação de crédito</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Classe enquadramento</label>
-                  <label class="hidden-sm-up">Classe enquad.</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Codigo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>CNPJ produtor</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Código selo controle</label>
-                  <label class="hidden-sm-up">Cód. selo controle</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Tipo de cálculo</label>
-                  <select class="form-control">
-                    <option>Percentual</option>
-                    <option>Em valor</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Base de cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Quant. total de unidade padrão</label>
-                  <label class="hidden-sm-up">Quant. total unid.</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Valor por unidade</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Total</label>
-                  <input type="text" class="form-control">
+              <div role="tabpanel" class="tab-pane" id="ipi">
+                <div class="row">
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label>Situação tributária</label>
+                    <select class="form-control">
+                      <option>IPI 00 - Entrada com recuperação de crédito</option>
+                      <option>IPI 00 - Entrada com recuperação de crédito</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label class="hidden-sm-down">Classe enquadramento</label>
+                    <label class="hidden-sm-up">Classe enquad.</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Codigo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>CNPJ produtor</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label class="hidden-sm-down">Código selo controle</label>
+                    <label class="hidden-sm-up">Cód. selo controle</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Tipo de cálculo</label>
+                    <select class="form-control">
+                      <option>Percentual</option>
+                      <option>Em valor</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Base de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label class="hidden-sm-down">Quant. total de unidade padrão</label>
+                    <label class="hidden-sm-up">Quant. total unid.</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Valor por unidade</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Total</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="pis">
-              <div class="underline">
-                <a href="" class="subheader">
-                  <span class="subheader">PIS</span>              
-                </a>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-6 col-xs-12">
-                  <label>Situação tributária</label>
-                  <select class="form-control">
-                    <option>PIS 99 - Outras operações</option>
-                    <option>PIS 99 - Outras operações</option>
-                    <option>etc...</option>
-                  </select>
+              <div role="tabpanel" class="tab-pane" id="pis">
+                <div class="underline">
+                  <a href="" class="subheader">
+                    <span class="subheader">PIS</span>              
+                  </a>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Tipo de cálculo</label>
-                  <input type="text" class="form-control">
+                <div class="row">
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label>Situação tributária</label>
+                    <select class="form-control">
+                      <option>PIS 99 - Outras operações</option>
+                      <option>PIS 99 - Outras operações</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Tipo de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Base de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota (%)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota (R$)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label class="hidden-sm-down">Quantidade vendida</label>
+                    <label class="hidden-sm-up">Quant. vendida</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Total</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Base de cálculo</label>
-                  <input type="text" class="form-control">
+                <div class="underline m-t-1">
+                  <a href="" class="subheader">
+                    <span class="subheader">PIS ST</span>              
+                  </a>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota (%)</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota (R$)</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Quantidade vendida</label>
-                  <label class="hidden-sm-up">Quant. vendida</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Total</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="underline m-t-1">
-                <a href="" class="subheader">
-                  <span class="subheader">PIS ST</span>              
-                </a>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-6 col-xs-12">
-                  <label>Situação tributária</label>
-                  <select class="form-control">
-                    <option>Percentual</option>
-                    <option>Em valor</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Tipo de cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Base de cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota (%)</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota (R$)</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Quantidade vendida</label>
-                  <label class="hidden-sm-up">Quant. vendida</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Total</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="cofins">
-              <div class="underline">
-                <a href="" class="subheader">
-                  <span class="subheader">COFINS</span>              
-                </a>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-6 col-xs-12">
-                  <label>Situação tributária</label>
-                  <select class="form-control">
-                    <option>COFINS 99 - Outras operações</option>
-                    <option>COFINS 99 - Outras operações</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Tipo de cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Base de cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota (%)</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota (R$)</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Quantidade vendida</label>
-                  <label class="hidden-sm-up">Quant. vendida</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Total</label>
-                  <input type="text" class="form-control">
+                <div class="row">
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label>Situação tributária</label>
+                    <select class="form-control">
+                      <option>Percentual</option>
+                      <option>Em valor</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Tipo de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Base de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota (%)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota (R$)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label class="hidden-sm-down">Quantidade vendida</label>
+                    <label class="hidden-sm-up">Quant. vendida</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Total</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
               </div>
-              <div class="underline m-t-1">
-                <a href="" class="subheader">
-                  <span class="subheader">COFINS ST</span>              
-                </a>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-6 col-xs-12">
-                  <label>Situação tributária</label>
-                  <select class="form-control">
-                    <option>Percentual</option>
-                    <option>Em valor</option>
-                    <option>etc...</option>
-                  </select>
+              <div role="tabpanel" class="tab-pane" id="cofins">
+                <div class="underline">
+                  <a href="" class="subheader">
+                    <span class="subheader">COFINS</span>              
+                  </a>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Tipo de cálculo</label>
-                  <input type="text" class="form-control">
+                <div class="row">
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label>Situação tributária</label>
+                    <select class="form-control">
+                      <option>COFINS 99 - Outras operações</option>
+                      <option>COFINS 99 - Outras operações</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Tipo de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Base de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota (%)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota (R$)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label class="hidden-sm-down">Quantidade vendida</label>
+                    <label class="hidden-sm-up">Quant. vendida</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Total</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Base de cálculo</label>
-                  <input type="text" class="form-control">
+                <div class="underline m-t-1">
+                  <a href="" class="subheader">
+                    <span class="subheader">COFINS ST</span>              
+                  </a>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota (%)</label>
-                  <input type="text" class="form-control">
+                <div class="row">
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label>Situação tributária</label>
+                    <select class="form-control">
+                      <option>Percentual</option>
+                      <option>Em valor</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Tipo de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Base de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota (%)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota (R$)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label class="hidden-sm-down">Quantidade vendida</label>
+                    <label class="hidden-sm-up">Quant. vendida</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Total</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota (R$)</label>
-                  <input type="text" class="form-control">
+              </div>            
+              <div role="tabpanel" class="tab-pane" id="issqn">
+                <div class="row">
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>Tributação</label>
+                    <select class="form-control">
+                      <option>Normal</option>
+                      <option>Retida</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Base de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control">
+                  </div>                
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Código do serviço</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-6 col-xs-6">
+                    <label>Lista de serviço</label>
+                    <select class="form-control">
+                      <option>Normal</option>
+                      <option>Retida</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Exigibilidade do ISS</label>
+                    <select class="form-control">
+                      <option>1 - Exigível</option>
+                      <option>2 - Não exigido</option>
+                      <option>etc...</option>
+                    </select>                
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Retenção do ISS</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-2 col-xs-12">
+                    <label>UF</label>
+                    <select class="form-control">
+                      <option>RS</option>
+                      <option>SC</option>
+                      <option>ETC</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-4 col-xs-12">
+                    <label>Município de ocorrencia</label>
+                    <select class="form-control">
+                      <option>Município</option>
+                      <option>Município</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>Pais</label>
+                    <select class="form-control">
+                      <option>Município</option>
+                      <option>Município</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>Incentivo fiscal</label>
+                    <select class="form-control">
+                      <option>1 - Sim</option>
+                      <option>2 - Não</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-2 col-xs-12">
+                    <label>UF de incidencia</label>
+                    <select class="form-control">
+                      <option>RS</option>
+                      <option>SC</option>
+                      <option>ETC</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-4 col-xs-12">
+                    <label>Município de incidencia</label>
+                    <select class="form-control">
+                      <option>Município</option>
+                      <option>Município</option>
+                      <option>etc...</option>
+                    </select>
+                  </div>                
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Deduções</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Outras retenções</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Desconto incondicionado</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Desconto condicionado</label>
+                    <input type="text" class="form-control">
+                  </div>                
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label class="hidden-sm-down">Processo judicial/administrativo</label>
+                    <label class="hidden-sm-up">Processo jud/adm</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-6">
+                    <label>Valor do ISSQN</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Quantidade vendida</label>
-                  <label class="hidden-sm-up">Quant. vendida</label>
-                  <input type="text" class="form-control">
+              </div> 
+              <div role="tabpanel" class="tab-pane" id="importacao">
+                <div class="row">
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>Base de cálculo</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>Despesas aduaneiras</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>IOF</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-sm-3 col-xs-12">
+                    <label>Imposto de importação</label>
+                    <input type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Total</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-            </div>            
-            <div role="tabpanel" class="tab-pane" id="issqn">
-              <div class="row">
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Tributação</label>
-                  <select class="form-control">
-                    <option>Normal</option>
-                    <option>Retida</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Base de cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Alíquota</label>
-                  <input type="text" class="form-control">
-                </div>                
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Código do serviço</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-6 col-xs-6">
-                  <label>Lista de serviço</label>
-                  <select class="form-control">
-                    <option>Normal</option>
-                    <option>Retida</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Exigibilidade do ISS</label>
-                  <select class="form-control">
-                    <option>1 - Exigível</option>
-                    <option>2 - Não exigido</option>
-                    <option>etc...</option>
-                  </select>                
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Retenção do ISS</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-2 col-xs-12">
-                  <label>UF</label>
-                  <select class="form-control">
-                    <option>RS</option>
-                    <option>SC</option>
-                    <option>ETC</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-4 col-xs-12">
-                  <label>Município de ocorrencia</label>
-                  <select class="form-control">
-                    <option>Município</option>
-                    <option>Município</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Pais</label>
-                  <select class="form-control">
-                    <option>Município</option>
-                    <option>Município</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Incentivo fiscal</label>
-                  <select class="form-control">
-                    <option>1 - Sim</option>
-                    <option>2 - Não</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-2 col-xs-12">
-                  <label>UF de incidencia</label>
-                  <select class="form-control">
-                    <option>RS</option>
-                    <option>SC</option>
-                    <option>ETC</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-4 col-xs-12">
-                  <label>Município de incidencia</label>
-                  <select class="form-control">
-                    <option>Município</option>
-                    <option>Município</option>
-                    <option>etc...</option>
-                  </select>
-                </div>                
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Deduções</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Outras retenções</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Desconto incondicionado</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Desconto condicionado</label>
-                  <input type="text" class="form-control">
-                </div>                
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Processo judicial/administrativo</label>
-                  <label class="hidden-sm-up">Processo jud/adm</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Valor do ISSQN</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-            </div> 
-            <div role="tabpanel" class="tab-pane" id="importacao">
-              <div class="row">
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Base de cálculo</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Despesas aduaneiras</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>IOF</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Imposto de importação</label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-            </div>           
-          </div>                
+              </div>           
+            </div>                
+          </div>
         </div>
       </div>
     </div>      

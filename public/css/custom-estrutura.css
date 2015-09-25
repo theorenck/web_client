@@ -105,8 +105,17 @@ html{
 .p-b-1{
 	padding-bottom: 1em;
 }
+.p-b-1{
+	padding-bottom: 1em;
+}
+.p-b-2{
+	padding-bottom: 2em;
+}
 .p-r-2{
 	padding-right: 2em;
+}
+.p-r-3{
+	padding-right: 3em;
 }
 .quarto{
 	min-width: 22.5%;
@@ -172,22 +181,19 @@ html{
     float: right;
     border-bottom: 1px solid #ddd;
 }
-select{
-	height: 40px;
-}
 .underline{
 	padding-bottom: 0.5em;
 	border-bottom: 1px solid #f1f1f1;
-}
-.underline-borda{
-	border-bottom-right-radius:50px 1px; 
-	border-right:30px solid white;
 }
 @media screen and (max-width: 34em) {
     .underline-borda{
 		border-bottom-right-radius:0; 
 		border-right:0;
 	}	
+}
+span.medida{
+	margin-top: -2em;
+	padding-right: 1em;
 }
 .table thead th{
 	padding-top: 0.2em;
@@ -197,11 +203,11 @@ select{
 .page-header{
 	display: block;
 }
-.form-bloco{
-	/*margin-bottom: 3em;*/
-}
 .form-group{
 	margin-bottom: 1em;
+}
+.form-control{
+	font-size: 1em;
 }
 @media screen and (max-width: 34em) {
     .interno{
@@ -220,6 +226,9 @@ select{
 input{
 	height: 2.5em;
 }
+input[type="checkbox"]{
+	height: 0.9em;
+}
 .lista button{
 	font-size: 0.80rem;
 }
@@ -227,7 +236,7 @@ input{
 	padding-right: 0.2em;
 }
 .btn{
-	padding: 8px
+	padding: 8px;
 }
 .btn-group.btn-block .btn-block{
 	width: 80%;
@@ -250,7 +259,6 @@ label{
 	font-weight: 600;
 }
 .label{
-	/*display: block;  todos labels da mesma largura*/
 	white-space: normal;
 	line-height: 1rem;
 	margin-bottom: 0.4em;
@@ -278,6 +286,11 @@ h3 small{
 	color: #bdc3c7;
 	font-size: 70%;
 	font-weight: normal;
+	padding-left: 0.5em;
+}
+span small{
+	color: #bdc3c7;
+	font-size: 80%;
 	padding-left: 0.5em;
 }
 @media screen and (max-width: 34em) {
@@ -364,89 +377,3 @@ span.header{
 	box-shadow: none;
 }
 
-
-/*  Forms ============================================================ */
-.editableform {
-    margin-bottom: 0;
-}
-.editableform .control-group {
-    margin-bottom: 0;
-    white-space: nowrap;
-    line-height: 1.42em;
-}
-.editableform .form-control {
-    width: auto;
-}
-.editable-input {
-    vertical-align: top; 
-    display: inline-block;
-    width: auto;
-    white-space: normal;
-   zoom: 1; 
-   *display: inline;   
-}
-
-/*  Botoes ============================================================ */
-.editable-buttons {
-   display: inline-block;
-   vertical-align: top;
-   margin-left: 0.5em;
-   zoom: 1; 
-   display: inline;
-}
-.editable-buttons.editable-buttons-bottom {
-   display: block; 
-   margin-top: 0.5em;
-   margin-left: 0;
-}
-.editable-buttons .editable-submit {
-   margin-left: 0.5em;
-   padding: 0.6em 1em; 
-}
-.editable-buttons .editable-cancel {
-   padding: 0.6em 1em; 
-}
-
-/*  Arrow ============================================================ */
-.popover.top .arrow {
-    bottom: -11px;
-    left: 50%;
-    margin-left: -11px;
-    border-top-color: #999999;
-    border-top-color: rgba(0, 0, 0, 0.25);
-    border-bottom-width: 0;
-}
-.popover .arrow {
-    border-width: 11px;
-}
-.popover .arrow, 
-.popover .arrow:after {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-}
-.popover.top .arrow:after {
-    bottom: 1px;
-    margin-left: -10px;
-    border-top-color: #ffffff;
-    border-bottom-width: 0;
-    content: " ";
-}
-.popover .arrow:after {
-    border-width: 10px;
-    content: "";
-}
-.popover .arrow, .popover .arrow:after {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-}
-select.form-control{
-  height: 2.45em;
-}
