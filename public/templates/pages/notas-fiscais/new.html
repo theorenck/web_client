@@ -57,7 +57,7 @@
   <div class="col-sm-12 m-b-1">
     <div class="row xs-m-b-2">
       <div class="col-sm-12">
-        <h3>Nota Fiscal
+        <h3>Nota Fiscal Eletrônica (NF-e) 
           <small>Nova nota</small>
         </h3>
       </div>
@@ -73,71 +73,33 @@
         Identificação
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>
-      
       <div class="collapse in" id="#">
         <div class="col-sm-12">          
           <div class="hidden-sm-down">
-            <div class="row">
-              <div class="form-group col-sm-3">
-                <label>Modelo</label>
-                <select class="form-control">
-                  <option>NF-e - modelo 55</option>
-                  <option>NF XX - modelo XX</option>
-                </select>           
-              </div>            
-              <div class="form-group col-sm-3">
-                <label>Número</label>
-                <span>123456</span>            
-              </div>
-              <div class="form-group col-sm-3">
-                <label>Série</label>
-                <span>123</span>            
-              </div>
-              <div class="form-group col-sm-3">
+            <div class="row m-b-1">
+              <div class="form-group col-sm-2">
                 <label>Situação</label>
                 <span class="label label-info">Em digitação</span>
               </div>
-            </div>
-          </div>
-          <div class="hidden-sm-up">
-            <div class="row">
-              <div class="form-group col-xs-12 xs-m-b-1">
-                <label>Modelo</label>
-                <select class="form-control">
-                  <option>NF-e</option>
-                  <option>NFS-e</option>
-                </select>           
+              <div class="form-group col-sm-8 col-xs-12">
+                <label>Emitente</label>  
+                <span class="bloco pontinhos">
+                  <a id="myPopover" type="button" data-toggle="popover" title="Teste" data-placement="teste de conteudo">Razão social do cliente - teste ed nome grande - Macroservice Tecnica Comercial LTDA</a>
+                </span>
+                <span class="bloco">123.456.789-00</span>
               </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-3">
-                <label>Número</label>
-                <span>123456</span>            
-              </div>
-              <div class="form-group col-xs-3">
+              <div class="form-group col-sm-2">
                 <label>Série</label>
-                <span>123</span>            
-              </div>
-              <div class="form-group col-xs-6">
-                <label>Situação</label>
-                <span class="label label-info">Em digitação</span>
+                <select class="form-control">
+                  <option>123</option>
+                  <option>124</option>
+                </select>            
               </div>
             </div>
           </div>
           <div class="hidden-sm-down">
             <div class="row">
-              <div class="form-group col-sm-3">
-                <label>Origem</label>
-                <select class="form-control">
-                  <option>Sem origem</option>
-                  <option>Ordem de Serviço</option>
-                  <option>Nota Fiscal Eletrônica</option>
-                  <option>Nota fiscal Impressa</option>
-                  <option>ERP</option>
-                </select>
-              </div>
-              
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-2">
                 <label>Tipo de Operação</label>
                 <select class="form-control">
                   <option>1 - Entrada</option>
@@ -147,9 +109,9 @@
               <div class="form-group col-sm-3">
                 <label>Natureza de Operação</label>
                 <select class="form-control">
-                  <option>1 - Venda</option>
-                  <option>2 - Compra</option>
-                  <option>3 - Devolução</option>
+                  <option>cod 123 - lorem</option>
+                  <option>123</option>
+                  <option>123</option>
                 </select>
               </div>
               <div class="form-group col-sm-3">
@@ -160,150 +122,45 @@
                   <option>3 - Outra</option>
                 </select>
               </div> 
-            </div>
-          </div>
-          <div class="hidden-sm-up">
-            <div class="row">
-              <div class="form-group col-xs-12">
-                <label>Origem</label>
-                <select class="form-control">
-                  <option>Sem origem</option>
-                  <option>Ordem de Serviço</option>
-                  <option>Nota Fiscal Eletrônica</option>
-                  <option>Nota fiscal Impressa</option>
-                  <option>ERP</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-6">
-                <label>Tipo de Operação</label>
-                <select class="form-control">
-                  <option>1 - Entrada</option>
-                  <option>2 - Saída</option>
-                </select>
-              </div>
-              <div class="form-group col-xs-6">
-                <label>Nat. de Operação</label>
-                <select class="form-control">
-                  <option>1 - Venda</option>
-                  <option>2 - Compra</option>
-                  <option>3 - Devolução</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-xs-12">
-                <label>Destinação</label>
-                <select class="form-control">
-                  <option>1 - Uso e consumo</option>
-                  <option>2 - Industrialização</option>
-                  <option>3 - Outra</option>
-                </select>
-              </div> 
-            </div>
-          </div>
-          <div class="hidden-sm-down">
-            <div class="row">
-              <div class="form-group col-sm-3">
+              <div class="form-group col-sm-2">
                 <label>Emissão</label>
-                <span>16/09/15 às 17h02</span>
+                <input type="text" class="form-control" placeholder="16/09/15 às 17:02">
               </div>
-              <div class="form-group col-sm-3">
-                <label>Saída</label>
-                <span>16/09/15 às 17h02</span>
-              </div> 
-              <div class="form-group col-sm-3">
-                <label>Frete</label>
-                <select class="form-control">
-                  <option>9 - Sem frete</option>
-                  <option>0 - Emitente</option>
-                  <option>1 - Destinatário</option>
-                  <option>2 - Terceiro</option>
-                </select>            
-              </div>
-              <div class="hidden-sm-down form-group col-sm-3">
-                <label>Total da Nota<small> (R$)</small></label>
-                <span>1234,56</span>
-              </div>
-            </div>
-          </div>
-          <div class="hidden-sm-up">
-            <div class="row">
-              <div class="form-group col-xs-6">
-                <label>Emissão</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-xs-6">
+              <div class="form-group col-sm-2">
                 <label>Saída</label>
                 <input type="text" class="form-control">
               </div>
             </div>
-            <div class="row">
-              <div class="form-group col-xs-12">
-                <label>Frete</label>
-                <select class="form-control">
-                  <option>9 - Sem frete</option>
-                  <option>0 - Emitente</option>
-                  <option>1 - Destinatário</option>
-                  <option>2 - Terceiro</option>
-                </select>            
-              </div>
-            </div>
-            <div class="row m-t-1">
-              <div class="form-group col-xs-12">
-                <label>Total da Nota</label>
-                <span>R$ 1234,56</span>
-              </div>
-            </div>
-          </div>
+          </div>         
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ************* EMITENTE ************************************** -->
+<!-- ************* DESTINATÁRIO ************************************** -->
 <div class="form-bloco">
   <div class="col-sm-12 m-b-3">
     <div class="row">
       <span class="header">
-        Emitente
+        Destinatário
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-      </span>
+      </span>      
       <div class="collapse in" id="#">
         <div class="col-sm-12">
-          <div class="row">
-            
-            <div class="form-group col-sm-3 col-xs-12">              
-              <span class="bloco pontinhos">
-                <a id="myPopover" type="button" data-toggle="popover" title="Teste" data-placement="teste de conteudo">Macroservice Tecnica Comercial LTDA</a>
-              </span>
-              <span class="bloco">123.456.789-00</span>
-            </div>
-            <div class="form-group col-sm-3 col-xs-12">
-              <span class="bloco pontinhos">
-                R. Rodolfo Felix Laner, 1108<br>
-                Cinquentenário - Caxias do Sul - RS<br>
-                CEP 95012-480
-              </span>
-            </div>            
-            <div class="form-group col-sm-2 col-xs-6">
-              <strong class="bloco">Inscrição Estadual</strong>
-              <span>0962762903</span>  
-            </div>
-            <div class="form-group col-sm-2 col-xs-6">
-              <strong class="bloco">Inscrição Municipal</strong>
-              <span>17770025</span>  
-            </div>
-            <div class="form-group col-sm-1 col-xs-6">
-              <strong class="bloco">Regime</strong>
-              <span>Simples</span>  
-            </div>
-            <div class="hidden-sm-down form-group col-sm-1 col-xs-6 text-right">
-              <button type="button" class="btn btn-lg btn-secondary" data-toggle="tooltip" data-placement="top" title="Editar informações">
+          <div class="row">            
+            <div class="form-group col-sm-10 col-xs-12">              
+              <label>Nome / Razão Social</label>
+              <input type="text" class="form-control">
+            </div>        
+            <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-2">
+              <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações" disabled>
                 <i class="fa fa-pencil btn-block"></i>
-              </button> 
+              </button>
+              <button type="button" class="btn btn-sm btn-primary tres-quartos">
+                <i class="fa fa-plus fa-padding"></i>
+                Novo
+              </button>  
             </div>
             <div class="hidden-sm-up xs-m-b-1 col-xs-6">
               <button class="btn btn-sm btn-secondary btn-block">
@@ -314,27 +171,61 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- ************* DESTINATARIO ************************************** -->
-<div class="form-bloco">
-  <div class="col-sm-12 m-b-4">
-    <div class="row">
-      <span class="header">
-        Destinatário
-        <i class="fa fa-chevron-down pull-right girar-baixo"></i>
-      </span>
       <div class="collapse in" id="#">
-        <div class="col-sm-12">        
+        <div class="col-sm-12">
+          <div class="row">            
+            <div class="form-group col-sm-4 col-xs-12">              
+              <span class="bloco pontinhos">
+                <a id="myPopover" type="button" data-toggle="popover" title="Teste" data-placement="teste de conteudo">Macroservice Tecnica Comercial LTDA</a>
+              </span>
+              <span class="bloco">123.456.789-00</span>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+              <strong class="bloco">Contato</strong>
+              <span>(51) 3030-3030</span>
+              <span>exemplo_de_email@gmail.com</span>   
+            </div>           
+            <div class="form-group col-sm-3 col-xs-12">
+              <span class="bloco pontinhos">
+                R. Rodolfo Felix Laner, 1108<br>
+                Cinquentenário - Caxias do Sul - RS<br>
+                CEP 95012-480
+              </span>
+            </div>            
+            <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-2">
+              <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
+                <i class="fa fa-pencil btn-block"></i>
+              </button>
+              <button type="button" class="btn btn-sm btn-primary tres-quartos">
+                <i class="fa fa-plus fa-padding"></i>
+                Novo
+              </button>  
+            </div>
+            <div class="hidden-sm-up xs-m-b-1 col-xs-6">
+              <button class="btn btn-sm btn-secondary btn-block">
+                <i class="fa fa-pencil bloco"></i>
+                Editar infos
+              </button>
+            </div>           
+          </div>
+        </div>
+      </div>
+
+      <div class="collapse in" id="#">
+        <div class="row m-b-1 underline">
+          <a href="" class="col-sm-12 subheader">
+            <i class="fa fa-chevron-right"></i>
+            <span class="subheader">Dados de identificação</span>              
+          </a>
+        </div>
+        <div class="col-sm-12">
           <div class="row">
             <div class="form-group col-sm-3 col-xs-12">
-              <label>Nome</label>
+              <label>Nome / Razão Social</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-3 col-xs-12">
-              <label>Documento</label>
+              <label>CNPJ / CPF / Documento Estrangeiro</label>
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-3 col-xs-12">
@@ -348,6 +239,14 @@
           </div>
           <div class="row">
             <div class="form-group col-sm-3 col-xs-12">
+              <label>Indicador da IE</label>
+              <select class="form-control">
+                <option>Contribuinte ICMS</option>
+                <option>Não contribuinte ICMS</option>
+                <option>Isento</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-3 col-xs-12">
               <label>Inscrição Estadual</label>
               <input type="text" class="form-control">
             </div>
@@ -359,6 +258,7 @@
               <label>Suframa</label>
               <input type="text" class="form-control">
             </div>
+            
           </div>
 
           <div class="collapse in" id="#">
@@ -374,7 +274,7 @@
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-4 col-xs-12">
-                <label>Endereço</label>
+                <label>Logradouro</label>
                 <input type="text" class="form-control">
               </div>
               <div class="form-group col-sm-3 col-xs-6">
@@ -405,15 +305,18 @@
               </div>
               <div class="form-group col-sm-3 col-xs-12">
                 <label>País</label>
-                <input type="text" class="form-control">
+                <select class="form-control">
+                  <option>Brasil</option>
+                  <option>SC</option>
+                  <option>etc...</option>
+                </select>
               </div>
 
             </div>
           </div>
-
         </div>
       </div>
-        
+
     </div>
   </div>
 </div>
@@ -423,7 +326,7 @@
   <div class="col-sm-12">
     <div class="row">
       <span class="header">
-        Produtos e Serviços
+        Itens <small>- Produtos e Serviços</small>
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>
     </div>
@@ -436,13 +339,13 @@
       <!-- **  HEADER lista ** -->
       <div class="row hidden-sm-down">
         <div class="form-group col-sm-1">
-          <strong class="header">No.</strong>
+          <strong class="header">#</strong>
         </div>
         <div class="form-group col-sm-1">
           <strong class="header">Tipo</strong>
         </div>
         <div class="form-group col-sm-3">
-          <strong class="header">Itens</strong>
+          <strong class="header">Descrição</strong>
         </div>
         <div class="form-group col-sm-1 text-right">
          <strong class="header">Quant.</strong>
@@ -454,11 +357,11 @@
           <strong class="header">Valor Total<small> (R$)</small></strong>
         </div>
       </div>      
-      <div class="divider-solid m-b-1 hidden-sm-down"></div>
+      <div class="divider-solid hidden-sm-down"></div>
       
       <!-- **  CORPO lista ** -->
       <div REPETIR item lista>
-        <div class="row">
+        <div class="row m-t-1">
           <div class="form-group col-sm-1 hidden-sm-down">
             <span>001</span>
           </div>
@@ -471,7 +374,8 @@
             <span class="hidden-sm-up">
               <span class="label label-primary">Produto</span>
             </span>
-            <span class="pontinhos"><span class="hidden-sm-up"> - </span>Produto X Y Z</span>
+            <span class="pontinhos bloco"><span class="hidden-sm-up"> - </span>Produto X Y Z</span>
+            <span>EAN - codigo</span>
           </div>
           <div class="form-group col-sm-1 col-xs-12 text-right ">
             <span class="hidden-sm-down">1 UN</span>
@@ -506,7 +410,7 @@
               Editar
             </button>
           </div>
-          <div class="col-sm-12 m-b-1 hidden-sm-down">
+          <div class="col-sm-12 hidden-sm-down">
             <div class="divider-solid"></div>
           </div>
           <div class="col-xs-12 xs-m-1 hidden-sm-up">
@@ -515,7 +419,7 @@
         </div> 
       </div>
       <div REPETIR item lista>
-        <div class="row">
+        <div class="row m-t-1">
           <div class="form-group col-sm-1 hidden-sm-down">
             <span>002</span>
           </div>
@@ -528,7 +432,8 @@
             <span class="hidden-sm-up">
               <span class="label label-success">Serviços</span>
             </span>
-            <span class="pontinhos"><span class="hidden-sm-up"> - </span>Serviço X Y Z</span>
+            <span class="pontinhos bloco"><span class="hidden-sm-up"> - </span>Serviço X Y Z</span>
+            <span>EAN - codigo</span>
           </div>
           <div class="form-group col-sm-1 col-xs-12 text-right ">
             <span class="hidden-sm-down">1 UN</span>
@@ -563,7 +468,7 @@
               Editar
             </button>
           </div>
-          <div class="col-sm-12 m-b-1 hidden-sm-down">
+          <div class="col-sm-12 hidden-sm-down">
             <div class="divider-solid"></div>
           </div>
           <div class="col-xs-12 xs-m-1 hidden-sm-up">
@@ -576,59 +481,60 @@
 
   <!-- **  ADICIONAR NOVO PRODUTO ** -->
   <div class="col-sm-12 m-b-4">
-    <div class="row m-b-1">
-      <div class="hidden-sm-down">
-        <div class="col-sm-offset-10 col-sm-2 m-b-meio">
-          <button type="button" class="btn btn-sm btn-info btn-block"><i class="fa fa-plus"></i>
-          Adicionar Item
-          </button>        
-        </div>
-      </div>
-      <div class="hidden-sm-up">
-        <div class="col-xs-12 xs-m-t-1 xs-m-b-2">
-          <div class="row">
-            <button type="button" class="btn btn-sm btn-info btn-block">
-              <i class="fa fa-plus"></i>
-              Adicionar Item
-            </button>
-          </div>                  
-        </div>
-      </div>
-    </div>
-
-    <!-- **  PAINEL INPUT NOVO PRODUTO ** -->
     <div class="row">
       <div class="collapse in borda-b-lat " id="#">
         <div class="p-t-1">
-          <div class="form-group col-sm-2 col-xs-4 xs-m-b-meio">
+          <div class="form-group col-sm-3 col-xs-4 xs-m-b-meio">
             <label>Tipo</label>
             <select class="form-control">
               <option>Produto</option>
               <option>Serviço</option>
             </select>
           </div>
-          <div class="form-group col-sm-4 col-xs-8 xs-m-b-meio">
+          <div class="form-group col-sm-3 col-xs-8 xs-m-b-meio">
             <label>Produto</label>
             <input type="text" class="form-control">
           </div>
-          <div class="form-group col-sm-2 col-xs-12 xs-m-b-meio">
+          <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
             <label>Quantidade</label>
             <input type="text" class="form-control">
           </div>
-          <div class="form-group col-sm-2 col-xs-12 xs-m-b-meio">
-            <label>Valor Unit.</label>
+          <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+            <label>Unidade</label>
             <input type="text" class="form-control">
+          </div>          
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>CFOP</label>
+            <select class="form-control">
+              <option>123</option>
+              <option>123</option>
+              <option>etc...</option>
+            </select>
           </div>
-          <div class="form-group col-sm-2 col-xs-12 xs-m-b-meio">
-            <label>Total</label>
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Total Bruto</label>
             <input type="text" class="form-control">
+          </div>  
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Desconto</label>
+            <input type="text" class="form-control">
+          </div> 
+          <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+            <label>Total Líquido<small> (R$)</small></label>
+            <span>123,00</span>
           </div>
         </div>
         <!-- ** Botoes da lista ** -->
         <div class="col-sm-12 col-xs-12">
           <div class="row m-t-1 m-b-2">
             <div class="hidden-sm-down">
-              <div class="col-sm-offset-6 col-sm-3">
+              <div class="col-sm-3">
+                <button class="btn btn-sm btn-secondary btn-block">
+                  <i class="fa fa-arrow-down fa-padding"></i>
+                    Detalhes
+                </button>            
+              </div>
+              <div class="col-sm-offset-3 col-sm-3">
                 <button class="btn btn-sm btn-secondary btn-block">
                   <i class="fa fa-trash-o fa-padding"></i>
                   Excluir
@@ -636,8 +542,8 @@
               </div>
               <div class="col-sm-3">
                 <button class="btn btn-sm btn-primary btn-block">
-                  <i class="fa fa-floppy-o fa-padding"></i>
-                  Salvar
+                  <i class="fa fa-plus fa-padding"></i>
+                  Adicionar item
                 </button>            
               </div>
             </div>
@@ -651,8 +557,8 @@
               </div>
               <div class="col-xs-6">
                 <button class="btn btn-sm btn-primary btn-block">
-                  <i class="fa fa-floppy-o bloco"></i>
-                  Salvar
+                  <i class="fa fa-plus bloco"></i>
+                  Adicionar item
                 </button>
               </div>
             </div>
@@ -687,7 +593,11 @@
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="item">
               <div class="row">
-                <div class="form-group col-sm-12 col-xs-12 xs-m-b-meio">
+                <div class="form-group col-sm-3 col-xs-12 xs-m-b-meio">
+                  <label>Código do produto</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-9 col-xs-12 xs-m-b-meio">
                   <label>Descrição</label>
                   <input type="text" class="form-control">
                 </div>
@@ -701,18 +611,6 @@
                   <label>EAN Tributável</label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Valor Unit. de Tributação<small> (R$)</small></label>
-                  <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label class="hidden-sm-down">Quantidade Tributária<small> (R$)</small></label>
-                  <label class="hidden-sm-up">Quant. Trib.<small> (R$)</small></label>
-                  <input type="text" class="form-control">
-                </div>
-              </div>
-              <div class="row">
                 <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                   <label>NCM</label>
                   <input type="text" class="form-control">
@@ -720,32 +618,36 @@
                 <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
                   <label>Ex TIPI</label>
                   <input type="text" class="form-control">
-                </div>              
-                <div class="form-group col-sm-3 col-xs-6 xs-m-b-meio">
-                  <label>CFOP</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Desconto</label>
-                  <input type="text" class="form-control">
                 </div>                
               </div>
               <div class="row">
-                <div class="form-group col-sm-3 col-xs-6">
+                <div class="form-group col-sm-4 col-xs-12 xs-m-b-meio">
+                  <label>Valor Unitário</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label class="hidden-sm-down">Valor Unit. de Tributação<small> (R$)</small></label>
+                  <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-4 col-xs-6">
+                  <label class="hidden-sm-down">Quantidade Tributária<small> (R$)</small></label>
+                  <label class="hidden-sm-up">Quant. Trib.<small> (R$)</small></label>
+                  <input type="text" class="form-control">
+                </div>        
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-4 col-xs-6">
                   <label>Total Seguro<small> (R$)</small></label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
+                <div class="form-group col-sm-4 col-xs-6">
                   <label>Total Frete<small> (R$)</small></label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-3 col-xs-6">
+                <div class="form-group col-sm-4 col-xs-6">
                   <label class="hidden-sm-down">Outras despesas acessorias<small> (R$)</small></label>
                   <label class="hidden-sm-up">Outros<small> (R$)</small></label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-6">
-                  <label>Total Bruto<small> (R$)</small></label>
                   <input type="text" class="form-control">
                 </div>
               </div>              
@@ -1139,7 +1041,11 @@
                 </div>
                 <div class="form-group col-sm-3 col-xs-12">
                   <label>Pais</label>
-                  <input type="text" class="form-control">
+                  <select class="form-control">
+                    <option>Município</option>
+                    <option>Município</option>
+                    <option>etc...</option>
+                  </select>
                 </div>
                 <div class="form-group col-sm-3 col-xs-12">
                   <label>Incentivo fiscal</label>
