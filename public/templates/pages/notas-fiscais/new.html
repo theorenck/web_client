@@ -160,7 +160,7 @@
 
 <!-- ************* DESTINATÁRIO ************************************** -->
 <div class="form-bloco">
-  <div class="col-sm-12 m-b-3">
+  <div class="col-sm-12 m-b-4">
     <div class="row">
       <span class="header">
         Destinatário
@@ -355,7 +355,7 @@
   <div class="col-sm-12">
     <div class="row">
       <span class="header">
-        Itens <small>Produtos e Serviços</small>
+        Produtos e Serviços
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>
     </div>
@@ -389,7 +389,7 @@
       <div class="divider-solid hidden-sm-down"></div>
       
       <!-- **  CORPO lista ** -->
-      <div REPETIR item lista>
+      <div REPETIR PRODUTO>
         <div class="row m-t-1">
           <div class="form-group col-sm-1 hidden-sm-down">
             <span>001</span>
@@ -447,7 +447,7 @@
           </div>
         </div> 
       </div>
-      <div REPETIR item lista>
+      <div REPETIR SERVICO LISTA>
         <div class="row m-t-1">
           <div class="form-group col-sm-1 hidden-sm-down">
             <span>002</span>
@@ -515,25 +515,19 @@
         <div class="p-t-1">
           <div class="form-group col-sm-12 xs-m-b-meio underline">
             <span class="subheader ">Novo item</span>
-            <strong class="pull-right">Total Líquido R$ 123,00</strong>
           </div>
-          <div class="form-group col-sm-2 col-xs-4 xs-m-b-meio">
+          <div class="form-group col-sm-3 col-xs-4 xs-m-b-meio">
             <label>Tipo</label>
             <select class="form-control">
               <option>Produto</option>
               <option>Serviço</option>
             </select>
           </div>
-          <div class="form-group col-sm-2 col-xs-8 xs-m-b-meio">
+          <div class="form-group col-sm-6 col-xs-8 xs-m-b-meio">
             <label>Produto</label>
             <input type="text" class="form-control">
           </div>
-          <div class="form-group col-sm-2 col-xs-8 xs-m-b-meio">
-            <label>Quantidade</label>
-            <input type="text" class="form-control text-right p-r-3">
-            <span class="pull-right medida">km</span>
-          </div> 
-          <div class="form-group col-sm-2 col-xs-6">
+          <div class="form-group col-sm-3 col-xs-6">
             <label>CFOP</label>
             <select class="form-control">
               <option>123</option>
@@ -541,32 +535,43 @@
               <option>etc...</option>
             </select>
           </div>
-          <div class="form-group col-sm-2 col-xs-6">
-            <label>Total Bruto</label>
-            <input type="text" class="form-control">
-          </div>  
-          <div class="form-group col-sm-2 col-xs-6">
-            <label>Desconto</label>
-            <input type="text" class="form-control">
+          <div class="form-group col-sm-3 col-xs-8 xs-m-b-meio">
+            <label>Quantidade</label>
+            <input type="text" class="form-control text-right p-r-3">
+            <span class="pull-right medida">km</span>
           </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Total Bruto</label>
+            <input type="text" class="form-control p-l-3">
+            <span class="medida p-l-1 pull-left">R$</span>            
+          </div>
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Desconto</label>
+            <input type="text" class="form-control p-l-3">
+            <span class="medida p-l-1 pull-left">R$</span>
+          </div>  
+          <div class="form-group col-sm-3 col-xs-6">
+            <label>Total Líquido</label>
+            <span>R$ 1234,56</span>            
+          </div> 
         </div>
         <!-- ** BOTOES da lista ** -->
         <div class="col-sm-12 col-xs-12">
           <div class="row m-t-1 m-b-2">
             <div class="hidden-sm-down">
-              <div class="col-sm-2">
+              <div class="col-sm-3">
                 <button class="btn btn-sm btn-secondary btn-block">
                   <i class="fa fa-trash-o fa-padding"></i>
                     Excluir
                 </button>
               </div>
-              <div class="col-sm-offset-6 col-sm-2">
+              <div class="col-sm-offset-3 col-sm-3">
                 <button class="btn btn-sm btn-secondary btn-block">
                   <i class="fa fa-eye fa-padding"></i>
                     Exibir detalhes
                 </button>            
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-3">
                 <button class="btn btn-sm btn-primary btn-block">
                   <i class="fa fa-plus fa-padding"></i>
                     Adicionar à lista
@@ -702,7 +707,7 @@
                     <input type="text" class="form-control">
                   </div>
                 </div>
-                <div class="underline m-t-1">
+                <div class="underline m-1">
                   <a href="" class="subheader">
                     <span class="subheader">ICMS</span>              
                   </a>
@@ -734,7 +739,7 @@
                     <input type="text" class="form-control">
                   </div>
                 </div>
-                <div class="underline m-t-1">
+                <div class="underline m-1">
                   <a href="" class="subheader">
                     <span class="subheader">ICMS ST</span>              
                   </a>
@@ -831,7 +836,7 @@
                 </div>
               </div>
               <div role="tabpanel" class="tab-pane" id="pis">
-                <div class="underline">
+                <div class="underline m-b-1">
                   <a href="" class="subheader">
                     <span class="subheader">PIS</span>              
                   </a>
@@ -871,7 +876,7 @@
                     <input type="text" class="form-control">
                   </div>
                 </div>
-                <div class="underline m-t-1">
+                <div class="underline m-1">
                   <a href="" class="subheader">
                     <span class="subheader">PIS ST</span>              
                   </a>
@@ -913,7 +918,7 @@
                 </div>
               </div>
               <div role="tabpanel" class="tab-pane" id="cofins">
-                <div class="underline">
+                <div class="underline m-b-1">
                   <a href="" class="subheader">
                     <span class="subheader">COFINS</span>              
                   </a>
@@ -953,7 +958,7 @@
                     <input type="text" class="form-control">
                   </div>
                 </div>
-                <div class="underline m-t-1">
+                <div class="underline m-1">
                   <a href="" class="subheader">
                     <span class="subheader">COFINS ST</span>              
                   </a>
@@ -1170,7 +1175,7 @@
           </div>
           <div class="divider-solid m-b-1 hidden-sm-down"></div>
 
-          <div REPETIR linha para cada IMPOSTO>
+          <div REPETIR IMPOSTO>
             <div class="row">
               <div class="form-group col-sm-3">
                 <span class="subheader">ICMS</span>
@@ -1246,9 +1251,9 @@
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>
       <div class="collapse in" id="#">
-        <div class="col-sm-12">        
+        <div class="col-sm-6">
           <div class="row">
-            <div class="form-group col-sm-4 col-xs-8">
+            <div class="form-group col-sm-8 col-xs-8">
               <label class="hidden-sm-down">Forma de pagamento</label>
               <label class="hidden-sm-up">Forma pagamento</label>
               <select class="form-control">
@@ -1259,27 +1264,41 @@
                 <option>Outros</option>
               </select>            
             </div>
-            <div class="form-group col-sm-2 col-xs-4">
+            <div class="form-group col-sm-4 col-xs-4">
               <label>Parcelas</label>
               <input type="text" class="form-control">           
             </div>
-            <div class="form-group col-sm-2 col-xs-3">
+          </div>
+        </div>
+        <div class="col-sm-6">        
+          <div class="row">
+            <div class="col-sm-4 col-xs-3">
               <label>Número</label>
-              <span REPETIR class="bloco">123 - A</span>
             </div>
-            <div class="form-group col-sm-2 col-xs-5">
+            <div class="col-sm-4 col-xs-5">
               <label>Vencimento</label>
-              <span REPETIR class="bloco">18/09/2015</span>
             </div>
-            <div class="form-group col-sm-2 col-xs-4">
+            <div class="col-sm-4 col-xs-4">
               <label>Valor<small> (R$)</small></label>
-              <span REPETIR class="bloco">123,00</span>
             </div>            
           </div>
 
-        </div>
-      </div>
+          <div REPETIR PAGAMENTO>
+            <div class="row">
+              <div class="form-group col-sm-4 col-xs-3">
+                <span class="bloco">123 - A</span>
+              </div>
+              <div class="form-group col-sm-4 col-xs-5">
+                <span class="bloco">18/09/2015</span>
+              </div>
+              <div class="form-group col-sm-4 col-xs-4">
+                <span class="bloco">123,00</span>
+              </div>            
+            </div>
+          </div>
 
+        </div>        
+      </div>
     </div>
   </div>
 </div>

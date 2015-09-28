@@ -72,6 +72,10 @@ a:focus{
 		font-weight: normal;
 	}
 }
+.bg-ff{
+	padding: 1em;
+    background-color: #ffffff; 
+}
 .bg-f1{
 	padding: 1em;
     background-color: #f1f1f1; 
