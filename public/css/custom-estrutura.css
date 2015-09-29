@@ -120,6 +120,12 @@ html{
 .m-b-4{
 	margin-bottom: 4em;
 }
+.m-b-5{
+	margin-bottom: 5em;
+}
+.m-b-6{
+	margin-bottom: 6em;
+}
 .p-t-1{
 	padding-top: 1em;
 }
@@ -156,7 +162,6 @@ html{
 .p-r-3{
 	padding-right: 3em;
 }
-
 
 /********************** Dividers e sublinhados ******************************/
 .underline{
@@ -203,8 +208,6 @@ html{
 	    overflow: hidden;
 	}	
 }
-
-
 
 /********************** Tipografia ******************************/
 span.header{
@@ -282,7 +285,6 @@ input{
 input[type="checkbox"]{
 	height: 0.9em;
 }
-
 
 /********************** Icones e imagens ******************************/
 .btn{
