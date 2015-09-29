@@ -30,8 +30,7 @@ a:focus{
 	background-color: #3498db;
 }
 .btn-primary:hover{
-	background-color: #3498db;
-	border-color: #3498db;
+	background-color: #2980b9;
 }
 .label-primary {
     background-color: #3498db;
