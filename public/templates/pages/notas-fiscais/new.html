@@ -81,13 +81,20 @@
                 <label>Situação</label>
                 <span class="label label-info">Em digitação</span>
               </div>
-              <div class="form-group col-sm-8 col-xs-12">
+              <div class="form-group col-sm-8 col-xs-12 ">
                 <label>Emitente</label>  
                 <span class="bloco pontinhos">
                   <a id="myPopover" type="button" data-toggle="popover" title="Teste" data-placement="teste de conteudo">Razão social do cliente - teste ed nome grande - Macroservice Tecnica Comercial LTDA</a>
                 </span>
                 <span class="bloco">123.456.789-00</span>
               </div>
+
+              <div class="form-group col-sm-8 col-xs-12 hidden">
+                <label>Emitente</label>  
+                <input type="text" class="form-control">
+              </div>
+
+
               <div class="form-group col-sm-2">
                 <label>Série</label>
                 <select class="form-control">
@@ -123,26 +130,14 @@
                 </select>
               </div> 
 
-
-              <div class="form-group col-sm-2 hidden">
-                <label>Emissão</label>
-                <span>25/09/15 10:28</span>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox">
-                    Editar emissão
-                  </label>
-                </div>                  
-              </div>
-
-              <div class="form-group col-sm-2 ">
+              <div class="form-group col-sm-2">
                 <label>Emissão</label>
                 <a href="">25/09/15 10:28</a>
               </div>
 
               <div class="form-group col-sm-2 hidden">
                 <label>Emissão</label>
-                <input type="text" class="form-control" placeholder="25/09/15 10:28">
+                <input type="text" class="form-control">
               </div>
 
 
@@ -230,8 +225,8 @@
         </div>
       </div>
       <div class="collapse in" id="#">
-        <div class="row m-b-1 underline">
-          <a href="" class="col-sm-12 subheader">
+        <div class="col-sm-12 underline m-b-1">
+          <a href="" class="subheader">
             <i class="fa fa-chevron-right"></i>
             <span class="subheader">Novo destinatário / Editar</span>              
           </a>
@@ -661,29 +656,34 @@
                     <input type="text" class="form-control">
                   </div>
                   <div class="form-group col-sm-4 col-xs-6">
-                    <label class="hidden-sm-down">Valor Unit. de Tributação<small> (R$)</small></label>
-                    <label class="hidden-sm-up">Valor Unit. Trib.<small> (R$)</small></label>
-                    <input type="text" class="form-control">
+                    <label class="hidden-sm-down">Valor Unit. de Tributação</label>
+                    <label class="hidden-sm-up">Valor Unit. Trib.</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>
                   <div class="form-group col-sm-4 col-xs-6">
-                    <label class="hidden-sm-down">Quantidade Tributária<small> (R$)</small></label>
-                    <label class="hidden-sm-up">Quant. Trib.<small> (R$)</small></label>
-                    <input type="text" class="form-control">
+                    <label class="hidden-sm-down">Quantidade Tributária</label>
+                    <label class="hidden-sm-up">Quant. Trib.</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>        
                 </div>
                 <div class="row">
                   <div class="form-group col-sm-4 col-xs-6">
-                    <label>Total Seguro<small> (R$)</small></label>
-                    <input type="text" class="form-control">
+                    <label>Total Seguro</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>
                   <div class="form-group col-sm-4 col-xs-6">
-                    <label>Total Frete<small> (R$)</small></label>
-                    <input type="text" class="form-control">
+                    <label>Total Frete</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>
                   <div class="form-group col-sm-4 col-xs-6">
-                    <label class="hidden-sm-down">Outras despesas acessorias<small> (R$)</small></label>
-                    <label class="hidden-sm-up">Outros<small> (R$)</small></label>
-                    <input type="text" class="form-control">
+                    <label class="hidden-sm-down">Outras despesas acessorias</label>
+                    <label class="hidden-sm-up">Outros</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>
                 </div>              
               </div>
@@ -748,8 +748,9 @@
                     <input type="text" class="form-control">
                   </div>
                   <div class="form-group col-sm-4 col-xs-6">
-                    <label>% redução da BC</label>
-                    <input type="text" class="form-control">
+                    <label>Redução da BC</label>
+                    <input type="text" class="form-control text-right p-r-3">
+                    <span class="pull-right medida">%</span>
                   </div>
                   <div class="form-group col-sm-2 col-xs-6">
                     <label>Total</label>
@@ -780,13 +781,15 @@
                     <input type="text" class="form-control">
                   </div>
                   <div class="form-group col-sm-2 col-xs-6">
-                    <label>% redução da BC</label>
-                    <input type="text" class="form-control">
+                    <label>Redução da BC</label>
+                    <input type="text" class="form-control text-right p-r-3">
+                    <span class="pull-right medida">%</span>
                   </div>
                   <div class="form-group col-sm-2 col-xs-6">
-                    <label class="hidden-sm-down">% margem valor adic.</label>
-                    <label class="hidden-sm-up">% margem val. adic.</label>
-                    <input type="text" class="form-control">
+                    <label class="hidden-sm-down">Margem valor adic.</label>
+                    <label class="hidden-sm-up">Margem val. adic.</label>
+                    <input type="text" class="form-control text-right p-r-3">
+                    <span class="pull-right medida">%</span>
                   </div>                
                   <div class="form-group col-sm-2 col-xs-12">
                     <label>Total</label>
@@ -876,12 +879,14 @@
                     <input type="text" class="form-control">
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
-                    <label>Alíquota (%)</label>
-                    <input type="text" class="form-control">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control text-right p-r-3">
+                    <span class="pull-right medida">%</span>
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
-                    <label>Alíquota (R$)</label>
-                    <input type="text" class="form-control">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
                     <label class="hidden-sm-down">Quantidade vendida</label>
@@ -916,12 +921,14 @@
                     <input type="text" class="form-control">
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
-                    <label>Alíquota (%)</label>
-                    <input type="text" class="form-control">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control text-right p-r-3">
+                    <span class="pull-right medida">%</span>
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
-                    <label>Alíquota (R$)</label>
-                    <input type="text" class="form-control">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
                     <label class="hidden-sm-down">Quantidade vendida</label>
@@ -958,12 +965,14 @@
                     <input type="text" class="form-control">
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
-                    <label>Alíquota (%)</label>
-                    <input type="text" class="form-control">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control text-right p-r-3">
+                    <span class="pull-right medida">%</span>
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
-                    <label>Alíquota (R$)</label>
-                    <input type="text" class="form-control">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
                     <label class="hidden-sm-down">Quantidade vendida</label>
@@ -998,12 +1007,14 @@
                     <input type="text" class="form-control">
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
-                    <label>Alíquota (%)</label>
-                    <input type="text" class="form-control">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control text-right p-r-3">
+                    <span class="pull-right medida">%</span>
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
-                    <label>Alíquota (R$)</label>
-                    <input type="text" class="form-control">
+                    <label>Alíquota</label>
+                    <input type="text" class="form-control p-l-3">
+                    <span class="medida p-l-1 pull-left">R$</span>
                   </div>
                   <div class="form-group col-sm-3 col-xs-6">
                     <label class="hidden-sm-down">Quantidade vendida</label>
@@ -1325,24 +1336,25 @@
   <div class="col-sm-12 m-b-4">
     <div class="row">
       <span class="header">
-        Entrega
+        Transporte e entrega
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>
       <div class="collapse in" id="#">
         <div class="col-sm-12 m-b-1">
           <div class="row">
             <div class="form-group col-sm-3 col-xs-6">
-              <label>Frete</label>
+              <label>Modalidade do frete</label>
               <select class="form-control">
-                <option>Sem frete</option>
-                <option>Emitente</option>
-                <option>Destinatário/Remetente</option>
-                <option>Terceiros</option>
+                <option>0 - Por conta do Emitente</option>
+                <option>1 - Por conta do Destinatário/Remetente</option>
+                <option>2 - Por conta de Terceiros</option>
+                <option>9 - Sem frete</option>
               </select>
             </div>
             <div class="form-group col-sm-3 col-xs-6">
               <label>Tipo de entrega</label>
               <select class="form-control">
+                <option></option>
                 <option>Correios</option>
                 <option>Transportadora</option>
                 <option>Motoboy</option>
@@ -1350,12 +1362,14 @@
               </select>
             </div>
             <div class="form-group col-sm-3 col-xs-6">
-              <label>Seguro <small> (R$)</small></label>
-              <input type="text" class="form-control">
+              <label>Seguro</label>
+              <input type="text" class="form-control p-l-3">
+              <span class="medida p-l-1 pull-left">R$</span>
             </div>
             <div class="form-group col-sm-3 col-xs-6">
-              <label>Total do Frete <small> (R$)</small></label>
-              <input type="text" class="form-control">
+              <label>Total do Frete</label>
+              <input type="text" class="form-control p-l-3">
+              <span class="medida p-l-1 pull-left">R$</span>
             </div>
           </div>
         </div>
@@ -1450,30 +1464,31 @@
                   <label>CNPJ</label>
                   <input type="text" class="form-control">
                 </div>
+                <div class="form-group col-sm-3 col-xs-12">
+                  <label>Inscrição Estadual</label>
+                  <input type="text" class="form-control">
+                </div>                
+              </div>
+              <div class="row">
                 <div class="form-group col-sm-3">
                   <label>Telefone</label>
                   <input type="text" class="form-control">
                 </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Inscrição Estadual</label>
+                <div class="form-group col-sm-6 col-xs-12">
+                  <label>E-mail</label>
                   <input type="text" class="form-control">
                 </div>
                 <div class="form-group col-sm-3 col-xs-12">
-                  <label>RNTRC</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>CGC</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="form-group col-sm-3 col-xs-12">
-                  <label>Motorista</label>
+                  <label>Contato</label>
                   <input type="text" class="form-control">
                 </div>
               </div>
               <div class="row">
+                <div class="col-sm-12 m-1 underline">
+                  <a href="">
+                    <span class="subheader ">Endereço</span>
+                  </a>
+                </div>
                 <div class="form-group col-sm-3 col-xs-12">
                   <label>CEP</label>
                   <input type="text" class="form-control">
@@ -1524,7 +1539,7 @@
                   <div class="col-sm-3 pull-right">
                     <button class="btn btn-sm btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
-                        Adicionar à lista
+                        Adicionar transportadora
                     </button>            
                   </div>
                 </div>
@@ -1579,27 +1594,31 @@
               </div>
               <div class="collapse in" id="#">
                 <div class="col-sm-12">
-                  <div class="row">            
+                  <div class="row">
+                    <div class="form-group col-sm-3 col-xs-6">
+                      <label>Tipo</label>
+                      <span>Veículo</span>
+                    </div> 
                     <div class="form-group col-sm-2 col-xs-4">
                       <label>Placa</label>
                       <span class="label label-primary ng-binding">
                         ITT9744
                       </span>
                     </div>
-                    <div class="form-group col-sm-3 col-xs-6">
-                      <strong class="bloco">Modelo</strong>
-                      <span>(51) 3030-3030</span>
-                      <span>exemplo_de_email@gmail.com</span>   
-                    </div>           
-                    <div class="form-group col-sm-3 col-xs-12">
-                      <span class="bloco pontinhos">
-                        R. Rodolfo Felix Laner, 1108<br>
-                        Cinquentenário - Caxias do Sul - RS<br>
-                        CEP 95012-480
-                      </span>
+                    <div class="form-group col-sm-2 col-xs-6">
+                      <label>Modelo</label>
+                      <span class="bloco">Renault Duster</span>
+                    </div>
+                    <div class="form-group col-sm-2 col-xs-6">
+                      <label>Estado</label>
+                      <span>Rio Grande do Sul</span>
+                    </div>              
+                    <div class="form-group col-sm-2 col-xs-12">
+                      <label>RNTC</label>
+                      <span>12345678</span>
                     </div>            
-                    <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
-                      <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
+                    <div class="hidden-sm-down form-group col-sm-1 col-xs-6">
+                      <button type="button" class="btn btn-lg btn-secondary pull-right">
                         <i class="fa fa-pencil btn-block"></i>
                       </button> 
                     </div>                       
@@ -1611,24 +1630,37 @@
             <div class="collapse in" id="#">
               <div class="row m-b-1 underline">
                 <a href="" class="col-sm-12 subheader">
-                  <span class="subheader">Nova veículo / Editar</span>
+                  <span class="subheader">Novo veículo / Editar</span>
                 </a>
               </div>
               <div class="row m-t-1">
+                <div class="form-group col-sm-3">
+                  <label>Tipo</label>
+                  <select class="form-control">
+                    <option>Veículo</option>
+                    <option>Reboque</option>
+                    <option>Balsa</option>
+                    <option>Vagão</option>
+                  </select>
+                </div>
                 <div class="form-group col-sm-2 col-xs-4">
                   <label>Placa</label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-4 col-xs-8">
+                <div class="form-group col-sm-2 col-xs-8">
                   <label>Modelo</label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-3">
-                  <label>Tipo de Veículo</label>
-                  <input type="text" class="form-control">
+                <div class="form-group col-sm-2 col-xs-8">
+                  <label>Estado</label>
+                  <select class="form-control">
+                    <option>RS</option>
+                    <option>SC</option>
+                    <option>etc...</option>
+                  </select>
                 </div>
                 <div class="form-group col-sm-3">
-                  <label>Chassi</label>
+                  <label>RNTC</label>
                   <input type="text" class="form-control">
                 </div>
               </div>
@@ -1643,7 +1675,223 @@
                   <div class="col-sm-3 pull-right">
                     <button class="btn btn-sm btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
-                        Adicionar à lista
+                        Adicionar veículo
+                    </button>            
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <!-- ** Volumes transportados ** -->
+        <div VOLUMES>
+          <div class="col-sm-12 m-b-1">
+            <div class="row m-b-1 underline">
+              <a href="" class="col-sm-12 subheader">
+                <i class="fa fa-chevron-right"></i>
+                <span class="subheader">Volumes transportados</span>              
+              </a>
+            </div>
+            <div class="row">
+              <div class="collapse in" id="#">
+                <div class="col-sm-12">
+                  <div class="row">            
+                    <div class="form-group col-sm-7 col-xs-12">              
+                      <label>Buscar</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-2 col-xs-12 m-t-1">
+                      <button type="button" class="btn btn-sm btn-primary btn-block">
+                        <i class="fa fa-search btn-block"></i>
+                        Pesquisar
+                      </button>
+                    </div>
+                    <div class="col-sm-1 hidden-sm-down p-t-1 p-b-1">
+                      <div class="divider-v-solid"></div>
+                    </div> 
+                    <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-1">
+                      <button type="button" class="btn btn-sm btn-info btn-block">
+                        <i class="fa fa-plus btn-block"></i>
+                        Novo
+                      </button>
+                    </div>
+                    <div class="hidden-sm-up xs-m-b-1 col-xs-6">
+                      <button class="btn btn-sm btn-secondary btn-block">
+                        <i class="fa fa-pencil bloco"></i>
+                        Editar infos
+                      </button>
+                    </div>
+                    <div class="col-sm-12 m-b-2 m-t-1">
+                      <div class="divider-solid"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse in" id="#">
+                <div class="col-sm-12">
+                  <div class="row">                    
+                    <div class="form-group col-sm-1">
+                      <strong class="header">#</strong>
+                    </div>                    
+                    <div class="form-group col-sm-1">
+                      <strong class="header">Quant.</strong>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <strong class="header">Espécie</strong>
+                    </div>
+                    <div class="form-group col-sm-2">
+                      <strong class="header">Marca</strong>
+                    </div>
+                    <div class="form-group col-sm-1">
+                     <strong class="header">Num.</strong>
+                    </div>
+                    <div class="form-group col-sm-1">
+                     <strong class="header">Peso liq.</strong>
+                    </div>
+                    <div class="form-group col-sm-2">
+                     <strong class="header">Peso bru.</strong>
+                    </div>
+                    <div class="form-group col-sm-1">
+                      <strong class="header"></strong>
+                    </div>
+                  </div>
+                  <div class="divider-solid m-b-1 hidden-sm-down"></div>
+                  <div REPETIR VOLUME>
+                    <div class="row">
+                      <div class="form-group col-sm-1">
+                        <span>1</span>
+                      </div>
+                      <div class="form-group col-sm-1">
+                        <span class="hidden-sm-down">123,00</span>                
+                        <div class="hidden-sm-up">
+                          <div class="row">
+                            <div class="divider-dashed hidden-sm-up m-b-meio"></div>  
+                          </div>
+                          <span>Substituição</span>
+                          <strong class="pull-right">123,00</strong>  
+                        </div>             
+                      </div>
+                      <div class="form-group col-sm-2">
+                        <span class="hidden-sm-down">123,00</span>                
+                        <div class="hidden-sm-up">
+                          <div class="row">
+                            <div class="divider-dashed hidden-sm-up m-b-meio"></div>  
+                          </div>
+                          <span>Alíquota</span>
+                          <strong class="pull-right">123,00</strong>  
+                        </div>               
+                      </div>
+                      <div class="form-group col-sm-2">
+                        <span class="hidden-sm-down">123,00</span>                
+                        <div class="hidden-sm-up">
+                          <div class="row">
+                            <div class="divider-dashed hidden-sm-up m-b-meio"></div>  
+                          </div>
+                          <span>Substituição</span>
+                          <strong class="pull-right">123,00</strong>  
+                        </div>             
+                      </div>
+                      <div class="form-group col-sm-1">
+                        <span class="hidden-sm-down">123,00</span>                
+                        <div class="hidden-sm-up">
+                          <div class="row">
+                            <div class="divider-dashed hidden-sm-up m-b-meio"></div>  
+                          </div>
+                          <span>Base Cálculo</span>
+                          <strong class="pull-right">123,00</strong>  
+                        </div>                               
+                      </div>
+                      <div class="form-group col-sm-1">
+                        <span class="hidden-sm-down">123,00</span>                
+                        <div class="hidden-sm-up">
+                          <div class="row">
+                            <div class="divider-dashed hidden-sm-up m-b-meio"></div>  
+                          </div>
+                          <span>Retenção</span>
+                          <strong class="pull-right">123,00</strong>  
+                        </div>               
+                      </div>
+                      <div class="form-group col-sm-2">
+                        <span class="hidden-sm-down">123,00</span>                
+                        <div class="hidden-sm-up">
+                          <div class="row">
+                            <div class="divider-dashed hidden-sm-up m-b-meio"></div>  
+                          </div>
+                          <span>Total</span>
+                          <strong class="pull-right">123,00</strong>  
+                        </div>             
+                      </div>
+                      <div class="form-group col-sm-2">
+                        <button type="button" class="btn btn-lg btn-secondary quarto">
+                          <i class="fa fa-trash btn-block"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm tres-quartos btn-primary">
+                          <i class="fa fa-pencil fa-padding"></i>
+                          Editar
+                        </button>            
+                      </div>                      
+                    </div>
+
+                    <div class="xs-m-1 sm-m-b-1">
+                      <div class="divider-solid xs-m-b-2"></div>
+                    </div> 
+                  </div>                          
+                        
+                </div>
+              </div>
+            </div>
+
+            <div class="collapse in" id="#">
+              <div class="row m-b-1 underline">
+                <a href="" class="col-sm-12 subheader">
+                  <span class="subheader">Incluir volume / Editar</span>
+                </a>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-3 col-xs-12">
+                  <label>Quantidade</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-3 col-xs-12">
+                  <label>Espécie</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-3 col-xs-12">
+                  <label>Marca</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-3 col-xs-12">
+                  <label>Numeração</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-6 col-xs-12">
+                  <label>Número dos lacres</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-sm-3 col-xs-12">
+                  <label>Peso líquido</label>
+                  <input type="text" class="form-control text-right p-r-3">
+                  <span class="pull-right medida">kg</span>
+                </div>
+                <div class="form-group col-sm-3 col-xs-12">
+                  <label>Peso bruto</label>
+                  <input type="text" class="form-control text-right p-r-3">
+                  <span class="pull-right medida">kg</span>
+                </div>
+              </div>
+              <div class="row m-t-1 m-b-2">
+                <div class="hidden-sm-down">
+                  <div class="col-sm-3">
+                    <button class="btn btn-sm btn-secondary btn-block">
+                      <i class="fa fa-trash-o fa-padding"></i>
+                        Excluir
+                    </button>
+                  </div>                  
+                  <div class="col-sm-3 pull-right">
+                    <button class="btn btn-sm btn-primary btn-block">
+                      <i class="fa fa-plus fa-padding"></i>
+                        Adicionar local de entrega
                     </button>            
                   </div>
                 </div>
@@ -1733,38 +1981,42 @@
                   <span class="subheader">Nova local de entrega / Editar</span>
                 </a>
               </div>
-              <div class="row m-t-1">
-                <div class="form-group col-sm-2 col-xs-12">
+              <div class="row">
+                <div class="form-group col-sm-3 col-xs-12">
                   <label>CEP</label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-4">
-                  <label>Endereço</label>
+                <div class="form-group col-sm-4 col-xs-12">
+                  <label>Logradouro</label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col-sm-2 col-xs-12">
                   <label>Número</label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col-sm-3 col-xs-12">
                   <label>Complemento</label>
                   <input type="text" class="form-control">
                 </div>
               </div>
               <div class="row">
-                <div class="form-group col-sm-2 col-xs-12">
+                <div class="form-group col-sm-3 col-xs-12">
                   <label>Estado</label>
-                  <input type="text" class="form-control">
+                  <select class="form-control">
+                    <option>RS</option>
+                    <option>SC</option>
+                    <option>etc...</option>
+                  </select>
                 </div>
-                <div class="form-group col-sm-4">
+                <div class="form-group col-sm-4 col-xs-12">
                   <label>Bairro</label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col-sm-2 col-xs-12">
                   <label>Cidade</label>
                   <input type="text" class="form-control">
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col-sm-3 col-xs-12">
                   <label>País</label>
                   <input type="text" class="form-control">
                 </div>
@@ -1780,7 +2032,7 @@
                   <div class="col-sm-3 pull-right">
                     <button class="btn btn-sm btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
-                        Adicionar à lista
+                        Adicionar local de entrega
                     </button>            
                   </div>
                 </div>
@@ -1836,23 +2088,17 @@
               <div class="collapse in" id="#">
                 <div class="col-sm-12">
                   <div class="row">            
-                    <div class="form-group col-sm-4 col-xs-12">              
-                      <span class="bloco pontinhos">
-                        <a href="">Macroservice Tecnica Comercial LTDA</a>
-                      </span>
-                      <span class="bloco">123.456.789-00</span>
+                    <div class="form-group col-sm-3 col-xs-12">              
+                      <strong>UF de embarque</strong>
+                      <span class="bloco">Rio Grande do Sul</span>
                     </div>
                     <div class="form-group col-sm-3 col-xs-6">
-                      <strong class="bloco">Contato</strong>
-                      <span>(51) 3030-3030</span>
-                      <span>exemplo_de_email@gmail.com</span>   
+                      <strong class="bloco">Local de embarque</strong>
+                      <span>Aeroporto de Porto Alegre</span>
                     </div>           
-                    <div class="form-group col-sm-3 col-xs-12">
-                      <span class="bloco pontinhos">
-                        R. Rodolfo Felix Laner, 1108<br>
-                        Cinquentenário - Caxias do Sul - RS<br>
-                        CEP 95012-480
-                      </span>
+                    <div class="form-group col-sm-4 col-xs-12">
+                      <strong class="bloco">Local de despacho</strong>
+                      <span>Própria empresa empresa</span>
                     </div>            
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
                       <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
@@ -1867,11 +2113,11 @@
             <div class="collapse in" id="#">
               <div class="row m-b-1 underline">
                 <a href="" class="col-sm-12 subheader">
-                  <span class="subheader">Novo exportação / Editar</span>
+                  <span class="subheader">Adicionar origem / Editar</span>
                 </a>
               </div>
               <div class="row m-t-1">
-                <div class="form-group col-sm-2 col-xs-12">
+                <div class="form-group col-sm-3 col-xs-12">
                   <label>UF de embarque</label>
                   <select class="form-control">
                     <option>RS</option>
@@ -1879,7 +2125,7 @@
                     <option>etc...</option>
                   </select>
                 </div>
-                <div class="form-group col-sm-4">
+                <div class="form-group col-sm-3">
                   <label>Local de Embarque</label>
                   <input type="text" class="form-control">
                 </div>
@@ -1899,7 +2145,7 @@
                   <div class="col-sm-3 pull-right">
                     <button class="btn btn-sm btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
-                        Adicionar à lista
+                        Adicionar exportação
                     </button>            
                   </div>
                 </div>
@@ -1907,7 +2153,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
