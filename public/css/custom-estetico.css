@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Open Sans';
     src: url('/font/opensans-regular-webfont.eot');
-
 	src: url('/font/opensans-regular-webfont.eot') format('eot'),
 		 url('/font/opensans-regular-webfont.woff') format('woff'),
 		 url('/font/opensans-regular-webfont.ttf') format('truetype'),
@@ -15,33 +14,8 @@ a:hover,
 a:focus{
 	text-decoration: none;
 }
-.bold{
-	font-weight: bold;
-}
 .navbar{
 	border-radius: 0;
-}
-@media screen and (max-width: 34em) {
-    .xs-bold{
-    	font-weight: bold;
-    }
-}
-.card-light{
-	border: none;
-	padding-right: 0;
-	padding-left: 0;
-}
-.card-dark{
-	margin-bottom: 2em;
-	background-color: #f1f1f1;
-}
-.form-bloco h5:hover,
-.form-bloco h5:focus{
-	color: #3498db;
-}
-.form-bloco h5.collapse-titulo:hover,
-.form-bloco h5.collapse-titulo:focus{
-	color: #34495e;
 }
 .navbar-dark{
 	background-color: #34495e;
@@ -62,16 +36,6 @@ a:focus{
 .label-primary {
     background-color: #3498db;
 }
-@media screen and (max-width: 34em) {
-    .subtitle{
-		color: #3498db;
-		font-weight: bold;
-	}
-	.subinfo{
-		color: #373a3c;
-		font-weight: normal;
-	}
-}
 .bg-ff{
 	padding: 1em;
     background-color: #ffffff; 
@@ -80,7 +44,7 @@ a:focus{
 	padding: 1em;
     background-color: #f1f1f1; 
 }
-.borda-b-lat{
+.borda{
 	border: 1px solid #eaeaea;
 	margin-top: -1px;
 }
@@ -95,43 +59,10 @@ a:focus{
 	background-color: #f1f1f1;
 }
 
-.rodape{
-	padding: 0.8em 0 0 0;
-	background-color: #ededed;
-	margin-top: -1.5em;
-}
-@media screen and (max-width: 34em) {
-    .rodape{
-		padding: 0.;
-		background-color: #ededed;
-		margin-top: 0;
-	}
-}
-
 /********************** Icones e imagens ******************************/
-.logo-navbar{
-	height: 40px;
-	width: 150px;
-	background-image: url('zeta.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 .fa{
 	transform: rotate(0deg);
 	transition: 0.5s ease;
 }
-.fa-chevron-down{
-	transition: 0.5s ease;
-}
-.fa-chevron-down.girar-cima{
-	transform: rotate(180deg);
-	transition: 0.5s ease;
-}
-.girar-icon{
-	transform: rotate(45deg);
-	transition: 0.5s ease;
-}
-
 
 
