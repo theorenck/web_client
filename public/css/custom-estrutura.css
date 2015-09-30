@@ -163,6 +163,33 @@ html{
 	padding-right: 3em;
 }
 
+/*.z-topo{
+	padding-top: 1.5em;
+	z-index: 1;	
+}
+.painel{
+	margin-top: -4em;
+	padding: 0 15px 1em;
+	background-color: #f1f1f1;
+	z-index: -1;
+}
+
+.nav-pills .nav-link {
+    display: block;
+    padding: .5em 1em;
+    border-radius: .25rem;
+    background-color: #E5E5E5;
+    margin-left: 1em;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .nav-link.active:focus, 
+.nav-pills .nav-link.active:hover, 
+.nav-pills .nav-item.open .nav-link, 
+.nav-pills .nav-item.open .nav-link:focus, 
+.nav-pills .nav-item.open .nav-link:hover {
+	background-color: #3498db;
+}*/
+
 /********************** Dividers e sublinhados ******************************/
 .underline{
 	padding-bottom: 0.5em;
@@ -319,3 +346,12 @@ label{
 	margin-bottom: 0.4em;
 	text-align: left;
 }
+
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 100px solid red;
+}
+
