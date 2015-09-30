@@ -56,11 +56,3 @@ a:focus{
 {
 	background-color: #f1f1f1;
 }
-
-/********************** Icones e imagens ******************************/
-.fa{
-	transform: rotate(0deg);
-	transition: 0.5s ease;
-}
-
-

@@ -288,7 +288,11 @@ input[type="checkbox"]{
 
 /********************** Icones e imagens ******************************/
 .btn{
-	padding: 8px;
+	padding: 0.4em 0.5em;
+	font-size: 1em;
+}
+.fa{
+	line-height: 1.5em;
 }
 .quarto{
 	min-width: 22.5%;

@@ -169,7 +169,7 @@
               <input type="text" class="form-control">
             </div>
             <div class="form-group col-sm-2 col-xs-12 m-t-1">
-              <button type="button" class="btn btn-sm btn-primary btn-block">
+              <button type="button" class="btn  btn-primary btn-block">
                 <i class="fa fa-search btn-block"></i>
                 Pesquisar
               </button>
@@ -178,13 +178,13 @@
               <div class="divider-v-solid"></div>
             </div> 
             <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-1">
-              <button type="button" class="btn btn-sm btn-info btn-block">
+              <button type="button" class="btn  btn-info btn-block">
                 <i class="fa fa-plus btn-block"></i>
                 Novo
               </button>
             </div>
             <div class="hidden-sm-up xs-m-b-1 col-xs-6">
-              <button class="btn btn-sm btn-secondary btn-block">
+              <button class="btn  btn-secondary btn-block">
                 <i class="fa fa-pencil bloco"></i>
                 Editar infos
               </button>
@@ -217,7 +217,7 @@
               </span>
             </div>            
             <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
-              <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
+              <button type="button" class="btn  btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
                 <i class="fa fa-pencil btn-block"></i>
               </button> 
             </div>                       
@@ -340,13 +340,13 @@
             <div class="row m-t-1 m-b-2">
               <div class="hidden-sm-down">
                 <div class="col-sm-3">
-                  <button class="btn btn-sm btn-secondary btn-block">
+                  <button class="btn  btn-secondary btn-block">
                     <i class="fa fa-trash-o fa-padding"></i>
                       Excluir
                   </button>
                 </div>                  
                 <div class="col-sm-3 pull-right">
-                  <button class="btn btn-sm btn-primary btn-block">
+                  <button class="btn  btn-primary btn-block">
                     <i class="fa fa-plus fa-padding"></i>
                       Adicionar à lista
                   </button>            
@@ -443,10 +443,10 @@
             </div>
           </div>
           <div class="form-group col-sm-2 hidden-sm-down">
-            <button type="button" class="btn btn-lg quarto btn-secondary">
+            <button type="button" class="btn quarto btn-secondary">
               <i class="fa fa-trash-o btn-block"></i>
             </button>
-            <button type="button" class="btn btn-sm tres-quartos btn-primary">
+            <button type="button" class="btn tres-quartos btn-primary">
               <i class="fa fa-pencil fa-padding"></i>
               Editar
             </button>
@@ -501,10 +501,10 @@
             </div>
           </div>
           <div class="form-group col-sm-2 hidden-sm-down">
-            <button type="button" class="btn btn-lg quarto btn-secondary">
+            <button type="button" class="btn  quarto btn-secondary">
               <i class="fa fa-trash-o btn-block"></i>
             </button>
-            <button type="button" class="btn btn-sm tres-quartos btn-primary">
+            <button type="button" class="btn  tres-quartos btn-primary">
               <i class="fa fa-pencil fa-padding"></i>
               Editar
             </button>
@@ -572,19 +572,19 @@
           <div class="row m-t-1 m-b-2">
             <div class="hidden-sm-down">
               <div class="col-sm-3">
-                <button class="btn btn-sm btn-secondary btn-block">
+                <button class="btn  btn-secondary btn-block">
                   <i class="fa fa-trash-o fa-padding"></i>
                     Excluir
                 </button>
               </div>
               <div class="col-sm-offset-3 col-sm-3">
-                <button class="btn btn-sm btn-secondary btn-block">
+                <button class="btn  btn-secondary btn-block">
                   <i class="fa fa-eye fa-padding"></i>
                     Exibir detalhes
                 </button>            
               </div>
               <div class="col-sm-3">
-                <button class="btn btn-sm btn-primary btn-block">
+                <button class="btn  btn-primary btn-block">
                   <i class="fa fa-plus fa-padding"></i>
                     Adicionar à lista
                 </button>            
@@ -1279,9 +1279,9 @@
         <i class="fa fa-chevron-down pull-right girar-baixo"></i>
       </span>
       <div class="collapse in" id="#">
-        <div class="col-sm-6">
+        <div class="col-sm-12 m-b-2">
           <div class="row">
-            <div class="form-group col-sm-8 col-xs-8">
+            <div class="form-group col-sm-3 col-xs-8">
               <label class="hidden-sm-down">Forma de pagamento</label>
               <label class="hidden-sm-up">Forma pagamento</label>
               <select class="form-control">
@@ -1292,39 +1292,101 @@
                 <option>Outros</option>
               </select>            
             </div>
-            <div class="form-group col-sm-4 col-xs-4">
-              <label>Parcelas</label>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label class="hidden-sm-down">Valor original</label>
+              <label class="hidden-sm-up">Valor original</label>
               <input type="text" class="form-control">           
             </div>
-          </div>
-        </div>
-        <div class="col-sm-6">        
-          <div class="row">
-            <div class="col-sm-4 col-xs-3">
-              <label>Número</label>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label class="hidden-sm-down">Valor do desconto</label>
+              <label class="hidden-sm-up">Desconto</label>
+              <input type="text" class="form-control">            
             </div>
-            <div class="col-sm-4 col-xs-5">
-              <label>Vencimento</label>
-            </div>
-            <div class="col-sm-4 col-xs-4">
-              <label>Valor<small> (R$)</small></label>
+            <div class="form-group col-sm-3 col-xs-6">
+              <label class="hidden-sm-down">Valor líquido</label>
+              <label class="hidden-sm-up">Valor líquido</label>
+              <input type="text" class="form-control">           
             </div>            
           </div>
-
-          <div REPETIR PAGAMENTO>
-            <div class="row">
-              <div class="form-group col-sm-4 col-xs-3">
-                <span class="bloco">123 - A</span>
-              </div>
-              <div class="form-group col-sm-4 col-xs-5">
-                <span class="bloco">18/09/2015</span>
-              </div>
-              <div class="form-group col-sm-4 col-xs-4">
-                <span class="bloco">123,00</span>
-              </div>            
+        </div>
+        <div class="col-sm-12">
+          <div class="divider-solid m-b-1 hidden-sm-down"></div>
+          <div class="row hidden-sm-down">
+            <div class="form-group col-sm-3">
+              <strong class="header">#</strong>
+            </div>
+            <div class="form-group col-sm-3">
+              <strong class="header">Número</strong>
+            </div>
+            <div class="form-group col-sm-3">
+              <strong class="header">Vencimento</strong>
+            </div>
+            <div class="form-group col-sm-3">
+             <strong class="header">Total<small> (R$)</small></strong>
             </div>
           </div>
+          <div class="divider-solid m-b-1 hidden-sm-down"></div>
+          <div>
+            <div class="row">
+              <div class="form-group col-sm-3 col-xs-3">
+                <span class="bloco">1234-A</span>
+              </div>
+              <div class="form-group col-sm-3 col-xs-5">
+                <span class="bloco">18/09/2015</span>
+              </div>
+              <div class="form-group col-sm-3 col-xs-4">
+                <span class="bloco">123,00</span>
+              </div> 
+              <div class="form-group col-sm-1 col-xs-3">
+                <span class="bloco">Entrada</span>
+              </div>
+              <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
+                <button type="button" class="btn  btn-secondary quarto">
+                  <i class="fa fa-pencil btn-block"></i>
+                </button>
+                <button type="button" class="btn  btn-secondary quarto">
+                  <i class="fa fa-pencil btn-block"></i>
+                </button> 
+              </div>           
+            </div>                         
+          </div>
+          <div REPETIR PAGAMENTO>
+            <div class="xs-m-1 sm-m-b-1">
+              <div class="divider-solid xs-m-b-2"></div>
+            </div> 
+            <div class="row">              
+              <div class="form-group col-sm-3 col-xs-3">
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-5">
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-4">
+                <input type="text" class="form-control">
+              </div> 
+              <div class="form-group col-sm-2 col-xs-3">
+                <select class="form-control">
+                  <option>Entrada</option>
+                  <option>Parcela 1</option>
+                  <option>Parcela 2</option>
+                </select>
+              </div>
+              <div class="hidden-sm-down form-group col-sm-1 col-xs-6 text-right">
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-pencil"></i>
+                  Salvar
+                </button> 
+              </div>           
+            </div>              
+          </div>
 
+          <div class="col-sm-3">
+            <button class="btn btn-primary btn-block">
+              <i class="fa fa-plus fa-padding"></i>
+                Adicionar à lista
+            </button>            
+          </div>
+          
         </div>        
       </div>
     </div>
@@ -1392,7 +1454,7 @@
                       <input type="text" class="form-control">
                     </div>
                     <div class="form-group col-sm-2 col-xs-12 m-t-1">
-                      <button type="button" class="btn btn-sm btn-primary btn-block">
+                      <button type="button" class="btn  btn-primary btn-block">
                         <i class="fa fa-search btn-block"></i>
                         Pesquisar
                       </button>
@@ -1401,13 +1463,13 @@
                       <div class="divider-v-solid"></div>
                     </div> 
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-1">
-                      <button type="button" class="btn btn-sm btn-info btn-block">
+                      <button type="button" class="btn  btn-info btn-block">
                         <i class="fa fa-plus btn-block"></i>
                         Novo
                       </button>
                     </div>
                     <div class="hidden-sm-up xs-m-b-1 col-xs-6">
-                      <button class="btn btn-sm btn-secondary btn-block">
+                      <button class="btn  btn-secondary btn-block">
                         <i class="fa fa-pencil bloco"></i>
                         Editar infos
                       </button>
@@ -1440,7 +1502,7 @@
                       </span>
                     </div>            
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
-                      <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
+                      <button type="button" class="btn  btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
                         <i class="fa fa-pencil btn-block"></i>
                       </button> 
                     </div>                       
@@ -1531,13 +1593,13 @@
               <div class="row m-t-1 m-b-2">
                 <div class="hidden-sm-down">
                   <div class="col-sm-3">
-                    <button class="btn btn-sm btn-secondary btn-block">
+                    <button class="btn  btn-secondary btn-block">
                       <i class="fa fa-trash-o fa-padding"></i>
                         Excluir
                     </button>
                   </div>                  
                   <div class="col-sm-3 pull-right">
-                    <button class="btn btn-sm btn-primary btn-block">
+                    <button class="btn  btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
                         Adicionar transportadora
                     </button>            
@@ -1566,7 +1628,7 @@
                       <input type="text" class="form-control">
                     </div>
                     <div class="form-group col-sm-2 col-xs-12 m-t-1">
-                      <button type="button" class="btn btn-sm btn-primary btn-block">
+                      <button type="button" class="btn  btn-primary btn-block">
                         <i class="fa fa-search btn-block"></i>
                         Pesquisar
                       </button>
@@ -1575,13 +1637,13 @@
                       <div class="divider-v-solid"></div>
                     </div> 
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-1">
-                      <button type="button" class="btn btn-sm btn-info btn-block">
+                      <button type="button" class="btn  btn-info btn-block">
                         <i class="fa fa-plus btn-block"></i>
                         Novo
                       </button>
                     </div>
                     <div class="hidden-sm-up xs-m-b-1 col-xs-6">
-                      <button class="btn btn-sm btn-secondary btn-block">
+                      <button class="btn  btn-secondary btn-block">
                         <i class="fa fa-pencil bloco"></i>
                         Editar infos
                       </button>
@@ -1618,7 +1680,7 @@
                       <span>12345678</span>
                     </div>            
                     <div class="hidden-sm-down form-group col-sm-1 col-xs-6">
-                      <button type="button" class="btn btn-lg btn-secondary pull-right">
+                      <button type="button" class="btn  btn-secondary pull-right">
                         <i class="fa fa-pencil btn-block"></i>
                       </button> 
                     </div>                       
@@ -1667,13 +1729,13 @@
               <div class="row m-t-1 m-b-2">
                 <div class="hidden-sm-down">
                   <div class="col-sm-3">
-                    <button class="btn btn-sm btn-secondary btn-block">
+                    <button class="btn  btn-secondary btn-block">
                       <i class="fa fa-trash-o fa-padding"></i>
                         Excluir
                     </button>
                   </div>                  
                   <div class="col-sm-3 pull-right">
-                    <button class="btn btn-sm btn-primary btn-block">
+                    <button class="btn  btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
                         Adicionar veículo
                     </button>            
@@ -1702,7 +1764,7 @@
                       <input type="text" class="form-control">
                     </div>
                     <div class="form-group col-sm-2 col-xs-12 m-t-1">
-                      <button type="button" class="btn btn-sm btn-primary btn-block">
+                      <button type="button" class="btn  btn-primary btn-block">
                         <i class="fa fa-search btn-block"></i>
                         Pesquisar
                       </button>
@@ -1711,13 +1773,13 @@
                       <div class="divider-v-solid"></div>
                     </div> 
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-1">
-                      <button type="button" class="btn btn-sm btn-info btn-block">
+                      <button type="button" class="btn  btn-info btn-block">
                         <i class="fa fa-plus btn-block"></i>
                         Novo
                       </button>
                     </div>
                     <div class="hidden-sm-up xs-m-b-1 col-xs-6">
-                      <button class="btn btn-sm btn-secondary btn-block">
+                      <button class="btn  btn-secondary btn-block">
                         <i class="fa fa-pencil bloco"></i>
                         Editar infos
                       </button>
@@ -1823,10 +1885,10 @@
                         </div>             
                       </div>
                       <div class="form-group col-sm-2">
-                        <button type="button" class="btn btn-lg btn-secondary quarto">
+                        <button type="button" class="btn  btn-secondary quarto">
                           <i class="fa fa-trash btn-block"></i>
                         </button>
-                        <button type="button" class="btn btn-sm tres-quartos btn-primary">
+                        <button type="button" class="btn  tres-quartos btn-primary">
                           <i class="fa fa-pencil fa-padding"></i>
                           Editar
                         </button>            
@@ -1883,13 +1945,13 @@
               <div class="row m-t-1 m-b-2">
                 <div class="hidden-sm-down">
                   <div class="col-sm-3">
-                    <button class="btn btn-sm btn-secondary btn-block">
+                    <button class="btn  btn-secondary btn-block">
                       <i class="fa fa-trash-o fa-padding"></i>
                         Excluir
                     </button>
                   </div>                  
                   <div class="col-sm-3 pull-right">
-                    <button class="btn btn-sm btn-primary btn-block">
+                    <button class="btn  btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
                         Adicionar local de entrega
                     </button>            
@@ -1918,7 +1980,7 @@
                       <input type="text" class="form-control">
                     </div>
                     <div class="form-group col-sm-2 col-xs-12 m-t-1">
-                      <button type="button" class="btn btn-sm btn-primary btn-block">
+                      <button type="button" class="btn  btn-primary btn-block">
                         <i class="fa fa-search btn-block"></i>
                         Pesquisar
                       </button>
@@ -1927,13 +1989,13 @@
                       <div class="divider-v-solid"></div>
                     </div> 
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-1">
-                      <button type="button" class="btn btn-sm btn-info btn-block">
+                      <button type="button" class="btn  btn-info btn-block">
                         <i class="fa fa-plus btn-block"></i>
                         Novo
                       </button>
                     </div>
                     <div class="hidden-sm-up xs-m-b-1 col-xs-6">
-                      <button class="btn btn-sm btn-secondary btn-block">
+                      <button class="btn  btn-secondary btn-block">
                         <i class="fa fa-pencil bloco"></i>
                         Editar infos
                       </button>
@@ -1966,7 +2028,7 @@
                       </span>
                     </div>            
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
-                      <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
+                      <button type="button" class="btn  btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
                         <i class="fa fa-pencil btn-block"></i>
                       </button> 
                     </div>                       
@@ -2024,13 +2086,13 @@
               <div class="row m-t-1 m-b-2">
                 <div class="hidden-sm-down">
                   <div class="col-sm-3">
-                    <button class="btn btn-sm btn-secondary btn-block">
+                    <button class="btn  btn-secondary btn-block">
                       <i class="fa fa-trash-o fa-padding"></i>
                         Excluir
                     </button>
                   </div>                  
                   <div class="col-sm-3 pull-right">
-                    <button class="btn btn-sm btn-primary btn-block">
+                    <button class="btn  btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
                         Adicionar local de entrega
                     </button>            
@@ -2059,7 +2121,7 @@
                       <input type="text" class="form-control">
                     </div>
                     <div class="form-group col-sm-2 col-xs-12 m-t-1">
-                      <button type="button" class="btn btn-sm btn-primary btn-block">
+                      <button type="button" class="btn  btn-primary btn-block">
                         <i class="fa fa-search btn-block"></i>
                         Pesquisar
                       </button>
@@ -2068,13 +2130,13 @@
                       <div class="divider-v-solid"></div>
                     </div> 
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right m-t-1">
-                      <button type="button" class="btn btn-sm btn-info btn-block">
+                      <button type="button" class="btn  btn-info btn-block">
                         <i class="fa fa-plus btn-block"></i>
                         Novo
                       </button>
                     </div>
                     <div class="hidden-sm-up xs-m-b-1 col-xs-6">
-                      <button class="btn btn-sm btn-secondary btn-block">
+                      <button class="btn  btn-secondary btn-block">
                         <i class="fa fa-pencil bloco"></i>
                         Editar infos
                       </button>
@@ -2101,7 +2163,7 @@
                       <span>Própria empresa empresa</span>
                     </div>            
                     <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
-                      <button type="button" class="btn btn-lg btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
+                      <button type="button" class="btn  btn-secondary quarto" data-toggle="tooltip" data-placement="top" title="Editar informações">
                         <i class="fa fa-pencil btn-block"></i>
                       </button> 
                     </div>                       
@@ -2137,13 +2199,13 @@
               <div class="row m-t-1 m-b-2">
                 <div class="hidden-sm-down">
                   <div class="col-sm-3">
-                    <button class="btn btn-sm btn-secondary btn-block">
+                    <button class="btn  btn-secondary btn-block">
                       <i class="fa fa-trash-o fa-padding"></i>
                         Excluir
                     </button>
                   </div>                  
                   <div class="col-sm-3 pull-right">
-                    <button class="btn btn-sm btn-primary btn-block">
+                    <button class="btn  btn-primary btn-block">
                       <i class="fa fa-plus fa-padding"></i>
                         Adicionar exportação
                     </button>            
@@ -2228,20 +2290,20 @@
   <div class="col-sm-12 m-b-2 hidden-sm-down">
     <div class="row m-t-1">
       <div class="form-group">
-        <button type="button" class="btn btn-sm btn-secondary col-sm-3"><i class="fa fa-arrow-left bloco"></i>
+        <button type="button" class="btn  btn-secondary col-sm-3"><i class="fa fa-arrow-left bloco"></i>
         Voltar
         </button>
-        <button type="button" class="btn btn-sm btn-primary col-sm-3 pull-right"><i class="fa fa-cog bloco"></i>
+        <button type="button" class="btn  btn-primary col-sm-3 pull-right"><i class="fa fa-cog bloco"></i>
           Gerar Nota
         </button>
       </div>
     </div>
     <div class="col-xs-12 hidden-sm-up">
       <div class="form-group">                
-        <button type="button" class="btn btn-sm btn-secondary metade pull-left"><i class="fa fa-arrow-left bloco"></i>
+        <button type="button" class="btn  btn-secondary metade pull-left"><i class="fa fa-arrow-left bloco"></i>
         Voltar
         </button>
-        <button type="button" class="btn btn-sm btn-primary metade pull-right"><i class="fa fa-cog bloco"></i>
+        <button type="button" class="btn  btn-primary metade pull-right"><i class="fa fa-cog bloco"></i>
           Gerar Nota
         </button>
       </div>
