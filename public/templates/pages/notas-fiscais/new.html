@@ -1295,26 +1295,24 @@
             <div class="form-group col-sm-3 col-xs-6">
               <label class="hidden-sm-down">Valor original</label>
               <label class="hidden-sm-up">Valor original</label>
-              <input type="text" class="form-control">           
+              <span>R$ 1234,56</span>       
             </div>
             <div class="form-group col-sm-3 col-xs-6">
-              <label class="hidden-sm-down">Valor do desconto</label>
-              <label class="hidden-sm-up">Desconto</label>
-              <input type="text" class="form-control">            
+              <label class="hidden-sm-down">Número de parcelas</label>
+              <label class="hidden-sm-up">Número de parcelas</label>
+              <input type="text" class="form-control">          
             </div>
             <div class="form-group col-sm-3 col-xs-6">
-              <label class="hidden-sm-down">Valor líquido</label>
-              <label class="hidden-sm-up">Valor líquido</label>
-              <input type="text" class="form-control">           
+              <label class="hidden-sm-down">Valor da parcela</label>
+              <label class="hidden-sm-up">Valor da parcela</label>
+              <input type="text" class="form-control p-l-3">
+              <span class="medida p-l-1 pull-left">R$</span>           
             </div>            
           </div>
         </div>
         <div class="col-sm-12">
           <div class="divider-solid m-b-1 hidden-sm-down"></div>
           <div class="row hidden-sm-down">
-            <div class="form-group col-sm-3">
-              <strong class="header">#</strong>
-            </div>
             <div class="form-group col-sm-3">
               <strong class="header">Número</strong>
             </div>
@@ -1326,7 +1324,8 @@
             </div>
           </div>
           <div class="divider-solid m-b-1 hidden-sm-down"></div>
-          <div>
+          
+          <div REPETIR PAGAMENTO>
             <div class="row">
               <div class="form-group col-sm-3 col-xs-3">
                 <span class="bloco">1234-A</span>
@@ -1336,57 +1335,39 @@
               </div>
               <div class="form-group col-sm-3 col-xs-4">
                 <span class="bloco">123,00</span>
-              </div> 
-              <div class="form-group col-sm-1 col-xs-3">
-                <span class="bloco">Entrada</span>
               </div>
-              <div class="hidden-sm-down form-group col-sm-2 col-xs-6 text-right">
-                <button type="button" class="btn  btn-secondary quarto">
-                  <i class="fa fa-pencil btn-block"></i>
+              <div class="hidden-sm-down form-group col-sm-3 col-xs-6">
+                <button type="button" class="btn btn-secondary col-sm-2">
+                  <i class="fa fa-trash btn-block"></i>
                 </button>
-                <button type="button" class="btn  btn-secondary quarto">
-                  <i class="fa fa-pencil btn-block"></i>
+                <button type="button" class="btn btn-primary col-sm-9 pull-right">
+                  <i class="fa fa-pencil fa-padding"></i>
+                  Editar
                 </button> 
               </div>           
-            </div>                         
-          </div>
-          <div REPETIR PAGAMENTO>
+            </div>
             <div class="xs-m-1 sm-m-b-1">
               <div class="divider-solid xs-m-b-2"></div>
+            </div>                         
+          </div>         
+             
+          <div class="row">
+            <div class="form-group col-sm-3 col-xs-3">
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-sm-3 col-xs-5">
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-sm-3 col-xs-4">
+              <input type="text" class="form-control">
             </div> 
-            <div class="row">              
-              <div class="form-group col-sm-3 col-xs-3">
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-5">
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-sm-3 col-xs-4">
-                <input type="text" class="form-control">
-              </div> 
-              <div class="form-group col-sm-2 col-xs-3">
-                <select class="form-control">
-                  <option>Entrada</option>
-                  <option>Parcela 1</option>
-                  <option>Parcela 2</option>
-                </select>
-              </div>
-              <div class="hidden-sm-down form-group col-sm-1 col-xs-6 text-right">
-                <button type="button" class="btn btn-primary">
-                  <i class="fa fa-pencil"></i>
-                  Salvar
-                </button> 
-              </div>           
-            </div>              
-          </div>
-
-          <div class="col-sm-3">
-            <button class="btn btn-primary btn-block">
-              <i class="fa fa-plus fa-padding"></i>
-                Adicionar à lista
-            </button>            
-          </div>
-          
+            <div class="hidden-sm-down form-group col-sm-3 col-xs-6 text-right">
+              <button type="button" class="btn btn-info btn-block">
+                <i class="fa fa-plus fa-padding"></i>
+                Adicionar parcela
+              </button> 
+            </div>           
+          </div>      
         </div>        
       </div>
     </div>
