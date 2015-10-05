@@ -29,7 +29,12 @@ a:focus{
 .btn-primary{
 	background-color: #3498db;
 }
-.btn-primary:hover{
+.btn-primary:hover,
+.btn-primary:focus, 
+.btn-primary.focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open > .btn-primary.dropdown-toggle{
 	background-color: #2980b9;
 }
 .label-primary {
