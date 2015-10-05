@@ -90,13 +90,10 @@
                 </span>
                 <span class="bloco">123.456.789-00</span>
               </div>
-
               <div class="form-group col-sm-8 col-xs-12 hidden">
                 <label>Emitente</label>  
                 <input type="text" class="form-control">
               </div>
-
-
               <div class="form-group col-sm-2">
                 <label>Série</label>
                 <select class="form-control">
@@ -407,7 +404,7 @@
                   <span class="label label-primary">Produto</span>
                 </span>
                 <span class="pontinhos bloco"><span class="hidden-sm-up"> - </span>Produto X Y Z COM UM NOME BEM GRANDE PARA TESTAR o comprimento da linha =D</span>
-                <span>EAN - codigo</span>
+                <span>EAN - código</span>
               </div>
               <div class="form-group col-sm-1 col-xs-12 text-right ">
                 <span class="hidden-sm-down">1 UN</span>
@@ -465,7 +462,7 @@
                   <span class="label label-success">Serviços</span>
                 </span>
                 <span class="pontinhos bloco"><span class="hidden-sm-up"> - </span>Serviço X Y Z</span>
-                <span>EAN - codigo</span>
+                <span>EAN - código</span>
               </div>
               <div class="form-group col-sm-1 col-xs-12 text-right ">
                 <span class="hidden-sm-down">1 UN</span>
@@ -551,7 +548,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-12 m-t-1">                
+                <div class="col-sm-12 m-t-1">
                   <div class="form-group col-sm-2">
                     <button class="btn btn-secondary btn-block" data-target="#detalhes" type="button" data-toggle="collapse" aria-expanded="false">
                       Detalhes
@@ -582,8 +579,8 @@
                 <div class="col-sm-12 m-t-1">
                   <!-- ** DETALHES** -->        
                   <div class="collapse bg-f1 p-1" id="detalhes">
-                    <div class="row">
-                      <div class="col-sm-12 m-t-1 m-b-2">
+                    <div class="col-sm-12 underline m-t-1 m-b-1">
+                      <div class="row">
                         <a href="">
                           <span class="subheader">Detalhes</span>
                         </a>
@@ -771,8 +768,8 @@
                             <input type="text" class="form-control">
                           </div>
                         </div>              
-                        <div class="row">
-                          <div class="col-sm-12 m-t-2 m-b-1">
+                        <div class="col-sm-12 underline m-t-1 m-b-1">
+                          <div class="row">                          
                             <a href="">
                               <span class="subheader">ICMS ST</span>              
                             </a>
@@ -873,7 +870,7 @@
                             <input type="text" class="form-control">
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label>Codigo</label>
+                            <label>Código</label>
                             <input type="text" class="form-control">
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
@@ -928,8 +925,8 @@
                             <input type="text" class="form-control">
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-sm-12 m-t-2 m-b-1">
+                        <div class="col-sm-12 underline m-t-2 m-b-1">
+                          <div class="row">
                             <a href="">
                               <span class="subheader">PIS ST</span>              
                             </a>
@@ -1017,8 +1014,8 @@
                             <input type="text" class="form-control">
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-sm-12 m-t-2 m-b-1">
+                        <div class="col-sm-12 underline m-t-2 m-b-1">
+                          <div class="row">
                             <a href="">
                               <span class="subheader">COFINS ST</span>              
                             </a>
@@ -1253,9 +1250,8 @@
                             <input type="text" class="form-control">
                           </div>
                         </div>
-
-                        <div class="row">
-                          <div class="col-sm-12 m-t-2 m-b-1">
+                        <div class="col-sm-12 underline m-t-2 m-b-1">
+                          <div class="row">
                             <span class="subheader">Declaração de importação</span>
                           </div>
                         </div>
@@ -1278,6 +1274,9 @@
                           <div class="col-sm-1 col-xs-12">
                             <label>Data</label>
                           </div>
+                        </div>
+                        <div class="col-sm-12">                            
+                          <div class="divider-solid m-t-meio m-b-1"></div>
                         </div>
                         <div REPETIR DECLARACOES>
                           <div class="row">
@@ -1309,6 +1308,9 @@
                               </button>            
                             </div>
                           </div>
+                          <div class="col-sm-12">                            
+                            <div class="divider-solid m-b-1"></div>
+                          </div>
                         </div>                         
                         <div class="row">
                           <div class="col-sm-offset-10 col-sm-2">
@@ -1319,8 +1321,8 @@
                           </div>
                         </div>
                         <div class="collapse" id="nova-declaracao">
-                          <div class="row">
-                            <div class="col-sm-6 m-t-2 m-b-1">
+                          <div class="col-sm-12 underline m-t-2 m-b-1">
+                            <div class="row">
                               <span class="subheader">Nova declaração de importação</span>
                             </div>
                           </div>
@@ -1405,14 +1407,16 @@
                             </div>
                           </div>
                           <div class="row m-t-1">
-                            <div class="col-sm-12 col-xs-12">
+                            <div class="col-sm-12 ">
                               <a class="subheader" data-target="#adicao" data-toggle="collapse" aria-expanded="false">
                                 <i class="fa fa-chevron-right fa-padding"></i>
-                                Adição
+                                Adição                                
                               </a>
+                              <div class="col-sm-12">                            
+                                <div class="divider-solid m-t-meio"></div>
+                              </div>
                             </div>
                           </div>
-
                           <div class="collapse" id="adicao">
                             <div class="row m-t-1">                              
                               <div class="col-sm-2 col-xs-12">
@@ -1428,8 +1432,11 @@
                                 <label>Número conc. drawback</label>
                               </div>
                             </div>
+                            <div class="col-sm-12">                            
+                              <div class="divider-solid m-t-meio m-b-1"></div>
+                            </div>
                             <div REPETIR ADICAO>
-                              <div class="row">                              
+                              <div class="row">
                                 <div class="form-group col-sm-2 col-xs-12">
                                   <span>123456</span>
                                 </div>
@@ -1451,6 +1458,9 @@
                                     Editar
                                   </button>            
                                 </div>
+                              </div>
+                              <div class="col-sm-12">                            
+                                <div class="divider-solid m-b-1"></div>
                               </div>
                             </div>
                             <div class="row">
@@ -1474,8 +1484,13 @@
                               </div>
                             </div>
                           </div>
-
-                          <div class="row m-t-2">
+                          <div class="row m-t-3">
+                            <div class="col-sm-2">
+                              <button type="button" class="btn  btn-secondary btn-block" data-target="#novo_dest" data-toggle="collapse" aria-expanded="false">
+                                <i class="fa fa-ban btn-block"></i>
+                                Cancelar
+                              </button>
+                            </div>
                             <div class="col-sm-2 pull-right">
                               <button type="button" class="btn  btn-primary btn-block" data-target="#novo_dest" data-toggle="collapse" aria-expanded="false">
                                 <i class="fa fa-check btn-block"></i>
@@ -1483,11 +1498,10 @@
                               </button>
                             </div>
                           </div>
-
                         </div>
                       </div>
                       <div role="tabpanel" class="p-t-2 tab-pane" id="exportacao">
-                        <div class="row">                                       
+                        <div class="row">
                           <div class="form-group col-sm-12 col-xs-12">
                             <label>Número do ato concessório de drawback</label>
                             <input type="text" class="form-control">
