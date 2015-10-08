@@ -292,6 +292,7 @@ span small{
 span.medida{
 	margin-top: -2em;
 	padding-right: 1em;
+	padding-left: 1em;
 }
 .multi-select{
 	border-top-left-radius: 0;

@@ -287,7 +287,7 @@
             <div class="row">
               <div class="form-group col-sm-3 col-xs-12">
                 <label>CEP</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" placeholder="">
               </div>
               <div class="form-group col-sm-5 col-xs-12">
                 <label>Logradouro</label>
@@ -649,7 +649,7 @@
                       </div>
                       <div class="form-group col-sm-3 col-xs-6">
                         <label>NCM</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="94052000">
                       </div>
                       <div class="form-group col-sm-3 col-xs-6">
                         <label>Ex TIPI</label>
@@ -682,7 +682,7 @@
                           <div class="col-sm-8">
                             <div class="col-sm-9">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-3">
@@ -729,12 +729,13 @@
                           </div>
                           <div class="form-group col-sm-4 col-xs-6">
                             <label>Redução da BC</label>
-                            <input type="text" class="form-control text-right p-r-3">
+                            <input type="text" class="form-control text-right p-r-3" placeholder="35">
                             <span class="pull-right medida">%</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control" placeholder="1.463,12">
+                            <input type="text" class="form-control p-l-3" placeholder="941,51">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Alíquota</label>
@@ -753,14 +754,15 @@
                             </div>
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label>Total<small> (R$)</small></label>
-                            <input type="text" class="form-control" placeholder="248,73">
+                            <label>Total</label>
+                            <input type="text" class="form-control p-l-3" placeholder="248,73">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Alíquota crédito</label>
                             <div class="col-sm-7">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-5">
@@ -775,7 +777,8 @@
                           <div class="form-group col-sm-2 col-xs-6">
                             <label class="hidden-sm-down">Crédito aproveitado</label>
                             <label class="hidden-sm-up">Crédito que pode ser aproveitado</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                         </div>              
                         <div class="col-sm-12 underline m-t-1 m-b-1">
@@ -797,7 +800,7 @@
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Redução da BC</label>
-                            <input type="text" class="form-control text-right p-r-3">
+                            <input type="text" class="form-control text-right p-r-3" placeholder="-">
                             <span class="pull-right medida">%</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
@@ -808,7 +811,8 @@
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control" placeholder="1.639,43">
+                            <input type="text" class="form-control p-l-3" placeholder="941,51">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Alíquota</label>
@@ -828,8 +832,9 @@
                           </div> 
                                           
                           <div class="form-group col-sm-2 col-xs-12">
-                            <label>Total<small> (R$)</small></label>
-                            <input type="text" class="form-control" placeholder="278,70">
+                            <label>Total</label>
+                            <input type="text" class="form-control p-l-3" placeholder="278,70">
+                            <span class="pull-left medida">R$</span>
                           </div>
                         </div>  
                       </div>
@@ -845,7 +850,8 @@
                           </div>                          
                          <div class="form-group col-sm-2 col-xs-6">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control" placeholder="941,51">
+                            <input type="text" class="form-control p-l-3" placeholder="941,51">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Alíquota</label>
@@ -865,32 +871,35 @@
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Total</label>
-                            <input type="text" class="form-control" placeholder="141,23">
+                            <input type="text" class="form-control p-l-3" placeholder="141,23">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Quant. uni. padrão</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-r-3" placeholder="5">
+                            <span class="pull-right medida">un</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label>Valor por unidade</label>
-                            <input type="text" class="form-control">
+                            <label>Valor unitário</label>
+                            <input type="text" class="form-control p-l-3" placeholder="61,84">
+                            <span class="pull-left medida">R$</span>
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Classe enquadra.</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="-">
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Código</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="-">
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>CNPJ produtor</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="-">
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label class="hidden-sm-down">Código selo controle</label>
                             <label class="hidden-sm-up">Cód. selo controle</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="-">
                           </div>
                         </div>
                       </div>
@@ -907,18 +916,19 @@
                           <div class="form-group col-sm-2 col-xs-6">
                             <label class="hidden-sm-down">Quantidade vendida</label>
                             <label class="hidden-sm-up">Quant. vendida</label>
-                            <input type="text" class="form-control text-right p-r-3">
-                            <span class="pull-right medida">km</span>
+                            <input type="text" class="form-control text-right p-r-3" placeholder="5">
+                            <span class="pull-right medida">un</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Alíquota</label>
                             <div class="col-sm-7">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-5">
@@ -932,7 +942,8 @@
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Total</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                         </div>
                         <div class="col-sm-12 underline m-t-2 m-b-1">
@@ -954,18 +965,19 @@
                           <div class="form-group col-sm-2 col-xs-6">
                             <label class="hidden-sm-down">Quantidade vendida</label>
                             <label class="hidden-sm-up">Quant. vendida</label>
-                            <input type="text" class="form-control text-right p-r-3">
-                            <span class="pull-right medida">km</span>
+                            <input type="text" class="form-control text-right p-r-3" placeholder="5">
+                            <span class="pull-right medida">un</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Alíquota</label>
                             <div class="col-sm-7">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-5">
@@ -979,7 +991,8 @@
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Total</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                         </div>
                       </div>
@@ -996,18 +1009,19 @@
                           <div class="form-group col-sm-2 col-xs-6">
                             <label class="hidden-sm-down">Quantidade vendida</label>
                             <label class="hidden-sm-up">Quant. vendida</label>
-                            <input type="text" class="form-control text-right p-r-3">
-                            <span class="pull-right medida">km</span>
+                            <input type="text" class="form-control text-right p-r-3" placeholder="5">
+                            <span class="pull-right medida">un</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Alíquota</label>
                             <div class="col-sm-7">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-5">
@@ -1021,7 +1035,8 @@
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Total</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                         </div>
                         <div class="col-sm-12 underline m-t-2 m-b-1">
@@ -1043,18 +1058,19 @@
                           <div class="form-group col-sm-2 col-xs-6">
                             <label class="hidden-sm-down">Quantidade vendida</label>
                             <label class="hidden-sm-up">Quant. vendida</label>
-                            <input type="text" class="form-control text-right p-r-3">
-                            <span class="pull-right medida">km</span>
+                            <input type="text" class="form-control text-right p-r-3" placeholder="5">
+                            <span class="pull-right medida">un</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Alíquota</label>
                             <div class="col-sm-7">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-5">
@@ -1068,7 +1084,8 @@
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Total</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                         </div>
                       </div>
@@ -1084,13 +1101,14 @@
                           </div>
                           <div class="form-group col-sm-3 col-xs-6">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="941,51">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-3 col-xs-6">
                             <label>Alíquota</label>
                             <div class="col-sm-9">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-3">
@@ -1104,21 +1122,24 @@
                           </div>
                           <div class="form-group col-sm-3 col-xs-6">
                             <label>Valor do ISSQN</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>                
                            <div class="form-group col-sm-3 col-xs-6">
                             <label>Retenção do ISS</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Deduções</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Desc. incondicionado</label>
                             <div class="col-sm-7">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-5">
@@ -1134,7 +1155,7 @@
                             <label>Desc. condicionado</label>
                             <div class="col-sm-7">
                               <div class="row">
-                                <input type="text" class="form-control multi-input">
+                                <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
                             </div>
                             <div class="col-sm-5">
@@ -1148,7 +1169,8 @@
                           </div>
                           <div class="form-group col-sm-3 col-xs-6">
                             <label>Outras retenções</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>                    
                           <div class="form-group col-sm-3 col-xs-6">
                             <label>Exigibilidade do ISS</label>
@@ -1161,7 +1183,7 @@
                           <div class="form-group col-sm-2 col-xs-6">
                             <label class="hidden-sm-down">Processo jud./adm.</label>
                             <label class="hidden-sm-up">Processo jud/adm</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="">
                           </div>
                           <div class="form-group col-sm-2 col-xs-12">
                             <label>Incentivo fiscal</label>
@@ -1172,7 +1194,7 @@
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Código do serviço</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="">
                           </div>
                           <div class="form-group col-sm-3 col-xs-6">
                             <label>Lista de serviço</label>
@@ -1245,19 +1267,23 @@
                         <div class="row">
                           <div class="form-group col-sm-3 col-xs-12">
                             <label>Base de cálculo</label>
-                            <input type="text" class="form-control" placeholder="941,51">
+                            <input type="text" class="form-control p-l-3" placeholder="941,51">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-3 col-xs-12">
                             <label>Despesas aduaneiras</label>
-                            <input type="text" class="form-control" placeholder="3.561,81">
+                            <input type="text" class="form-control p-l-3" placeholder="3.561,81">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-3 col-xs-12">
                             <label>IOF</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control p-l-3" placeholder="-">
+                            <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-3 col-xs-12">
                             <label>Imposto de importação</label>
-                            <input type="text" class="form-control" placeholder="143,62">
+                            <input type="text" class="form-control p-l-3" placeholder="143,62">
+                            <span class="pull-left medida">R$</span>
                           </div>
                         </div>
                         <div class="col-sm-12 underline m-t-2 m-b-1">
@@ -1466,16 +1492,16 @@
                                 </div>
                                 <div class="row m-t-1">
                                   <div class="form-group col-sm-offset-2 col-sm-2 col-xs-12">
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" placeholder="002">
                                   </div>
                                   <div class="form-group col-sm-2 col-xs-12">
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" placeholder="812">
                                   </div>
                                   <div class="form-group col-sm-2 col-xs-12">
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" placeholder="-">
                                   </div>
                                   <div class="form-group col-sm-2 col-xs-12">
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" placeholder="1512179975">
                                   </div>
                                   <div class="form-group col-sm-2">
                                     <button type="button" class="btn btn-block btn-info">
@@ -2287,33 +2313,31 @@
           </div>
           <div class="collapse" id="trans_exp">
             <div class="row">
-              <div class="m-t-1">
-                <div class="form-group col-sm-2">
-                  <label>UF de embarque</label>
-                  <select class="form-control">
-                    <option>RS</option>
-                    <option>SC</option>
-                    <option>etc...</option>
-                  </select>
-                </div>
-                <div class="form-group col-sm-4">
-                  <label>Local de Embarque</label>
-                  <input type="text" class="form-control" placeholder="Rio Grande">
-                </div>
-                <div class="form-group col-sm-4">
-                  <label>Local de Despacho</label>
-                  <input type="text" class="form-control" placeholder="SRF Rio Grande">
-                </div>
-                <div class="form-group col-sm-2 m-t-2">
-                  <button type="button" class="btn btn-secondary quarto">
-                    <i class="fa fa-trash btn-block"></i>
-                  </button>
-                  <button type="button" class="btn tres-quartos btn-primary">
-                    <i class="fa fa-plus fa-padding"></i>
-                    Adicionar
-                  </button> 
-                </div>
+              <div class="form-group col-sm-2">
+                <label>UF de embarque</label>
+                <select class="form-control">
+                  <option>RS</option>
+                  <option>SC</option>
+                  <option>etc...</option>
+                </select>
               </div>
+              <div class="form-group col-sm-4">
+                <label>Local de Embarque</label>
+                <input type="text" class="form-control" placeholder="Rio Grande">
+              </div>
+              <div class="form-group col-sm-4">
+                <label>Local de Despacho</label>
+                <input type="text" class="form-control" placeholder="SRF Rio Grande">
+              </div>
+              <div class="form-group col-sm-2 m-t-2">
+                <button type="button" class="btn btn-secondary quarto">
+                  <i class="fa fa-trash btn-block"></i>
+                </button>
+                <button type="button" class="btn tres-quartos btn-primary">
+                  <i class="fa fa-plus fa-padding"></i>
+                  Adicionar
+                </button> 
+              </div>              
             </div>
           </div>              
         </div>        
