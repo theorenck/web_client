@@ -354,6 +354,9 @@ label{
 	margin-bottom: 0.4em;
 	text-align: left;
 }
+.label-white{
+	color: white;
+}
 
 #triangle-up {
 	width: 0;
