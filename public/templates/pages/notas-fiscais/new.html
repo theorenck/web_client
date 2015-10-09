@@ -523,7 +523,7 @@
               <div class="row">
                 <div class="col-sm-12 m-t-1">
                   <!-- ** DETALHES** -->        
-                  <div class="collapse bg-f1 p-1" id="detalhes">
+                  <div class="collapse in bg-f1 p-1" id="detalhes">
                     <div class="col-sm-12 underline m-t-1 m-b-1">
                       <div class="row">
                         <a href="">
@@ -664,8 +664,8 @@
                           </div>
                         </div>                                      
                         <div class="row">
-                          <div class="form-group col-sm-2 col-xs-12">
-                            <label>Mod. determ. BC</label>
+                          <div class="form-group col-sm-4 col-xs-12">
+                            <label>Modalidade BC</label>
                             <select class="form-control">
                               <option>3 - Valor da operação</option>
                               <option>0 - Margem valor agregado</option>
@@ -673,7 +673,7 @@
                               <option>2 - Preço tabelado (valor)</option>
                             </select>
                           </div>
-                          <div class="form-group col-sm-4 col-xs-6">
+                          <div class="form-group col-sm-2 col-xs-6">
                             <label>Redução da BC</label>
                             <input type="text" class="form-control text-right p-r-3" placeholder="35">
                             <span class="pull-right medida">%</span>
@@ -700,7 +700,7 @@
                             </div>
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label>Total</label>
+                            <label>Valor ICMS</label>
                             <input type="text" class="form-control p-l-3" placeholder="248,73">
                             <span class="pull-left medida">R$</span>
                           </div>
@@ -736,7 +736,7 @@
                         </div>
                         <div class="row">
                           <div class="form-group col-sm-2 col-xs-12">
-                            <label>Mod. determ. BC</label>
+                            <label>Modalidade BC</label>
                             <select class="form-control">
                               <option>4 - Margem valor agregado</option>
                               <option>Pauta (valor)</option>
@@ -745,16 +745,16 @@
                             </select>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label>Redução da BC</label>
-                            <input type="text" class="form-control text-right p-r-3" placeholder="-">
-                            <span class="pull-right medida">%</span>
-                          </div>
-                          <div class="form-group col-sm-2 col-xs-6">
-                            <label class="hidden-sm-down">Margem adic.</label>
-                            <label class="hidden-sm-up">Margem adic.</label>
+                            <label class="hidden-sm-down">MVA</label>
+                            <label class="hidden-sm-up">MVA</label>
                             <input type="text" class="form-control text-right p-r-3" placeholder="35">
                             <span class="pull-right medida">%</span>
                           </div>
+                          <div class="form-group col-sm-2 col-xs-6">
+                            <label>Redução da BC</label>
+                            <input type="text" class="form-control text-right p-r-3" placeholder="-">
+                            <span class="pull-right medida">%</span>
+                          </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
                             <label>Base de cálculo</label>
                             <input type="text" class="form-control p-l-3" placeholder="941,51">
@@ -778,7 +778,7 @@
                           </div> 
                                           
                           <div class="form-group col-sm-2 col-xs-12">
-                            <label>Total</label>
+                            <label>Valor ICMS ST</label>
                             <input type="text" class="form-control p-l-3" placeholder="278,70">
                             <span class="pull-left medida">R$</span>
                           </div>
@@ -816,17 +816,17 @@
                             </div>
                           </div>                          
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label>Total</label>
+                            <label>Valor IPI</label>
                             <input type="text" class="form-control p-l-3" placeholder="141,23">
                             <span class="pull-left medida">R$</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label>Quant. uni. padrão</label>
+                            <label>Quant. tributado</label>
                             <input type="text" class="form-control p-r-3" placeholder="5">
                             <span class="pull-right medida">un</span>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label>Valor unitário</label>
+                            <label>Valor tributado</label>
                             <input type="text" class="form-control p-l-3" placeholder="61,84">
                             <span class="pull-left medida">R$</span>
                           </div>                          
@@ -860,8 +860,8 @@
                             </select>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label class="hidden-sm-down">Quantidade vendida</label>
-                            <label class="hidden-sm-up">Quant. vendida</label>
+                            <label class="hidden-sm-down">Quantidade tributada</label>
+                            <label class="hidden-sm-up">Quant. tributada</label>
                             <input type="text" class="form-control text-right p-r-3" placeholder="5">
                             <span class="pull-right medida">un</span>
                           </div>
@@ -909,8 +909,8 @@
                             </select>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label class="hidden-sm-down">Quantidade vendida</label>
-                            <label class="hidden-sm-up">Quant. vendida</label>
+                            <label class="hidden-sm-down">Quantidade tributada</label>
+                            <label class="hidden-sm-up">Quant. tributada</label>
                             <input type="text" class="form-control text-right p-r-3" placeholder="5">
                             <span class="pull-right medida">un</span>
                           </div>
@@ -953,8 +953,8 @@
                             </select>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label class="hidden-sm-down">Quantidade vendida</label>
-                            <label class="hidden-sm-up">Quant. vendida</label>
+                            <label class="hidden-sm-down">Quantidade tributada</label>
+                            <label class="hidden-sm-up">Quant. tributada</label>
                             <input type="text" class="form-control text-right p-r-3" placeholder="5">
                             <span class="pull-right medida">un</span>
                           </div>
@@ -1002,8 +1002,8 @@
                             </select>
                           </div>
                           <div class="form-group col-sm-2 col-xs-6">
-                            <label class="hidden-sm-down">Quantidade vendida</label>
-                            <label class="hidden-sm-up">Quant. vendida</label>
+                            <label class="hidden-sm-down">Quantidade tributada</label>
+                            <label class="hidden-sm-up">Quant. tributada</label>
                             <input type="text" class="form-control text-right p-r-3" placeholder="5">
                             <span class="pull-right medida">un</span>
                           </div>
@@ -1342,42 +1342,35 @@
                               </div>  
                             </div>
                             <div class="col-sm-12">
-                              <div class="row">
-                                <div class="col-sm-6">
-                                  <div class="row">                                    
-                                    <div class="form-group col-sm-4 col-xs-12">
-                                      <label>Data desemb. adu.</label>
-                                      <input type="text" class="form-control" placeholder="02/10/15">
-                                    </div>   
-                                    <div class="form-group col-sm-4 col-xs-12">
-                                      <label>Local desemb. adu.</label>
-                                      <input type="text" class="form-control" placeholder="SFR Rio Grande">
-                                    </div>
-                                    <div class="form-group col-sm-4 col-xs-12">
-                                      <label>Estado desemb. adu.</label>
-                                      <select class="form-control">
-                                        <option>RS</option>
-                                        <option>SC</option>
-                                        <option>etc....</option>
-                                      </select>
-                                    </div>
+                              <div class="row">               
+                                  <div class="form-group col-sm-2 col-xs-12">
+                                    <label>Data desemb. adu.</label>
+                                    <input type="text" class="form-control" placeholder="02/10/15">
+                                  </div>   
+                                  <div class="form-group col-sm-4 col-xs-12">
+                                    <label>Local desemb. adu.</label>
+                                    <input type="text" class="form-control" placeholder="SFR Rio Grande">
                                   </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div class="row">                                    
-                                    <div class="form-group col-sm-8 col-xs-12">
-                                      <label>Local</label>
-                                      <input type="text" class="form-control" placeholder="SFR Rio Grande">
-                                    </div>
-                                    <div class="form-group col-sm-4 col-xs-12">
-                                      <label>Estado encomendante</label>
-                                      <select class="form-control">
-                                        <option>RS</option>
-                                        <option>SC</option>
-                                        <option>etc....</option>
-                                      </select>
-                                    </div>
+                                  <div class="form-group col-sm-2 col-xs-12">
+                                    <label>Estado desemb. adu.</label>
+                                    <select class="form-control">
+                                      <option>RS</option>
+                                      <option>SC</option>
+                                      <option>etc....</option>
+                                    </select>
                                   </div>
+                                  <div class="form-group col-sm-2 col-xs-12">
+                                    <label>Local</label>
+                                    <input type="text" class="form-control" placeholder="SFR Rio Grande">
+                                  </div>
+                                  <div class="form-group col-sm-2 col-xs-12">
+                                    <label>Estado encomendante</label>
+                                    <select class="form-control">
+                                      <option>RS</option>
+                                      <option>SC</option>
+                                      <option>etc....</option>
+                                    </select>
+                                  </div>                                  
                                 </div>
                               </div>
                             </div>
@@ -1613,23 +1606,8 @@
             </div>
           </div>
 
-          <div class="row hidden-sm-down">
-            <div class="form-group col-sm-2">
-              <strong class="subheader">Totais</strong>
-            </div>
-            <div class="form-group col-sm-2 text-right">
-              <strong class="header">123,00</strong>
-            </div>
-            <div class="form-group col-sm-2 text-right">
-              <strong class="header">123,00</strong>
-            </div>
-            <div class="form-group col-sm-2 text-right">
-              <strong class="header">123,00</strong>
-            </div>
-            <div class="form-group col-sm-2 text-right">
-              <strong class="header">123,00</strong>
-            </div>
-            <div class="form-group col-sm-2 text-right">
+          <div class="row hidden-sm-down">            
+            <div class="form-group col-sm-2 pull-right">
              <strong class="header">123,00</strong>
             </div>
           </div>

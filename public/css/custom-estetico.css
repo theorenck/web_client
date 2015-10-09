@@ -10,14 +10,7 @@ body{
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
 }
-a:hover,
-a:focus{
-	text-decoration: none;
-}
-.info,
-span.header.info{
-	color: #5bc0de;
-}
+
 .navbar{
 	border-radius: 0;
 }
@@ -44,6 +37,13 @@ span.header.info{
 .label-primary {
     background-color: #3498db;
 }
+a:hover,
+a:focus{
+	text-decoration: none;
+}
+.azul-zeta{
+    color: #34495e;
+}
 .bg-ff{
     background-color: #ffffff; 
 }
@@ -53,6 +53,19 @@ span.header.info{
 .bg-azul-zeta{
     background-color: #34495e; 
 }
+.btn.bg-azul-zeta{
+    color: white;
+    background-color: #34495e;
+}
+.info,
+span.header.info{
+	color: #5bc0de;
+	border-color: #34495e;
+}
+.bg-f1 .divider-solid{
+	border-color: #d8d8d8;
+}
+
 .borda{
 	border: 1px solid #eaeaea;
 	margin-top: -1px;
