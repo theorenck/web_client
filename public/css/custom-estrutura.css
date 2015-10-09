@@ -295,13 +295,14 @@ span.medida{
 	padding-left: 1em;
 }
 .multi-select{
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	margin-left: -1px;
-}
-.multi-input{
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
+	padding-left: 0.5em;
+}
+.multi-input{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: -1px;	
 }
 .table thead th{
 	padding-top: 0.2em;
