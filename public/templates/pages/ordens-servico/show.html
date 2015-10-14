@@ -17,19 +17,19 @@
   <div class="form-bloco">
     <div class="col-sm-12 m-b-2">
         <div class="row">
-          <div class="form-group col-sm-3 col-xs-6">
+          <div class="m-b-1 col-sm-3 col-xs-6">
             <label>Emissão</label>
             <p>há {{ctrl.os.dataentrada|cdate|timeago}}</p>
           </div>
-          <div class="form-group col-sm-3 col-xs-6">
+          <div class="m-b-1 col-sm-3 col-xs-6">
             <label>Orçamentista</label>
             <p>{{ctrl.os.usuarioinclusao|humanize}}</p>
           </div>
-          <div class="form-group col-sm-3 col-xs-6">
+          <div class="m-b-1 col-sm-3 col-xs-6">
             <label>Total<small> (R$)</small></label>
             <p>12.345,00</p>
           </div>
-          <div class="form-group col-sm-3 col-xs-6">
+          <div class="m-b-1 col-sm-3 col-xs-6">
             <button type="button" class="btn  btn-primary btn-block">
               <i class="fa fa-cog bloco"></i>
               Gerar NF
@@ -49,15 +49,15 @@
         </span>
         <div class="col-sm-12">
           <div class="row">
-            <div class="form-group col-sm-6 col-xs-12">
+            <div class="m-b-1 col-sm-6 col-xs-12">
               <label>Nome</label>
               <p>{{ctrl.os.cliente.nome|humanize}}</p>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
+            <div class="m-b-1 col-sm-3 col-xs-6">
               <label>Documento</label>
               <p>{{ctrl.os.cliente.cpf_cgc|cpfcnpj}}</p>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
+            <div class="m-b-1 col-sm-3 col-xs-6">
               <label>Telefone</label>
               <p>{{ctrl.os.cliente.fone}}</p>
             </div>
@@ -65,7 +65,7 @@
         </div>
         <div class="col-sm-12">
           <div class="row">
-            <div class="form-group col-sm-12">
+            <div class="m-b-1 col-sm-12">
               <label>Endereço</label>
               <p class="hidden-sm-down" style="color:red">R. Rodolfo Felix Laner, 1108  Cinquentenário - Caxias do Sul - RS CEP 95012-480</p>
               <p class="hidden-sm-up" style="color:red">R. Rodolfo Felix Laner, 1108<br>Cinquentenário - Caxias do Sul - RS<br>CEP 95012-480</p>
@@ -85,30 +85,30 @@
         </span>
         <div class="col-sm-12 m-b-2">
           <div class="row">
-            <div class="form-group col-sm-1 col-xs-4">
+            <div class="m-b-1 col-sm-1 col-xs-4">
               <label>Placa</label>
               <span class="label label-primary ng-binding">
                 {{ctrl.os.placa}}
               </span>
             </div>
-            <div class="form-group col-sm-3 col-xs-8">
+            <div class="m-b-1 col-sm-3 col-xs-8">
               <label>Modelo</label>
               <p>{{ctrl.os.marca|capitalize}} {{ctrl.os.modelo|capitalize}} {{ctrl.os.versaomodelo}}</p>
             </div>
-            <div class="form-group col-sm-2 col-xs-4">
+            <div class="m-b-1 col-sm-2 col-xs-4">
               <label>Ano</label>
               <p style="color:red">{{ctrl.os.anomodelo}} / -{{ctrl.os.anofrabicacao}}</p>
             </div>
-            <div class="form-group col-sm-2 col-xs-4">
+            <div class="m-b-1 col-sm-2 col-xs-4">
               <label>Cor</label>
               <p>{{ctrl.os.cor|capitalize}}</p>
             </div>
-            <div class="form-group col-sm-1 col-xs-4">
+            <div class="m-b-1 col-sm-1 col-xs-4">
               <label>Portas</label>
               <p>{{ctrl.os.qtdeportas}}</p>
             </div>
 
-            <div class="form-group col-sm-3 col-xs-12">
+            <div class="m-b-1 col-sm-3 col-xs-12">
               <label>Chassi</label>
               <p>{{ctrl.os.chassi}}</p>
             </div>
@@ -123,26 +123,26 @@
               <div class="row">  
                 <div class="col-sm-12 m-t-1">
                   <div class="row">
-                    <div class="form-group col-xs-4">
+                    <div class="m-b-1 col-xs-4">
                       <strong class="header">Data </strong>
                     </div>
-                    <div class="form-group col-xs-3">
+                    <div class="m-b-1 col-xs-3">
                       <strong class="header">km</strong>
                     </div>
-                    <div class="form-group col-xs-5">
+                    <div class="m-b-1 col-xs-5">
                       <strong class="header">Combustível </strong>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="form-group col-xs-4">
+                <div class="m-b-1 col-xs-4">
                   <p style="color:red">22/08/2015</p>
                 </div>
-                <div class="form-group col-xs-3">
+                <div class="m-b-1 col-xs-3">
                   <p>{{ctrl.os.kmsentrada}}</p>
                 </div>
-                <div class="form-group col-xs-5">
+                <div class="m-b-1 col-xs-5">
                   <p style="color:red">B - Reserva (???)</p>
                 </div>
               </div>
@@ -156,26 +156,26 @@
               <div class="row">
                 <div class="col-sm-12 m-t-1">
                   <div class="row">
-                    <div class="form-group col-xs-4">
+                    <div class="m-b-1 col-xs-4">
                       <strong class="header">Data</strong>
                     </div>
-                    <div class="form-group col-xs-3">
+                    <div class="m-b-1 col-xs-3">
                       <strong class="header">km</strong>
                     </div>
-                    <div class="form-group col-xs-5">
+                    <div class="m-b-1 col-xs-5">
                       <strong class="header">Combustível</strong>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="form-group col-xs-4">
+                <div class="m-b-1 col-xs-4">
                   <p style="color:red">22/08/2015</p>
                 </div>
-                <div class="form-group col-xs-3">
+                <div class="m-b-1 col-xs-3">
                   <p style="color:red">(???)</p>
                 </div>
-                <div class="form-group col-xs-5">
+                <div class="m-b-1 col-xs-5">
                   <p style="color:red">B - Reserva (???)</p>
                 </div>
               </div>
@@ -196,10 +196,10 @@
         </span>
         <div class="col-sm-12 m-b-2">
           <div class="row">
-            <div class="form-group col-sm-12">
+            <div class="m-b-1 col-sm-12">
               <strong class="header">Descrição</strong>
             </div>
-            <div class="form-group col-sm-12">
+            <div class="m-b-1 col-sm-12">
               <p>{{ctrl.os.descricaoservicos}}</p>
             </div>
           </div>
@@ -219,33 +219,33 @@
           </div>
           <div class="collapse in" id="ver-pecas">
             <div class="row hidden-sm-down m-t-1">
-              <div class="form-group col-sm-1">
+              <div class="m-b-1 col-sm-1">
                 <strong class="header">Código</strong>
               </div>
-              <div class="form-group col-sm-5">
+              <div class="m-b-1 col-sm-5">
                 <strong class="header">Descrição</strong>
               </div>
-              <div class="form-group col-sm-2 text-right">
+              <div class="m-b-1 col-sm-2 text-right">
                <strong class="header">Quant.</strong>
               </div>
-              <div class="form-group col-sm-2 text-right">
+              <div class="m-b-1 col-sm-2 text-right">
                 <strong class="header">Valor Unit.<small> (R$)</small></strong>
               </div>
-              <div class="form-group col-sm-2 text-right">
+              <div class="m-b-1 col-sm-2 text-right">
                 <strong class="header">Valor Total<small> (R$)</small></strong>
               </div>
             </div>
             <div class="divider-solid m-t-meio m-b-1 hidden-sm-down"></div>
             <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
               <div class="row m-t-1">
-                <div class="form-group col-sm-1">
+                <div class="m-b-1 col-sm-1">
                   <span class="hidden-sm-down">{{item.coditem}}</span>
                 </div>
-                <div class="form-group col-sm-5 col-xs-12">
+                <div class="m-b-1 col-sm-5 col-xs-12">
                   <span class="hidden-sm-up">{{item.coditem}}</span>
                   <span style="color:red"><span class="hidden-sm-up"> - </span>Aqui vai um produto de exemplo</span>
                 </div>
-                <div class="form-group col-sm-2 col-xs-12 text-right">
+                <div class="m-b-1 col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
                   <div class="row hidden-sm-up">
                     <div class="divider-dashed hidden-sm-up m-b-meio"></div>
@@ -253,7 +253,7 @@
                     <span class="xs-bold col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
                   </div>
                 </div>
-                <div class="form-group col-sm-2 col-xs-12 text-right">
+                <div class="m-b-1 col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.precounitario|number:2}}</span>
                   <div class="row hidden-sm-up">
                     <div class="divider-dashed hidden-sm-up m-b-meio"></div>
@@ -261,7 +261,7 @@
                     <span class="xs-bold col-xs-6">{{item.precounitario|currency:2}}</span>
                   </div>
                 </div>
-                <div class="form-group col-sm-2 col-xs-12 text-right">
+                <div class="m-b-1 col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
                   <div class="row hidden-sm-up">
                     <div class="divider-dashed hidden-sm-up m-b-meio"></div>
@@ -276,7 +276,7 @@
               <div class="divider-solid m-t-meio hidden-sm-down"></div>
             </div>
             <div class="row">
-              <div class="form-group m-t-1 col-sm-12 text-right">
+              <div class="m-b-1 m-t-1 col-sm-12 text-right">
                 <strong class="header" style="color:red">Total das Peças<small> (R$)</small><span class="bloco">1.073,83</span></strong>
               </div>
             </div>
@@ -297,33 +297,33 @@
           </div>
           <div class="collapse in" id="ver-maoobra">
             <div class="row hidden-sm-down m-t-1">
-              <div class="form-group col-sm-1">
+              <div class="m-b-1 col-sm-1">
                 <strong class="header">Código</strong>
               </div>
-              <div class="form-group col-sm-6">
+              <div class="m-b-1 col-sm-6">
                 <strong class="header">Descrição</strong>
               </div>
-              <div class="form-group col-sm-1 text-right">
+              <div class="m-b-1 col-sm-1 text-right">
                <strong class="header">Quant.</strong>
               </div>
-              <div class="form-group col-sm-2 text-right">
+              <div class="m-b-1 col-sm-2 text-right">
                 <strong class="header">Valor Unit.<small> (R$)</small></strong>
               </div>
-              <div class="form-group col-sm-2 text-right">
+              <div class="m-b-1 col-sm-2 text-right">
                 <strong class="header">Valor Total<small> (R$)</small></strong>
               </div>
             </div>
             <div class="divider-solid m-b-1 hidden-sm-down"></div>
             <div ng-repeat="item in ctrl.os.itens | filter:{codtipoitem:1}">
               <div class="row m-t-1">
-                <div class="form-group col-sm-1">
+                <div class="m-b-1 col-sm-1">
                   <span class="hidden-sm-down">{{item.coditem}}</span>
                 </div>
-                <div class="form-group col-sm-5 col-xs-12">
+                <div class="m-b-1 col-sm-5 col-xs-12">
                   <span class="hidden-sm-up">{{item.coditem}}</span>
                   <span style="color:red"><span class="hidden-sm-up"> - </span>Aqui vai um produto de exemplo</span>
                 </div>
-                <div class="form-group col-sm-2 col-xs-12 text-right">
+                <div class="m-b-1 col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.quantidade}} {{item.unidade}}</span>
                   <div class="row hidden-sm-up">
                     <div class="divider-dashed hidden-sm-up m-b-meio"></div>
@@ -331,7 +331,7 @@
                     <span class="xs-bold col-xs-6">{{item.quantidade}} {{item.unidade}}</span>
                   </div>
                 </div>
-                <div class="form-group col-sm-2 col-xs-12 text-right">
+                <div class="m-b-1 col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.precounitario|number:2}}</span>
                   <div class="row hidden-sm-up">
                     <div class="divider-dashed hidden-sm-up m-b-meio"></div>
@@ -339,7 +339,7 @@
                     <span class="xs-bold col-xs-6">{{item.precounitario|currency:2}}</span>
                   </div>
                 </div>
-                <div class="form-group col-sm-2 col-xs-12 text-right">
+                <div class="m-b-1 col-sm-2 col-xs-12 text-right">
                   <span class="hidden-sm-down">{{item.valorsubtotal|number:2}}</span>
                   <div class="row hidden-sm-up">
                     <div class="divider-dashed hidden-sm-up m-b-meio"></div>
@@ -354,7 +354,7 @@
               <div class="divider-solid m-t-meio hidden-sm-down"></div>
             </div>
             <div class="row">
-              <div class="form-group m-t-1 col-sm-12 text-right">
+              <div class="m-b-1 m-t-1 col-sm-12 text-right">
                 <strong class="header" style="color:red">Total da Mão de Obra<small> (R$)</small><span class="bloco">1.073,83</span></strong>
               </div>
             </div>
@@ -373,26 +373,26 @@
         </span>
         <div class="col-sm-12 m-b-2">
           <div class="row">
-            <div class="form-group col-sm-3 col-xs-6">
+            <div class="m-b-1 col-sm-3 col-xs-6">
               <label>Produtos<small> (R$)</small></label>
               <p>12.345,00</p>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
+            <div class="m-b-1 col-sm-3 col-xs-6">
               <label>Serviços<small> (R$)</small></label>
               <p>12.345,00</p>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
+            <div class="m-b-1 col-sm-3 col-xs-6">
               <label>Impostos<small> (R$)</small></label>
               <p>12.345,00</p>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
+            <div class="m-b-1 col-sm-3 col-xs-6">
               <label>Total<small> (R$)</small></label>
               <p>12.345,00</p>
             </div>
           </div>
         </div>
         <div class="col-sm-12 hidden-sm-down">
-          <div class="form-group">                
+          <div class="m-b-1">                
             <button type="button" class="btn  btn-secondary col-sm-3"><i class="fa fa-arrow-left bloco"></i>
             Voltar
             </button>
@@ -402,7 +402,7 @@
           </div>
         </div>
         <div class="col-xs-12 hidden-sm-up">
-          <div class="form-group">                
+          <div class="m-b-1">                
             <button type="button" class="btn  btn-secondary metade pull-left"><i class="fa fa-arrow-left bloco"></i>
             Voltar
             </button>

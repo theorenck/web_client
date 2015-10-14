@@ -14,19 +14,19 @@
 <div class="form-bloco">
   <div class="col-sm-12 m-b-1">
     <div class="row hidden-sm-down">
-      <div class="form-group col-sm-1">
+      <div class="m-b-1 col-sm-1">
         <strong class="header">Número</strong>
       </div>
-      <div class="form-group col-sm-1">
+      <div class="m-b-1 col-sm-1">
         <strong class="header">Situação</strong>
       </div>
-      <div class="form-group col-sm-4">
+      <div class="m-b-1 col-sm-4">
         <strong class="header">Cliente</strong>
       </div>
-      <div class="form-group col-sm-2">
+      <div class="m-b-1 col-sm-2">
         <strong class="header p-r-2 pull-right">Total<small> (R$)</small></strong>
       </div>
-      <div class="form-group col-sm-2">
+      <div class="m-b-1 col-sm-2">
         <strong class="header">Atualizado</strong>
       </div>
       <div class="col-sm-12">
@@ -40,7 +40,7 @@
   <div class="form-bloco">
     <div class="col-sm-12">
       <div class="row">
-        <div class="form-group col-sm-1 col-xs-12">
+        <div class="m-b-1 col-sm-1 col-xs-12">
           <span>
             <a href="#/ordens-servico/{{os.codservico}}">{{os.codservico}}</a>
           </span>
@@ -56,21 +56,21 @@
             {{os.situacao1}}
           </span>
         </div>
-        <div class="form-group col-sm-4 col-xs-12">
+        <div class="m-b-1 col-sm-4 col-xs-12">
           <span class="bloco pontinhos" >
             <a href="#">{{os.cliente|humanize}}</a>
           </span>
           <span class="bloco">{{os.cgc|cpfcnpj}}</span>
         </div>
-        <div class="form-group col-sm-2 col-xs-12">
+        <div class="m-b-1 col-sm-2 col-xs-12">
           <span class="p-r-2 hidden-sm-down pull-right">{{os.total|number:2}}</span>
           <span class="hidden-sm-up pull-right ">Total R$ {{os.total|number:2}}</span>
         </div>
-        <div class="form-group col-sm-2 hidden-sm-down">
+        <div class="m-b-1 col-sm-2 hidden-sm-down">
           <span>há {{os.dataentrada|cdate|timeago}}</span>
           <span>por <a href="#">{{os.usuarioinclusao|humanize}}</a></span>
         </div>
-        <div class="form-group col-sm-2 hidden-sm-down nowrap">
+        <div class="m-b-1 col-sm-2 hidden-sm-down nowrap">
           <button type="button" class="btn  btn-secondary quarto">
           <i class="fa fa-eye "></i>
           </button>
@@ -79,7 +79,7 @@
             Gerar NF
           </button>
         </div>
-        <div class="form-group col-xs-12 hidden-sm-up">
+        <div class="m-b-1 col-xs-12 hidden-sm-up">
           <button type="button" class="btn  btn-secondary metade pull-left">
           <i class="fa fa-eye fa-lg bloco"></i>
             Exibir
