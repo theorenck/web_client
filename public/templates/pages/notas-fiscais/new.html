@@ -15,7 +15,7 @@
 <div class="form-bloco">
   <div class="col-sm-12 m-b-4">
     <div class="row">      
-      <a href="#identificação" data-toggle="collapse in" aria-expanded="false">
+      <a href="#identificação" data-toggle="collapse" aria-expanded="false">
         <span class="header">
         Identificação
           <i class="fa fa-chevron-down pull-right girar-baixo"></i>
@@ -23,8 +23,8 @@
       </a>
       <div class="collapse in" id="identificação">
         <div class="col-sm-12">
-          <div class="row sm-m-b-1">
-            <div class="form-group col-sm-8 col-xs-12">
+          <div class="row">
+            <div class="form-group col-sm-6 col-xs-12">
               <label>Emitente</label>  
               <span class="bloco pontinhos">
                 <a id="myPopover" type="button" data-toggle="popover" title="Teste" data-placement="teste de conteudo">Treelux Brazil - Baren Iluminacao Eireli</a>
@@ -34,23 +34,19 @@
             <div class="form-group col-sm-2 col-xs-6">
               <label>Situação</label>
               <span class="label label-info">Em digitação</span>
-            </div>
+            </div><div class="form-group col-sm-2 col-xs-6">
+              <label>Emissão</label>
+              <a href="">21/07/2015 10:28</a>
+            </div><div class="form-group col-sm-2 col-xs-6">
+              <label>Saída</label>
+              <input type="text" class="form-control" placeholder="07/10/2015">
+            </div> 
             <div class="form-group col-sm-2 col-xs-6">
               <label>Série</label>
               <select class="form-control">
                 <option>0001</option>
                 <option>0002</option>
               </select>            
-            </div>            
-          </div>
-          <div class="row">
-            <div class="form-group col-sm-3 col-xs-12">
-              <label>Natureza de Operação</label>
-              <select class="form-control">
-                <option>3.102 - Compra imp.ext. comercializa</option>
-                <option>123</option>
-                <option>123</option>
-              </select>
             </div>
             <div class="form-group col-sm-2 col-xs-6">
               <label>Tipo de Operação</label>
@@ -58,8 +54,8 @@
                 <option>1 - Entrada</option>
                 <option>2 - Saída</option>
               </select>
-            </div>            
-            <div class="form-group col-sm-3 col-xs-6">
+            </div>
+            <div class="form-group col-sm-2 col-xs-6">
               <label>Destinação</label>
               <select class="form-control">
                 <option>1 - Uso e consumo</option>
@@ -67,15 +63,87 @@
                 <option>3 - Outra</option>
               </select>
             </div>
-            <div class="form-group col-sm-2 col-xs-6">
-              <label>Emissão</label>
-              <a href="">21/07/2015 10:28</a>
+            <div class="form-group col-sm-4 col-xs-12">
+              <label>Natureza de Operação</label>
+              <select class="form-control">
+                <option>3.102 - Compra imp.ext. comercializa</option>
+                <option>123</option>
+                <option>123</option>
+              </select>
+            </div> 
+            <div class="form-group col-sm-2 col-xs-12">
+              <label>Finalidade de Emissão</label>
+              <select class="form-control">
+                <option>NF-e normal</option>
+                <option>NF-e complementar</option>
+                <option>NF-e de ajuste</option>
+                <option>Devolução de mercadoria</option>
+              </select>
+            </div>            
+          </div>
+          <div class="bg-f1 p-1 collapse in" id="Finalidade-nfe">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12">
+                <span class="subheader">Nota referenciada</span>
+                <div class="col-sm-12 col-xs-12 m-t-1"><div class="divider-solid"></div></div>
+              </div>
+              <div class="col-sm-2 col-xs-12">
+                <div class="form-group m-1">
+                  <label>Origem</label>  
+                  <select class="form-control">
+                    <option>NF-e</option>
+                    <option>NF</option>
+                    <option>CT-e</option>
+                    <option>Cupom fiscal</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-10 col-xs-12">
+                <div class="collapse in" id="Finalidade-eletronica"> 
+                  <div class="row m-t-1">
+                    <div class="form-group col-sm-12 col-xs-12">
+                      <label>Chave de acesso</label>  
+                      <input type="text" class="form-control" placeholder="43150803253626000289550010000019251000166194">
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="Finalidade-impressa">
+                  <div class="row m-t-1">
+                    <div class="form-group col-sm-4 col-xs-12">
+                      <label>Série</label>  
+                      <select class="form-control">
+                        <option>001</option>
+                        <option>002</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-4 col-xs-12">
+                      <label>Número</label>  
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-4 col-xs-12">
+                      <label>Modelo</label>  
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-4 col-xs-12">
+                      <label>UF</label>  
+                      <select class="form-control">
+                        <option>RS</option>
+                        <option>SC</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-4 col-xs-12">
+                      <label>Mês/ano emissão</label>  
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-4 col-xs-12">
+                      <label>CNPJ</label>  
+                      <input type="text" class="form-control" placeholder="">
+                    </div>
+                  </div>                
+                </div>
+              </div>
             </div>
-            <div class="form-group col-sm-2 col-xs-6">
-              <label>Saída</label>
-              <input type="text" class="form-control" placeholder="07/10/2015">
-            </div>
-          </div>      
+          </div>
         </div>
       </div>
     </div>
@@ -86,7 +154,7 @@
 <div class="form-bloco">
   <div class="col-sm-12 m-b-4">
     <div class="row"> 
-      <a href="#destinatario" data-toggle="collapse in" aria-expanded="false">
+      <a href="#destinatario" data-toggle="collapse" aria-expanded="false">
         <span class="header">
         Destinatário
           <i class="fa fa-chevron-down pull-right girar-baixo"></i>
@@ -102,13 +170,13 @@
             <div class="form-group col-sm-4 m-b-1 m-t-2">
               <div class="row">
                 <div class="col-sm-6 col-xs-6">
-                  <a href="#" type="button" class="btn btn-primary btn-block">
+                  <a href="#" type="button" class="btn btn-primary btn-block" data-target="#buscar_dest" data-toggle="collapse" aria-expanded="false">
                     <i class="fa fa-search fa-padding"></i>
                     Procurar
                   </a>
                 </div>                
                 <div class="col-sm-6 col-xs-6">
-                  <a href="#" type="button" class="btn btn-info btn-block" data-target="#novo_dest" data-toggle="collapse in" aria-expanded="false">
+                  <a href="#" type="button" class="btn btn-info btn-block" data-target="#novo_dest" data-toggle="collapse" aria-expanded="false">
                     <i class="fa fa-plus fa-padding"></i>
                     Novo
                   </a>
@@ -117,7 +185,7 @@
             </div>
           </div>
         </div>
-        <div class="collapse in" id="buscar_dest">
+        <div class="collapse" id="buscar_dest">
           <div class="row m-t-1">
             <div class="form-group col-sm-4 col-xs-12">
               <span class="bloco pontinhos">
@@ -142,7 +210,7 @@
             </div> 
           </div>
         </div>
-        <div class="collapse in" id="novo_dest">
+        <div class="collapse" id="novo_dest">
           <div class="col-sm-12 row underline m-1">
             <a href="" class="subheader">
               <i class="fa fa-chevron-right"></i>
@@ -176,7 +244,7 @@
             </div>
             <div class="form-group col-sm-3 col-xs-12">
               <label>Nacionalidade</label>
-              <input type="text" class="form-control" placeholder="Chinês">
+              <input type="text" class="form-control" placeholder="Chinesa">
             </div>
           </div>
           <div class="row">
@@ -279,7 +347,7 @@
 <div class="form-bloco">
   <div class="col-sm-12 m-b-4">
     <div class="row"> 
-      <a href="#prod-serv" data-toggle="collapse in" aria-expanded="false">
+      <a href="#prod-serv" data-toggle="collapse" aria-expanded="false">
         <span class="header">
         Produtos e Serviços
           <i class="fa fa-chevron-down pull-right girar-baixo"></i>
@@ -290,23 +358,23 @@
         <!-- **  LISTA ** -->
         <div class="col-sm-12">
           <!-- **  HEADER lista ** -->      
-          <div class="row hidden-sm-down">
-            <div class="form-group col-sm-1">
+          <div class="row hidden-sm-down m-b-1">
+            <div class="col-sm-1">
               <strong class="header">#</strong>
             </div>
-            <div class="form-group col-sm-1">
+            <div class="col-sm-1">
               <strong class="header">Tipo</strong>
             </div>
-            <div class="form-group col-sm-5">
+            <div class="col-sm-5">
               <strong class="header">Descrição</strong>
             </div>
-            <div class="form-group col-sm-1 text-right">
+            <div class="col-sm-1 text-right">
              <strong class="header">Quant.</strong>
             </div>
-            <div class="form-group col-sm-1 text-right">
+            <div class="col-sm-1 text-right">
               <strong class="header">Unit.<small> (R$)</small></strong>
             </div>
-            <div class="form-group col-sm-1 text-right">
+            <div class="col-sm-1 text-right">
               <strong class="header">Total<small> (R$)</small></strong>
             </div>
           </div>      
@@ -314,7 +382,7 @@
           <!-- **  CORPO lista ** -->
           <div REPETIR PRODUTO>
             <div class="row sm-m-t-1 xs-m-t-2">
-              <div class="form-group col-sm-1 col-xs-2 hidden-sm-down">
+              <div class="m-b-1 col-sm-1 col-xs-2 hidden-sm-down">
                 <span>001</span>
               </div>
               <div class="col-sm-1 col-xs-12">
@@ -322,32 +390,32 @@
                   <span class="label label-primary">Produto</span>
                 </span>
               </div>
-              <div class="form-group col-sm-5 col-xs-12 xs-m-t-1 pontinhos">
+              <div class="m-b-1 col-sm-5 col-xs-12 xs-m-t-1 pontinhos">
                 <span class="pontinhos bloco">222253 - EMB. LED QUADRADO 12W BRANCO ALUMINIO 900 LM. IRC</span>
                 <span>EAN - 7899532922538</span>
               </div>
-              <div class="form-group col-sm-1 col-xs-12 text-right">
+              <div class="m-b-1 col-sm-1 col-xs-12 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Quantidade</span>
                 </div>
                 <span class="text-right xs-bold">1 UN</span>
               </div>
-              <div class="form-group col-sm-1 col-xs-12 text-right">
+              <div class="m-b-1 col-sm-1 col-xs-12 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Valor Unitário<small> (R$)</small></span>
                 </div>
                 <span class="xs-bold text-right">380,00</span>
               </div>
-              <div class="form-group col-sm-1 col-xs-12 text-right">
+              <div class="m-b-1 col-sm-1 col-xs-12 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Valor Total<small> (R$)</small></span>
                 </div>
                 <span class="xs-bold text-right">380,00</span>
               </div>
-              <div class="form-group col-sm-2 hidden-sm-down">
+              <div class="m-b-1 col-sm-2 hidden-sm-down">
                 <button type="button" class="btn  quarto btn-secondary">
                   <i class="fa fa-trash-o btn-block"></i>
                 </button>
@@ -373,7 +441,7 @@
           </div>
           <div REPETIR SERVICO>
             <div class="row sm-m-t-1 xs-m-t-2">
-              <div class="form-group col-sm-1 col-xs-2 hidden-sm-down">
+              <div class="m-b-1 col-sm-1 col-xs-2 hidden-sm-down">
                 <span>001</span>
               </div>
               <div class="col-sm-1 col-xs-12">
@@ -381,32 +449,32 @@
                   <span class="label label-success">Serviços</span>
                 </span>
               </div>
-              <div class="form-group col-sm-5 col-xs-12 xs-m-t-1 pontinhos">
+              <div class="m-b-1 col-sm-5 col-xs-12 xs-m-t-1 pontinhos">
                 <span class="pontinhos bloco">222253 - Serviço X Y Z</span>
                 <span>EAN - código</span>
               </div>
-              <div class="form-group col-sm-1 col-xs-12 text-right">
+              <div class="m-b-1 col-sm-1 col-xs-12 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Quantidade</span>
                 </div>
                 <span class="text-right xs-bold">1 UN</span>
               </div>
-              <div class="form-group col-sm-1 col-xs-12 text-right">
+              <div class="m-b-1 col-sm-1 col-xs-12 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Valor Unitário<small> (R$)</small></span>
                 </div>
                 <span class="xs-bold text-right">380,00</span>
               </div>
-              <div class="form-group col-sm-1 col-xs-12 text-right">
+              <div class="m-b-1 col-sm-1 col-xs-12 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Valor Total<small> (R$)</small></span>
                 </div>
                 <span class="xs-bold text-right">380,00</span>
               </div>
-              <div class="form-group col-sm-2 hidden-sm-down">
+              <div class="m-b-1 col-sm-2 hidden-sm-down">
                 <button type="button" class="btn quarto btn-secondary">
                   <i class="fa fa-trash-o btn-block"></i>
                 </button>
@@ -438,7 +506,7 @@
               <div class="row">
                 <div class="col-sm-12">                
                   <div class="p-t-1">
-                    <div class="form-group col-sm-12 xs-m-b-meio underline">
+                    <div class="m-b-1 col-sm-12 xs-m-b-meio underline">
                       <span class="subheader">Item</span>
                     </div>
                   </div>
@@ -446,7 +514,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-12 col-xs-12">
-                  <div class="form-group col-sm-2 ">
+                  <div class="form-group col-sm-2 col-xs-12">
                     <label>Tipo</label>                    
                     <select class="form-control">
                       <option>Produto</option>
@@ -478,38 +546,51 @@
               </div>
               <div class="row">
                 <div class="col-xs-12 m-t-1 hidden-sm-up">
-                  <div class="col-xs-6">
+                  <div class="col-xs-4">
                     <button type="button" class="btn btn-block btn-secondary">
-                      <i class="fa fa-trash-o btn-block"></i>
+                      <i class="fa fa-trash-o fa-padding"></i>
                       Excluir
                     </button>
                   </div>
-                  <div class="col-xs-6">
+                  <div class="col-xs-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog fa-padding"></i>
+                        Outros
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" data-target="#detalhes" type="button" data-toggle="collapse" aria-expanded="false">Detalhes</a>
+                        <a class="dropdown-item" data-target="#imposto-prod" type="button" data-toggle="collapse" aria-expanded="false">Impostos</a>
+                        <a class="dropdown-item" data-target="#imp-exp" type="button" data-toggle="collapse" aria-expanded="false">Imp / Exp</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
                     <button type="button" class="btn btn-block btn-primary pull-right">
-                      <i class="fa fa-plus btn-block"></i>
+                      <i class="fa fa-plus fa-padding"></i>
                       Adicionar
                     </button>            
                   </div>
                 </div>
-                <div class="col-sm-6 col-xs-12 m-t-1 pull-left">
-                  <div class="form-group col-sm-4 col-xs-4 xs-m-t-1">
-                    <button class="btn btn-secondary btn-block" data-target="#detalhes" type="button" data-toggle="collapse in" aria-expanded="false">
+                <div class="col-sm-6 col-xs-12 m-t-1 pull-left hidden-sm-down">
+                  <div class="col-sm-4 col-xs-4 xs-m-t-1">
+                    <button class="btn btn-secondary btn-block" data-target="#detalhes" type="button" data-toggle="collapse" aria-expanded="false">
                       Detalhes
                     </button>
                   </div>
-                  <div class="form-group col-sm-4 col-xs-4 xs-m-t-1">              
-                    <button class="btn btn-secondary btn-block" data-target="#imposto-prod" type="button" data-toggle="collapse in" aria-expanded="false">
+                  <div class="col-sm-4 col-xs-4 xs-m-t-1">              
+                    <button class="btn btn-secondary btn-block" data-target="#imposto-prod" type="button" data-toggle="collapse" aria-expanded="false">
                       Impostos
                     </button>
                   </div>
-                  <div class="form-group col-sm-4 col-xs-4 xs-m-t-1">
-                    <button class="btn btn-secondary btn-block" data-target="#imp-exp" type="button" data-toggle="collapse in" aria-expanded="false">
+                  <div class="col-sm-4 col-xs-4 xs-m-t-1">
+                    <button class="btn btn-secondary btn-block" data-target="#imp-exp" type="button" data-toggle="collapse" aria-expanded="false">
                       Imp / Exp 
                     </button>
                   </div>
                 </div>
                 <div class="col-sm-6 m-t-1 hidden-sm-down">
-                  <div class="form-group col-sm-4 pull-right">
+                  <div class="col-sm-4 pull-right">
                     <button type="button" class="btn quarto btn-secondary">
                       <i class="fa fa-trash-o btn-block"></i>
                     </button>
@@ -600,9 +681,9 @@
                     </div>
                   </div>
                   <!-- ** IMPOSTOS DO PRODUTO ** --> 
-                  <div class="collapse in" id="imposto-prod">
+                  <div class="collapse" id="imposto-prod">
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs m-t-1" role="tablist">
+                    <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" href="#icms" role="tab" data-toggle="tab">ICMS</a>
                       </li>
@@ -622,7 +703,7 @@
                         <div class="row">
                           <label class="col-sm-4 col-xs-12">Impostos aproximado</label>
                           <div class="col-sm-8 col-xs-12">
-                            <div class="col-sm-2 col-xs-2">
+                            <div class="col-sm-2 col-xs-4">
                               <div class="row">
                                 <select class="form-control multi-select">
                                   <option>%</option>
@@ -630,7 +711,7 @@
                                 </select>
                               </div>                      
                             </div>
-                            <div class="col-sm-10 col-xs-10">
+                            <div class="col-sm-10 col-xs-8">
                               <div class="row">
                                 <input type="text" class="form-control multi-input" placeholder="-">
                               </div>
@@ -1189,7 +1270,7 @@
                     </div>              
                   </div>
                   <!-- ** IMPORTACAO E EXPORTACAO ** -->
-                  <div class="collapse in" id="imp-exp">
+                  <div class="collapse" id="imp-exp">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item">
@@ -1253,24 +1334,24 @@
                         <div REPETIR DECLARACOES>
                           <div class="col-sm-12 col-xs-12 xs-interno xs-m-t-1">
                             <div class="row">
-                              <div class="form-group col-sm-4 col-xs-12 xs-m-t-1">
+                              <div class="m-b-1 col-sm-4 col-xs-12 xs-m-t-1">
                                 <span class="text-right xs-bold">Treelux Brazil - Baren Iluminacao Eireli</span>
                               </div>
-                              <div class="form-group col-sm-2 col-xs-12">
+                              <div class="m-b-1 col-sm-2 col-xs-12">
                                 <div class="hidden-sm-up">
                                   <div class="divider-dashed m-b-1"></div>                  
                                   <span class="pull-left">Saída</span>
                                 </div>
                                 <span class="text-right xs-bold xs-pull-right">08/07/2015</span>
                               </div>
-                              <div class="form-group col-sm-2 col-xs-12">
+                              <div class="m-b-1 col-sm-2 col-xs-12">
                                 <div class="hidden-sm-up">
                                   <div class="divider-dashed m-b-1"></div>                  
                                   <span class="pull-left">Desembaraço</span>
                                 </div>
                                 <span class="text-right xs-bold xs-pull-right">02/10/15</span>
                               </div>
-                              <div class="form-group col-sm-2 col-xs-12">
+                              <div class="m-b-1 col-sm-2 col-xs-12">
                                 <div class="hidden-sm-up">
                                   <div class="divider-dashed m-b-1"></div>                  
                                   <span class="pull-left">Local e Estado</span>
@@ -1278,7 +1359,7 @@
                                 <span class="text-right xs-bold xs-pull-right">SRF Rio Grande, RS</span>
                               </div>
 
-                              <div class="form-group col-sm-2 hidden-sm-down">
+                              <div class="m-b-1 col-sm-2 hidden-sm-down">
                                 <button type="button" class="btn quarto btn-secondary">
                                   <i class="fa fa-trash-o btn-block"></i>
                                 </button>
@@ -1309,7 +1390,7 @@
                         <div class="row">
                           <div class="col-sm-12 col-xs-12 xs-m-b-1 xs-m-t-2">
                             <div class="col-sm-offset-10 col-sm-2 col-xs-12">
-                              <button type="button" class="btn btn-info btn-block" data-target="#nova-declaracao" data-toggle="collapse in" aria-expanded="false">
+                              <button type="button" class="btn btn-info btn-block" data-target="#nova-declaracao" data-toggle="collapse" aria-expanded="false">
                                 <i class="fa fa-plus"></i>
                                 Nova declaração
                               </button>
@@ -1317,7 +1398,7 @@
                           </div>                            
                         </div>
 
-                        <div class="collapse in" id="nova-declaracao">
+                        <div class="collapse" id="nova-declaracao">
                           <div class="col-sm-12 underline m-t-2 m-b-1  xs-interno">
                             <div class="row  xs-interno">
                               <span class="subheader">Nova declaração de importação</span>
@@ -1393,7 +1474,7 @@
                           </div>
                           <div class="row m-t-1">
                             <div class="col-sm-12">
-                              <a class="subheader" data-target="#adicao" data-toggle="collapse in" aria-expanded="false">
+                              <a class="subheader" data-target="#adicao" data-toggle="collapse" aria-expanded="false">
                                 <i class="fa fa-chevron-right fa-padding"></i>
                                 Adição                                
                               </a>
@@ -1402,7 +1483,7 @@
                               </div>
                             </div>
                             <div class="col-sm-12 sm-m-t-menos2">
-                              <div class="collapse in" id="adicao">
+                              <div class="collapse" id="adicao">
                                 <div class="row hidden-sm-down">
                                   <div class="col-sm-offset-2 col-sm-2 col-xs-12">
                                     <label>Número</label>
@@ -1419,34 +1500,34 @@
                                 </div>
                                 <div REPETIR ADICAO>
                                   <div class="row m-t-1 xs-interno">
-                                    <div class="form-group col-sm-offset-2 col-sm-2 col-xs-12 xs-m-t-1">
+                                    <div class="col-sm-offset-2 col-sm-2 col-xs-12 xs-m-t-1">
                                       <div class="hidden-sm-up">
                                         <span class="pull-left">Número</span>
                                       </div>
                                       <span class="text-right xs-bold xs-pull-right">001</span>
                                     </div>
-                                    <div class="form-group col-sm-2 col-xs-12">
+                                    <div class="col-sm-2 col-xs-12">
                                       <div class="hidden-sm-up">
                                         <div class="divider-dashed m-b-1"></div>                 
                                         <span class="pull-left">Cód. fabricante</span>
                                       </div>
                                       <span class="text-right xs-bold xs-pull-right">812</span>
                                     </div>
-                                    <div class="form-group col-sm-2 col-xs-12">
+                                    <div class="col-sm-2 col-xs-12">
                                       <div class="hidden-sm-up">
                                         <div class="divider-dashed m-b-1"></div>                 
                                         <span class="pull-left">Desconto</span>
                                       </div>
                                       <span class="text-right xs-bold xs-pull-right"> - </span>
                                     </div>
-                                    <div class="form-group col-sm-2 col-xs-12">
+                                    <div class="col-sm-2 col-xs-12">
                                       <div class="hidden-sm-up">
                                         <div class="divider-dashed m-b-1"></div>                 
                                         <span class="pull-left">Número conc. drawback</span>
                                       </div>
                                       <span class="text-right xs-bold xs-pull-right">1512179975</span>
                                     </div>
-                                    <div class="form-group col-sm-2 hidden-sm-down">
+                                    <div class="m-b-1 col-sm-2 hidden-sm-down">
                                       <button type="button" class="btn quarto btn-secondary">
                                         <i class="fa fa-trash-o btn-block"></i>
                                       </button>
@@ -1474,19 +1555,19 @@
                                   </div>                                  
                                 </div>                              
                                 <div class="row m-t-1 hidden-sm-down">
-                                  <div class="form-group col-sm-offset-2 col-sm-2">
+                                  <div class="col-sm-offset-2 col-sm-2">
                                     <span>002</span>
                                   </div>
-                                  <div class="form-group col-sm-2">
+                                  <div class="col-sm-2">
                                     <input type="text" class="form-control" placeholder="812">
                                   </div>
-                                  <div class="form-group col-sm-2">
+                                  <div class="col-sm-2">
                                     <input type="text" class="form-control" placeholder="-">
                                   </div>
-                                  <div class="form-group col-sm-2">
+                                  <div class="col-sm-2">
                                     <input type="text" class="form-control" placeholder="1512179975">
                                   </div>
-                                  <div class="form-group col-sm-2">
+                                  <div class="m-b-1 col-sm-2">
                                     <button type="button" class="btn btn-block btn-info">
                                       <i class="fa fa-plus fa-padding"></i>
                                       Adicionar
@@ -1497,7 +1578,7 @@
                                   <div class="divider-solid"></div>
                                 </div> 
                                 <div class="col-xs-12 xs-m-2 hidden-sm-up">
-                                  <button type="button" class="btn btn-info btn-block" data-target="#nova-adicao-xs" data-toggle="collapse in" aria-expanded="true">
+                                  <button type="button" class="btn btn-info btn-block" data-target="#nova-adicao-xs" data-toggle="collapse" aria-expanded="true">
                                     <i class="fa fa-plus"></i>
                                     Nova adição
                                   </button>
@@ -1550,13 +1631,13 @@
                           </div>
                           <div class="row m-t-2">
                             <div class="col-sm-2 col-xs-6 ">
-                              <button type="button" class="btn btn-secondary btn-block" data-target="#novo_dest" data-toggle="collapse in" aria-expanded="false">
+                              <button type="button" class="btn btn-secondary btn-block" data-target="#novo_dest" data-toggle="collapse" aria-expanded="false">
                                 <i class="fa fa-ban btn-block"></i>
                                 Cancelar
                               </button>
                             </div>
                             <div class="col-sm-2 col-xs-6 pull-right">
-                              <button type="button" class="btn btn-info btn-primary" data-target="#novo_dest" data-toggle="collapse in" aria-expanded="false">
+                              <button type="button" class="btn btn-info btn-primary" data-target="#novo_dest" data-toggle="collapse" aria-expanded="false">
                                 <i class="fa fa-plus btn-block"></i>
                                 Adicionar declaração
                               </button>
@@ -1608,28 +1689,28 @@
 <div class="form-bloco">
   <div class="col-sm-12 m-b-4">
     <div class="row"> 
-      <a href="#impostos" data-toggle="collapse in" aria-expanded="false">
+      <a href="#impostos" data-toggle="collapse" aria-expanded="false">
         <span class="header">
         Impostos
           <i class="fa fa-chevron-down pull-right girar-baixo"></i>
         </span>
       </a>
-      <div class="collapse in" id="impostos">
+      <div class="collapse" id="impostos">
         <div class="col-sm-12">
           <div class="row hidden-sm-down">
-            <div class="form-group col-sm-4">
+            <div class="m-b-1 col-sm-4">
               <strong class="header"></strong>
             </div>
-            <div class="form-group col-sm-2 text-right">
+            <div class="m-b-1 col-sm-2 text-right">
               <strong class="header">Base Cálculo<small> (R$)</small></strong>
             </div>
-            <div class="form-group col-sm-2 text-right">
+            <div class="m-b-1 col-sm-2 text-right">
               <strong class="header">Alíquota<small> (R$)</small></strong>
             </div>
-            <div class="form-group col-sm-2 text-right">
+            <div class="m-b-1 col-sm-2 text-right">
               <strong class="header">Retenção<small> (R$)</small></strong>
             </div>
-            <div class="form-group col-sm-2 text-right">
+            <div class="m-b-1 col-sm-2 text-right">
              <strong class="header">Total<small> (R$)</small></strong>
             </div>
           </div>
@@ -1637,31 +1718,31 @@
 
           <div REPETIR IMPOSTO>
             <div class="row xs-m-t-2">
-              <div class="form-group col-sm-4">
+              <div class="col-sm-4 m-b-1">
                 <span class="subheader">ICMS</span>
               </div>
-              <div class="form-group col-sm-2 col-xs-6 text-right">
+              <div class="col-sm-2 col-xs-6 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Base Cálculo</span>
                 </div>
                 <span class="text-right xs-bold">123,00</span>
               </div>
-              <div class="form-group col-sm-2 col-xs-6 text-right">
+              <div class="col-sm-2 col-xs-6 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Alíquota</span>
                 </div>
                 <span class="text-right xs-bold">123,00</span>
               </div>
-              <div class="form-group col-sm-2 col-xs-6 text-right">
+              <div class="col-sm-2 col-xs-6 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Retenção</span>
                 </div>
                 <span class="text-right xs-bold">123,00</span>
               </div>
-              <div class="form-group col-sm-2 col-xs-6 text-right">
+              <div class="col-sm-2 col-xs-6 text-right">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Total</span>
@@ -1673,46 +1754,6 @@
               <div class="divider-solid"></div>
             </div>
           </div>
-
-          <div NÃO REPETIR, somente exemplo>
-            <div class="row xs-m-t-2">
-              <div class="form-group col-sm-4">
-                <span class="subheader">ICMS ST</span>
-              </div>
-              <div class="form-group col-sm-2 col-xs-6 text-right">
-                <div class="hidden-sm-up">
-                  <div class="divider-dashed m-b-1"></div>                  
-                  <span class="pull-left">Base Cálculo</span>
-                </div>
-                <span class="text-right xs-bold">123,00</span>
-              </div>
-              <div class="form-group col-sm-2 col-xs-6 text-right">
-                <div class="hidden-sm-up">
-                  <div class="divider-dashed m-b-1"></div>                  
-                  <span class="pull-left">Alíquota</span>
-                </div>
-                <span class="text-right xs-bold">123,00</span>
-              </div>
-              <div class="form-group col-sm-2 col-xs-6 text-right">
-                <div class="hidden-sm-up">
-                  <div class="divider-dashed m-b-1"></div>                  
-                  <span class="pull-left">Retenção</span>
-                </div>
-                <span class="text-right xs-bold">123,00</span>
-              </div>
-              <div class="form-group col-sm-2 col-xs-6 text-right">
-                <div class="hidden-sm-up">
-                  <div class="divider-dashed m-b-1"></div>                  
-                  <span class="pull-left">Total</span>
-                </div>
-                <span class="text-right xs-bold">123,00</span>
-              </div>
-            </div>
-            <div class="xs-m-1 sm-m-b-1">
-              <div class="divider-solid"></div>
-            </div>
-          </div>
-
           <div class="row hidden-sm-down">            
             <div class="form-group col-sm-offset-10 col-sm-2 text-right">
              <strong class="header">123,00</strong>
@@ -1728,22 +1769,22 @@
 <div class="form-bloco">
   <div class="col-sm-12 m-b-4">
     <div class="row">
-      <a href="#Cobrança" data-toggle="collapse in" aria-expanded="false">
+      <a href="#Cobrança" data-toggle="collapse" aria-expanded="false">
         <span class="header">
         Cobrança
           <i class="fa fa-chevron-down pull-right girar-baixo"></i>
         </span>
       </a>
-      <div class="collapse in" id="Cobrança">
+      <div class="collapse" id="Cobrança">
         <div class="col-sm-12">
           <div class="row hidden-sm-down">
-            <div class="form-group col-sm-3">
+            <div class="m-b-1 col-sm-3">
               <strong class="header">Parcela</strong>
             </div>
-            <div class="form-group col-sm-3">
+            <div class="m-b-1 col-sm-3">
               <strong class="header">Vencimento</strong>
             </div>
-            <div class="form-group col-sm-4">
+            <div class="m-b-1 col-sm-4">
              <strong class="header">Valor<small> (R$)</small></strong>
             </div>
           </div>
@@ -1751,14 +1792,14 @@
           
           <div REPETIR COBRANÇA>
             <div class="row">
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="m-b-1 col-sm-3 col-xs-12">
                 <div class="hidden-sm-up">
                   <span class="pull-left">Parcela</span>
                   <span class="pull-right xs-bold">1234-A</span>
                 </div>
                 <span class="hidden-sm-down">1234-A</span>
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="m-b-1 col-sm-3 col-xs-12">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Vencimento</span>
@@ -1766,7 +1807,7 @@
                 </div>
                 <span class="hidden-sm-down">18/09/2015</span>
               </div>
-              <div class="form-group col-sm-4 col-xs-12">
+              <div class="m-b-1 col-sm-4 col-xs-12">
                 <div class="hidden-sm-up">
                   <div class="divider-dashed m-b-1"></div>                  
                   <span class="pull-left">Valor</span>
@@ -1774,7 +1815,7 @@
                 </div>
                 <span class="hidden-sm-down">123,00</span>
               </div>
-              <div class="hidden-sm-down form-group col-sm-2 col-xs-6">
+              <div class="hidden-sm-down m-b-1 col-sm-2 col-xs-6">
                 <button type="button" class="btn btn-secondary col-sm-3">
                   <i class="fa fa-trash btn-block"></i>
                 </button>
@@ -1825,13 +1866,13 @@
 
           <div class="col-xs-12 hidden-sm-up xs-m-b-2">
             <div class="row">
-              <button type="button" class="btn btn-info btn-block" data-target="#nova-parcela" data-toggle="collapse in" aria-expanded="false">
+              <button type="button" class="btn btn-info btn-block" data-target="#nova-parcela" data-toggle="collapse" aria-expanded="false">
                 <i class="fa fa-plus"></i>
                 Nova parcela
               </button>
             </div>              
           </div>
-          <div class="collapse in" id="nova-parcela">
+          <div class="collapse" id="nova-parcela">
             <div class="row">
               <div class="form-group col-sm-3 col-xs-6">
                 <label class="hidden-sm-up">Parcela</label>
@@ -1864,7 +1905,7 @@
 <div class="form-bloco">
   <div class="col-sm-12 m-b-4">
     <div class="row">
-      <a href="#transporte" data-toggle="collapse in" aria-expanded="false">
+      <a href="#transporte" data-toggle="collapse" aria-expanded="false">
         <span class="header">
         Transporte
           <i class="fa fa-chevron-down pull-right girar-baixo"></i>
@@ -1893,7 +1934,7 @@
               <span class="medida p-l-1 pull-left">R$</span>
             </div>
             <div class="form-group col-sm-3 col-xs-12 sm-m-t-2">
-              <button type="button" class="btn btn-primary btn-block xs-m-t-1" data-target="#trans_local" data-toggle="collapse in" aria-expanded="false">
+              <button type="button" class="btn btn-primary btn-block xs-m-t-1" data-target="#trans_local" data-toggle="collapse" aria-expanded="false">
                 <i class="fa fa-map-marker fa-padding"></i>
                 Entregar em endereço diferente
               </button>
@@ -1903,7 +1944,7 @@
 
         <!-- ** Endereço entrega ** -->
         <div class="col-sm-12 ">
-          <div class="collapse in" id="trans_local">
+          <div class="collapse" id="trans_local">
             <div class="row m-b-1 underline">
               <a href="" class="col-sm-12 subheader">
                 <span class="subheader">Endereço de entrega</span>
@@ -1958,7 +1999,7 @@
                   </button>
                 </div>                  
                 <div class="col-sm-3 pull-right">
-                  <button class="btn  btn-primary btn-block" data-target="#add-local" data-toggle="collapse in" aria-expanded="false">
+                  <button class="btn  btn-primary btn-block" data-target="#add-local" data-toggle="collapse" aria-expanded="false">
                     <i class="fa fa-plus fa-padding"></i>
                       Adicionar
                   </button>            
@@ -1967,7 +2008,7 @@
             </div>
           </div>
 
-          <div class="collapse in" id="add-local">
+          <div class="collapse" id="add-local">
             <div class="row m-b-1 underline">
               <a href="" class="col-sm-12 subheader">
                 <span class="subheader">Endereço de entrega</span>
@@ -1999,49 +2040,49 @@
         <!-- ** Volumes transportados ** -->        
         <div class="col-sm-12 m-b-1">
           <div class="row m-b-1 underline">
-            <a href="#trans_volumes" class="col-sm-12 subheader" data-toggle="collapse in" aria-expanded="false">
+            <a href="#trans_volumes" class="col-sm-12 subheader" data-toggle="collapse" aria-expanded="false">
               <i class="fa fa-chevron-right"></i>
               <span class="subheader">Volumes transportados</span>              
             </a>
           </div>
-          <div class="collapse in" id="trans_volumes">
+          <div class="collapse" id="trans_volumes">
             <div class="row hidden-sm-down">
-              <div class="form-group col-sm-1">
+              <div class="m-b-1 col-sm-1">
                 <strong class="header">Núm.</strong>
               </div>                    
-              <div class="form-group col-sm-1">
+              <div class="m-b-1 col-sm-1">
                 <strong class="header">Quant.</strong>
               </div>
-              <div class="form-group col-sm-1">
+              <div class="m-b-1 col-sm-1">
                 <strong class="header">Espécie</strong>
               </div>
-              <div class="form-group col-sm-2">
+              <div class="m-b-1 col-sm-2">
                 <strong class="header">Marca</strong>
               </div>
-              <div class="form-group col-sm-1">
+              <div class="m-b-1 col-sm-1">
                <strong class="header">Num.</strong>
               </div>
-              <div class="form-group col-sm-2">
+              <div class="m-b-1 col-sm-2">
                <strong class="header">Peso liq. <small>(kg)</small></strong>
               </div>
-              <div class="form-group col-sm-2">
+              <div class="m-b-1 col-sm-2">
                <strong class="header">Peso bru. <small>(kg)</small></strong>
               </div>
-              <div class="form-group col-sm-1">
+              <div class="m-b-1 col-sm-1">
                 <strong class="header"></strong>
               </div>                  
             </div>
             <div class="divider-solid m-b-1 hidden-sm-down"></div>
             <div REPETIR VOLUME>
               <div class="row">
-                <div class="form-group col-sm-1 col-xs-12 xs-m-t-1">
+                <div class="m-b-1 col-sm-1 col-xs-12 xs-m-t-1">
                   <div class="hidden-sm-up">
                     <span class="pull-left">Número</span>
                     <span class="pull-right xs-bold">1</span>
                   </div>
                   <span class="hidden-sm-down">1</span>
                 </div>
-                <div class="form-group col-sm-1 col-xs-6">
+                <div class="m-b-1 col-sm-1 col-xs-6">
                   <div class="hidden-sm-up">
                     <div class="divider-dashed m-b-1"></div>                  
                     <span class="pull-left">Quantidade</span>
@@ -2049,7 +2090,7 @@
                   </div>
                   <span class="hidden-sm-down">5</span>
                 </div>
-                <div class="form-group col-sm-1 col-xs-6">
+                <div class="m-b-1 col-sm-1 col-xs-6">
                   <div class="hidden-sm-up">
                     <div class="divider-dashed m-b-1"></div>                  
                     <span class="pull-left">Espécie</span>
@@ -2057,7 +2098,7 @@
                   </div>
                   <span class="hidden-sm-down">Caixa</span>
                 </div>
-                <div class="form-group col-sm-2 col-xs-6">
+                <div class="m-b-1 col-sm-2 col-xs-6">
                   <div class="hidden-sm-up">
                     <div class="divider-dashed m-b-1"></div>                  
                     <span class="pull-left">Marca</span>
@@ -2065,7 +2106,7 @@
                   </div>
                   <span class="hidden-sm-down">Lindoya</span>
                 </div>
-                <div class="form-group col-sm-1 col-xs-6">
+                <div class="m-b-1 col-sm-1 col-xs-6">
                   <div class="hidden-sm-up">
                     <div class="divider-dashed m-b-1"></div>                  
                     <span class="pull-left">Espécie</span>
@@ -2073,7 +2114,7 @@
                   </div>
                   <span class="hidden-sm-down">500</span>
                 </div>
-                <div class="form-group col-sm-2 col-xs-6">
+                <div class="m-b-1 col-sm-2 col-xs-6">
                   <div class="hidden-sm-up">
                     <div class="divider-dashed m-b-1"></div>                  
                     <span class="pull-left">Peso líquido<small> (kg)</small></span>
@@ -2081,13 +2122,22 @@
                   </div>
                   <span class="hidden-sm-down">50</span>
                 </div>
-                <div class="form-group col-sm-2 col-xs-6">
+                <div class="m-b-1 col-sm-2 col-xs-6">
                   <div class="hidden-sm-up">
                     <div class="divider-dashed m-b-1"></div>                  
                     <span class="pull-left">Peso bruto<small> (kg)</small></span>
                     <span class="pull-right xs-bold">50</span>
                   </div>
                   <span class="hidden-sm-down">50</span>
+                </div>
+                <div class="m-b-1 col-sm-2 hidden-sm-down">
+                  <button type="button" class="btn quarto btn-secondary">
+                    <i class="fa fa-trash-o btn-block"></i>
+                  </button>
+                  <button type="button" class="btn tres-quartos btn-primary">
+                    <i class="fa fa-pencil fa-padding"></i>
+                    Editar
+                  </button>
                 </div>
                 <div class="col-xs-12 xs-m-b-1 hidden-sm-up">
                   <button type="button" class="btn metade btn-secondary">
@@ -2107,13 +2157,13 @@
 
             <div class="row">
               <div class="col-sm-2 col-xs-12 pull-right xs-m-b-2">
-                <button class="btn btn-info btn-block" data-target="#novo_volum" data-toggle="collapse in" aria-expanded="false">
+                <button class="btn btn-info btn-block" data-target="#novo_volum" data-toggle="collapse" aria-expanded="false">
                   <i class="fa fa-plus fa-padding"></i>
                     Novo volume
                 </button>            
               </div>              
             </div>
-            <div class="collapse in" id="novo_volum">
+            <div class="collapse" id="novo_volum">
               <div class="row m-b-1 underline">
                 <a href="" class="col-sm-12 subheader">
                   <span class="subheader">Adicionar volume / Editar</span>
@@ -2174,12 +2224,12 @@
         <!-- ** Transportadora ** -->
         <div class="col-sm-12 m-b-1">
           <div class="row m-b-1 underline">
-            <a href="#trans_transp" class="col-sm-12 subheader" data-toggle="collapse in" aria-expanded="false">
+            <a href="#trans_transp" class="col-sm-12 subheader" data-toggle="collapse" aria-expanded="false">
               <i class="fa fa-chevron-right"></i>
               <span class="subheader">Transportadora</span>              
             </a>
           </div>
-          <div class="collapse in" id="trans_transp">
+          <div class="collapse" id="trans_transp">
             <div class="row">
               <div class="form-group col-sm-8 col-xs-12">              
                 <label>Buscar</label>
@@ -2188,13 +2238,13 @@
               <div class="form-group col-sm-4 m-b-1 m-t-2">
                 <div class="row">
                   <div class="col-sm-6 col-xs-6">
-                    <a href="#" type="button" class="btn btn-primary btn-block" data-target="#buscar_transp" data-toggle="collapse in" aria-expanded="false">
+                    <a href="#" type="button" class="btn btn-primary btn-block" data-target="#buscar_transp" data-toggle="collapse" aria-expanded="false">
                       <i class="fa fa-search fa-padding"></i>
                       Procurar
                     </a>
                   </div>                
                   <div class="col-sm-6 col-xs-6">
-                    <a href="#" type="button" class="btn btn-info btn-block" data-target="#nova_transp" data-toggle="collapse in" aria-expanded="false">
+                    <a href="#" type="button" class="btn btn-info btn-block" data-target="#nova_transp" data-toggle="collapse" aria-expanded="false">
                       <i class="fa fa-plus fa-padding"></i>
                       Novo
                     </a>
@@ -2202,7 +2252,7 @@
                 </div>
               </div>
             </div>
-            <div class="collapse in" id="buscar_transp">
+            <div class="collapse" id="buscar_transp">
               <div class="row m-t-2">
                 <div class="form-group col-sm-4 col-xs-12"> 
                   <span class="bloco pontinhos">
@@ -2227,8 +2277,8 @@
                 </div>  
               </div>
             </div>
-            <div class="collapse in" id="nova_transp">
-              <div class="row m-b-1 underline">
+            <div class="collapse" id="nova_transp">
+              <div class="row m-1 underline">
                 <a href="" class="col-sm-12 subheader">
                   <span class="subheader">Nova transportadora / Editar</span>
                 </a>
@@ -2333,12 +2383,12 @@
         <!-- ** Veiculo ** -->       
         <div class="col-sm-12 m-b-1">
           <div class="row m-b-1 underline">
-            <a href="#trans_veiculo" class="col-sm-12 subheader" data-toggle="collapse in" aria-expanded="false">
+            <a href="#trans_veiculo" class="col-sm-12 subheader" data-toggle="collapse" aria-expanded="false">
               <i class="fa fa-chevron-right"></i>
               <span class="subheader">Veículo</span>              
             </a>
           </div>
-          <div class="collapse in" id="trans_veiculo">
+          <div class="collapse" id="trans_veiculo">
             <div class="row">
               <div class="form-group col-sm-2 col-xs-6">
                 <label>Placa</label>
@@ -2393,12 +2443,12 @@
         <!-- ** Exportação ** -->        
         <div class="col-sm-12 m-b-1">
           <div class="row m-b-1 underline">
-            <a href="#trans_exp" class="col-sm-12 subheader" data-toggle="collapse in" aria-expanded="false">
+            <a href="#trans_exp" class="col-sm-12 subheader" data-toggle="collapse" aria-expanded="false">
               <i class="fa fa-chevron-right"></i>
               <span class="subheader">Exportação</span>              
             </a>
           </div>
-          <div class="collapse in" id="trans_exp">
+          <div class="collapse" id="trans_exp">
             <div class="row">
               <div class="form-group col-sm-2">
                 <label>UF de embarque</label>
@@ -2444,7 +2494,6 @@
             </div>
           </div>              
         </div>        
-
       </div>
     </div>
   </div>
@@ -2454,13 +2503,13 @@
 <div class="form-bloco">
   <div class="col-sm-12 m-b-4">
     <div class="row">
-      <a href="#adicionais" data-toggle="collapse in" aria-expanded="false">
+      <a href="#adicionais" data-toggle="collapse" aria-expanded="false">
         <span class="header">
         Dados Adicionais
           <i class="fa fa-chevron-down pull-right girar-baixo"></i>
         </span>
       </a>
-      <div class="collapse in" id="adicionais">
+      <div class="collapse" id="adicionais">
         <div class="col-sm-12">
           <div class="row">
             <div class="form-group col-sm-12 col-xs-12">
