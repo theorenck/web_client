@@ -271,6 +271,12 @@ span.medida{
 }
 .form-group{
 	margin-bottom: 1em;
+	min-height: 72px;
+}
+@media screen and (max-width: 34em) {
+	.form-group{
+		min-height: 60px;
+	}
 }
 .form-control{
 	font-size: 1em;
