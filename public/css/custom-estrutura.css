@@ -10,6 +10,9 @@ html{
 .navbar-nav .nav-link{
 	padding: 0.8em 0 0.5em; 
 }
+.nav-tabs .nav-link{
+	padding: 1em;
+}
 .hidden{
 	display: none;
 }
