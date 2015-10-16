@@ -296,17 +296,17 @@
             </div>
             <div class="row">
               <div class="form-group col-sm-3 col-xs-6">
+                <label>Bairro</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Estado</label>
                 <select class="form-control" >
                   <option>RS</option>
                   <option>SC</option>
                   <option>etc...</option>
                 </select>
-              </div>
-              <div class="form-group col-sm-3 col-xs-6">
-                <label>Bairro</label>
-                <input type="text" class="form-control">
-              </div>
+              </div>              
               <div class="form-group col-sm-3 col-xs-12">
                 <label>Cidade</label>
                 <input type="text" class="form-control">
@@ -1804,11 +1804,21 @@
           <i class="fa fa-chevron-down pull-right girar-baixo"></i>
         </span>
       </a>
-      <div class="collapse" id="Cobrança">
+      <div class="collapse in" id="Cobrança">
         <div class="col-sm-12">
+          <div class="row m-b-2">
+            <div class="form-group col-sm-3 col-xs-6 ">
+              <label>Forma de pagamento</label>
+              <select class="form-control">
+                <option>À vista</option>
+                <option>À prazo</option>
+                <option>Outros</option>
+              </select>
+            </div>
+          </div>
           <div class="row hidden-sm-down">
             <div class="m-b-1 col-sm-3">
-              <strong class="header">Parcela</strong>
+              <strong class="header">Número</strong>
             </div>
             <div class="m-b-1 col-sm-3">
               <strong class="header">Vencimento</strong>
@@ -1819,59 +1829,6 @@
           </div>
           <div class="divider-solid m-b-1 hidden-sm-down"></div>
           
-          <div REPETIR COBRANÇA>
-            <div class="row">
-              <div class="m-b-1 col-sm-3 col-xs-12">
-                <div class="hidden-sm-up">
-                  <span class="pull-left">Parcela</span>
-                  <span class="pull-right xs-bold">1234-A</span>
-                </div>
-                <span class="hidden-sm-down">1234-A</span>
-              </div>
-              <div class="m-b-1 col-sm-3 col-xs-12">
-                <div class="hidden-sm-up">
-                  <div class="divider-dashed m-b-1"></div>                  
-                  <span class="pull-left">Vencimento</span>
-                  <span class="pull-right xs-bold">18/09/2015</span>
-                </div>
-                <span class="hidden-sm-down">18/09/2015</span>
-              </div>
-              <div class="m-b-1 col-sm-4 col-xs-12">
-                <div class="hidden-sm-up">
-                  <div class="divider-dashed m-b-1"></div>                  
-                  <span class="pull-left">Valor</span>
-                  <span class="pull-right xs-bold">123,00</span>
-                </div>
-                <span class="hidden-sm-down">123,00</span>
-              </div>
-              <div class="hidden-sm-down m-b-1 col-sm-2 col-xs-6">
-                <button type="button" class="btn btn-secondary col-sm-3">
-                  <i class="fa fa-trash btn-block"></i>
-                </button>
-                <button type="button" class="btn btn-primary col-sm-8 pull-right">
-                  <i class="fa fa-pencil fa-padding"></i>
-                  Editar
-                </button> 
-              </div>           
-            </div>
-            <div class="col-xs-12 xs-m-b-1 hidden-sm-up">
-              <div class="row">
-                <button type="button" class="btn metade btn-secondary">
-                  <i class="fa fa-trash-o fa-padding"></i>
-                  Excluir
-                </button>
-                <button type="button" class="btn metade btn-primary pull-right">
-                  <i class="fa fa-pencil fa-padding"></i>
-                  Editar
-                </button>
-              </div>                    
-            </div>
-            <div class="col-sm-12 col-xs-12">
-              <div class="row xs-m-1 xs-m-b-2">
-                <div class="divider-solid sm-m-b-1"></div>
-              </div>
-            </div>                
-          </div> 
           <div class="row hidden-sm-down">
             <div class="form-group col-sm-3 col-xs-6">
               <label class="hidden-sm-up">Parcela</label>
@@ -1891,8 +1848,7 @@
                 Adicionar
               </button> 
             </div>           
-          </div> 
-
+          </div>
           <div class="col-xs-12 hidden-sm-up xs-m-b-2">
             <div class="row">
               <button type="button" class="btn btn-info btn-block" data-target="#nova-parcela" data-toggle="collapse" aria-expanded="false">
@@ -1923,7 +1879,6 @@
               </div>           
             </div> 
           </div>
-
         </div>
       </div>
     </div>
@@ -1988,11 +1943,11 @@
                 <label>Logradouro</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-2 col-xs-12">
+              <div class="form-group col-sm-2 col-xs-6">
                 <label>Número</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-3 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-6">
                 <label>Complemento</label>
                 <input type="text" class="form-control">
               </div>
@@ -2006,11 +1961,11 @@
                   <option>etc...</option>
                 </select>
               </div>
-              <div class="form-group col-sm-4 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12">
                 <label>Bairro</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-2 col-xs-12">
+              <div class="form-group col-sm-3 col-xs-12">
                 <label>Cidade</label>
                 <input type="text" class="form-control">
               </div>
@@ -2364,7 +2319,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="form-group col-sm-3 col-xs-12">
+                <div class="form-group col-sm-3 col-xs-6">
                   <label>Bairro</label>
                   <input type="text" class="form-control">
                 </div>
@@ -2376,7 +2331,7 @@
                     <option>etc...</option>
                   </select>
                 </div>                
-                <div class="form-group col-sm-3 col-xs-6">
+                <div class="form-group col-sm-3 col-xs-12">
                   <label>Cidade</label>
                   <input type="text" class="form-control">
                 </div>
