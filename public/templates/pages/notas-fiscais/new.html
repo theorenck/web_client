@@ -1806,8 +1806,8 @@
       </a>
       <div class="collapse in" id="Cobrança">
         <div class="col-sm-12">
-          <div class="row m-b-2">
-            <div class="form-group col-sm-3 col-xs-6 ">
+          <div class="row m-b-1">
+            <div class="form-group col-sm-3 col-xs-12">
               <label>Forma de pagamento</label>
               <select class="form-control">
                 <option>À vista</option>
@@ -1827,58 +1827,71 @@
              <strong class="header">Valor<small> (R$)</small></strong>
             </div>
           </div>
-          <div class="divider-solid m-b-1 hidden-sm-down"></div>
-          
-          <div class="row hidden-sm-down">
-            <div class="form-group col-sm-3 col-xs-6">
-              <label class="hidden-sm-up">Parcela</label>
-              <span>1234-B</span>
+          <div REPETIR COBRANCA>
+            <div class="divider-solid m-b-1"></div>          
+            <div class="row m-b-1">
+              <div class="col-sm-3 col-xs-3">
+                <label class="hidden-sm-up">Número</label>
+                <span>1234-A</span>
+              </div>
+              <div class="col-sm-3 col-xs-5">
+                <label class="hidden-sm-up">Vencimento</label>
+                <input type="text" class="form-control" value="16/10/2016">
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <label class="hidden-sm-up">Valor</label>
+                <input type="text" class="form-control" value="123,00">
+              </div>
+              <div class="col-sm-2 pull-right">
+                <button type="button" class="btn quarto btn-secondary hidden-sm-down">
+                  <i class="fa fa-trash-o btn-block"></i>
+                </button>
+                <button type="button" class="btn tres-quartos btn-primary hidden-sm-down">
+                  <i class="fa fa-pencil fa-padding"></i>
+                  Editar
+                </button>
+              </div>
+              <div class="col-xs-12 xs-m-t-1">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <button type="button" class="btn btn-block btn-secondary hidden-sm-up">
+                      <i class="fa fa-trash-o fa-padding"></i>
+                      Excluir
+                    </button>
+                  </div>
+                  <div class="col-xs-6">
+                    <button type="button" class="btn btn-block btn-primary hidden-sm-up">
+                      <i class="fa fa-pencil fa-padding"></i>
+                      Editar
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
-              <label class="hidden-sm-up">Vencimento</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-sm-4 col-xs-6">
-              <label class="hidden-sm-up">Valor</label>
-              <input type="text" class="form-control">
-            </div> 
-            <div class="form-group col-sm-2 col-xs-6 pull-right xs-m-t-2">
-              <button type="button" class="btn btn-info btn-block">
-                <i class="fa fa-plus fa-padding"></i>
-                Adicionar
-              </button> 
-            </div>           
           </div>
-          <div class="col-xs-12 hidden-sm-up xs-m-b-2">
-            <div class="row">
-              <button type="button" class="btn btn-info btn-block" data-target="#nova-parcela" data-toggle="collapse" aria-expanded="false">
-                <i class="fa fa-plus"></i>
-                Nova parcela
-              </button>
-            </div>              
-          </div>
-          <div class="collapse" id="nova-parcela">
-            <div class="row">
-              <div class="form-group col-sm-3 col-xs-6">
-                <label class="hidden-sm-up">Parcela</label>
+          <div NAO repetir - exemplo de lista com btn ADD>
+            <div class="divider-solid m-b-1"></div>          
+            <div class="row m-b-1">
+              <div class="col-sm-3 col-xs-3">
+                <label class="hidden-sm-up">Número</label>
                 <span>1234-B</span>
               </div>
-              <div class="form-group col-sm-3 col-xs-6">
+              <div class="col-sm-3 col-xs-5">
                 <label class="hidden-sm-up">Vencimento</label>
                 <input type="text" class="form-control">
               </div>
-              <div class="form-group col-sm-4 col-xs-6">
+              <div class="col-sm-4 col-xs-4">
                 <label class="hidden-sm-up">Valor</label>
                 <input type="text" class="form-control">
               </div> 
-              <div class="form-group col-sm-2 col-xs-6 pull-right xs-m-t-2">
+              <div class="col-sm-2 col-xs-12 pull-right xs-m-t-1">
                 <button type="button" class="btn btn-info btn-block">
                   <i class="fa fa-plus fa-padding"></i>
                   Adicionar
                 </button> 
               </div>           
-            </div> 
-          </div>
+            </div>
+          </div>            
         </div>
       </div>
     </div>
